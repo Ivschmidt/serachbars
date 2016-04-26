@@ -1,0 +1,28 @@
+﻿<Window x:Class="SearchBars.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SearchBars"
+        mc:Ignorable="d"
+        Title="SearchBars" Height="350" Width="525" WindowState="Maximized" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <DockPanel>
+            <TextBlock DockPanel.Dock="Top" Text="SearchBars" HorizontalAlignment="Center" FontSize="25"/>
+            <Grid Height="50" Width="200 px">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="85px"/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <TextBlock Text="identifiant :" Grid.Column="0" Grid.Row="0" VerticalAlignment="Center"/>
+                <TextBox Grid.Column="1" Grid.Row="0" Margin="0 0 0 3"/>
+                <TextBlock Text="mot de passe :" Grid.Column="0" Grid.Row="1" VerticalAlignment="Center"/>
+                <PasswordBox Grid.Column="1" Grid.Row="1" Margin="0 3 0 0"/>
+            </Grid>
+        </DockPanel>
+    </Grid>
+</Window>

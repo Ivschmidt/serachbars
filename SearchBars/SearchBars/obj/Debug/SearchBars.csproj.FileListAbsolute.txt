@@ -1,0 +1,14 @@
+D:\Workspace\searchbars\SearchBars\SearchBars\bin\Debug\SearchBars.exe.config
+D:\Workspace\searchbars\SearchBars\SearchBars\bin\Debug\SearchBars.exe
+D:\Workspace\searchbars\SearchBars\SearchBars\bin\Debug\SearchBars.pdb
+D:\Workspace\searchbars\SearchBars\SearchBars\obj\Debug\SearchBars.csprojResolveAssemblyReference.cache
+D:\Workspace\searchbars\SearchBars\SearchBars\obj\Debug\MainWindow.g.cs
+D:\Workspace\searchbars\SearchBars\SearchBars\obj\Debug\App.g.cs
+D:\Workspace\searchbars\SearchBars\SearchBars\obj\Debug\SearchBars_MarkupCompile.cache
+D:\Workspace\searchbars\SearchBars\SearchBars\obj\Debug\SearchBars_MarkupCompile.lref
+D:\Workspace\searchbars\SearchBars\SearchBars\obj\Debug\MainWindow.baml
+D:\Workspace\searchbars\SearchBars\SearchBars\obj\Debug\SearchBars.g.resources
+D:\Workspace\searchbars\SearchBars\SearchBars\obj\Debug\SearchBars.Properties.Resources.resources
+D:\Workspace\searchbars\SearchBars\SearchBars\obj\Debug\SearchBars.csproj.GenerateResource.Cache
+D:\Workspace\searchbars\SearchBars\SearchBars\obj\Debug\SearchBars.exe
+D:\Workspace\searchbars\SearchBars\SearchBars\obj\Debug\SearchBars.pdb
