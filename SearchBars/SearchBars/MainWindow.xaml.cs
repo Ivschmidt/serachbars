@@ -24,5 +24,10 @@ namespace SearchBars
         {
             InitializeComponent();
         }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            Window subscribe = new Window();
+        }
     }
 }
