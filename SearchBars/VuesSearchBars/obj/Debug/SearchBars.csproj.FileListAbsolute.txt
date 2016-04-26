@@ -1,0 +1,16 @@
+D:\Workspace\searchbars\SearchBars\SearchBars\bin\Debug\VuesSearchBars.exe.config
+D:\Workspace\searchbars\SearchBars\SearchBars\bin\Debug\VuesSearchBars.exe
+D:\Workspace\searchbars\SearchBars\SearchBars\bin\Debug\VuesSearchBars.pdb
+D:\Workspace\searchbars\SearchBars\SearchBars\obj\Debug\SearchBars.csprojResolveAssemblyReference.cache
+D:\Workspace\searchbars\SearchBars\SearchBars\obj\Debug\MainWindow.g.cs
+D:\Workspace\searchbars\SearchBars\SearchBars\obj\Debug\SearchWindow.g.cs
+D:\Workspace\searchbars\SearchBars\SearchBars\obj\Debug\App.g.cs
+D:\Workspace\searchbars\SearchBars\SearchBars\obj\Debug\VuesSearchBars_MarkupCompile.cache
+D:\Workspace\searchbars\SearchBars\SearchBars\obj\Debug\VuesSearchBars_MarkupCompile.lref
+D:\Workspace\searchbars\SearchBars\SearchBars\obj\Debug\MainWindow.baml
+D:\Workspace\searchbars\SearchBars\SearchBars\obj\Debug\SearchWindow.baml
+D:\Workspace\searchbars\SearchBars\SearchBars\obj\Debug\VuesSearchBars.g.resources
+D:\Workspace\searchbars\SearchBars\SearchBars\obj\Debug\VuesSearchBars.Properties.Resources.resources
+D:\Workspace\searchbars\SearchBars\SearchBars\obj\Debug\SearchBars.csproj.GenerateResource.Cache
+D:\Workspace\searchbars\SearchBars\SearchBars\obj\Debug\VuesSearchBars.exe
+D:\Workspace\searchbars\SearchBars\SearchBars\obj\Debug\VuesSearchBars.pdb
