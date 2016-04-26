@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace SearchBars.Properties {
+namespace VuesSearchBars.Properties {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]

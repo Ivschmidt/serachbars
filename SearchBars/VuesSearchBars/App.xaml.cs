@@ -6,7 +6,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows;
 
-namespace SearchBars
+namespace VuesSearchBars
 {
     /// <summary>
     /// Logique d'interaction pour App.xaml
