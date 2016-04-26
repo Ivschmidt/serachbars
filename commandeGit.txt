@@ -1,0 +1,7 @@
+commandes Git :
+
+- git pull : récupère les fichiers du serveur
+- git status : permet de savoir si on a des fichiers locaux non commités (pas sur le serveur)
+- git add * : ajoute tous les fichiers locaux 
+- git commit -m "ton message du commit"
+- git push : envoie les fichiers sur le serveur
