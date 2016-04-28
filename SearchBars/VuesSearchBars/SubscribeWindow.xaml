@@ -20,25 +20,25 @@
             <ColumnDefinition/>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
-        <TextBlock Text="Inscription : " Grid.Row="0" Grid.Column="0"/>
-        <TextBlock Text="Identifiant : " Grid.Row="1" Grid.Column="0"/>
-        <TextBox Grid.Row="1" Grid.Column="1" Width="auto" Height="20px"/>
-        <TextBlock Text="Sexe : " Grid.Row="2" Grid.Column="0"/>
+        <TextBlock Text="Inscription : " Grid.Row="0" Grid.Column="0" Margin="10,0,0,0" FontSize="15px"/>
+        <TextBlock Text="Identifiant : " Grid.Row="1" Grid.Column="0" Margin="5,0,0,0"/>
+        <TextBox Grid.Row="1" Grid.Column="1" Width="auto" Height="20px" Margin="10,0,10,0"/>
+        <TextBlock Text="Sexe : " Grid.Row="2" Grid.Column="0" Margin="5,0,0,0"/>
         <WrapPanel Grid.Row="2" Grid.Column="1">
-            <RadioButton Content="F"/>
-            <RadioButton Content="M"/>
+            <RadioButton Content="F" Margin="4,4,4,4"/>
+            <RadioButton Content="M" Margin="4,4,4,4"/>
         </WrapPanel>
-        <TextBlock Text="Nom :" Grid.Row="3" Grid.Column="0"/>
-        <TextBox Grid.Row="3" Grid.Column="1" Width="auto" Height="20px"/>
-        <TextBlock Text="Prenom : " Grid.Row="4" Grid.Column="0"/>
-        <TextBox Grid.Row="4" Grid.Column="1" Width="auto" Height="20px"/>
-        <TextBlock Text="Date de naissance : " Grid.Row="5" Grid.Column="0"/>
-        <DatePicker Grid.Column="1" HorizontalAlignment="Left" Margin="3,3,3,3" Grid.Row="5" VerticalAlignment="Top"/>
-        <TextBlock Text="Numéro de téléphone : " Grid.Row="6" Grid.Column="0"/>
-        <TextBox Grid.Row="6" Grid.Column="1" Width="auto" Height="20px"/>
-        <TextBlock Text="Ville : " Grid.Row="7" Grid.Column="0"/>
-        <TextBox Grid.Row="7" Grid.Column="1" Width="auto" Height="20px"/>
-        <TextBlock Text="Boisson Préférée : " Grid.Row="8" Grid.Column="0"/>   
+        <TextBlock Text="Nom :" Grid.Row="3" Grid.Column="0" Margin="5,0,0,0"/>
+        <TextBox Grid.Row="3" Grid.Column="1" Width="auto" Height="20px" Margin="10,0,10,0"/>
+        <TextBlock Text="Prenom : " Grid.Row="4" Grid.Column="0" Margin="5,0,0,0"/>
+        <TextBox Grid.Row="4" Grid.Column="1" Width="auto" Height="20px" Margin="10,0,10,0"/>
+        <TextBlock Text="Date de naissance : " Grid.Row="5" Grid.Column="0" Margin="5,0,0,0"/>
+        <DatePicker Grid.Column="1" HorizontalAlignment="Left"  Grid.Row="5" Margin="10,5,10,5"/>
+        <TextBlock Text="Numéro de téléphone : " Grid.Row="6" Grid.Column="0" Margin="5,0,0,0"/>
+        <TextBox Grid.Row="6" Grid.Column="1" Width="auto" Height="20px" Margin="10,0,10,0"/>
+        <TextBlock Text="Ville : " Grid.Row="7" Grid.Column="0" Margin="5,0,0,0"/>
+        <TextBox Grid.Row="7" Grid.Column="1" Width="auto" Height="20px" Margin="10,0,10,0"/>
+        <TextBlock Text="Boisson Préférée : " Grid.Row="8" Grid.Column="0" Margin="5,0,0,0"/>   
         <ComboBox Grid.Column="1" HorizontalAlignment="Left" Margin="10,0,0,0" Grid.Row="8" VerticalAlignment="Top" Width="120"/>
         <Image Grid.Row="9" Grid.Column="0" Width="80" Height="80" Margin="10,10,10,10"/>
         <Button Content="Parcourir" Grid.Row="9" Grid.Column="1" Width="60" Height="20"/>

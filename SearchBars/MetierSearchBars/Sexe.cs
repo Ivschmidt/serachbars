@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace MetierSearchBars
 {
-    public class Class1
+    public enum Sexe
     {
+        Homme,
+        Femme,
     }
 }

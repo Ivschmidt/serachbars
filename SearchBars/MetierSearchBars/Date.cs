@@ -4,13 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TestMetierSearchBars
+namespace MetierSearchBars
 {
-    class Program
+    class Date
     {
-        static void Main(string[] args)
-        {
-
-        }
+        private int mJour;
+        private int mMois;
+        private int mAnnee;
     }
 }
