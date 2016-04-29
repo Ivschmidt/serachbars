@@ -6,10 +6,8 @@ using System.Threading.Tasks;
 
 namespace MetierSearchBars
 {
-    class Date
+    public class BoissonComposee : Boisson
     {
-        private int mJour;
-        private int mMois;
-        private int mAnnee;
+        List<Boisson> coktail= new List<Boisson>();
     }
 }
