@@ -13,16 +13,22 @@ namespace MetierSearchBars
         public string Nom { get; set; }
         public string Prenom { get; set; }
         public Sexe Sexe { get; set; }
-        public Date DdN { get; set; }
+        public DateTime DdN { get; set; }
         public string NumTel { get; set; }
         public string Ville { get; set; }
         public string BoissonPref { get; set; }
 
-        public User()
+        public User(string pseudo, string mdp, string nom, string prenom, Sexe sexe, DateTime ddN, string numTel = "", string ville = "", string boissonPref = "")
         {
-
+            Pseudo = pseudo;
+            Mdp = mdp;
+            Nom = nom;
+            Prenom = prenom;
+            Sexe = sexe;
+            DdN = ddN;
+            NumTel = numTel;
+            Ville = ville;
+            BoissonPref = boissonPref;
         }
-        
-
     }
 }
