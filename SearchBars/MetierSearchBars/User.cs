@@ -8,14 +8,15 @@ namespace MetierSearchBars
 {
     class User
     {
-        private string mPseudo;
-        private string mNom;
-        private string mPrenom;
-        private Sexe mSexe;
-        private string mNumTel;
-        private string mVille;
-        private string mBoissonPref;
-        private Date mDateDeNaissance;
+        public string Pseudo { get; set; }
+        public string Mdp { get; set; }
+        public string Nom { get; set; }
+        public string Prenom { get; set; }
+        public Sexe Sexe { get; set; }
+        public Date DdN { get; set; }
+        public string NumTel { get; set; }
+        public string Ville { get; set; }
+        public string BoissonPref { get; set; }
 
         public User()
         {
