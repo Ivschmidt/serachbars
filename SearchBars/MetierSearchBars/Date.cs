@@ -8,8 +8,16 @@ namespace MetierSearchBars
 {
     class Date
     {
-        private int mJour;
-        private int mMois;
-        private int mAnnee;
+        public int Jour { get; set; }
+        public int Mois { get; set; }
+        public int Annee { get; set; }
+
+        public Date(int jour,int mois, int annee){
+            Jour = jour;
+            Mois = mois;
+            Annee = annee;
+        }
     }
+
+
 }
