@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:VuesSearchBars"
         mc:Ignorable="d"
-        Title="SearchBars" Height="350" Width="525" WindowState="Maximized" WindowStartupLocation="CenterScreen">
+        Title="SearchBars" Height="350" Width="525" WindowState="Maximized" WindowStartupLocation="CenterScreen" Background="#808893">
     <Grid>
         <DockPanel>
             <TextBlock DockPanel.Dock="Top" Text="SearchBars" HorizontalAlignment="Center" FontSize="25"/>
@@ -19,13 +19,13 @@
                         <RowDefinition/>
                         <RowDefinition/>
                     </Grid.RowDefinitions>
-                    <TextBlock Text="identifiant :" Grid.Column="0" Grid.Row="0" VerticalAlignment="Center"/>
+                    <TextBlock Text="Pseudo :" Grid.Column="0" Grid.Row="0" VerticalAlignment="Center"/>
                     <TextBox Grid.Column="1" Grid.Row="0" Height="20px"/>
                     <TextBlock Text="mot de passe :" Grid.Column="0" Grid.Row="1" VerticalAlignment="Center"/>
                     <PasswordBox Grid.Column="1" Grid.Row="1" Height="20px"/>
                 </Grid>
-                <Button Content="Connexion" Width="80px" Margin=" 0 50 0 5" />
-                <Button Content="S'inscrire" Width="60px" FontSize="10px"/>
+                <Button Content="Connexion" Width="80px" Margin=" 0 50 0 5" Style="{StaticResource couleurBouton}"/>
+                <Button Content="S'inscrire" Width="60px" FontSize="10px" Style="{StaticResource couleurBouton}"/>
             </StackPanel>
         </DockPanel>
     </Grid>

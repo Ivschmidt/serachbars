@@ -8,6 +8,6 @@ namespace MetierSearchBars
 {
     public class BoissonComposee : Boisson
     {
-        List<Boisson> coktail= new List<Boisson>();
+        private List<Boisson> listBoissons = new List<Boisson>();
     }
 }

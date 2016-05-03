@@ -8,7 +8,7 @@ namespace MetierSearchBars
 {
     public class Boisson
     {
-        List<Ingredient> composition;
+        private List<Ingredient> listIng;
         public Type Type{ get; set; }
         public string Nom { get; set; }
         public float Prix { get; set; }
