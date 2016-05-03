@@ -1,6 +1,7 @@
 - ClassDiag : 
 	- changer prix en float
 	- restauration : bool
+	- noteMoyenne en float (done)
 
 - lors de l'inscription d'un User, gérer qu'il n'existe pas déja (pseudo inexistant)
 	- peut-etre rajouter une classe qui gere tous les users 
