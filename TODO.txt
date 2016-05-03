@@ -1,10 +1,12 @@
 - ClassDiag : 
-	- changer prix en float
-	- restauration : bool
+	- changer prix en float (done)
+	- restauration : bool (done)
+	- revoir la conception autour de boissonComposée
 
 - lors de l'inscription d'un User, gérer qu'il n'existe pas déja (pseudo inexistant)
-	- peut-etre rajouter une classe qui gere tous les users 
+	- peut-etre rajouter une classe qui gere tous les users ==> UserManager
 
 - pour bar : lors de la creation du bar : - ajout de la liste de boissons dans constructeur ?
 					  - methodes ?
 					  - directement load grace à la persistance ?
+
