@@ -8,3 +8,5 @@
 - pour bar : lors de la creation du bar : - ajout de la liste de boissons dans constructeur ?
 					  - methodes ?
 					  - directement load grace à la persistance ?
+
+- rajouter effets sur les text box de la page de connection

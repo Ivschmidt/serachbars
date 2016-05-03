@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:VuesSearchBars"
         xmlns:userCResult="clr-namespace:VuesSearchBars"
         mc:Ignorable="d"
-        Title="SearchBars" Height="350" Width="525" WindowState="Maximized" WindowStartupLocation="CenterScreen">
+        Title="SearchBars" Height="350" Width="525" WindowState="Maximized" WindowStartupLocation="CenterScreen" Background="#808893">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="50"/>

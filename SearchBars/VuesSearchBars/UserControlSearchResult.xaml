@@ -3,6 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:map="clr-namespace:Microsoft.Maps.MapControl.WPF;assembly=Microsoft.Maps.MapControl.WPF"
              mc:Ignorable="d" 
              d:DesignHeight="250" d:DesignWidth="500">
     <Grid>
@@ -20,8 +21,11 @@
         </ListBox>
         <DockPanel Grid.Column="1">
             <TextBlock Text="Nom de la ville :" FontSize="20" DockPanel.Dock="Top"/>
-            <!-- Devra être remplacer par une windows form pour pouvoir intégrer google map avec la ville recherché -->
-            <Image Source="Images/googleMap.JPG" VerticalAlignment="Center" Margin="100"/>    
+            <map:Map ZoomLevel="10" CredentialsProvider="GPTQ32UjcuKIjSoK2k67~zsm5A0WorhEOdGW-14U77Q~AlSPzDbJPec2cvWGOg7TwCQLPRorLVoO3z2Sh1p7FR6Qd4Uu9rFdCLDAE7WWFLuY">
+                <map:Map.Center>
+                    <map:Location Latitude="45.7833" Longitude="3.0833" />
+                </map:Map.Center>
+            </map:Map>
         </DockPanel>
         
 
