@@ -68,6 +68,9 @@
     <Compile Include="SubscribeWindow.xaml.cs">
       <DependentUpon>SubscribeWindow.xaml</DependentUpon>
     </Compile>
+    <Compile Include="UserControlSearch.xaml.cs">
+      <DependentUpon>UserControlSearch.xaml</DependentUpon>
+    </Compile>
     <Compile Include="UserControlSearchResult.xaml.cs">
       <DependentUpon>UserControlSearchResult.xaml</DependentUpon>
     </Compile>
@@ -84,6 +87,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="SubscribeWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControlSearch.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

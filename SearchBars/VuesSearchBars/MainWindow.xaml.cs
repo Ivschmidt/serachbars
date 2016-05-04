@@ -23,5 +23,11 @@ namespace VuesSearchBars
         {
             InitializeComponent();
         }
+
+        //private void Button_Click(object sender, RoutedEventArgs e)
+        //{
+        //    UserControlSearchResult unUserControl = new UserControlSearchResult();
+            
+        //}
     }
 }

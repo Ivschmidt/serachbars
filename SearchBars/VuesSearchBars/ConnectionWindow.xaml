@@ -8,7 +8,7 @@
         Title="SearchBars" Height="350" Width="525" WindowState="Maximized" WindowStartupLocation="CenterScreen" Background="#808893">
     <Grid>
         <DockPanel>
-            <TextBlock DockPanel.Dock="Top" Text="SearchBars" HorizontalAlignment="Center" FontSize="25"/>
+            <TextBlock DockPanel.Dock="Top" Text="SearchBars" HorizontalAlignment="Center" FontSize="25" Style="{StaticResource textblockset}"/>
             <StackPanel VerticalAlignment="Center">
                 <Grid Height="50" Width="200 px" >
                     <Grid.ColumnDefinitions>
@@ -19,13 +19,13 @@
                         <RowDefinition/>
                         <RowDefinition/>
                     </Grid.RowDefinitions>
-                    <TextBlock Text="Pseudo :" Grid.Column="0" Grid.Row="0" VerticalAlignment="Center"/>
-                    <TextBox Grid.Column="1" Grid.Row="0" Height="20px"/>
-                    <TextBlock Text="mot de passe :" Grid.Column="0" Grid.Row="1" VerticalAlignment="Center"/>
-                    <PasswordBox Grid.Column="1" Grid.Row="1" Height="20px"/>
+                    <TextBlock Text="Pseudo :" Grid.Column="0" Grid.Row="0" Style="{StaticResource textblockset}"/>
+                    <TextBox Grid.Column="1" Grid.Row="0" Style="{StaticResource textboxset}"/>
+                    <TextBlock Text="mot de passe :" Grid.Column="0" Grid.Row="1" Style="{StaticResource textblockset}"/>
+                    <PasswordBox Grid.Column="1" Grid.Row="1" Style="{StaticResource passwordboxset}"/>
                 </Grid>
-                <Button Content="Connexion" Width="80px" Margin=" 0 50 0 5" Style="{StaticResource couleurBouton}"/>
-                <Button Content="S'inscrire" Width="60px" FontSize="10px" Style="{StaticResource couleurBouton}"/>
+                <Button Content="Connexion" Width="80px" Margin=" 0 50 0 5" Style="{StaticResource couleurBouton}" Click="Button_Click_Connexion"/>
+                <Button Content="S'inscrire" Width="60px" FontSize="10px" Style="{StaticResource couleurBouton}" Click="Button_Click_Subscribe"/>
             </StackPanel>
         </DockPanel>
     </Grid>

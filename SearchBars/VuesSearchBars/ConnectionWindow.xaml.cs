@@ -23,5 +23,19 @@ namespace VuesSearchBars
         {
             InitializeComponent();
         }
+
+        private void Button_Click_Connexion(object sender, RoutedEventArgs e)
+        {
+            MainWindow uneMainWindow = new MainWindow();
+            uneMainWindow.Show();
+            this.Close();
+        }
+
+        private void Button_Click_Subscribe(object sender, RoutedEventArgs e)
+        {
+            
+        }
+
+        
     }
 }
