@@ -17,7 +17,7 @@ namespace MetierSearchBars
 
         public Boisson(string nom, float prix, string marque, int degreA, Type type)
         {
-            composition = new List<Ingredient>();
+            listIng = new List<Ingredient>();
             Nom = nom;
             Prix = prix;
             Marque = marque;
