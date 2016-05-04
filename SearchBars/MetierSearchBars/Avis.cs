@@ -11,7 +11,7 @@ namespace MetierSearchBars
         public int Note { get; set; }
         public string Description { get; set; }
 
-        public Avis(int note, string desc)
+        public Avis(int note, string desc = "")
         {
             Note = note;
             Description = desc;
