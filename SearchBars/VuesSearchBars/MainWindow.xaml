@@ -9,7 +9,7 @@
         Title="SearchBars" Height="350" Width="525" WindowState="Maximized" WindowStartupLocation="CenterScreen" Background="#808893">
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition Height="50"/>
+            <RowDefinition Height=".15*"/>
             <RowDefinition Height="auto"/>
             <RowDefinition/>
         </Grid.RowDefinitions>
@@ -43,6 +43,7 @@
 
         </Grid>
         <Separator Grid.Row="1"/>
-        <userCResult:UserControlSearchResult Grid.Row="2" Margin="20 20 20 20" Loaded="UserControlSearchResult_Loaded" />
+        <!--<userCResult:UserControlSearchResult Grid.Row="2" Margin="20 20 20 20" Loaded="UserControlSearchResult_Loaded" />-->
+        <userCResult:UserControlResultBar Grid.Row="2" Loaded="UserControlResultBar_Loaded"/>
     </Grid>
 </Window>

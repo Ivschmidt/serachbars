@@ -9,7 +9,7 @@
             <Setter Property="Background" Value="#B5E655"/>
         </Style>
         <Style x:Key="textblockset" TargetType="TextBlock">
-            <!--<Setter Property="TextBlock.Margin" Value="5 0 0 0"/>-->
+            <Setter Property="TextBlock.Margin" Value="5 0 0 0"/>
             <Setter Property="TextBlock.VerticalAlignment" Value="Center"/>
             <Setter Property="TextBlock.Foreground" Value="#B5E655"/>
         </Style>
