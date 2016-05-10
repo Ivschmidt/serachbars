@@ -8,8 +8,8 @@ namespace MetierSearchBars
 {
     public class Type
     {
-        public string Nom { get; set; }
-        public string Libelle { get; set; }
+        public string Nom { get; private set; }
+        public string Libelle { get; private set; }
 
         public Type(string nom, string libelle)
         {

@@ -8,12 +8,12 @@ namespace MetierSearchBars
 {
     public class Bar
     {
-        private Dictionary<User, Avis> commentaires;
-        private List<Boisson> listBoissons;
-        public string Ville { get; set; }
-        public float NoteMoyenne { get; set; }
-        public CoordonneesGPS GPS{ get; set; }
-        public bool Restauration { get; set; }
+        private Dictionary<User, Avis> commentaires = new Dictionary<User, Avis>();
+        private List<Boisson> listBoissons = new List<Boisson>();
+        public string Ville { get; private set; }
+        public float NoteMoyenne { get; private set; }
+        public CoordonneesGPS GPS{ get; private set; }
+        public bool Restauration { get; private set; }
 
         public Bar(CoordonneesGPS gps, bool restauration = false, float note = -1, string ville="") 
         {
@@ -21,8 +21,6 @@ namespace MetierSearchBars
             Restauration = restauration;
             NoteMoyenne = note;
             Ville = ville;
-            commentaires = new Dictionary<User, Avis>();
-            listBoissons = new List<Boisson>();
         } 
     }
 }

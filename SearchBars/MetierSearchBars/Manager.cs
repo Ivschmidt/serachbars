@@ -8,21 +8,42 @@ namespace MetierSearchBars
 {
     public class Manager
     {
-        public User CurrentUser { get; set; }
-        private UserManager useMan;
+        public User CurrentUser { get; private set; }
+        private HashSet<User> listUsers = new HashSet<User>();
+        private List<Bar> listBar = new List<Bar>();
 
         public Manager()
         {
             CurrentUser = null;
-            useMan = new UserManager();
         }
-        public bool seConnecter(string pseudo, string mdp)
+
+        private bool rechercherUser(string pseudo)
         {
-            CurrentUser = useMan.rechercherUser(pseudo);
-            if (CurrentUser != null)
+            foreach (User user in listUsers)
+                if (user.Pseudo.Equals(pseudo))
+                {
+                    CurrentUser = user;
+                    return true;
+                }
+            return false;
+        }
+
+        public bool seConnecter(string pseudo, string mdp) //il faudra faire avec un event et non un bool
+        {
+            if(!this.rechercherUser(pseudo))
                 return false;
             else 
-                return (CurrentUser.Mdp.Equals(mdp);    
+                return (CurrentUser.Mdp.Equals(mdp));    
+        }
+
+        public void sInscrire(string pseudo, string mdp, string nom, string prenom, Sexe sexe, DateTime ddN, string numTel = "", string ville = "", Boisson boissonPref = null)
+        {
+            if(rechercherUser(pseudo))
+            {
+                throw new Exception("Cet user existe déja");
+            }
+            User newUser = new User(pseudo, mdp, nom, prenom, sexe, ddN, numTel, ville, boissonPref);
+            listUsers.Add(newUser);
         }
     }
 }

@@ -8,8 +8,8 @@ namespace MetierSearchBars
 {
     public class Ingredient
     {
-        public string Nom { get; set; }
-        public string Description { get; set; }
+        public string Nom { get; private set; }
+        public string Description { get; private set; }
 
         public Ingredient(string nom, string description)
         {
