@@ -8,8 +8,8 @@ namespace MetierSearchBars
 {
     public class Avis
     {
-        public int Note { get; set; }
-        public string Description { get; set; }
+        public int Note { get; private set; }
+        public string Description { get; private set; }
 
         public Avis(int note, string desc = "")
         {
