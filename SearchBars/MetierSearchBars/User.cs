@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MetierSearchBars
 {
-    class User
+    public class User
     {
         public string Pseudo { get; private set; }
         public string Mdp { get; private set; }
@@ -16,9 +16,9 @@ namespace MetierSearchBars
         public DateTime DdN { get; private set; }
         public string NumTel { get; private set; }
         public string Ville { get; private set; }
-        public string BoissonPref { get; private set; }
+        public Boisson BoissonPref { get; private set; }
 
-        public User(string pseudo, string mdp, string nom, string prenom, Sexe sexe, DateTime ddN, string numTel = "", string ville = "", string boissonPref = "")
+        public User(string pseudo, string mdp, string nom, string prenom, Sexe sexe, DateTime ddN, string numTel = "", string ville = "", Boisson boissonPref = null)
         {
             Pseudo = pseudo;
             Mdp = mdp;
@@ -30,5 +30,7 @@ namespace MetierSearchBars
             Ville = ville;
             BoissonPref = boissonPref;
         }
+        
+        // TODO : faire une méthode haschcode et equals (peut etre juste avec pseudo, si discriminant)
     }
 }
