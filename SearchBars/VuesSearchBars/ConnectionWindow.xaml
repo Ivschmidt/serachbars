@@ -9,7 +9,7 @@
     <Grid>
         <DockPanel>
             <TextBlock DockPanel.Dock="Top" Text="SearchBars" HorizontalAlignment="Center" FontSize="25" Style="{StaticResource textblockset}"/>
-            <StackPanel VerticalAlignment="Center">
+            <StackPanel VerticalAlignment="Center" >
                 <Grid Height="50" Width="200 px" >
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="85px"/>
@@ -27,6 +27,6 @@
                 <Button Content="Connexion" Width="80px" Margin=" 0 50 0 5" Style="{StaticResource couleurBouton}" Click="Button_Click_Connexion"/>
                 <Button Content="S'inscrire" Width="60px" FontSize="10px" Style="{StaticResource couleurBouton}" Click="Button_Click_Subscribe"/>
             </StackPanel>
-        </DockPanel>
+            </DockPanel>
     </Grid>
 </Window>
