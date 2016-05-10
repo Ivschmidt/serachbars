@@ -2,11 +2,26 @@
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:local="clr-namespace:VuesSearchBars"
-             StartupUri="SubscribeWindow.xaml">
+             StartupUri="ConnectionWindow.xaml">
     <Application.Resources>
         <Style x:Key="couleurBouton" TargetType="{x:Type Button}">
             <Setter Property="Foreground" Value="#808893" />
             <Setter Property="Background" Value="#B5E655"/>
+        </Style>
+        <Style x:Key="textblockset" TargetType="TextBlock">
+            <Setter Property="TextBlock.Margin" Value="5 0 0 0"/>
+            <Setter Property="TextBlock.VerticalAlignment" Value="Center"/>
+            <Setter Property="TextBlock.Foreground" Value="#B5E655"/>
+        </Style>
+        <Style x:Key="textboxset" TargetType="TextBox">
+            <Setter Property="Background" Value="#ABADB7"/>
+            <Setter Property="Height" Value="20"/>
+            <Setter Property="Width" Value="auto"/>
+        </Style>
+        <Style x:Key="passwordboxset" TargetType="PasswordBox">
+            <Setter Property="Background" Value="#ABADB7"/>
+            <Setter Property="Height" Value="20"/>
+            <Setter Property="Width" Value="auto"/>
         </Style>
     </Application.Resources>
 </Application>
