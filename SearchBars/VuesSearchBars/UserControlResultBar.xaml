@@ -1,0 +1,80 @@
+﻿<UserControl x:Class="VuesSearchBars.UserControlResultBar"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:map="clr-namespace:Microsoft.Maps.MapControl.WPF;assembly=Microsoft.Maps.MapControl.WPF"
+             mc:Ignorable="d" 
+             d:DesignHeight="600" d:DesignWidth="700">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width=".20*"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <ListBox Grid.Column="0"  Margin="5 10 5 10">
+            <ListBoxItem Content="bar1"/>
+            <ListBoxItem Content="bar2"/>
+            <ListBoxItem Content="bar3"/>
+            <ListBoxItem Content="bar4"/>
+            <ListBoxItem Content="bar5"/>
+            <ListBoxItem Content="bar6"/>
+        </ListBox>
+        <Grid Grid.Column="1">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid Grid.Row="0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <StackPanel Grid.Column="0">
+                    <TextBlock Text="NomBar :" FontSize="40" Style="{StaticResource textblockset}"/>
+                    <WrapPanel>
+                        <TextBlock Text="note" FontSize="20" Style="{StaticResource textblockset}"/>
+                        <TextBlock Text=".../5" FontSize="20" Style="{StaticResource textblockset}"/>
+                    </WrapPanel>
+                    <WrapPanel>
+                        <TextBlock Text="Adresse :" FontSize="20" Style="{StaticResource textblockset}"/>
+                        <TextBlock Text="un adresse" FontSize="20" Style="{StaticResource textblockset}"/>
+                    </WrapPanel>
+                    <WrapPanel>
+                        <TextBlock Text="Numero :" FontSize="20" Style="{StaticResource textblockset}"/>
+                        <TextBlock Text="0000000000" FontSize="20" Style="{StaticResource textblockset}"/>
+                    </WrapPanel>
+                    <WrapPanel>
+                        <TextBlock Text="Boisson :" FontSize="20" Style="{StaticResource textblockset}"/>
+                        <TextBlock Text="liste de boissons" FontSize="20" Style="{StaticResource textblockset}"/>
+                    </WrapPanel>
+                </StackPanel>
+                <map:Map Grid.Column="1"  Margin="10" ZoomLevel="10" CredentialsProvider="GPTQ32UjcuKIjSoK2k67~zsm5A0WorhEOdGW-14U77Q~AlSPzDbJPec2cvWGOg7TwCQLPRorLVoO3z2Sh1p7FR6Qd4Uu9rFdCLDAE7WWFLuY" RenderTransformOrigin="1.819,0.485">
+                    <map:Map.Center>
+                        <map:Location Latitude="45.7833" Longitude="3.0833" />
+                    </map:Map.Center>
+                </map:Map>
+            </Grid>
+            <Grid Grid.Row="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <WrapPanel Grid.Column="0" HorizontalAlignment="Center">
+                    <Button Content="Prec" Width="30" Height="20" />
+                    <Image Source="Images/photoprofil.jpg" Margin="10" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <Button Content="Suiv" Width="30" Height="20" />
+                </WrapPanel>
+                <StackPanel Grid.Column="1" Margin="0 0 10 0">
+                    <TextBlock Text="Avis clients :" FontSize="30" Style="{StaticResource textblockset}"/>
+                    <ListBox Height="200">
+                        <ListBoxItem Content="avis1"/>
+                        <ListBoxItem Content="avis2"/>
+                        <ListBoxItem Content="avis3"/>
+                        <ListBoxItem Content="avis4"/>
+                    </ListBox>
+                    <Button Content="Poster un avis" Margin="0 5 0 5"/>
+                </StackPanel>
+            </Grid>
+        </Grid>
+    </Grid>
+</UserControl>

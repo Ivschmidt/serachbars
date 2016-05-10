@@ -1,0 +1,48 @@
+﻿<UserControl x:Class="VuesSearchBars.UserControlProfil"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="500" d:DesignWidth="600">
+    <Grid>
+        <WrapPanel>
+            <StackPanel >
+                <TextBlock Text="Pseudo" FontSize="40" Style="{StaticResource textblockset}"/>
+                <Image Source="Images/photoprofil.jpg" MaxHeight="350" MinHeight="150" MaxWidth="250" MinWidth="150"/>
+            </StackPanel>
+            
+            <StackPanel VerticalAlignment="Top" Margin="0 50 0 0">
+                <WrapPanel>
+                    <TextBlock Text="Nom :" FontSize="20" Style="{StaticResource textblockset}"/>
+                    <TextBlock Text="unNom" FontSize="20" Style="{StaticResource textblockset}"/>
+                </WrapPanel>
+                <WrapPanel>
+                    <TextBlock Text="Prénom :" FontSize="20" Style="{StaticResource textblockset}"/>
+                    <TextBlock Text="unPrénom" FontSize="20" Style="{StaticResource textblockset}"/>
+                </WrapPanel>
+                <WrapPanel>
+                    <TextBlock Text="Sexe :" FontSize="20" Style="{StaticResource textblockset}"/>
+                    <TextBlock Text="homme/femme" FontSize="20" Style="{StaticResource textblockset}"/>
+                </WrapPanel>
+                <WrapPanel>
+                    <TextBlock Text="Age :" FontSize="20" Style="{StaticResource textblockset}"/>
+                    <TextBlock Text="300" FontSize="20" Style="{StaticResource textblockset}"/>
+                    <TextBlock Text="ans" FontSize="20" Style="{StaticResource textblockset}"/>
+                </WrapPanel>
+                <WrapPanel>
+                    <TextBlock Text="Date de naissance : " FontSize="20" Style="{StaticResource textblockset}"/>
+                    <TextBlock Text="datedenaissaince" FontSize="20" Style="{StaticResource textblockset}"/>
+                </WrapPanel>
+                <WrapPanel>
+                    <TextBlock Text="Ville :" FontSize="20" Style="{StaticResource textblockset}"/>
+                    <TextBlock Text="unsVille" FontSize="20" Style="{StaticResource textblockset}"/>
+                </WrapPanel>
+                <WrapPanel>
+                    <TextBlock Text="Boisson préférée :" FontSize="20" Style="{StaticResource textblockset}"/>
+                    <TextBlock Text="uneBoisson" FontSize="20" Style="{StaticResource textblockset}"/>
+                </WrapPanel>
+            </StackPanel>
+        </WrapPanel>
+    </Grid>
+</UserControl>

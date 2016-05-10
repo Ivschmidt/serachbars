@@ -27,6 +27,7 @@
                 <Button Content="Connexion" Width="80px" Margin=" 0 50 0 5" Style="{StaticResource couleurBouton}" Click="Button_Click_Connexion"/>
                 <Button Content="S'inscrire" Width="60px" FontSize="10px" Style="{StaticResource couleurBouton}" Click="Button_Click_Subscribe"/>
             </StackPanel>
-            </DockPanel>
+            <!--<TextBlock Text="L'abus d'alcool est dangereux pour la santé." DockPanel.Dock="Bottom" Style="{StaticResource textblockset}"/>-->
+        </DockPanel>
     </Grid>
 </Window>
