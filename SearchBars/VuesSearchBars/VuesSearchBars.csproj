@@ -65,8 +65,14 @@
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
     </Compile>
+    <Compile Include="RateWindow.xaml.cs">
+      <DependentUpon>RateWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="SubscribeWindow.xaml.cs">
       <DependentUpon>SubscribeWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlProfil.xaml.cs">
+      <DependentUpon>UserControlProfil.xaml</DependentUpon>
     </Compile>
     <Compile Include="UserControlResultBar.xaml.cs">
       <DependentUpon>UserControlResultBar.xaml</DependentUpon>
@@ -89,7 +95,15 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="RateWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="SubscribeWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControlProfil.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
