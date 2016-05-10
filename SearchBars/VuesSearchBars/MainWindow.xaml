@@ -19,7 +19,7 @@
                 <ColumnDefinition/>
                 <ColumnDefinition Width="150"/>
             </Grid.ColumnDefinitions>
-            <Button Content="Rechercher" Grid.Column="0" Width="100px" HorizontalAlignment="Left" Margin="10" Style="{StaticResource couleurBouton}" />
+            <Button Content="Rechercher" Grid.Column="0" Height="20" Width="100px" HorizontalAlignment="Left" Margin="10" Style="{StaticResource couleurBouton}" />
             <TextBlock Text="SearchBars" Grid.Column="1" FontSize="30" HorizontalAlignment="Center" Style="{StaticResource textblockset}"/>
             <Grid Grid.Column="2">
                 <Grid.ColumnDefinitions>
@@ -44,6 +44,7 @@
         </Grid>
         <Separator Grid.Row="1"/>
         <!--<userCResult:UserControlSearchResult Grid.Row="2" Margin="20 20 20 20" Loaded="UserControlSearchResult_Loaded" />-->
-        <userCResult:UserControlResultBar Grid.Row="2" Loaded="UserControlResultBar_Loaded"/>
+        <!--<userCResult:UserControlResultBar Grid.Row="2" Loaded="UserControlResultBar_Loaded"/>-->
+        <userCResult:UserControlProfil Grid.Row="2" Loaded="UserControlProfil_Loaded"/>
     </Grid>
 </Window>
