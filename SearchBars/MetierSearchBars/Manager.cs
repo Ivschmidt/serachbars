@@ -8,17 +8,26 @@ namespace MetierSearchBars
 {
     public class Manager
     {
-        public User CurrentUser { get; set; }
-        private UserManager useMan;
+        internal User CurrentUser { get; private set; }
+        private HashSet<User> listUsers = new HashSet<User>();
+        private List<Bar> listBar = new List<Bar>();
 
         public Manager()
         {
             CurrentUser = null;
-            useMan = new UserManager();
         }
-        public bool seConnecter(string pseudo, string mdp)
+
+        private User rechercherUser(string pseudo)
         {
-            CurrentUser = useMan.rechercherUser(pseudo);
+            foreach (User user in listUsers)
+                if (user.Pseudo.Equals(pseudo))
+                    return user;
+            return null;
+        }
+
+        public bool seConnecter(string pseudo, string mdp) //il faudra faire avec un event et non un bool
+        {
+            CurrentUser = this.rechercherUser(pseudo);
             if (CurrentUser != null)
                 return false;
             else 

@@ -8,16 +8,15 @@ namespace MetierSearchBars
 {
     public class Boisson
     {
-        private List<Ingredient> listIng;
-        public Type Type{ get; set; }
-        public string Nom { get; set; }
-        public float Prix { get; set; }
-        public string Marque { get; set; }
-        public int DegreAlcool { get; set; }
+        private List<Ingredient> listIng = new List<Ingredient>();
+        public Type Type{ get; private set; }
+        public string Nom { get; private set; }
+        public float Prix { get; private set; }
+        public string Marque { get; private set; }
+        public int DegreAlcool { get; private set; }
 
         public Boisson(string nom, float prix, string marque, int degreA, Type type)
         {
-            listIng = new List<Ingredient>();
             Nom = nom;
             Prix = prix;
             Marque = marque;

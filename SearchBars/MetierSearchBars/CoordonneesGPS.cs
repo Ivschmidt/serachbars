@@ -8,8 +8,8 @@ namespace MetierSearchBars
 {
     public class CoordonneesGPS
     {
-        public int Longitude { get; set; }
-        public int Latitude { get; set; }
+        public int Longitude { get; private set; }
+        public int Latitude { get; private set; }
 
         public CoordonneesGPS(int longitude, int latitude)
         {
