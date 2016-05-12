@@ -1,3 +1,0 @@
-1- Clicker sur connexion amène à une fenètre de recherche.
-2- Clicker sur inscription permet aux nouveaux visiteurs de se créer un compte.
-3- Clicker 

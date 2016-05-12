@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestMetierSearchBars", "Tes
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VuesSearchBars", "VuesSearchBars\VuesSearchBars.csproj", "{B10B2E40-3D2E-4EDA-857A-1E4F89149AB9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataSearchBars", "DataSearchBars\DataSearchBars.csproj", "{38648225-8EDE-42B4-8A81-CB63BE5DA5E7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{B10B2E40-3D2E-4EDA-857A-1E4F89149AB9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B10B2E40-3D2E-4EDA-857A-1E4F89149AB9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B10B2E40-3D2E-4EDA-857A-1E4F89149AB9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{38648225-8EDE-42B4-8A81-CB63BE5DA5E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{38648225-8EDE-42B4-8A81-CB63BE5DA5E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{38648225-8EDE-42B4-8A81-CB63BE5DA5E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{38648225-8EDE-42B4-8A81-CB63BE5DA5E7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -36,7 +36,7 @@ namespace TestMetierSearchBars
             else
                 Console.WriteLine("Connexion échoué");
 
-            //test connexion avec User existant et mauvant mdp
+            //test connexion avec User existant et mauvais mdp
             if (mgr.seConnecter("tutu", "1234"))
                 Console.WriteLine(mgr.CurrentUser.Nom + " connecté");
             else
