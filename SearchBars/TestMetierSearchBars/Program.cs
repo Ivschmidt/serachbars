@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using MetierSearchBars;
+using DataSearchBars;
 
 namespace TestMetierSearchBars
 {
@@ -11,7 +12,7 @@ namespace TestMetierSearchBars
     {
         static void Main(string[] args)
         {
-            Manager mgr = new Manager();
+            Manager mgr = new Manager(new Stubb));
 
             //test connexion avec User inexistant
             if (mgr.seConnecter("toto", "123456"))

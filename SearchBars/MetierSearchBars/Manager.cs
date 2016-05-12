@@ -8,13 +8,14 @@ namespace MetierSearchBars
 {
     public class Manager
     {
-      //  private IDataManager dataMgr = new Stubb();
+        private IDataManager dataMgr;
         public User CurrentUser { get; private set; }
         private HashSet<User> listUsers = new HashSet<User>();
         private List<Bar> listBar = new List<Bar>();
 
-        public Manager()
+        public Manager(IDataManager dataManager)
         {
+            dataMgr = dataManager;
             CurrentUser = null;
         }
 
