@@ -9,6 +9,7 @@
 
 - changer prix de boisson en double
 
-- un User est-il discriminé par son pseudo ? (faire hashcode et equals en conséquence)
+- faire une classe Ville
+
 
 
