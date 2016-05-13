@@ -11,7 +11,7 @@ namespace MetierSearchBars
         public double Longitude { get; private set; }
         public double Latitude { get; private set; }
 
-        public CoordonneesGPS(int longitude, int latitude)
+        public CoordonneesGPS(double latitude, double longitude)
         {
             Longitude = longitude;
             Latitude = latitude;

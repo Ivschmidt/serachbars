@@ -9,6 +9,7 @@ namespace MetierSearchBars
     public class BoissonComposee : Boisson
     {
         private List<Boisson> listBoissons = new List<Boisson>();
+        private List<Ingredient> listIng = new List<Ingredient>();
 
         public BoissonComposee(string nom, float prix, string marque, int degreA, Type type)
             : base(nom, prix, marque, degreA, type)

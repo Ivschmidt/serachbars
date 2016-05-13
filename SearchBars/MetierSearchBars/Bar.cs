@@ -10,13 +10,15 @@ namespace MetierSearchBars
     {
         private Dictionary<User, Avis> commentaires = new Dictionary<User, Avis>();
         private List<Boisson> listBoissons = new List<Boisson>();
+        public string Nom { get; private set; }
         public string Ville { get; private set; }
         public float NoteMoyenne { get; private set; }
         public CoordonneesGPS GPS{ get; private set; }
         public bool Restauration { get; private set; }
 
-        public Bar(CoordonneesGPS gps, bool restauration = false, float note = -1, string ville="") 
+        public Bar(string nom, CoordonneesGPS gps, bool restauration = false, string ville = "", float note = -1) 
         {
+            Nom = nom;
             GPS = gps;
             Restauration = restauration;
             NoteMoyenne = note;

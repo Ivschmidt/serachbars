@@ -47,5 +47,10 @@ namespace MetierSearchBars
             User newUser = new User(pseudo, mdp, nom, prenom, sexe, ddN, numTel, ville, boissonPref);
             listUsers.Add(newUser);
         }
+
+        public void seDeconnecter()
+        {
+            CurrentUser = null;
+        }
     }
 }
