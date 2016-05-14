@@ -12,7 +12,7 @@ namespace TestMetierSearchBars
     {
         static void Main(string[] args)
         {
-            Manager mgr = new Manager(new Stubb));
+            Manager mgr = new Manager(new Stubb());
 
             //test connexion avec User inexistant
             if (mgr.seConnecter("toto", "123456"))

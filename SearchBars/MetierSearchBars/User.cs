@@ -48,7 +48,7 @@ namespace MetierSearchBars
         public override bool Equals(object right)
         {
             //check null
-            if (object.ReferenceEquals(, null))
+            if (object.ReferenceEquals(right, null))
             {
                 return false;
             }

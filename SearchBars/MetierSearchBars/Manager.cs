@@ -10,8 +10,8 @@ namespace MetierSearchBars
     {
         private IDataManager dataMgr;
         public User CurrentUser { get; private set; }
-        private HashSet<User> listUsers = new HashSet<User>();
-        private List<Bar> listBar = new List<Bar>();
+        private HashSet<User> listUsers = new HashSet<User>(); 
+        private List<Ville> listVille = new List<Ville>();
 
         public Manager(IDataManager dataManager)
         {

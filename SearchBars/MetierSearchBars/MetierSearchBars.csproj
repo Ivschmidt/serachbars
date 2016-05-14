@@ -52,6 +52,7 @@
     <Compile Include="Sexe.cs" />
     <Compile Include="Type.cs" />
     <Compile Include="User.cs" />
+    <Compile Include="Ville.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
