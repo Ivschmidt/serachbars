@@ -6,15 +6,39 @@ using System.Threading.Tasks;
 
 namespace MetierSearchBars
 {
-    public class CoordonneesGPS
+    public struct CoordonneesGPS : IEquatable<CoordonneesGPS>
     {
-        public double Longitude { get; private set; }
-        public double Latitude { get; private set; }
+        public double Longitude
+        {
+            get
+            {
+                return mLongitude;
+            }
+            private set
+            {
+                mLongitude = value;
+            }
+        }
+        private double mLongitude;
+
+        public double Latitude
+        {
+            get
+            {
+                return mLatitude;
+            }
+            private set
+            {
+                mLatitude = value;
+            }
+        }
+        private double mLatitude;
 
         public CoordonneesGPS(double latitude, double longitude)
         {
-            Longitude = longitude;
-            Latitude = latitude;
+            mLatitude = latitude;
+            mLongitude = longitude;
+
         }
 
         /// <summary>
@@ -33,23 +57,12 @@ namespace MetierSearchBars
         /// <returns>true if equals, false if not</returns>
         public override bool Equals(object right)
         {
-            //check null
-            if (object.ReferenceEquals(right, null))
+
+            if (!(right is CoordonneesGPS))
             {
                 return false;
             }
-
-            if (object.ReferenceEquals(this, right))
-            {
-                return true;
-            }
-
-            if (this.GetType() != right.GetType())
-            {
-                return false;
-            }
-
-            return this.Equals(right as CoordonneesGPS);
+            return Equals((CoordonneesGPS)right);
         }
 
         /// <summary>
@@ -61,5 +74,16 @@ namespace MetierSearchBars
         {
             return (this.Latitude == other.Latitude && this.Longitude == other.Longitude);
         }
+
+        public static bool operator ==(CoordonneesGPS gps1, CoordonneesGPS gps2)
+        {
+            return gps1.Equals(gps2);
+        }
+
+        public static bool operator !=(CoordonneesGPS gps1, CoordonneesGPS gps2)
+        {
+            return !gps1.Equals(gps2);
+        }
+
     }
 }

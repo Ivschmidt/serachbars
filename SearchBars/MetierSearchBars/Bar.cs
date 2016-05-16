@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MetierSearchBars
 {
-    public class Bar
+    public class Bar : IEquatable<Bar>
     {
         private Dictionary<User, Avis> commentaires = new Dictionary<User, Avis>();
         private List<Boisson> listBoissons = new List<Boisson>();

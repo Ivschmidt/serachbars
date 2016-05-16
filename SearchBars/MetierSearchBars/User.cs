@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MetierSearchBars
 {
-    public class User
+    public class User : IEquatable<User>
     {
         public string Pseudo { get; private set; }
         public string Mdp { get; private set; }
