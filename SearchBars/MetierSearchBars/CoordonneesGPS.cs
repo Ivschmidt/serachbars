@@ -14,10 +14,6 @@ namespace MetierSearchBars
             {
                 return mLongitude;
             }
-            private set
-            {
-                mLongitude = value;
-            }
         }
         private double mLongitude;
 
@@ -26,10 +22,6 @@ namespace MetierSearchBars
             get
             {
                 return mLatitude;
-            }
-            private set
-            {
-                mLatitude = value;
             }
         }
         private double mLatitude;

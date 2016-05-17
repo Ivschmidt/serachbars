@@ -24,7 +24,7 @@ namespace DataSearchBars
             List<Ville> list = new List<Ville>();
 
             Ville clermont = new Ville("Clermont-ferrand", new CoordonneesGPS(45.7833, 3.0833));
-            clermont.ajouterBar(new Bar("Le Starter", new CoordonneesGPS(45.782036, 3.081432), false, 5));
+            clermont.ajouterBar(new Bar("Le Starter", new CoordonneesGPS(45.782036, 3.081432), false));
             clermont.ajouterBar(new Bar("Délirium", new CoordonneesGPS(45.776289, 3.083339), true));
             clermont.ajouterBar(new Bar("The Still Irish Bar", new CoordonneesGPS(45.773706, 3.086125), false));
             list.Add(clermont);

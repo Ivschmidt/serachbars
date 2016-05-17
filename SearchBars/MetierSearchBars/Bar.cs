@@ -8,19 +8,28 @@ namespace MetierSearchBars
 {
     public class Bar : IEquatable<Bar>
     {
-        private Dictionary<User, Avis> commentaires = new Dictionary<User, Avis>();
+        private Dictionary<User, List<Avis>> commentaires = new Dictionary<User, List<Avis>>();
         private List<Boisson> listBoissons = new List<Boisson>();
         public string Nom { get; private set; }
-        public float NoteMoyenne { get; private set; }
+        public float? NoteMoyenne
+        {
+            get
+            {
+                if (commentaires == null || commentaires.Count == 0)
+                {
+                    return null;
+                }
+                return (float) commentaires.Average(kvp => kvp.Value.Average(elem => elem.Note));
+            }
+        }
         public CoordonneesGPS GPS{ get; private set; }
         public bool Restauration { get; private set; }
 
-        public Bar(string nom, CoordonneesGPS gps, bool restauration = false, float note = -1) 
+        public Bar(string nom, CoordonneesGPS gps, bool restauration = false) 
         {
             Nom = nom;
             GPS = gps;
             Restauration = restauration;
-            NoteMoyenne = note;
         }
 
         /// <summary>
@@ -29,7 +38,7 @@ namespace MetierSearchBars
         /// <returns>hash code</returns>
         public override int GetHashCode()
         {
-            return GPS.GetHashCode();
+            return GPS.GetHashCode() + Nom.GetHashCode();
         }
 
         /// <summary>
@@ -65,7 +74,7 @@ namespace MetierSearchBars
         /// <returns>true if equals</returns>
         public bool Equals(Bar other)
         {
-            return (this.GPS.Equals(other.GPS));
+            return (this.GPS.Equals(other.GPS) && this.Nom.Equals(other.Nom));
         }
     }
 }

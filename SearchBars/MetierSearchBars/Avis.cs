@@ -5,16 +5,44 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace MetierSearchBars
-{
-    public class Avis
+{   
+    public struct Avis
     {
-        public int Note { get; private set; }
-        public string Description { get; private set; }
-
-        public Avis(int note, string desc = "")
+        public int Note
         {
-            Note = note;
-            Description = desc;
+            get
+            {
+                return mNote;
+            }
+            private set
+            {
+                mNote = value;
+            }
+        }
+        private int mNote;
+
+        public string Description
+        {
+            get
+            {
+                return mDescription;
+            }
+            private set
+            {
+                mDescription = value;
+            }
+        }
+        private string mDescription;
+
+        public Avis(int note)
+        {
+            mNote = note;
+            mDescription = "";
+        }
+
+        public Avis(int note, string desc) : this(note)
+        {
+            mDescription = desc;
         }
     }
 }
