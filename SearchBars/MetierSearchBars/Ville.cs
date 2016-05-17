@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MetierSearchBars
 {
-    public class Ville
+    class Ville : IVille
     {
         public string Nom { get; private set; }
         public CoordonneesGPS GPS { get; private set; }

@@ -6,16 +6,9 @@ using System.Threading.Tasks;
 
 namespace MetierSearchBars
 {
-    public enum TypeBoisson
+    public interface IVille
     {
-        Biere,
-        Vin,
-        AlcoolFort,
-        Cocktail,
-        Sirop,
-        Jus,
-        Soda,
-        None,
-
+        string Nom { get;}
+        CoordonneesGPS GPS { get;}
     }
 }

@@ -9,9 +9,25 @@ namespace MetierSearchBars
     public class Manager
     {
         private IDataManager dataMgr;
-        public User CurrentUser { get; private set; }
+        public IUser CurrentUser { get; private set; } //demander prof pq mettre IUser
+
         private HashSet<User> listUsers = new HashSet<User>(); 
+        //public IEnumerable<IUser> ListUsers
+        //{
+        //    get
+        //    {
+        //        return listUsers;
+        //    }
+        //}
+
         private List<Ville> listVille = new List<Ville>();
+        //public IEnumerable<IVille> ListVilles
+        //{
+        //    get
+        //    {
+        //        return listVille;
+        //    }
+        //}
 
         public Manager(IDataManager dataManager)
         {
@@ -21,13 +37,8 @@ namespace MetierSearchBars
 
         private bool rechercherUser(string pseudo)
         {
-            foreach (User user in listUsers)
-                if (user.Pseudo.Equals(pseudo))
-                {
-                    CurrentUser = user;
-                    return true;
-                }
-            return false;
+            CurrentUser = listUsers.Single(user => user.Pseudo.Equals(pseudo));
+            return (CurrentUser == null);
         }
 
         public bool seConnecter(string pseudo, string mdp) //il faudra faire avec un event et non un bool
@@ -38,7 +49,7 @@ namespace MetierSearchBars
                 return (CurrentUser.Mdp.Equals(mdp));    
         }
 
-        public void sInscrire(string pseudo, string mdp, string nom, string prenom, Sexe sexe, DateTime ddN, string numTel = "", string ville = "", Boisson boissonPref = null)
+        public void sInscrire(string pseudo, string mdp, string nom, string prenom, Sexe sexe, DateTime ddN, string numTel = "", string ville = "", TypeBoisson boissonPref = TypeBoisson.None)
         {
             if(rechercherUser(pseudo))
             {
@@ -52,5 +63,10 @@ namespace MetierSearchBars
         {
             CurrentUser = null;
         }
+
+        //public IEnumerable<IBar> rechercherBars(IVille ville, bool restauration = false, List<Boisson> list = null, float noteMin = -1)
+        //{
+
+        //}
     }
 }

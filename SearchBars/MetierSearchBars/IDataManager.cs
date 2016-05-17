@@ -8,7 +8,7 @@ namespace MetierSearchBars
 {
     public interface IDataManager
     {
-        HashSet<User> loadUsers();
-        List<Ville> loadVilles();
+        IEnumerable<IUser> loadUsers();
+        IEnumerable<IVille> loadVilles();
     }
 }
