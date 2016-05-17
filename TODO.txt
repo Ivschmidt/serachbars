@@ -3,15 +3,10 @@
 
 - rajouter effets sur les text box de la page de connection
 
-- changer prix de boisson en double
-
-- faire une classe Ville 
-
--transformer boissonPref en Type 
-
--faire de type une enum avec comme valeur par exemple (biere, vin, sirop, ..) => type globale de la boisson sans renseignements supplémentaires
-
--changer la facon dont boisson est conçue => un type pour retrouver les boissons de ce type + un nom + une marque + un prix + un degre alcool
-+ heritage pour boissons plus complexes (style vin)
-
 -diagramme de sequence
+
+-implementer .equals dans Boisson et etc si besoin
+
+- ajouter un projet de test non internal access
+
+-ajouter les classes de sauvegarde

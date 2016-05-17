@@ -10,6 +10,14 @@ namespace MetierSearchBars
     {
         private Dictionary<User, List<Avis>> commentaires = new Dictionary<User, List<Avis>>();
         private List<Boisson> listBoissons = new List<Boisson>();
+        public IEnumerable<IBoisson> ListeBoisson
+        {
+            get
+            {
+                return listBoissons;
+            }
+        }
+
         public string Nom { get; private set; }
         public float? NoteMoyenne
         {

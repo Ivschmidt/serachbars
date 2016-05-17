@@ -46,6 +46,7 @@
     <Compile Include="BoissonComposee.cs" />
     <Compile Include="CoordonneesGPS.cs" />
     <Compile Include="IBar.cs" />
+    <Compile Include="IBoisson.cs" />
     <Compile Include="IDataManager.cs" />
     <Compile Include="Ingredient.cs" />
     <Compile Include="IUser.cs" />

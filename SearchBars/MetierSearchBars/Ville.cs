@@ -12,6 +12,13 @@ namespace MetierSearchBars
         public CoordonneesGPS GPS { get; private set; }
 
         private List<Bar> listBar = new List<Bar>();
+        public IEnumerable<IBar> ListBar
+        {
+            get
+            {
+                return listBar;
+            }
+        }
 
         public Ville(string nom, CoordonneesGPS gps)
         {
@@ -23,5 +30,7 @@ namespace MetierSearchBars
         {
             listBar.Add(bar);
         }
+
+
     }
 }
