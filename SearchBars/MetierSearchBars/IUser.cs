@@ -16,6 +16,6 @@ namespace MetierSearchBars
         DateTime DdN { get; }
         string NumTel { get; }
         string Ville { get;  }
-        TypeBoisson BoissonPref { get;  }
+        TypeBoisson? BoissonPref { get;  }
     }
 }

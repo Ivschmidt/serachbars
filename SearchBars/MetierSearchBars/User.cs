@@ -17,47 +17,48 @@ namespace MetierSearchBars
         /// <summary>
         /// Pseudo : pseudo de l'utilisateur, identifiant discriminant
         /// </summary>
-        public string Pseudo { get; private set; }
+        public string Pseudo { get; set; }
 
         /// <summary>
         /// Mdp : mot de passe de l'utilisateur, utilisé pour la connexion permettant de vérifier l'authenticité de l'utilisateur
         /// </summary>
-        public string Mdp { get; private set; }
+        public string Mdp { get; set; }
 
         /// <summary>
         /// Nom : nom de l'utilisateur
         /// </summary>
-        public string Nom { get; private set; }
+        public string Nom { get; set; }
 
         /// <summary>
         /// Prenom : prénom de l'utilisateur
         /// </summary>
-        public string Prenom { get; private set; }
+        public string Prenom { get; set; }
 
         /// <summary>
         /// Sexe : sexe de l'utilisateur (homme ou femme)
         /// </summary>
-        public Sexe Sexe { get; private set; }
+        public Sexe Sexe { get; set; }
 
         /// <summary>
         /// DdN : date de naissance de l'utilisateur 
         /// </summary>
-        public DateTime DdN { get; private set; }
+        public DateTime DdN { get; set; }
 
         /// <summary>
         /// NumTel : numero de téléphone de l'utilisateur (optionnel)
         /// </summary>
-        public string NumTel { get; private set; }
+        public string NumTel { get; set; }
 
         /// <summary>
         /// Ville : ville d'habitation de l'utilisateur (optionnel)
         /// </summary>
-        public string Ville { get; private set; }
+        public string Ville { get; set; }
 
         /// <summary>
-        /// BoissonPref : boisson préférée de l'utilisateur parmi les éléments de l'enum Type (bière, vin, etc) (optionnel)
+        /// BoissonPref : boisson préférée de l'utilisateur parmi les éléments de l'enum Type (bière, vin, etc) (optionnel) 
+        /// Si champ non renseigné = null
         /// </summary>
-        public TypeBoisson BoissonPref { get; private set; }
+        public TypeBoisson? BoissonPref { get; set; }
 
         /// <summary>
         /// Constructeur d'un utilisateur 
@@ -71,7 +72,7 @@ namespace MetierSearchBars
         /// <param name="numTel">numéro de téléphone de l'utilisateur à créer (optionel)</param>
         /// <param name="ville">ville d'habitation de l'utilisateur à créer (optionel)</param>
         /// <param name="boissonPref">type de boisson préférée de l'utilisateur à créer (optionel)</param>
-        public User(string pseudo, string mdp, string nom, string prenom, Sexe sexe, DateTime ddN, string numTel = "", string ville = "", TypeBoisson boissonPref = TypeBoisson.None )
+        public User(string pseudo, string mdp, string nom, string prenom, Sexe sexe, DateTime ddN, string numTel = "", string ville = "", TypeBoisson? boissonPref = null )
         {
             Pseudo = pseudo;
             Mdp = mdp;

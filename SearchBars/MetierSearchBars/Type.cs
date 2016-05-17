@@ -15,7 +15,5 @@ namespace MetierSearchBars
         Sirop,
         Jus,
         Soda,
-        None,
-
     }
 }
