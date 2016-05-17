@@ -14,5 +14,4 @@
 -changer la facon dont boisson est conçue => un type pour retrouver les boissons de ce type + un nom + une marque + un prix + un degre alcool
 + heritage pour boissons plus complexes (style vin)
 
-
-
+-diagramme de sequence
