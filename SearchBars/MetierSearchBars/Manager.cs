@@ -9,7 +9,14 @@ namespace MetierSearchBars
     public class Manager
     {
         private IDataManager dataMgr;
-        public IUser CurrentUser { get; private set; } //demander prof pq mettre IUser
+        public IUser CurrentUser
+        {
+            get
+            {
+                return mCurrentUser;
+            }
+        }
+        private User mCurrentUser;
 
         private HashSet<User> listUsers = new HashSet<User>(); 
         //public IEnumerable<IUser> ListUsers
