@@ -39,22 +39,19 @@ namespace MetierSearchBars
         public Manager(IDataManager dataManager)
         {
             dataMgr = dataManager;
-
             mCurrentUser = null;
         }
 
         private bool rechercherUser(string pseudo)
         {
-
             mCurrentUser = listUsers.Single(user => user.Pseudo.Equals(pseudo));
             return (CurrentUser == null);
         }
 
         public bool seConnecter(string pseudo, string mdp) //il faudra faire avec un event et non un bool
         {
-
+            if(!rechercherUser(pseudo))
                 return false;
-
             else
                 return (CurrentUser.Mdp.Equals(mdp));
         }
@@ -62,7 +59,7 @@ namespace MetierSearchBars
 
         public void sInscrire(string pseudo, string mdp, string nom, string prenom, Sexe sexe, DateTime ddN, string numTel = "", string ville = "", TypeBoisson? boissonPref = null)
         {
-
+            if(rechercherUser(pseudo))
             {
                 throw new Exception("Cet user existe déja");
             }
@@ -72,7 +69,6 @@ namespace MetierSearchBars
 
         public void seDeconnecter()
         {
-
             mCurrentUser = null;
         }
 
@@ -80,7 +76,6 @@ namespace MetierSearchBars
         public IEnumerable<IBar> rechercherBars(IVille ville, bool restauration = false, List<TypeBoisson> listTypeBoisson = null, float noteMin = 0)
         {
             IEnumerable<IBar> temp = ville.ListBar;
-
 
             if (restauration)
             {
