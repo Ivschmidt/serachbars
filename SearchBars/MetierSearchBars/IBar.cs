@@ -12,5 +12,6 @@ namespace MetierSearchBars
         float? NoteMoyenne { get; }
         CoordonneesGPS GPS { get; }
         bool Restauration { get; }
+        IEnumerable<IBoisson> ListBoisson { get; }
     }
 }

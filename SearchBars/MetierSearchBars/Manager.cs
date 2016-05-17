@@ -39,12 +39,12 @@ namespace MetierSearchBars
         public Manager(IDataManager dataManager)
         {
             dataMgr = dataManager;
-            CurrentUser = null;
+            mCurrentUser = null;
         }
 
         private bool rechercherUser(string pseudo)
         {
-            CurrentUser = listUsers.Single(user => user.Pseudo.Equals(pseudo));
+            mCurrentUser = listUsers.Single(user => user.Pseudo.Equals(pseudo));
             return (CurrentUser == null);
         }
 
@@ -68,12 +68,28 @@ namespace MetierSearchBars
 
         public void seDeconnecter()
         {
-            CurrentUser = null;
+            mCurrentUser = null;
         }
 
-        //public IEnumerable<IBar> rechercherBars(IVille ville, bool restauration = false, List<Boisson> list = null, float noteMin = -1)
-        //{
+        public IEnumerable<IBar> rechercherBars(IVille ville, bool restauration = false, List<TypeBoisson> listTypeBoisson = null, float noteMin = 0)
+        {
+            IEnumerable<IBar> temp = ville.ListBar;
 
-        //}
+            if (restauration)
+            {
+                temp = temp.Where(bars => bars.Restauration == true);
+            }
+
+            temp = temp.Where(bars => bars.NoteMoyenne >= noteMin);
+
+            if (listTypeBoisson != null && listTypeBoisson.Count()>0)
+            {
+                //easy
+                temp.Where(bars => bars.ListBoisson.Select(types => types.Type).Distinct().Count() > 0);
+                
+            }
+
+            return temp;
+        }
     }
 }

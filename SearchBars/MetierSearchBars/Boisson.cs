@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MetierSearchBars
 {
-    public class Boisson
+    class Boisson : IBoisson
     {
         public TypeBoisson Type{ get; private set; }
         public string Nom { get; private set; }
