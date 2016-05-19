@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MetierSearchBars
 {
-    public class BoissonComposee : Boisson
+    class BoissonComposee : Boisson
     {
         private List<Boisson> listBoissons = new List<Boisson>();
         private List<Ingredient> listIng = new List<Ingredient>();

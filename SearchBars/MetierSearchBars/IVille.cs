@@ -10,6 +10,6 @@ namespace MetierSearchBars
     {
         string Nom { get;}
         CoordonneesGPS GPS { get;}
-        public IEnumerable<IBar> ListBar { get; }
+        IEnumerable<IBar> ListBar { get; }
     }
 }

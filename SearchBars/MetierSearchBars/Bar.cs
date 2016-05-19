@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace MetierSearchBars
 {
-    public class Bar : IEquatable<Bar>, IBar
+    class Bar : IEquatable<Bar>, IBar
     {
         private Dictionary<User, List<Avis>> commentaires = new Dictionary<User, List<Avis>>();
         private List<Boisson> listBoissons = new List<Boisson>();
-        public IEnumerable<IBoisson> ListeBoisson
+        public IEnumerable<IBoisson> ListBoisson
         {
             get
             {
@@ -40,6 +40,10 @@ namespace MetierSearchBars
             Restauration = restauration;
         }
 
+        public void ajouterBoisson(Boisson b)
+        {
+            listBoissons.Add(b);
+        }
         /// <summary>
         /// returns a hash code in order to use this class in hash table
         /// </summary>

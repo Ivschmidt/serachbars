@@ -73,7 +73,7 @@ namespace MetierSearchBars
         }
 
 
-        public IEnumerable<IBar> rechercherBars(IVille ville, bool restauration = false, List<TypeBoisson> listTypeBoisson = null, float noteMin = 0)
+        public IEnumerable<IBar> rechercherBars(IVille ville, bool restauration = false, List<TypeBoisson> listTypeBoissonPref = null, float noteMin = 0)
         {
             IEnumerable<IBar> temp = ville.ListBar;
 
@@ -84,10 +84,9 @@ namespace MetierSearchBars
 
             temp = temp.Where(bars => bars.NoteMoyenne >= noteMin);
 
-            if (listTypeBoisson != null && listTypeBoisson.Count()>0)
+            if (listTypeBoissonPref != null && listTypeBoissonPref.Count()>0)
             {
-                //easy
-                temp.Where(bars => bars.ListBoisson.Select(types => types.Type).Distinct().Count() > 0);
+                temp.Where(bars => bars.ListBoisson.Select(types => types.Type).Distinct().Intersect(listTypeBoissonPref).Count() > 0);
                 
             }
 
