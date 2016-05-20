@@ -61,6 +61,11 @@ namespace MetierSearchBars
         public TypeBoisson? BoissonPref { get; set; }
 
         /// <summary>
+        /// PhotoDeProfil : chemin pour accéder a la photo de profil de l'utilisateur (optionnel)
+        /// </summary>
+        public string PhotoDeProfil { get; set; }
+
+        /// <summary>
         /// Constructeur d'un utilisateur 
         /// </summary>
         /// <param name="pseudo">pseudo de l'utilisateur à créer</param>
@@ -72,7 +77,8 @@ namespace MetierSearchBars
         /// <param name="numTel">numéro de téléphone de l'utilisateur à créer (optionel)</param>
         /// <param name="ville">ville d'habitation de l'utilisateur à créer (optionel)</param>
         /// <param name="boissonPref">type de boisson préférée de l'utilisateur à créer (optionel)</param>
-        public User(string pseudo, string mdp, string nom, string prenom, Sexe sexe, DateTime ddN, string numTel = "", string ville = "", TypeBoisson? boissonPref = null )
+        /// <param name="photo">chemin de la photo à ajouter pour le profil de l'utilisateur(optionel)</param>
+        public User(string pseudo, string mdp, string nom, string prenom, Sexe sexe, DateTime ddN, string numTel = "", string ville = "", TypeBoisson? boissonPref = null, string photo="" )
         {
             Pseudo = pseudo;
             Mdp = mdp;
@@ -83,6 +89,8 @@ namespace MetierSearchBars
             NumTel = numTel;
             Ville = ville;
             BoissonPref = boissonPref;
+            PhotoDeProfil = photo;
+
         }
 
         /// <summary>

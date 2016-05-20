@@ -53,6 +53,34 @@ namespace TestMetierSearchBars
             {
                 Console.WriteLine(e.Message);
             }
+
+            //test modification avec User existant et connecté (+Mot de passe correct)
+            try
+            {
+                mgr.modifierUser("123", nprenom: "Denis", nnom: "Brognard");
+                Console.WriteLine("Mot de passe correct");
+                Console.WriteLine("Nouveau nom : " + mgr.CurrentUser.Nom);
+                Console.WriteLine("Nouveau prénom : " + mgr.CurrentUser.Prenom);
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
+            }
+
+            //test modification avec User existant et connecté (+Mot de passe incorrect)
+            try
+            {
+                mgr.modifierUser("560", nprenom: "Denis", nnom: "Brognard");
+                Console.WriteLine("Nouveau nom : " + mgr.CurrentUser.Nom);
+                Console.WriteLine("Nouveau prénom : " + mgr.CurrentUser.Prenom);
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
+            }
+            //test déconnexion 
+            mgr.seDeconnecter();
+            Console.WriteLine("Déconnexion");
         }
     }
 }
