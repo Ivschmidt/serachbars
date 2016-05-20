@@ -44,8 +44,8 @@ namespace MetierSearchBars
 
         private bool rechercherUser(string pseudo)
         {
-            mCurrentUser = listUsers.Single(user => user.Pseudo.Equals(pseudo));
-            return (CurrentUser == null);
+            mCurrentUser = listUsers.SingleOrDefault(user => user.Pseudo.Equals(pseudo));
+            return (CurrentUser != null);
         }
 
         public bool seConnecter(string pseudo, string mdp) //il faudra faire avec un event et non un bool

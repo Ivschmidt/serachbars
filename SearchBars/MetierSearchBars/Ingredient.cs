@@ -6,15 +6,20 @@ using System.Threading.Tasks;
 
 namespace MetierSearchBars
 {
-    class Ingredient
+    struct Ingredient
     {
-        public string Nom { get; private set; }
-        public string Description { get; private set; }
-
-        public Ingredient(string nom, string description)
+        public string Nom
         {
-            Nom = nom;
-            Description = description;  
+            get
+            {
+                return mNom;
+            }
+        }
+        private string mNom;
+
+        public Ingredient(string nom)
+        {
+            mNom = nom;
         }
     }
 }
