@@ -44,6 +44,7 @@
     <Compile Include="Bar.cs" />
     <Compile Include="Boisson.cs" />
     <Compile Include="BoissonComposee.cs" />
+    <Compile Include="BoissonSimple.cs" />
     <Compile Include="CoordonneesGPS.cs" />
     <Compile Include="IBar.cs" />
     <Compile Include="IBoisson.cs" />
@@ -57,6 +58,7 @@
     <Compile Include="Type.cs" />
     <Compile Include="User.cs" />
     <Compile Include="Ville.cs" />
+    <Compile Include="Vin.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

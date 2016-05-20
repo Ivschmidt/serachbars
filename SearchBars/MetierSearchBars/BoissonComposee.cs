@@ -8,12 +8,14 @@ namespace MetierSearchBars
 {
     class BoissonComposee : Boisson
     {
-        private List<Boisson> listBoissons = new List<Boisson>();
-        private List<Ingredient> listIng = new List<Ingredient>();
+        private List<Boisson> listBoissons;
+        private List<Ingredient> listIng;
 
-        public BoissonComposee(string nom, float prix, string marque, int degreA, TypeBoisson type)
-            : base(nom, prix, marque, degreA, type)
+        public BoissonComposee(string nom, double prix, int degreA, TypeBoisson type, List<Boisson> boissonList, List<Ingredient> ingrList)
+            : base(nom, prix, degreA, type)
         {
+            listBoissons = boissonList;
+            listIng = ingrList;
         }
     }
 }

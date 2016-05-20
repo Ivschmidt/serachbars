@@ -26,12 +26,20 @@ namespace DataSearchBars
             Ville clermont = new Ville("Clermont-ferrand", new CoordonneesGPS(45.7833, 3.0833));
 
             Bar starter = new Bar("Le Starter", new CoordonneesGPS(45.782036, 3.081432));
-            starter.ajouterBoisson(new Boisson("Ruby", 3.5, "Leffe", 4, TypeBoisson.Biere));
-            starter.ajouterBoisson(new Boisson("Jus de banane", 2, "Pago", 0, TypeBoisson.Jus));
-            starter.ajouterBoisson(new Boisson("Vodka", 5, "Eristoff", 37, TypeBoisson.AlcoolFort));
+            starter.ajouterBoisson(new BoissonSimple("Ruby", 3.5, "Leffe", 4, TypeBoisson.Biere));
+            starter.ajouterBoisson(new BoissonSimple("Jus de banane", 2, "Pago", 0, TypeBoisson.Jus));
+            starter.ajouterBoisson(new BoissonSimple("Vodka", 5, "Eristoff", 37, TypeBoisson.AlcoolFort));
             clermont.ajouterBar(starter);
 
             Bar delirium = new Bar("Délirium", new CoordonneesGPS(45.776289, 3.083339), true);
+            delirium.ajouterBoisson(new Vin("Chateaubriant", 15, "Duras", 12, TypeBoisson.Vin, 2009, "rouge"));
+
+            List<Boisson> boissonMojitoList = new List<Boisson>();
+            boissonMojitoList.Add(new BoissonSimple("Rhum", 4, "OldNick", 40, TypeBoisson.AlcoolFort));
+            List<Ingredient> ingrMojitoList = new List<Ingredient>();
+            ingrMojitoList.Add(new Ingredient("citron vert"));
+            ingrMojitoList.Add(new Ingredient("feuilles de menthe fraiches"));
+            delirium.ajouterBoisson(new BoissonComposee("Mojito", 6.5, 18, TypeBoisson.Cocktail, boissonMojitoList, ingrMojitoList));
 
             clermont.ajouterBar(delirium);
 

@@ -10,3 +10,5 @@
 - ajouter un projet de test non internal access
 
 -ajouter les classes de sauvegarde
+
+- prop marque juste dans boisson Simple
