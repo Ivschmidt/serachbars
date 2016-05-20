@@ -152,5 +152,16 @@ namespace MetierSearchBars
         {
             return mdp.Equals(mCurrentUser.Mdp);
         }
+
+        
+        public void laisserUnAvis(Bar bar, String desc, int note)
+        {
+            Ville v = listVille.SingleOrDefault(ville => ville.ListBar.Contains(bar));
+            if (v != null)
+            {
+                Bar b = (Bar)v.ListBar.Single(bars => bars.Equals(bar));
+                b.laisserAvis(new Avis(note,desc),mCurrentUser);
+            }
+        }
     }
 }

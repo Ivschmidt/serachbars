@@ -8,7 +8,7 @@ namespace MetierSearchBars
 {
     class Bar : IEquatable<Bar>, IBar
     {
-        private Dictionary<User, List<Avis>> commentaires = new Dictionary<User, List<Avis>>();
+        private Dictionary<User, Avis> commentaires = new Dictionary<User, Avis>();
         private List<Boisson> listBoissons = new List<Boisson>();
         public IEnumerable<IBoisson> ListBoisson
         {
@@ -27,7 +27,7 @@ namespace MetierSearchBars
                 {
                     return null;
                 }
-                return (float) commentaires.Average(kvp => kvp.Value.Average(elem => elem.Note));
+                return (float) commentaires.Average(kvp => kvp.Value.Note);
             }
         }
         public CoordonneesGPS GPS{ get; set; }
@@ -87,6 +87,11 @@ namespace MetierSearchBars
         public bool Equals(Bar other)
         {
             return (this.GPS.Equals(other.GPS) && this.Nom.Equals(other.Nom));
+        }
+
+        public void laisserAvis(Avis avis, User user)
+        {
+            commentaires.Add(user, avis);
         }
     }
 }
