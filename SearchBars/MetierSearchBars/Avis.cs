@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MetierSearchBars
 {   
-    struct Avis
+    public struct Avis
     {
         public int Note
         {

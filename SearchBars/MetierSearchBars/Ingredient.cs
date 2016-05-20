@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MetierSearchBars
 {
-    public class Ingredient
+    class Ingredient
     {
         public string Nom { get; private set; }
         public string Description { get; private set; }

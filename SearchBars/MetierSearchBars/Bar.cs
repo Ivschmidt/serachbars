@@ -18,7 +18,7 @@ namespace MetierSearchBars
             }
         }
 
-        public string Nom { get; private set; }
+        public string Nom { get; set; }
         public float? NoteMoyenne
         {
             get
@@ -30,8 +30,8 @@ namespace MetierSearchBars
                 return (float) commentaires.Average(kvp => kvp.Value.Average(elem => elem.Note));
             }
         }
-        public CoordonneesGPS GPS{ get; private set; }
-        public bool Restauration { get; private set; }
+        public CoordonneesGPS GPS{ get; set; }
+        public bool Restauration { get; set; }
 
         public Bar(string nom, CoordonneesGPS gps, bool restauration = false) 
         {

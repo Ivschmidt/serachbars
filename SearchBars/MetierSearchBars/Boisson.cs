@@ -8,11 +8,11 @@ namespace MetierSearchBars
 {
     class Boisson : IBoisson
     {
-        public TypeBoisson Type{ get; private set; }
-        public string Nom { get; private set; }
-        public double Prix { get; private set; }
-        public string Marque { get; private set; }
-        public int DegreAlcool { get; private set; }
+        public TypeBoisson Type{ get; set; }
+        public string Nom { get; set; }
+        public double Prix { get; set; }
+        public string Marque { get; set; }
+        public int DegreAlcool { get; set; }
 
         public Boisson(string nom, double prix, string marque, int degreA, TypeBoisson type)
         {
