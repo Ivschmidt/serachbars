@@ -17,5 +17,6 @@ namespace MetierSearchBars
         string NumTel { get; }
         string Ville { get;  }
         TypeBoisson? BoissonPref { get;  }
+        string PhotoDeProfil { get; set; }
     }
 }
