@@ -44,8 +44,8 @@ namespace MetierSearchBars
 
         private bool rechercherUser(string pseudo)
         {
-            mCurrentUser = listUsers.Single(user => user.Pseudo.Equals(pseudo));
-            return (CurrentUser == null);
+            mCurrentUser = listUsers.SingleOrDefault(user => user.Pseudo.Equals(pseudo));
+            return (CurrentUser != null);
         }
 
         public bool seConnecter(string pseudo, string mdp) //il faudra faire avec un event et non un bool
@@ -57,13 +57,13 @@ namespace MetierSearchBars
         }
 
 
-        public void sInscrire(string pseudo, string mdp, string nom, string prenom, Sexe sexe, DateTime ddN, string numTel = "", string ville = "", TypeBoisson? boissonPref = null)
+        public void sInscrire(string pseudo, string mdp, string nom, string prenom, Sexe sexe, DateTime ddN, string numTel = "", string ville = "", TypeBoisson? boissonPref = null, string photo="")
         {
             if(rechercherUser(pseudo))
             {
-                throw new Exception("Cet user existe déja");
+                throw new Exception("Ce user existe déja");
             }
-            User newUser = new User(pseudo, mdp, nom, prenom, sexe, ddN, numTel, ville, boissonPref);
+            User newUser = new User(pseudo, mdp, nom, prenom, sexe, ddN, numTel, ville, boissonPref, photo);
             listUsers.Add(newUser);
         }
 
@@ -96,58 +96,73 @@ namespace MetierSearchBars
         /// <summary>
         /// Méthode qui modifie les paramètres utilisateurs
         /// </summary>
-        /// <param name="npseudo"></param>
-        /// <param name="nmdp"></param>
-        /// <param name="nprenom"></param>
-        /// <param name="nnom"></param>
-        /// <param name="nddn"></param>
-        /// <param name="nnumTel"></param>
-        /// <param name="nville"></param>
-        /// <param name="nBoissonPref"></param>
-        public void modifierUser(string npseudo="", string nmdp="", string nprenom="", string nnom="", DateTime? nddn = null, string nnumTel="", string nville="", TypeBoisson? nBoissonPref = null)
+        /// <param name="npseudo">nouveau pseudo à modifier(optionnel)</param>
+        /// <param name="nmdp">nouveau mot de passe à modifier(optionnel)</param>
+        /// <param name="nprenom">nouveau prenom à modifier(optionnel)</param>
+        /// <param name="nnom">nouveau nom à modifier(optionnel)</param>
+        /// <param name="nddn">nouvelle date de naissance à modifier(optionnel)</param>
+        /// <param name="nnumTel">nouveau numéro de téléphone à modifier(optionnel)</param>
+        /// <param name="nville">nouvelle ville à modifier(optionnel)</param>
+        /// <param name="nBoissonPref">nouvelle boisson préférée à modifier(optionnel)</param>
+        /// <param name="nphoto">nouveau chemin de photo à modifier(optionnel)</param>
+        /// <param name="mdpactuel">Mot de passe pour vérifier l'identité de l'utilisateur</param>
+        public void modifierUser(string mdpactuel, string npseudo = "", string nmdp = "", string nprenom = "", string nnom = "", DateTime? nddn = null, string nnumTel = "", string nville = "", TypeBoisson? nBoissonPref = null, string nphoto = "")
         {
-            if(npseudo != null)             //Vérifie si le pseudo doit être modifié
+            if (!verifierMotDePasse(mdpactuel))
+            {
+                throw new Exception("Mot de passe incorrect");
+            }
+            if (!string.IsNullOrEmpty(npseudo))
             {
                 mCurrentUser.Pseudo = npseudo;
             }
 
-            if(nmdp != null)             //Vérifie si le mot de passe doit être modifié
+            if (!string.IsNullOrEmpty(nmdp))
             {
                 mCurrentUser.Mdp = nmdp;
             }
 
-            if(nprenom != null)             //Vérifie si le prénom doit être modifié
+            if (!string.IsNullOrEmpty(nprenom))
             {
                 mCurrentUser.Prenom = nprenom;
             }
 
-            if(nnom != null)             //Vérifie si le nom doit être modifié
+            if (!string.IsNullOrEmpty(nnom))
             {
                 mCurrentUser.Nom = nnom;
             }
 
-            if(nddn != null)             //Vérifie si la date de naissance doit être modifié
+            if (nddn != null)
             {
                 mCurrentUser.DdN = (DateTime)nddn;
             }
 
-            if(nnumTel != null)             //Vérifie si le numéro de téléphone doit être modifié
+            if (!string.IsNullOrEmpty(nnumTel))
             {
                 mCurrentUser.NumTel = nnumTel;
             }
 
-            if(nville != null)             //Vérifie si la ville doit être modifié
+            if (!string.IsNullOrEmpty(nville))
             {
                 mCurrentUser.Ville = nville;
             }
 
-            if(nBoissonPref != null)             //Vérifie si la boisson préférée doit être modifié
+            if (nBoissonPref != null)
             {
                 mCurrentUser.BoissonPref = nBoissonPref;
             }
+
+            if (!string.IsNullOrEmpty(nphoto))
+            {
+                mCurrentUser.PhotoDeProfil = nphoto;
+            }
         }
 
-        //Méthode qui vise à vérifier le mot de passe de l'utilisateur connecté
+        /// <summary>
+        /// Méthode qui vise à vérifier le mot de passe de l'utilisateur connecté
+        /// </summary>
+        /// <param name="mdp">Mot de passe transmis pour vérifier son identité</param>
+        /// <returns></returns>
         public bool verifierMotDePasse(string mdp)
         {
             return mdp.Equals(mCurrentUser.Mdp);
