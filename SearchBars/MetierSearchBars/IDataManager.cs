@@ -10,5 +10,7 @@ namespace MetierSearchBars
     {
         IEnumerable<IUser> loadUsers();
         IEnumerable<IVille> loadVilles();
+        void saveUsers(List<IUser> userList);
+        void saveVille(List<IVille> villeList);
     }
 }

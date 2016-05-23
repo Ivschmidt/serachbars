@@ -7,11 +7,11 @@ using System.Threading.Tasks;
 
 namespace DataSearchBars
 {
-    public class Stubb : IDataManager
+    public class StubData : IDataManager
     {
         public IEnumerable<IUser> loadUsers()
         {
-            HashSet<IUser> list = new HashSet<IUser>();
+            List<IUser> list = new List<IUser>();
             list.Add(new User("trololo", "123456", "Delabierre", "Yvan", Sexe.Homme, new DateTime(1980, 1, 9), "0654856952", "St Julien De Copel"));
             list.Add(new User("picoiffard", "090297", "Coiffard", "Pierre", Sexe.Homme, new DateTime(1997, 2, 9), "0659712062", "Bois de boulogne"));
             list.Add(new User("ivschmidt", "290497", "Schmidt", "Ivan", Sexe.Homme, new DateTime(1997, 4, 29),ville : "cantal perdu"));
@@ -59,6 +59,16 @@ namespace DataSearchBars
             list.Add(nice);
            
             return list;
+        }
+
+        public void saveUsers(List<IUser> userList)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void saveVille(List<IVille> villeList )
+        {
+            throw new NotImplementedException();
         }
     }
 }
