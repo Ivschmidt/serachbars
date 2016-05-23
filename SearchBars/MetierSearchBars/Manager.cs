@@ -8,7 +8,12 @@ namespace MetierSearchBars
 {
     public class Manager
     {
-        private IDataManager dataMgr;
+        private IDataManager DataManager
+        {
+            get;
+            set;
+        }
+
         public IUser CurrentUser
         {
             get
@@ -18,7 +23,7 @@ namespace MetierSearchBars
         }
         private User mCurrentUser;
  
-        private HashSet<User> listUsers = new HashSet<User>();
+        private List<User> listUsers = new List<User>();
         //public IEnumerable<IUser> ListUsers
         //{
         //    get
@@ -38,9 +43,23 @@ namespace MetierSearchBars
 
         public Manager(IDataManager dataManager)
         {
-            dataMgr = dataManager;
+            DataManager = dataManager;
             mCurrentUser = null;
+            ChargerDonnees();
         }
+
+        public void ChargerDonnees()
+        {
+            listVille.AddRange(DataManager.loadVilles().Select(iVille => iVille as Ville));
+            listUsers.AddRange(DataManager.loadUsers().Select(iUser => iUser as User));
+        }
+
+        //public void EnregistrerDonnees()
+        //{
+        //    listVille = 
+        //    DataManager.saveUsers(listUsers.Select(user => user as IUser));
+        //    DataManager.saveVille(listVille.Select(ville => ville as IVille);
+        //}
 
         private bool rechercherUser(string pseudo)
         {
@@ -169,7 +188,7 @@ namespace MetierSearchBars
         }
 
         
-        public void laisserUnAvis(Bar bar, String desc, int note)
+        public void laisserUnAvis(IBar bar, String desc, int note)
         {
             Ville v = listVille.SingleOrDefault(ville => ville.ListBar.Contains(bar));
             if (v != null)
