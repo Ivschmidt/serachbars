@@ -26,22 +26,22 @@
                     <ColumnDefinition/>
                 </Grid.ColumnDefinitions>
                 <StackPanel Grid.Column="0">
-                    <TextBlock Text="NomBar :" FontSize="40" Style="{StaticResource textblockset}"/>
+                    <TextBlock Text="NomBar :" FontSize="40" Style="{StaticResource STextBlock}"/>
                     <WrapPanel>
-                        <TextBlock Text="note" FontSize="20" Style="{StaticResource textblockset}"/>
-                        <TextBlock Text=".../5" FontSize="20" Style="{StaticResource textblockset}"/>
+                        <TextBlock Text="note" FontSize="20" Style="{StaticResource STextBlock}"/>
+                        <TextBlock Text=".../5" FontSize="20" Style="{StaticResource STextBlock}"/>
                     </WrapPanel>
                     <WrapPanel>
-                        <TextBlock Text="Adresse :" FontSize="20" Style="{StaticResource textblockset}"/>
-                        <TextBlock Text="un adresse" FontSize="20" Style="{StaticResource textblockset}"/>
+                        <TextBlock Text="Adresse :" FontSize="20" Style="{StaticResource STextBlock}"/>
+                        <TextBlock Text="un adresse" FontSize="20" Style="{StaticResource STextBlock}"/>
                     </WrapPanel>
                     <WrapPanel>
-                        <TextBlock Text="Numero :" FontSize="20" Style="{StaticResource textblockset}"/>
-                        <TextBlock Text="0000000000" FontSize="20" Style="{StaticResource textblockset}"/>
+                        <TextBlock Text="Numero :" FontSize="20" Style="{StaticResource STextBlock}"/>
+                        <TextBlock Text="0000000000" FontSize="20" Style="{StaticResource STextBlock}"/>
                     </WrapPanel>
                     <WrapPanel>
-                        <TextBlock Text="Boisson :" FontSize="20" Style="{StaticResource textblockset}"/>
-                        <TextBlock Text="liste de boissons" FontSize="20" Style="{StaticResource textblockset}"/>
+                        <TextBlock Text="Boisson :" FontSize="20" Style="{StaticResource STextBlock}"/>
+                        <TextBlock Text="liste de boissons" FontSize="20" Style="{StaticResource STextBlock}"/>
                     </WrapPanel>
                 </StackPanel>
                 <map:Map Grid.Column="1"  Margin="10" ZoomLevel="10" CredentialsProvider="GPTQ32UjcuKIjSoK2k67~zsm5A0WorhEOdGW-14U77Q~AlSPzDbJPec2cvWGOg7TwCQLPRorLVoO3z2Sh1p7FR6Qd4Uu9rFdCLDAE7WWFLuY" RenderTransformOrigin="1.819,0.485">
@@ -61,7 +61,7 @@
                     <Button Content="Suiv" Width="30" Height="20" />
                 </WrapPanel>
                 <StackPanel Grid.Column="1" Margin="0 0 10 0">
-                    <TextBlock Text="Avis clients :" FontSize="30" Style="{StaticResource textblockset}"/>
+                    <TextBlock Text="Avis clients :" FontSize="30" Style="{StaticResource STextBlock}"/>
                     <ListBox Height="200" ItemsSource="{Binding }">
                         <ListBoxItem Content="avis1"/>
                         <ListBoxItem Content="avis2"/>

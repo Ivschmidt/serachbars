@@ -4,21 +4,22 @@
              xmlns:local="clr-namespace:VuesSearchBars"
              StartupUri="ConnectionWindow.xaml">
     <Application.Resources>
-        <Style x:Key="couleurBouton" TargetType="{x:Type Button}">
+        <Style x:Key="SButton" TargetType="{x:Type Button}">
             <Setter Property="Foreground" Value="#808893" />
             <Setter Property="Background" Value="#B5E655"/>
         </Style>
-        <Style x:Key="textblockset" TargetType="TextBlock">
+        <Style x:Key="STextBlock">
             <Setter Property="TextBlock.Margin" Value="5 0 0 0"/>
             <Setter Property="TextBlock.VerticalAlignment" Value="Center"/>
             <Setter Property="TextBlock.Foreground" Value="#B5E655"/>
+            <Setter Property="TextBlock.FontSize" Value="20"/>
         </Style>
-        <Style x:Key="textboxset" TargetType="TextBox">
+        <Style x:Key="STextBox" TargetType="TextBox">
             <Setter Property="Background" Value="#ABADB7"/>
             <Setter Property="Height" Value="20"/>
             <Setter Property="Width" Value="auto"/>
         </Style>
-        <Style x:Key="passwordboxset" TargetType="PasswordBox">
+        <Style x:Key="SPasswordBox" TargetType="PasswordBox">
             <Setter Property="Background" Value="#ABADB7"/>
             <Setter Property="Height" Value="20"/>
             <Setter Property="Width" Value="auto"/>

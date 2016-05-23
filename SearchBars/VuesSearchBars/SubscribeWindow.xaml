@@ -2,13 +2,14 @@
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="SubscribeWindow" Height="500" Width="350" ResizeMode="NoResize" Background="#808893">
-    <!--<Window.Resources>
-        <Style x:Key="textblockset">
+    <Window.Resources>
+        <Style x:Key="STextBlockSubscribe">
             <Setter Property="TextBlock.Margin" Value="5 0 0 0"/>
             <Setter Property="TextBlock.VerticalAlignment" Value="Center"/>
             <Setter Property="TextBlock.Foreground" Value="#B5E655"/>
+            <Setter Property="TextBlock.FontSize" Value="12"/>
         </Style>
-    </Window.Resources>-->
+    </Window.Resources>
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition/>
@@ -29,23 +30,23 @@
             <ColumnDefinition/>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
-        <TextBlock Text="Inscription : " Grid.Row="0" Grid.Column="0" Style="{StaticResource textblockset}" FontSize="20" Margin="5 0 0 0"/>
-        <TextBlock Text="Pseudo : " Grid.Row="1" Grid.Column="0" Style="{StaticResource textblockset}" Margin="5 0 0 0"/>
-        <TextBox Grid.Row="1" Grid.Column="1" Margin="0 0 5 0" Style="{StaticResource textboxset}"/>
-        <TextBlock Text="Sexe : " Grid.Row="2" Grid.Column="0" Style="{StaticResource textblockset}" Margin="5 0 0 0"/>
+        <TextBlock Text="Inscription : " Grid.Row="0" Grid.Column="0" Style="{StaticResource STextBlock}" />
+        <TextBlock Text="Pseudo : " Grid.Row="1" Grid.Column="0" Style="{StaticResource STextBlockSubscribe}"/>
+        <TextBox Grid.Row="1" Grid.Column="1" Margin="0 0 5 0" Style="{StaticResource STextBlock}"/>
+        <TextBlock Text="Sexe : " Grid.Row="2" Grid.Column="0" Style="{StaticResource STextBlockSubscribe}" />
         <WrapPanel Grid.Row="2" Grid.Column="1" >
             <RadioButton Content="F" Foreground="#B5E655" Margin="5"/>
             <RadioButton Content="M" Foreground="#B5E655" Margin="5"/>
         </WrapPanel>
-        <TextBlock Text="Nom :" Grid.Row="3" Grid.Column="0" Style="{StaticResource textblockset}" Margin="5 0 0 0"/>
-        <TextBox Grid.Row="3" Grid.Column="1" Margin="0 0 5 0" Style="{StaticResource textboxset}"/>
-        <TextBlock Text="Prenom : " Grid.Row="4" Grid.Column="0" Style="{StaticResource textblockset}" Margin="5 0 0 0"/>
-        <TextBox Grid.Row="4" Grid.Column="1" Margin="0 0 5 0" Style="{StaticResource textboxset}"/>
-        <TextBlock Text="Mot de passe :" Grid.Column="0" Grid.Row="5" Style="{StaticResource textblockset}" Margin="5 0 0 0"/>
-        <PasswordBox Grid.Column="1" Grid.Row="5" Margin="0 0 5 0" Style="{StaticResource passwordboxset}"/>
-        <TextBlock Text="Retaper mot de passe :" Grid.Column="0" Grid.Row="6" Style="{StaticResource textblockset}" Margin="5 0 0 0"/>
-        <PasswordBox Grid.Column="1" Grid.Row="6" Margin="0 0 5 0" Style="{StaticResource passwordboxset}"/>
-        <TextBlock Text="Date de naissance : " Grid.Row="7" Grid.Column="0" Style="{StaticResource textblockset}" Margin="5 0 0 0"/>
+        <TextBlock Text="Nom :" Grid.Row="3" Grid.Column="0" Style="{StaticResource STextBlockSubscribe}"/>
+        <TextBox Grid.Row="3" Grid.Column="1" Margin="0 0 5 0" Style="{StaticResource STextBox}"/>
+        <TextBlock Text="Prenom : " Grid.Row="4" Grid.Column="0" Style="{StaticResource STextBlockSubscribe}"/>
+        <TextBox Grid.Row="4" Grid.Column="1" Margin="0 0 5 0" Style="{StaticResource STextBox}"/>
+        <TextBlock Text="Mot de passe :" Grid.Column="0" Grid.Row="5" Style="{StaticResource STextBlockSubscribe}"/>
+        <PasswordBox Grid.Column="1" Grid.Row="5" Margin="0 0 5 0" Style="{StaticResource SPasswordBox}"/>
+        <TextBlock Text="Retaper mot de passe :" Grid.Column="0" Grid.Row="6" Style="{StaticResource STextBlockSubscribe}"/>
+        <PasswordBox Grid.Column="1" Grid.Row="6" Margin="0 0 5 0" Style="{StaticResource SPasswordBox}"/>
+        <TextBlock Text="Date de naissance : " Grid.Row="7" Grid.Column="0" Style="{StaticResource STextBlockSubscribe}"/>
         <WrapPanel Grid.Column="1" Grid.Row="7" HorizontalAlignment="Center">
             <ComboBox />
             <TextBlock Text="/" Foreground="#B5E655" Margin="10 0 10 0"/>
@@ -53,15 +54,15 @@
             <TextBlock Text="/" Foreground="#B5E655" Margin="10 0 10 0"/>
             <ComboBox/>
         </WrapPanel>
-        <TextBlock Text="Numéro de téléphone : " Grid.Row="8" Grid.Column="0" Style="{StaticResource textblockset}" Margin="5 0 0 0"/>
-        <TextBox Grid.Row="8" Grid.Column="1" Margin="0 0 5 0" Style="{StaticResource textboxset}"/>
-        <TextBlock Text="Ville : " Grid.Row="9" Grid.Column="0" Style="{StaticResource textblockset}" Margin="5 0 0 0"/>
-        <TextBox Grid.Row="9" Grid.Column="1" Margin="0 0 5 0" Style="{StaticResource textboxset}"/>
-        <TextBlock Text="Boisson Préférée : " Grid.Row="10" Grid.Column="0" Style="{StaticResource textblockset}" Margin="5 0 0 0"/>   
+        <TextBlock Text="Numéro de téléphone : " Grid.Row="8" Grid.Column="0" Style="{StaticResource STextBlockSubscribe}"/>
+        <TextBox Grid.Row="8" Grid.Column="1" Margin="0 0 5 0" Style="{StaticResource STextBox}"/>
+        <TextBlock Text="Ville : " Grid.Row="9" Grid.Column="0" Style="{StaticResource STextBlockSubscribe}" />
+        <TextBox Grid.Row="9" Grid.Column="1" Margin="0 0 5 0" Style="{StaticResource STextBox}"/>
+        <TextBlock Text="Boisson Préférée : " Grid.Row="10" Grid.Column="0" Style="{StaticResource STextBlockSubscribe}" />   
         <ComboBox Grid.Column="1" HorizontalAlignment="Left" Margin="10,0,0,0" Grid.Row="10" VerticalAlignment="Top" Width="120"/>
         <Image Source="Images/photoprofil.jpg" Grid.Row="11" Grid.Column="0" Width="80" Height="80" Margin="10,10,10,10"/>
-        <Button Content="Parcourir" Grid.Row="11" Grid.Column="1" Width="60" Height="20" Style="{StaticResource couleurBouton}"/>
-        <Button Content="S'incrire" Grid.Row="12" Grid.Column="0" Margin="5" Style="{StaticResource couleurBouton}"/>
-        <Button Content="Annuler" Grid.Row="12" Grid.Column="1" Margin="5" Style="{StaticResource couleurBouton}"/>
+        <Button Content="Parcourir" Grid.Row="11" Grid.Column="1" Width="60" Height="20" Style="{StaticResource SButton}"/>
+        <Button Content="S'incrire" Grid.Row="12" Grid.Column="0" Margin="5" Style="{StaticResource SButton}"/>
+        <Button Content="Annuler" Grid.Row="12" Grid.Column="1" Margin="5" Style="{StaticResource SButton}"/>
     </Grid>
 </Window>

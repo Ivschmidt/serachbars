@@ -10,18 +10,18 @@
             <RowDefinition/>
             <RowDefinition/>
         </Grid.RowDefinitions>
-        <TextBlock Text="Avis" Grid.Row="0" FontSize="50" Style="{StaticResource textblockset}" TextAlignment="Center"/>
+        <TextBlock Text="Avis" Grid.Row="0" FontSize="50" Style="{StaticResource STextBlock}" TextAlignment="Center"/>
         <WrapPanel Grid.Row="1">
-            <TextBlock Text="Note :" Style="{StaticResource textblockset}"/>
+            <TextBlock Text="Note :" Style="{StaticResource STextBlock}" FontSize="12"/>
             <Slider Minimum="0" Maximum="5" Width="150" Margin="10 0 0 0" IsSnapToTickEnabled="True" TickFrequency="1" TickPlacement="BottomRight" Cursor="Arrow" AutoToolTipPlacement="BottomRight"/>
         </WrapPanel>
         <WrapPanel Grid.Row="2">
-            <TextBlock Text="Commentaire(s) :" FontSize="25" Style="{StaticResource textblockset}"/>
+            <TextBlock Text="Commentaire(s) :" FontSize="25" Style="{StaticResource STextBlock}"/>
         </WrapPanel>
         <TextBox Grid.Row="3" Margin="5"/>
         <WrapPanel Grid.Row="4" VerticalAlignment="Center" HorizontalAlignment="Center">
-            <Button Content="Poster" Style="{StaticResource couleurBouton}"/>
-            <Button Content="Annuler" Margin="25 0 0 0" Style="{StaticResource couleurBouton}"/>
+            <Button Content="Poster" Style="{StaticResource SButton}"/>
+            <Button Content="Annuler" Margin="25 0 0 0" Style="{StaticResource SButton}"/>
         </WrapPanel>
     </Grid>
 </Window>

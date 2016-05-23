@@ -20,7 +20,7 @@
             <ListBoxItem Content="bar6"/>
         </ListBox>
         <DockPanel Grid.Column="1">
-            <TextBlock Text="Nom de la ville :" FontSize="20" DockPanel.Dock="Top" Style="{StaticResource textblockset}"/>
+            <TextBlock Text="Nom de la ville :" FontSize="20" DockPanel.Dock="Top" Style="{StaticResource STextBlock}"/>
             <map:Map ZoomLevel="10" CredentialsProvider="GPTQ32UjcuKIjSoK2k67~zsm5A0WorhEOdGW-14U77Q~AlSPzDbJPec2cvWGOg7TwCQLPRorLVoO3z2Sh1p7FR6Qd4Uu9rFdCLDAE7WWFLuY">
                 <map:Map.Center>
                     <map:Location Latitude="45.7833" Longitude="3.0833" />

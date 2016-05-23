@@ -33,7 +33,7 @@ namespace VuesSearchBars
         {
            InitializeComponent();
 
-            Manager = new Manager(new Stubb());
+            //Manager = new Manager(new Stubb());
 
             DataContext = Manager;
         }

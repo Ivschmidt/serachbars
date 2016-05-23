@@ -4,45 +4,71 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              mc:Ignorable="d" 
-             d:DesignHeight="500" d:DesignWidth="600">
+             d:DesignHeight="400" d:DesignWidth="600">
+    <!--<UserControl.Resources>
+        <Style x:Key="STextBlockProfil">
+            <Setter Property="TextBlock.Margin" Value="5 0 0 0"/>
+            <Setter Property="TextBlock.VerticalAlignment" Value="Center"/>
+            <Setter Property="TextBlock.HorizontalAlignment" Value="Left"/>
+            <Setter Property="TextBlock.Foreground" Value="#B5E655"/>
+            <Setter Property="TextBlock.FontSize" Value="20"/>
+        </Style>
+    </UserControl.Resources>-->
     <Grid>
-        <WrapPanel>
-            <StackPanel >
-                <TextBlock Text="Pseudo" FontSize="40" Style="{StaticResource textblockset}"/>
-                <Image Source="Images/photoprofil.jpg" MaxHeight="350" MinHeight="150" MaxWidth="250" MinWidth="150"/>
-            </StackPanel>
+        <Grid.RowDefinitions>
+            <RowDefinition Height=".1*"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <TextBlock Text="Pseudo" FontSize="40" Style="{StaticResource STextBlock}"/>
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width=".4*"/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Image Source="Images/photoprofil.jpg" MaxHeight="350" MinHeight="150" MaxWidth="250" MinWidth="150" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10 5 0 0 "/>
+            <Grid Grid.Column="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width=".25*"/>
+                    <ColumnDefinition Width=".25*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <TextBlock Text="Nom :" Style="{StaticResource STextBlock}"/>
+                <TextBlock Text="unNom" Grid.Column="1" Style="{StaticResource STextBlock}"/>
+
+                <TextBlock Text="Prénom :" Grid.Row="1" Style="{StaticResource STextBlock}"/>
+                <TextBlock Text="unPrénom" Grid.Row="1" Grid.Column="1" Style="{StaticResource STextBlock}"/>
+
+                <TextBlock Text="Sexe :" Grid.Row="2" Style="{StaticResource STextBlock}"/>
+                <TextBlock Text="homme/femme" Grid.Row="2" Grid.Column="1" Style="{StaticResource STextBlock}"/>
+
+                <TextBlock Text="Age :" Grid.Row="3" Style="{StaticResource STextBlock}"/>
+                <WrapPanel Grid.Row="3" Grid.Column="1" VerticalAlignment="Center">
+                    <TextBlock Text="300" Style="{StaticResource STextBlock}"/>
+                    <TextBlock Text="ans" Style="{StaticResource STextBlock}"/>
+                </WrapPanel>
+
+                <TextBlock Text="Date de naissance : " Grid.Row="4" Style="{StaticResource STextBlock}"/>
+                <TextBlock Text="datedenaissaince" Grid.Row="4" Grid.Column="1" Style="{StaticResource STextBlock}"/>
+
+                <TextBlock Text="Ville :" Grid.Row="5" Style="{StaticResource STextBlock}"/>
+                <TextBlock Text="unsVille" Grid.Row="5" Grid.Column="1" Style="{StaticResource STextBlock}"/>
+
+                <TextBlock Text="Boisson préférée :" Grid.Row="6" Style="{StaticResource STextBlock}"/>
+                <TextBlock Text="uneBoisson" Grid.Row="6" Grid.Column="1" Style="{StaticResource STextBlock}"/>
+            </Grid>
+        </Grid>  
+                
+                
             
-            <StackPanel VerticalAlignment="Top" Margin="0 50 0 0">
-                <WrapPanel>
-                    <TextBlock Text="Nom :" FontSize="20" Style="{StaticResource textblockset}"/>
-                    <TextBlock Text="unNom" FontSize="20" Style="{StaticResource textblockset}"/>
-                </WrapPanel>
-                <WrapPanel>
-                    <TextBlock Text="Prénom :" FontSize="20" Style="{StaticResource textblockset}"/>
-                    <TextBlock Text="unPrénom" FontSize="20" Style="{StaticResource textblockset}"/>
-                </WrapPanel>
-                <WrapPanel>
-                    <TextBlock Text="Sexe :" FontSize="20" Style="{StaticResource textblockset}"/>
-                    <TextBlock Text="homme/femme" FontSize="20" Style="{StaticResource textblockset}"/>
-                </WrapPanel>
-                <WrapPanel>
-                    <TextBlock Text="Age :" FontSize="20" Style="{StaticResource textblockset}"/>
-                    <TextBlock Text="300" FontSize="20" Style="{StaticResource textblockset}"/>
-                    <TextBlock Text="ans" FontSize="20" Style="{StaticResource textblockset}"/>
-                </WrapPanel>
-                <WrapPanel>
-                    <TextBlock Text="Date de naissance : " FontSize="20" Style="{StaticResource textblockset}"/>
-                    <TextBlock Text="datedenaissaince" FontSize="20" Style="{StaticResource textblockset}"/>
-                </WrapPanel>
-                <WrapPanel>
-                    <TextBlock Text="Ville :" FontSize="20" Style="{StaticResource textblockset}"/>
-                    <TextBlock Text="unsVille" FontSize="20" Style="{StaticResource textblockset}"/>
-                </WrapPanel>
-                <WrapPanel>
-                    <TextBlock Text="Boisson préférée :" FontSize="20" Style="{StaticResource textblockset}"/>
-                    <TextBlock Text="uneBoisson" FontSize="20" Style="{StaticResource textblockset}"/>
-                </WrapPanel>
-            </StackPanel>
-        </WrapPanel>
+            
+        
     </Grid>
 </UserControl>

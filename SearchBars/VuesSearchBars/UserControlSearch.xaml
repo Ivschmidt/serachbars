@@ -14,26 +14,26 @@
             <RowDefinition/>
             <RowDefinition/>
         </Grid.RowDefinitions>
-        <TextBlock Text="Recherche :" Grid.Row="0" Style="{StaticResource textblockset}" FontSize="20"/>
+        <TextBlock Text="Recherche :" Grid.Row="0" Style="{StaticResource STextBlock}" FontSize="20"/>
         <WrapPanel Grid.Row="1">
-            <TextBlock Text="Ville : " Style="{StaticResource textblockset}"/>
+            <TextBlock Text="Ville : " Style="{StaticResource STextBlock}"/>
             <ComboBox Width="150"/>
         </WrapPanel>
         <WrapPanel Grid.Row="2">
-            <TextBlock Text="Restauration : " Style="{StaticResource textblockset}"/>
+            <TextBlock Text="Restauration : " Style="{StaticResource STextBlock}"/>
             <RadioButton Content="oui"/>
             <RadioButton Content="non"/>
         </WrapPanel>
         <WrapPanel Grid.Row="3">
-            <TextBlock Text="Boisson(s) :" Style="{StaticResource textblockset}"/>
+            <TextBlock Text="Boisson(s) :" Style="{StaticResource STextBlock}"/>
             <ComboBox Width="70" Margin="5 0 0 0"/>
             <ComboBox Width="70" Margin=" 5 0 0 0"/>
-            <Button Content="+" Style="{StaticResource couleurBouton}" Width="20" Height="20" Margin="5 0 0 0 "/>
+            <Button Content="+" Style="{StaticResource SButton}" Width="20" Height="20" Margin="5 0 0 0 "/>
         </WrapPanel>
         <WrapPanel Grid.Row="4">
-            <TextBlock Text="Note (minimum) :" Style="{StaticResource textblockset}"/>
+            <TextBlock Text="Note (minimum) :" Style="{StaticResource STextBlock}"/>
             <Slider Minimum="0" Maximum="5" Width="150"/>
         </WrapPanel>
-        <Button Content="Rechercher" Grid.Row="5" Style="{StaticResource couleurBouton}" Height="20" Width="150"/>
+        <Button Content="Rechercher" Grid.Row="5" Style="{StaticResource SButton}" Height="20" Width="150"/>
     </Grid>
 </UserControl>

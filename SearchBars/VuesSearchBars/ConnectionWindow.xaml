@@ -7,8 +7,12 @@
         mc:Ignorable="d"
         Title="SearchBars" Height="350" Width="525" WindowState="Maximized" WindowStartupLocation="CenterScreen" Background="#808893">
     <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height=".1*"/>
+        </Grid.RowDefinitions>
         <DockPanel>
-            <TextBlock DockPanel.Dock="Top" Text="SearchBars" HorizontalAlignment="Center" FontSize="25" Style="{StaticResource textblockset}"/>
+            <TextBlock DockPanel.Dock="Top" Text="SearchBars" HorizontalAlignment="Center" FontSize="25" Style="{StaticResource STextBlock}"/>
             <StackPanel VerticalAlignment="Center" >
                 <Grid Height="50" Width="200 px" >
                     <Grid.ColumnDefinitions>
@@ -19,15 +23,15 @@
                         <RowDefinition/>
                         <RowDefinition/>
                     </Grid.RowDefinitions>
-                    <TextBlock Text="Pseudo :" Grid.Column="0" Grid.Row="0" Style="{StaticResource textblockset}"/>
-                    <TextBox Grid.Column="1" Grid.Row="0" Style="{StaticResource textboxset}"/>
-                    <TextBlock Text="mot de passe :" Grid.Column="0" Grid.Row="1" Style="{StaticResource textblockset}"/>
-                    <PasswordBox Grid.Column="1" Grid.Row="1" Style="{StaticResource passwordboxset}"/>
+                    <TextBlock Text="Pseudo :" Grid.Column="0" Grid.Row="0" Style="{StaticResource STextBlock}" FontSize="12"/>
+                    <TextBox Grid.Column="1" Grid.Row="0" Style="{StaticResource STextBox}"/>
+                    <TextBlock Text="mot de passe :" Grid.Column="0" Grid.Row="1" Style="{StaticResource STextBlock}" FontSize="12"/>
+                    <PasswordBox Grid.Column="1" Grid.Row="1" Style="{StaticResource SPasswordBox}"/>
                 </Grid>
-                <Button Content="Connexion" Width="80px" Margin=" 0 50 0 5" Style="{StaticResource couleurBouton}" Click="Button_Click_Connexion"/>
-                <Button Content="S'inscrire" Width="60px" FontSize="10px" Style="{StaticResource couleurBouton}" Click="Button_Click_Subscribe"/>
+                <Button Content="Connexion" Width="80px" Margin=" 0 50 0 5" Style="{StaticResource SButton}" Click="Button_Click_Connexion"/>
+                <Button Content="S'inscrire" Width="60px" FontSize="10px" Style="{StaticResource SButton}" Click="Button_Click_Subscribe"/>
             </StackPanel>
-            <!--<TextBlock Text="L'abus d'alcool est dangereux pour la santé." DockPanel.Dock="Bottom" Style="{StaticResource textblockset}"/>-->
         </DockPanel>
+        <TextBlock Text="/!\ L'abus d'alcool est dangereux pour la santé. /!\" Grid.Row="1" Style="{StaticResource STextBlock}" FontSize="12"/>
     </Grid>
 </Window>
