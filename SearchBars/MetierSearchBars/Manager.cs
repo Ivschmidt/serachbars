@@ -169,7 +169,7 @@ namespace MetierSearchBars
         }
 
         
-        public void laisserUnAvis(Bar bar, String desc, int note)
+        public void laisserUnAvis(IBar bar, String desc, int note)
         {
             Ville v = listVille.SingleOrDefault(ville => ville.ListBar.Contains(bar));
             if (v != null)

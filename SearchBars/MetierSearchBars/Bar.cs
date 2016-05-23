@@ -18,6 +18,13 @@ namespace MetierSearchBars
             }
         }
 
+        private List<string> listCheminPhoto = new List<string>();
+        public System.Collections.ObjectModel.ReadOnlyCollection<string> CheminPhotoROC
+        {
+            get;
+            private set; 
+        }
+
         public string Nom { get; set; }
         public float? NoteMoyenne
         {
@@ -38,6 +45,7 @@ namespace MetierSearchBars
             Nom = nom;
             GPS = gps;
             Restauration = restauration;
+            CheminPhotoROC = new System.Collections.ObjectModel.ReadOnlyCollection<string>(listCheminPhoto);
         }
 
         public void ajouterBoisson(Boisson b)

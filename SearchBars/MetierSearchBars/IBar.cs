@@ -13,6 +13,6 @@ namespace MetierSearchBars
         CoordonneesGPS GPS { get; }
         bool Restauration { get; }
         IEnumerable<IBoisson> ListBoisson { get; }
-        
+        System.Collections.ObjectModel.ReadOnlyCollection<string> CheminPhotoROC { get; }
     }
 }

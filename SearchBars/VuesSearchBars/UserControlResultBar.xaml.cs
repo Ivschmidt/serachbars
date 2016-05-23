@@ -12,6 +12,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using DataSearchBars;
+using MetierSearchBars;
 
 namespace VuesSearchBars
 {
@@ -20,9 +22,20 @@ namespace VuesSearchBars
     /// </summary>
     public partial class UserControlResultBar : UserControl
     {
+        private Manager Manager
+        {
+            get;
+            set;
+        }
+
+
         public UserControlResultBar()
         {
-            InitializeComponent();
+           InitializeComponent();
+
+            Manager = new Manager(new Stubb());
+
+            DataContext = Manager;
         }
     }
 }

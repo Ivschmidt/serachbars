@@ -4,6 +4,7 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:map="clr-namespace:Microsoft.Maps.MapControl.WPF;assembly=Microsoft.Maps.MapControl.WPF"
+             xmlns:metier ="clr-namespace:MetierSearchBars;assembly=MetierSearchBars"
              mc:Ignorable="d" 
              d:DesignHeight="600" d:DesignWidth="700">
     <Grid>
@@ -11,13 +12,8 @@
             <ColumnDefinition Width=".20*"/>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
-        <ListBox Grid.Column="0"  Margin="5 10 5 10">
-            <ListBoxItem Content="bar1"/>
-            <ListBoxItem Content="bar2"/>
-            <ListBoxItem Content="bar3"/>
-            <ListBoxItem Content="bar4"/>
-            <ListBoxItem Content="bar5"/>
-            <ListBoxItem Content="bar6"/>
+        <ListBox Grid.Column="0"  Margin="5 10 5 10" ItemsSource="{Binding Manager}">
+          
         </ListBox>
         <Grid Grid.Column="1">
             <Grid.RowDefinitions>
@@ -66,7 +62,7 @@
                 </WrapPanel>
                 <StackPanel Grid.Column="1" Margin="0 0 10 0">
                     <TextBlock Text="Avis clients :" FontSize="30" Style="{StaticResource textblockset}"/>
-                    <ListBox Height="200">
+                    <ListBox Height="200" ItemsSource="{Binding }">
                         <ListBoxItem Content="avis1"/>
                         <ListBoxItem Content="avis2"/>
                         <ListBoxItem Content="avis3"/>
