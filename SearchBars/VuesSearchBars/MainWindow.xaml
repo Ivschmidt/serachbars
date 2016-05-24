@@ -4,7 +4,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:VuesSearchBars"
-        xmlns:userCResult="clr-namespace:VuesSearchBars"
+        xmlns:core="clr-namespace:MetierSearchBars;assembly=MetierSearchBars"
         mc:Ignorable="d"
         Title="SearchBars" Height="350" Width="525" WindowState="Maximized" WindowStartupLocation="CenterScreen" Background="#808893">
     <Grid>
@@ -15,9 +15,9 @@
         </Grid.RowDefinitions>
         <Grid Grid.Row="0">
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="150" />
+                <ColumnDefinition Width=".5*" />
                 <ColumnDefinition/>
-                <ColumnDefinition Width="150"/>
+                <ColumnDefinition Width=".5*"/>
             </Grid.ColumnDefinitions>
             <Button Content="Rechercher" Grid.Column="0" Height="20" Width="100px" HorizontalAlignment="Left" Margin="10" Style="{StaticResource SButton}" />
             <TextBlock Text="SearchBars" Grid.Column="1" FontSize="30" HorizontalAlignment="Center" Style="{StaticResource STextBlock}"/>
@@ -29,8 +29,8 @@
                 </Grid.ColumnDefinitions>
                 <Image Source="Images/photoprofil.jpg"  Grid.Column="0" />
                 <StackPanel Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center">
-                    <TextBlock Text="Nom" Style="{StaticResource STextBlock}" FontSize="12"/>
-                    <TextBlock Text="Prenom" Style="{StaticResource STextBlock}" FontSize="12"/>
+                    <TextBlock Text="{Binding CurrentUser.Nom}" Style="{StaticResource STextBlock}" FontSize="12"/>
+                    <TextBlock Text="{Binding CurrentUser.Prenom}" Style="{StaticResource STextBlock}" FontSize="12"/>
                 </StackPanel>
                 <Menu Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center">
                     <MenuItem Header="Menu" >
@@ -46,6 +46,6 @@
         <!--<userCResult:UserControlSearchResult Grid.Row="2" Margin="20 20 20 20" Loaded="UserControlSearchResult_Loaded" />-->
         <!--<userCResult:UserControlResultBar Grid.Row="2" Loaded="UserControlResultBar_Loaded"/>-->
         <!--<userCResult:UserControlProfil Grid.Row="2" Loaded="UserControlProfil_Loaded"/>-->
-        <userCResult:UserControlSearch Grid.Row="2" Loaded="UserControlSearch_Loaded"/>
+        <local:UserControlSearch Grid.Row="2" x:Name="userControlSearch" Manager="{Binding}" ListVille="{Binding ListVilles}"/>
     </Grid>
 </Window>

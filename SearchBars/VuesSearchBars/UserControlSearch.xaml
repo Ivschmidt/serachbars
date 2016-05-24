@@ -18,7 +18,13 @@
         <TextBlock Text="Recherche :" Grid.Row="0" Style="{StaticResource STextBlock}" FontSize="20"/>
         <WrapPanel Grid.Row="1">
             <TextBlock Text="Ville : " Style="{StaticResource STextBlock}"/>
-            <ComboBox Width="150" ItemsSource="{Binding ListVille, ElementName=root}"/>
+            <ComboBox Width="150" Name="comboBox_Ville" ItemsSource="{Binding ListVille, ElementName=root}">
+                <ComboBox.ItemTemplate>
+                    <DataTemplate>
+                        <!--pas fini-->
+                    </DataTemplate>
+                </ComboBox.ItemTemplate>
+            </ComboBox>
         </WrapPanel>
         <WrapPanel Grid.Row="2">
             <TextBlock Text="Restauration : " Style="{StaticResource STextBlock}"/>
