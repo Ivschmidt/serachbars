@@ -5,22 +5,18 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:map="clr-namespace:Microsoft.Maps.MapControl.WPF;assembly=Microsoft.Maps.MapControl.WPF"
              mc:Ignorable="d" 
-             d:DesignHeight="250" d:DesignWidth="500">
+             d:DesignHeight="250" d:DesignWidth="500"
+             x:Name="root">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="200"/>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
         <ListBox Grid.Column="0"  Margin="5 10 5 10">
-            <ListBoxItem Content="bar1"/>
-            <ListBoxItem Content="bar2"/>
-            <ListBoxItem Content="bar3"/>
-            <ListBoxItem Content="bar4"/>
-            <ListBoxItem Content="bar5"/>
-            <ListBoxItem Content="bar6"/>
+            <ListBoxItem Content="unbar"/>
         </ListBox>
         <DockPanel Grid.Column="1">
-            <TextBlock Text="Nom de la ville :" FontSize="20" DockPanel.Dock="Top" Style="{StaticResource STextBlock}"/>
+            <TextBlock Text="{Binding NomVille, ElementName=root}" FontSize="20" DockPanel.Dock="Top" Style="{StaticResource STextBlock}"/>
             <map:Map ZoomLevel="10" CredentialsProvider="GPTQ32UjcuKIjSoK2k67~zsm5A0WorhEOdGW-14U77Q~AlSPzDbJPec2cvWGOg7TwCQLPRorLVoO3z2Sh1p7FR6Qd4Uu9rFdCLDAE7WWFLuY">
                 <map:Map.Center>
                     <map:Location Latitude="45.7833" Longitude="3.0833" />

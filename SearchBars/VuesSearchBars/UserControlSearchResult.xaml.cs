@@ -12,6 +12,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using MetierSearchBars;
+using DataSearchBars;
 
 namespace VuesSearchBars
 {
@@ -23,6 +25,31 @@ namespace VuesSearchBars
         public UserControlSearchResult()
         {
             InitializeComponent();
+            
+        }
+
+        Manager manager = new Manager(new StubData());
+
+        
+
+        static UserControlSearchResult()
+        {
+            UserControlSearchResult.villeProperty = DependencyProperty.Register("NomVille",typeof(string), typeof(UserControlSearchResult),
+                new PropertyMetadata("listeVille"));
+        }
+
+        public static readonly DependencyProperty villeProperty;
+
+        public IVille ville
+        {
+            get
+            {
+                return GetValue(UserControlSearchResult.villeProperty) as IVille;
+            }
+            set
+            {
+
+            }
         }
     }
 }
