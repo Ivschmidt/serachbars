@@ -22,26 +22,35 @@ namespace VuesSearchBars
     /// </summary>
     public partial class UserControlSearch : UserControl
     {
-        private Manager manager;
-
-        public UserControlSearch(Manager manager)
+        public UserControlSearch()
         {
             InitializeComponent();
 
-            this.manager = manager;
         }
 
 
-
-        public String ListVille
+        
+        public IVille ListVille
         {
-            get { return (String)GetValue(ListVilleProperty); }
+            get { return (IVille)GetValue(ListVilleProperty); }
             set { SetValue(ListVilleProperty, value); }
         }
 
         // Using a DependencyProperty as the backing store for ListVille.  This enables animation, styling, binding, etc...
         public static readonly DependencyProperty ListVilleProperty =
-            DependencyProperty.Register("ListVille", typeof(String), typeof(IVille), new PropertyMetadata(0));
+            DependencyProperty.Register("ListVille", typeof(IVille), typeof(UserControlSearch), new PropertyMetadata(null));
+
+
+
+        public Manager Manager
+        {
+            get { return (Manager)GetValue(ManagerProperty); }
+            set { SetValue(ManagerProperty, value); }
+        }
+
+        // Using a DependencyProperty as the backing store for Manager.  This enables animation, styling, binding, etc...
+        public static readonly DependencyProperty ManagerProperty =
+            DependencyProperty.Register("Manager", typeof(Manager), typeof(UserControlSearch), new PropertyMetadata(null));
 
         
 
