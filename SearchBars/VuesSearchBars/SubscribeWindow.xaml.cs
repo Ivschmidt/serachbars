@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MetierSearchBars;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -19,9 +20,22 @@ namespace SearchBars
     /// </summary>
     public partial class SubscribeWindow : Window
     {
-        public SubscribeWindow()
+        private Manager manager;
+
+        public SubscribeWindow(Manager manager)
         {
             InitializeComponent();
+            this.manager = manager;
+        }
+
+        private void Button_Click_Subscribe(object sender, RoutedEventArgs e)
+        {
+            //manager.sInscrire();
+        }
+
+        private void Button_Click_Cancel(object sender, RoutedEventArgs e)
+        {
+            this.Close();
         }
     }
 }

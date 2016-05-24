@@ -11,6 +11,9 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using MetierSearchBars;
+using DataSearchBars;
+using SearchBars;
 
 namespace VuesSearchBars
 {
@@ -19,21 +22,31 @@ namespace VuesSearchBars
     /// </summary>
     public partial class ConnectionWindow : Window
     {
+        private Manager manager;
         public ConnectionWindow()
         {
+            manager = new Manager(new StubData());
             InitializeComponent();
         }
 
         private void Button_Click_Connexion(object sender, RoutedEventArgs e)
         {
-            MainWindow uneMainWindow = new MainWindow();
-            uneMainWindow.Show();
-            this.Close();
+            if (manager.seConnecter(pseudo.Text, mdp.Password))
+            {
+                MainWindow mainWindow = new MainWindow(manager);
+                mainWindow.Show();
+                this.Close();
+            }
+            else
+            { 
+                MessageBox.Show("Mot de passe incorrect", "Attention", MessageBoxButton.OK, MessageBoxImage.Warning);
+            }
         }
 
         private void Button_Click_Subscribe(object sender, RoutedEventArgs e)
         {
-            
+            SubscribeWindow subWind = new SubscribeWindow(manager);
+            subWind.Show();
         }
 
         

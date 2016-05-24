@@ -11,6 +11,8 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using MetierSearchBars;
+using DataSearchBars;
 
 namespace VuesSearchBars
 {
@@ -19,9 +21,11 @@ namespace VuesSearchBars
     /// </summary>
     public partial class MainWindow : Window
     {
-        public MainWindow()
+        public MainWindow(Manager manager)
         {
             InitializeComponent();
+
+            DataContext = manager;
         }
 
         private void UserControlResultBar_Loaded(object sender, RoutedEventArgs e)
@@ -38,11 +42,18 @@ namespace VuesSearchBars
         {
 
         }
+        
+        private void Button_Click_Deco(object sender, RoutedEventArgs e)
+        {
+            ConnectionWindow connect = new ConnectionWindow();
+            connect.Show();
+            this.Close();
+        }
 
         //private void Button_Click(object sender, RoutedEventArgs e)
         //{
         //    UserControlSearchResult unUserControl = new UserControlSearchResult();
-            
+
         //}
     }
 }

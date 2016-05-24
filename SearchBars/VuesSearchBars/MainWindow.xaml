@@ -36,7 +36,7 @@
                     <MenuItem Header="Menu" >
                         <MenuItem Header="Mon compte"/>
                         <Separator/>
-                        <MenuItem Header="Déconnexion"/>
+                        <MenuItem Header="Déconnexion" Click="Button_Click_Deco"/>
                     </MenuItem>
                 </Menu>
             </Grid>

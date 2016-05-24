@@ -32,7 +32,7 @@
         </Grid.ColumnDefinitions>
         <TextBlock Text="Inscription : " Grid.Row="0" Grid.Column="0" Style="{StaticResource STextBlock}" />
         <TextBlock Text="Pseudo : " Grid.Row="1" Grid.Column="0" Style="{StaticResource STextBlockSubscribe}"/>
-        <TextBox Grid.Row="1" Grid.Column="1" Margin="0 0 5 0" Style="{StaticResource STextBlock}"/>
+        <TextBox Grid.Row="1" Grid.Column="1" Margin="0 0 5 0" Style="{StaticResource STextBox}"/>
         <TextBlock Text="Sexe : " Grid.Row="2" Grid.Column="0" Style="{StaticResource STextBlockSubscribe}" />
         <WrapPanel Grid.Row="2" Grid.Column="1" >
             <RadioButton Content="F" Foreground="#B5E655" Margin="5"/>
@@ -62,7 +62,7 @@
         <ComboBox Grid.Column="1" HorizontalAlignment="Left" Margin="10,0,0,0" Grid.Row="10" VerticalAlignment="Top" Width="120"/>
         <Image Source="Images/photoprofil.jpg" Grid.Row="11" Grid.Column="0" Width="80" Height="80" Margin="10,10,10,10"/>
         <Button Content="Parcourir" Grid.Row="11" Grid.Column="1" Width="60" Height="20" Style="{StaticResource SButton}"/>
-        <Button Content="S'incrire" Grid.Row="12" Grid.Column="0" Margin="5" Style="{StaticResource SButton}"/>
-        <Button Content="Annuler" Grid.Row="12" Grid.Column="1" Margin="5" Style="{StaticResource SButton}"/>
+        <Button Content="S'incrire" Grid.Row="12" Grid.Column="0" Margin="5" Style="{StaticResource SButton}" Click="Button_Click_Subscribe"/>
+        <Button Content="Annuler" Grid.Row="12" Grid.Column="1" Margin="5" Style="{StaticResource SButton}" Click="Button_Click_Cancel"/>
     </Grid>
 </Window>
