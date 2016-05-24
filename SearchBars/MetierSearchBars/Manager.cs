@@ -41,6 +41,10 @@ namespace MetierSearchBars
             }
         }
 
+        /// <summary>
+        ///
+        /// </summary>
+        /// <param name="dataManager"></param>
         public Manager(IDataManager dataManager)
         {
             DataManager = dataManager;
@@ -48,6 +52,9 @@ namespace MetierSearchBars
             ChargerDonnees();
         }
 
+        /// <summary>
+        /// Charge la liste de villes et la liste de users
+        /// </summary>
         public void ChargerDonnees()
         {
             listVille.AddRange(DataManager.loadVilles().Select(iVille => iVille as Ville));
@@ -61,6 +68,11 @@ namespace MetierSearchBars
         //    DataManager.saveVille(listVille.Select(ville => ville as IVille);
         //}
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="pseudo"></param>
+        /// <returns></returns>
         private bool rechercherUser(string pseudo)
         {
             mCurrentUser = listUsers.SingleOrDefault(user => user.Pseudo.Equals(pseudo));
@@ -187,7 +199,12 @@ namespace MetierSearchBars
             return mdp.Equals(mCurrentUser.Mdp);
         }
 
-        
+        /// <summary>
+        /// Méthode qui vise à laisser un avis sur un bar donnée, cet avis contient une note et une description du bar(donc l'avis du client)
+        /// </summary>
+        /// <param name="bar">Bar qui doit recevoir un commentaire</param>
+        /// <param name="desc">Description du bar par le Current User</param>
+        /// <param name="note">Note attribuée au bar</param>
         public void laisserUnAvis(IBar bar, String desc, int note)
         {
             Ville v = listVille.SingleOrDefault(ville => ville.ListBar.Contains(bar));
