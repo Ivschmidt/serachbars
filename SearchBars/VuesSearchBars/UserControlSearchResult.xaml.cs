@@ -28,28 +28,24 @@ namespace VuesSearchBars
             
         }
 
-        Manager manager = new Manager(new StubData());
+        //Manager manager = new Manager(new StubData());
+
+
+
+
+
+
+
+        //public string NomVille
+        //{
+        //    get { return (string)GetValue(NomVilleProperty); }
+        //    set { SetValue(NomVilleProperty, value); }
+        //}
+
+        //// Using a DependencyProperty as the backing store for NomVille.  This enables animation, styling, binding, etc...
+        //public static readonly DependencyProperty NomVilleProperty =
+        //    DependencyProperty.Register("NomVille", typeof(string), typeof(IVille), new PropertyMetadata(0));
 
         
-
-        static UserControlSearchResult()
-        {
-            UserControlSearchResult.villeProperty = DependencyProperty.Register("NomVille",typeof(string), typeof(UserControlSearchResult),
-                new PropertyMetadata("listeVille"));
-        }
-
-        public static readonly DependencyProperty villeProperty;
-
-        public IVille ville
-        {
-            get
-            {
-                return GetValue(UserControlSearchResult.villeProperty) as IVille;
-            }
-            set
-            {
-
-            }
-        }
     }
 }
