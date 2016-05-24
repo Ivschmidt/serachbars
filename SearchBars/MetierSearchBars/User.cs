@@ -137,5 +137,10 @@ namespace MetierSearchBars
         {
             return (this.Pseudo.Equals(other.Pseudo));
         }
+
+        public override string ToString()
+        {
+            return Pseudo;
+        }
     }
 }

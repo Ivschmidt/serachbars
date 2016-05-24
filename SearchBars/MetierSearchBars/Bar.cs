@@ -101,5 +101,15 @@ namespace MetierSearchBars
         {
             commentaires.Add(user, avis);
         }
+
+        public override string ToString()
+        {
+            string temp = "\t" + Nom + " ";
+            if(NoteMoyenne != null)
+            {
+                temp += NoteMoyenne.ToString();
+            }
+            return temp + "\n";
+        }
     }
 }
