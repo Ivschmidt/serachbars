@@ -49,6 +49,5 @@ namespace VuesSearchBars
             subWind.Show();
         }
 
-        
     }
 }

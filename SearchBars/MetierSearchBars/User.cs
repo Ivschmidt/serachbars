@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
 namespace MetierSearchBars
@@ -17,22 +18,78 @@ namespace MetierSearchBars
         /// <summary>
         /// Pseudo : pseudo de l'utilisateur, identifiant discriminant
         /// </summary>
-        public string Pseudo { get; set; }
+        private string pseudo;
+
+        public string Pseudo
+        {
+            get { return pseudo; }
+            set
+            {
+                if (string.IsNullOrEmpty(value))
+                {
+                    throw new Exception("Le pseudo ne peut être nul");
+                }
+                    pseudo = value;
+            }
+        }
+
 
         /// <summary>
         /// Mdp : mot de passe de l'utilisateur, utilisé pour la connexion permettant de vérifier l'authenticité de l'utilisateur
         /// </summary>
-        public string Mdp { get; set; }
+        private string mdp;
+
+        public string Mdp
+        {
+            get { return mdp; }
+            set
+            {
+                if (string.IsNullOrEmpty(value))
+                {
+                    throw new Exception("Le mot de passe ne peut être null");
+                }
+                    mdp = value;
+            }
+        }
+
 
         /// <summary>
         /// Nom : nom de l'utilisateur
         /// </summary>
-        public string Nom { get; set; }
+        private string nom;
+
+        public string Nom
+        {
+            get { return nom; }
+            set
+            {
+                if (string.IsNullOrEmpty(value))
+                {
+                    throw new Exception("Le nom ne peut être null");
+                }
+                nom = value;
+            }
+        }
+
 
         /// <summary>
         /// Prenom : prénom de l'utilisateur
         /// </summary>
-        public string Prenom { get; set; }
+        private string prenom;
+
+        public string Prenom
+        {
+            get { return prenom; }
+            set
+            {
+                if (string.IsNullOrEmpty(value))
+                {
+                    throw new Exception("Le prenom ne peut être null");
+                }
+                prenom = value;
+            }
+        }
+
 
         /// <summary>
         /// Sexe : sexe de l'utilisateur (homme ou femme)
@@ -47,7 +104,29 @@ namespace MetierSearchBars
         /// <summary>
         /// NumTel : numero de téléphone de l'utilisateur (optionnel)
         /// </summary>
-        public string NumTel { get; set; }
+        public string NumTel
+        {
+            get
+            {
+                return mNumTel;
+            }
+            set
+            {
+                if(!string.IsNullOrEmpty(value))
+                {
+                    if (value.Length != 10)
+                    {
+                        throw new Exception("le numéro de télephone doit être de la forme XX-XX-XX-XX-XX");
+                    }
+                    if(!Regex.IsMatch(value, @"^\d+$"))
+                    {
+                        throw new Exception("le numéro de téléphone doit contenir uniquement des chiffres");
+                    }
+                    }
+                mNumTel = value;
+            }
+        }
+        private string mNumTel;
 
         /// <summary>
         /// Ville : ville d'habitation de l'utilisateur (optionnel)

@@ -32,20 +32,20 @@
         </Grid.ColumnDefinitions>
         <TextBlock Text="Inscription : " Grid.Row="0" Grid.Column="0" Style="{StaticResource STextBlock}" />
         <TextBlock Text="Pseudo : " Grid.Row="1" Grid.Column="0" Style="{StaticResource STextBlockSubscribe}"/>
-        <TextBox Grid.Row="1" Grid.Column="1" Margin="0 0 5 0" Style="{StaticResource STextBox}"/>
+        <TextBox Name="pseudo" Grid.Row="1" Grid.Column="1" Margin="0 0 5 0" Style="{StaticResource STextBox}"/>
         <TextBlock Text="Sexe : " Grid.Row="2" Grid.Column="0" Style="{StaticResource STextBlockSubscribe}" />
         <WrapPanel Grid.Row="2" Grid.Column="1" >
-            <RadioButton Content="F" Foreground="#B5E655" Margin="5"/>
-            <RadioButton Content="M" Foreground="#B5E655" Margin="5"/>
+            <RadioButton Content="F" Checked="msexe_checked" Tag="F" Foreground="#B5E655" Margin="5"/>
+            <RadioButton Content="M" Checked="msexe_checked" Tag="M" Foreground="#B5E655" Margin="5"/>
         </WrapPanel>
         <TextBlock Text="Nom :" Grid.Row="3" Grid.Column="0" Style="{StaticResource STextBlockSubscribe}"/>
-        <TextBox Grid.Row="3" Grid.Column="1" Margin="0 0 5 0" Style="{StaticResource STextBox}"/>
+        <TextBox Name="nom" Grid.Row="3" Grid.Column="1" Margin="0 0 5 0" Style="{StaticResource STextBox}"/>
         <TextBlock Text="Prenom : " Grid.Row="4" Grid.Column="0" Style="{StaticResource STextBlockSubscribe}"/>
-        <TextBox Grid.Row="4" Grid.Column="1" Margin="0 0 5 0" Style="{StaticResource STextBox}"/>
+        <TextBox Name="prenom" Grid.Row="4" Grid.Column="1" Margin="0 0 5 0" Style="{StaticResource STextBox}"/>
         <TextBlock Text="Mot de passe :" Grid.Column="0" Grid.Row="5" Style="{StaticResource STextBlockSubscribe}"/>
-        <PasswordBox Grid.Column="1" Grid.Row="5" Margin="0 0 5 0" Style="{StaticResource SPasswordBox}"/>
+        <PasswordBox Name="mdp1" Grid.Column="1" Grid.Row="5" Margin="0 0 5 0" Style="{StaticResource SPasswordBox}"/>
         <TextBlock Text="Retaper mot de passe :" Grid.Column="0" Grid.Row="6" Style="{StaticResource STextBlockSubscribe}"/>
-        <PasswordBox Grid.Column="1" Grid.Row="6" Margin="0 0 5 0" Style="{StaticResource SPasswordBox}"/>
+        <PasswordBox Name="mdp2" Grid.Column="1" Grid.Row="6" Margin="0 0 5 0" Style="{StaticResource SPasswordBox}"/>
         <TextBlock Text="Date de naissance : " Grid.Row="7" Grid.Column="0" Style="{StaticResource STextBlockSubscribe}"/>
         <WrapPanel Grid.Column="1" Grid.Row="7" HorizontalAlignment="Center">
             <ComboBox />
@@ -55,10 +55,10 @@
             <ComboBox/>
         </WrapPanel>
         <TextBlock Text="Numéro de téléphone : " Grid.Row="8" Grid.Column="0" Style="{StaticResource STextBlockSubscribe}"/>
-        <TextBox Grid.Row="8" Grid.Column="1" Margin="0 0 5 0" Style="{StaticResource STextBox}"/>
+        <TextBox Name="numTel" Grid.Row="8" Grid.Column="1" Margin="0 0 5 0" Style="{StaticResource STextBox}"/>
         <TextBlock Text="Ville : " Grid.Row="9" Grid.Column="0" Style="{StaticResource STextBlockSubscribe}" />
-        <TextBox Grid.Row="9" Grid.Column="1" Margin="0 0 5 0" Style="{StaticResource STextBox}"/>
-        <TextBlock Text="Boisson Préférée : " Grid.Row="10" Grid.Column="0" Style="{StaticResource STextBlockSubscribe}" />   
+        <TextBox Name="ville" Grid.Row="9" Grid.Column="1" Margin="0 0 5 0" Style="{StaticResource STextBox}"/>
+        <TextBlock Name="bpref" Text="Boisson Préférée : " Grid.Row="10" Grid.Column="0" Style="{StaticResource STextBlockSubscribe}" />   
         <ComboBox Grid.Column="1" HorizontalAlignment="Left" Margin="10,0,0,0" Grid.Row="10" VerticalAlignment="Top" Width="120"/>
         <Image Source="Images/photoprofil.jpg" Grid.Row="11" Grid.Column="0" Width="80" Height="80" Margin="10,10,10,10"/>
         <Button Content="Parcourir" Grid.Row="11" Grid.Column="1" Width="60" Height="20" Style="{StaticResource SButton}"/>

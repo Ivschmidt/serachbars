@@ -13,16 +13,33 @@ namespace TestMetierSearchBars
         static void Main(string[] args)
         {
             Manager mgr = new Manager(new StubData());
-            foreach(IVille ville in mgr.ListVilles)
-            {
-                Console.WriteLine(ville);
-            }
 
             //test connexion avec User inexistant
             if (mgr.seConnecter("toto", "123456"))
                 Console.WriteLine(mgr.CurrentUser.Nom + " connecté");
             else
                 Console.WriteLine("Connexion échoué");
+
+            //test inscription avec numTel éronné (10 chiffres)
+            try
+            {
+                mgr.sInscrire("toto", "1234", "michel", "jean", Sexe.Femme, new DateTime(1986, 9, 20), "06589636565");
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
+            }
+
+            //test inscription avec numTel éronné (lettres)
+            try
+            {
+                mgr.sInscrire("toto", "1234", "michel", "jean", Sexe.Femme, new DateTime(1986, 9, 20), "065896c365");
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
+            }
+
 
             //test inscription
             try
@@ -82,6 +99,13 @@ namespace TestMetierSearchBars
             {
                 Console.WriteLine(e.Message);
             }
+
+            //afficher les villes
+            foreach (IVille ville in mgr.ListVilles)
+            {
+                Console.WriteLine(ville);
+            }
+
             //test déconnexion 
             mgr.seDeconnecter();
             Console.WriteLine("Déconnexion");

@@ -21,6 +21,8 @@ namespace SearchBars
     public partial class SubscribeWindow : Window
     {
         private Manager manager;
+        private Sexe sexe;
+        DateTime ddd;
 
         public SubscribeWindow(Manager manager)
         {
@@ -30,12 +32,39 @@ namespace SearchBars
 
         private void Button_Click_Subscribe(object sender, RoutedEventArgs e)
         {
-            //manager.sInscrire();
+            string message="";
+
+            if(!mdp1.Password.Equals(mdp2.Password))
+            {
+                message = "Le mot de passe n'est pas identique dans les deux emplacements";
+            }
+
+            if(!string.IsNullOrEmpty(message))
+            {
+                MessageBox.Show(message, "Attention", MessageBoxButton.OK, MessageBoxImage.Warning);
+            }
+            else
+            {
+                ddd = new DateTime(2016, 01, 01);
+                manager.sInscrire(pseudo,mdp1,nom,prenom, sexe,ddd,numTel,ville,bpref);
+            }
         }
 
         private void Button_Click_Cancel(object sender, RoutedEventArgs e)
         {
             this.Close();
+        }
+
+        private void msexe_checked(object sender, RoutedEventArgs e)
+        {
+            var radio = sender as RadioButton;
+            if (radio.Tag.ToString().Equals("F"))
+            {
+                sexe = Sexe.Femme;
+            }else
+            {
+                sexe = Sexe.Homme;
+            }
         }
     }
 }
