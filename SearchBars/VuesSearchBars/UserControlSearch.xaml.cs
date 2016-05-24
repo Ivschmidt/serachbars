@@ -12,6 +12,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using MetierSearchBars;
+using DataSearchBars;
 
 namespace VuesSearchBars
 {
@@ -20,9 +22,28 @@ namespace VuesSearchBars
     /// </summary>
     public partial class UserControlSearch : UserControl
     {
-        public UserControlSearch()
+        private Manager manager;
+
+        public UserControlSearch(Manager manager)
         {
             InitializeComponent();
+
+            this.manager = manager;
         }
+
+
+
+        public String ListVille
+        {
+            get { return (String)GetValue(ListVilleProperty); }
+            set { SetValue(ListVilleProperty, value); }
+        }
+
+        // Using a DependencyProperty as the backing store for ListVille.  This enables animation, styling, binding, etc...
+        public static readonly DependencyProperty ListVilleProperty =
+            DependencyProperty.Register("ListVille", typeof(String), typeof(IVille), new PropertyMetadata(0));
+
+        
+
     }
 }

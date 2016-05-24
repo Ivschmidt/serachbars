@@ -50,6 +50,11 @@ namespace VuesSearchBars
             this.Close();
         }
 
+        private void UserControlSearch_Loaded(object sender, RoutedEventArgs e)
+        {
+
+        }
+
         //private void Button_Click(object sender, RoutedEventArgs e)
         //{
         //    UserControlSearchResult unUserControl = new UserControlSearchResult();

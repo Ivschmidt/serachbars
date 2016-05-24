@@ -12,6 +12,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using MetierSearchBars;
+using DataSearchBars;
 
 namespace VuesSearchBars
 {
@@ -23,6 +25,27 @@ namespace VuesSearchBars
         public UserControlSearchResult()
         {
             InitializeComponent();
+            
         }
+
+        //Manager manager = new Manager(new StubData());
+
+
+
+
+
+
+
+        //public string NomVille
+        //{
+        //    get { return (string)GetValue(NomVilleProperty); }
+        //    set { SetValue(NomVilleProperty, value); }
+        //}
+
+        //// Using a DependencyProperty as the backing store for NomVille.  This enables animation, styling, binding, etc...
+        //public static readonly DependencyProperty NomVilleProperty =
+        //    DependencyProperty.Register("NomVille", typeof(string), typeof(IVille), new PropertyMetadata(0));
+
+        
     }
 }

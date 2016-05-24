@@ -4,7 +4,8 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              mc:Ignorable="d" 
-             d:DesignHeight="150" d:DesignWidth="300">
+             d:DesignHeight="150" d:DesignWidth="300"
+             x:Name="root">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition/>
@@ -17,7 +18,7 @@
         <TextBlock Text="Recherche :" Grid.Row="0" Style="{StaticResource STextBlock}" FontSize="20"/>
         <WrapPanel Grid.Row="1">
             <TextBlock Text="Ville : " Style="{StaticResource STextBlock}"/>
-            <ComboBox Width="150"/>
+            <ComboBox Width="150" ItemsSource="{Binding ListVille, ElementName=root}"/>
         </WrapPanel>
         <WrapPanel Grid.Row="2">
             <TextBlock Text="Restauration : " Style="{StaticResource STextBlock}"/>
