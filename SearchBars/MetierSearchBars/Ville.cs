@@ -31,6 +31,15 @@ namespace MetierSearchBars
             listBar.Add(bar);
         }
 
+        public override string ToString()
+        {
+            string temp = Nom + "\n";
+            foreach (Bar bar in listBar)
+            {
+                temp += bar.ToString();
+            }
+            return temp;
+        }
 
     }
 }

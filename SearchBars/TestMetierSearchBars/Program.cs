@@ -13,6 +13,10 @@ namespace TestMetierSearchBars
         static void Main(string[] args)
         {
             Manager mgr = new Manager(new StubData());
+            foreach(IVille ville in mgr.ListVilles)
+            {
+                Console.WriteLine(ville);
+            }
 
             //test connexion avec User inexistant
             if (mgr.seConnecter("toto", "123456"))

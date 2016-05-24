@@ -33,13 +33,13 @@ namespace MetierSearchBars
         //}
 
         private List<Ville> listVille = new List<Ville>();
-        //public IEnumerable<IVille> ListVilles
-        //{
-        //    get
-        //    {
-        //        return listVille;
-        //    }
-        //}
+        public IEnumerable<IVille> ListVilles
+        {
+            get
+            {
+                return listVille;
+            }
+        }
 
         public Manager(IDataManager dataManager)
         {
