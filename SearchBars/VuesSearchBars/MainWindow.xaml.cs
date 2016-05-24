@@ -21,38 +21,21 @@ namespace VuesSearchBars
     /// </summary>
     public partial class MainWindow : Window
     {
+        private Manager manager;
         public MainWindow(Manager manager)
         {
             InitializeComponent();
-
+            this.manager = manager;
             DataContext = manager;
         }
 
-        private void UserControlResultBar_Loaded(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void UserControlSearchResult_Loaded(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void UserControlProfil_Loaded(object sender, RoutedEventArgs e)
-        {
-
-        }
-        
+                
         private void Button_Click_Deco(object sender, RoutedEventArgs e)
         {
+            manager.seDeconnecter();
             ConnectionWindow connect = new ConnectionWindow();
             connect.Show();
             this.Close();
-        }
-
-        private void UserControlSearch_Loaded(object sender, RoutedEventArgs e)
-        {
-
         }
 
         //private void Button_Click(object sender, RoutedEventArgs e)

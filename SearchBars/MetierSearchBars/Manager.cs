@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MetierSearchBars
 {
-    public class Manager
+    public class Manager : System.Collections.ObjectModel.ObservableCollection<IVille>
     {
         private IDataManager DataManager
         {
@@ -61,12 +61,12 @@ namespace MetierSearchBars
             listUsers.AddRange(DataManager.loadUsers().Select(iUser => iUser as User));
         }
 
-        //public void EnregistrerDonnees()
-        //{
+        public void EnregistrerDonnees()
+        {
         //    listVille = 
         //    DataManager.saveUsers(listUsers.Select(user => user as IUser));
         //    DataManager.saveVille(listVille.Select(ville => ville as IVille);
-        //}
+        }
 
         /// <summary>
         /// 
@@ -101,6 +101,7 @@ namespace MetierSearchBars
         public void seDeconnecter()
         {
             mCurrentUser = null;
+            EnregistrerDonnees();
         }
 
 
