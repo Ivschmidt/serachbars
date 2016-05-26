@@ -22,7 +22,6 @@ namespace SearchBars
     {
         private Manager manager;
         private Sexe sexe;
-        DateTime ddd;
 
         public SubscribeWindow(Manager manager)
         {
@@ -32,21 +31,29 @@ namespace SearchBars
 
         private void Button_Click_Subscribe(object sender, RoutedEventArgs e)
         {
-            string message="";
+            string message = "";
 
-            if(!mdp1.Password.Equals(mdp2.Password))
+            if (!mdp1.Password.Equals(mdp2.Password))
             {
                 message = "Le mot de passe n'est pas identique dans les deux emplacements";
             }
 
-            if(!string.IsNullOrEmpty(message))
+            if (string.IsNullOrEmpty(message))
+            {
+                try
+                { 
+                    TypeBoisson boisson = TypeBoisson.Vin;
+                    DateTime ddd = new DateTime(2016, 01, 01);
+                    manager.sInscrire(pseudo.Text, mdp1.Password, nom.Text, prenom.Text, sexe, ddd, numTel.Text, ville.Text, boisson);
+                }
+                catch (Exception i)
+                {
+                    message += i.Message;
+                }
+            }
+            if (string.IsNullOrEmpty(message))
             {
                 MessageBox.Show(message, "Attention", MessageBoxButton.OK, MessageBoxImage.Warning);
-            }
-            else
-            {
-                ddd = new DateTime(2016, 01, 01);
-                manager.sInscrire(pseudo,mdp1,nom,prenom, sexe,ddd,numTel,ville,bpref);
             }
         }
 
@@ -65,6 +72,11 @@ namespace SearchBars
             {
                 sexe = Sexe.Homme;
             }
+        }
+
+        private void ComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
         }
     }
 }
