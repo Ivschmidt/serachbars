@@ -16,7 +16,7 @@ namespace DataSearchBars
             list.Add(new User("picoiffard", "090297", "Coiffard", "Pierre", Sexe.Homme, new DateTime(1997, 2, 9), "0659712062", "Bois de boulogne"));
             list.Add(new User("ivschmidt", "290497", "Schmidt", "Ivan", Sexe.Homme, new DateTime(1997, 4, 29),ville : "cantal perdu"));
             list.Add(new User("olmartin2", "131096", "Martin", "Olivier", Sexe.Homme, new DateTime(1996, 10, 13), "0626731060", "coin riche"));
-            list.Add(new User("", "", "TestNom", "TestPrenom", Sexe.Homme, new DateTime(1998, 10, 13), "0626731060", "coin riche"));
+            //list.Add(new User("", "", "TestNom", "TestPrenom", Sexe.Homme, new DateTime(1998, 10, 13), "0626731060", "coin riche"));
             return list;
         }
 
