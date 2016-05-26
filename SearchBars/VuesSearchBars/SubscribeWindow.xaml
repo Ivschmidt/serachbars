@@ -58,13 +58,8 @@
         <TextBox Name="numTel" Grid.Row="8" Grid.Column="1" Margin="0 0 5 0" Style="{StaticResource STextBox}"/>
         <TextBlock Text="Ville : " Grid.Row="9" Grid.Column="0" Style="{StaticResource STextBlockSubscribe}" />
         <TextBox Name="ville" Grid.Row="9" Grid.Column="1" Margin="0 0 5 0" Style="{StaticResource STextBox}"/>
-<<<<<<< .mine
         <TextBlock Text="Boisson Préférée : " Grid.Row="10" Grid.Column="0" Style="{StaticResource STextBlockSubscribe}" />
         <ComboBox Name="bpref" Grid.Column="1" HorizontalAlignment="Left" Margin="10,0,0,0" Grid.Row="10" VerticalAlignment="Top" Width="120"/>
-=======
-        <TextBlock Text="Boisson Préférée : " Grid.Row="10" Grid.Column="0" Style="{StaticResource STextBlockSubscribe}" />
-        <ComboBox Name="bpref" Grid.Column="1" HorizontalAlignment="Left" Margin="10,0,0,0" Grid.Row="10" VerticalAlignment="Top" Width="120" SelectionChanged="ComboBox_SelectionChanged"/>
->>>>>>> .theirs
         <Image Source="Images/photoprofil.jpg" Grid.Row="11" Grid.Column="0" Width="80" Height="80" Margin="10,10,10,10"/>
         <Button Content="Parcourir" Grid.Row="11" Grid.Column="1" Width="60" Height="20" Style="{StaticResource SButton}"/>
         <Button Content="S'incrire" Grid.Row="12" Grid.Column="0" Margin="5" Style="{StaticResource SButton}" Click="Button_Click_Subscribe"/>
