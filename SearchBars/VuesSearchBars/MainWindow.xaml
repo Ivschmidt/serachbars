@@ -43,9 +43,12 @@
 
         </Grid>
         <Separator Grid.Row="1"/>
-        <!--<userCResult:UserControlSearchResult Grid.Row="2" Margin="20 20 20 20" Loaded="UserControlSearchResult_Loaded" />-->
-        <!--<userCResult:UserControlResultBar Grid.Row="2" Loaded="UserControlResultBar_Loaded"/>-->
-        <!--<userCResult:UserControlProfil Grid.Row="2" Loaded="UserControlProfil_Loaded"/>-->
-        <local:UserControlSearch Grid.Row="2" x:Name="userControlSearch" Manager="{Binding}" ListVille="{Binding ListVilles}"/>
+        <Grid Grid.Row="2" Name="GridMainControl">
+            <local:UserControlSearch x:Name="userControlSearch" Manager="{Binding}" ListVille="{Binding ListVilles}"/>
+            <!--<local:UserControlSearchResult Grid.Row="2" Margin="20 20 20 20" Loaded="UserControlSearchResult_Loaded" />-->
+            <!--<local:UserControlResultBar Grid.Row="2" Loaded="UserControlResultBar_Loaded"/>-->
+            <!--<local:UserControlProfil Grid.Row="2" Loaded="UserControlProfil_Loaded>-->
+        </Grid>
+        
     </Grid>
 </Window>

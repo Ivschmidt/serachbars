@@ -68,6 +68,7 @@
     <Compile Include="RateWindow.xaml.cs">
       <DependentUpon>RateWindow.xaml</DependentUpon>
     </Compile>
+    <Compile Include="RechercheLanceeEventArgs.cs" />
     <Compile Include="SubscribeWindow.xaml.cs">
       <DependentUpon>SubscribeWindow.xaml</DependentUpon>
     </Compile>

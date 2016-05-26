@@ -46,7 +46,7 @@ namespace SearchBars
             else
             {
                 ddd = new DateTime(2016, 01, 01);
-                manager.sInscrire(pseudo,mdp1,nom,prenom, sexe,ddd,numTel,ville,bpref);
+               // manager.sInscrire(pseudo,mdp1,nom,prenom, sexe,ddd,numTel,ville,bpref);
             }
         }
 

@@ -41,6 +41,15 @@ namespace MetierSearchBars
             }
         }
 
+        private List<Bar> barRecherches = new List<Bar>();
+        public IEnumerable<IBar> BarRecherches
+        {
+            get
+            {
+                return barRecherches;
+            }
+        }
+
         /// <summary>
         ///
         /// </summary>
@@ -105,25 +114,25 @@ namespace MetierSearchBars
         }
 
 
-        public IEnumerable<IBar> rechercherBars(IVille ville, bool restauration = false, List<TypeBoisson> listTypeBoissonPref = null, float noteMin = 0)
-        {
-            IEnumerable<IBar> temp = ville.ListBar;
+        //public void rechercherBars(IVille ville, bool restauration = false, List<TypeBoisson> listTypeBoissonPref = null, float noteMin = 0)
+        //{
+        //    List<Bar> temp = ville.ListBar.Select(ibar => ibar as Bar).ToList();
 
-            if (restauration)
-            {
-                temp = temp.Where(bars => bars.Restauration == true);
-            }
+        //    if (restauration)
+        //    {
+        //        temp = temp.Where(bars => bars.Restauration == true);
+        //    }
 
-            temp = temp.Where(bars => bars.NoteMoyenne >= noteMin);
+        //    temp = temp.Where(bars => bars.NoteMoyenne >= noteMin);
 
-            if (listTypeBoissonPref != null && listTypeBoissonPref.Count()>0)
-            {
-                temp.Where(bars => bars.ListBoisson.Select(types => types.Type).Distinct().Intersect(listTypeBoissonPref).Count() > 0);
+        //    if (listTypeBoissonPref != null && listTypeBoissonPref.Count()>0)
+        //    {
+        //        temp.Where(bars => bars.ListBoisson.Select(types => types.Type).Distinct().Intersect(listTypeBoissonPref).Count() > 0);
                 
-            }
+        //    }
 
-            return temp;
-        }
+        //    barRecherches = temp;
+        //}
 
         /// <summary>
         /// Méthode qui modifie les paramètres utilisateurs

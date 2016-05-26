@@ -25,11 +25,11 @@ namespace VuesSearchBars
         public UserControlSearch()
         {
             InitializeComponent();
-
+            //DataContext = Manager;
         }
 
 
-        
+
         public IVille ListVille
         {
             get { return (IVille)GetValue(ListVilleProperty); }
@@ -52,7 +52,24 @@ namespace VuesSearchBars
         public static readonly DependencyProperty ManagerProperty =
             DependencyProperty.Register("Manager", typeof(Manager), typeof(UserControlSearch), new PropertyMetadata(null));
 
-        
+        public event EventHandler<RechercheLanceeEventArgs> RechercheLancee;
 
+        protected virtual void OnRechercheLancee(RechercheLanceeEventArgs args)
+        {
+            if(RechercheLancee != null)
+            {
+                RechercheLancee(this, args);
+            }
+        }
+
+        private void Button_Click_Rechercher(object sender, RoutedEventArgs e)
+        {
+            //List<TypeBoisson> listBoissonsPref = new List<TypeBoisson>()
+            //{
+            //    if(BoissonPref1.SelectedItem != null)
+            //}
+            //OnRechercheLancee(new RechercheLanceeEventArgs(comboBox_Ville.SelectedItem, RadioButton_oui.IsChecked, noteMin.Value));
+            //a finir
+        }
     }
 }
