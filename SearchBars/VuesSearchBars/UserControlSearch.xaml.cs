@@ -30,15 +30,15 @@ namespace VuesSearchBars
 
 
 
-        public IVille ListVille
-        {
-            get { return (IVille)GetValue(ListVilleProperty); }
-            set { SetValue(ListVilleProperty, value); }
-        }
+        //public IVille ListVille
+        //{
+        //    get { return (IVille)GetValue(ListVilleProperty); }
+        //    set { SetValue(ListVilleProperty, value); }
+        //}
 
-        // Using a DependencyProperty as the backing store for ListVille.  This enables animation, styling, binding, etc...
-        public static readonly DependencyProperty ListVilleProperty =
-            DependencyProperty.Register("ListVille", typeof(IVille), typeof(UserControlSearch), new PropertyMetadata(null));
+        //// Using a DependencyProperty as the backing store for ListVille.  This enables animation, styling, binding, etc...
+        //public static readonly DependencyProperty ListVilleProperty =
+        //    DependencyProperty.Register("ListVille", typeof(IVille), typeof(UserControlSearch), new PropertyMetadata(null));
 
 
 
@@ -64,12 +64,21 @@ namespace VuesSearchBars
 
         private void Button_Click_Rechercher(object sender, RoutedEventArgs e)
         {
-            //List<TypeBoisson> listBoissonsPref = new List<TypeBoisson>()
-            //{
-            //    if(BoissonPref1.SelectedItem != null)
-            //}
-            //OnRechercheLancee(new RechercheLanceeEventArgs(comboBox_Ville.SelectedItem, RadioButton_oui.IsChecked, noteMin.Value));
-            //a finir
+            List<TypeBoisson> listBoissonsPref = new List<TypeBoisson>();
+
+            if (BoissonPref1.SelectedItem != null)
+            {
+                listBoissonsPref.Add((TypeBoisson) BoissonPref1.SelectedItem);
+            }
+            if(BoissonPref2.SelectedItem != null)
+            {
+                listBoissonsPref.Add((TypeBoisson)BoissonPref2.SelectedItem);
+            }
+            if(listBoissonsPref == null || listBoissonsPref.Count == 0)
+            { 
+                listBoissonsPref.AddRange(Enum.GetValues(typeof(TypeBoisson)).Cast<TypeBoisson>().ToList());
+            }
+            OnRechercheLancee(new RechercheLanceeEventArgs(comboBox_Ville.SelectedItem as IVille, (bool) RadioButton_oui.IsChecked, noteMin.Value, listBoissonsPref));
         }
     }
 }

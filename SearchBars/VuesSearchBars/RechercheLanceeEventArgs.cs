@@ -17,7 +17,7 @@ namespace VuesSearchBars
             private set;
         }
 
-        public float NoteMin
+        public double NoteMin
         {
             get;
             private set;
@@ -29,7 +29,7 @@ namespace VuesSearchBars
             private set;
         }
 
-        public RechercheLanceeEventArgs(IVille ville, bool restauration, float noteMin, List<TypeBoisson> listBoissons)
+        public RechercheLanceeEventArgs(IVille ville, bool restauration, double noteMin, List<TypeBoisson> listBoissons)
         {
             Ville = ville;
             Restauration = restauration;

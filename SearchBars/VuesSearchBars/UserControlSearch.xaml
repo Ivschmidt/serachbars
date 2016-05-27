@@ -5,7 +5,18 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              mc:Ignorable="d" 
              d:DesignHeight="150" d:DesignWidth="300"
-             x:Name="root">
+             x:Name="root"
+             xmlns:system="clr-namespace:System;assembly=mscorlib"
+             xmlns:core="clr-namespace:MetierSearchBars;assembly=MetierSearchBars">
+    <UserControl.Resources>
+        <ObjectDataProvider MethodName="GetValues"
+                            ObjectType="{x:Type system:Enum}"
+                            x:Key="enumTypeBoisson">
+            <ObjectDataProvider.MethodParameters>
+                <x:Type Type="core:TypeBoisson" />
+            </ObjectDataProvider.MethodParameters>
+        </ObjectDataProvider>
+    </UserControl.Resources>
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition/>
@@ -33,13 +44,14 @@
         </WrapPanel>
         <WrapPanel Grid.Row="3">
             <TextBlock Text="Boisson(s) :" Style="{StaticResource STextBlock}"/>
-            <ComboBox Name="BoissonPref1" Width="70" Margin="5 0 0 0"/>
-            <ComboBox Name="BoissonPref2" Width="70" Margin=" 5 0 0 0"/>
+            <ComboBox ItemsSource="{Binding Source={StaticResource enumTypeBoisson}}" Name="BoissonPref1" MinWidth="70" Width="Auto" Margin="5 0 0 0"/>
+            <ComboBox ItemsSource="{Binding Source={StaticResource enumTypeBoisson}}" Name="BoissonPref2" MinWidth="70" Width="Auto" Margin="5 0 0 0"/>
             <Button Content="+" Style="{StaticResource SButton}" Width="20" Height="20" Margin="5 0 0 0 "/>
         </WrapPanel>
         <WrapPanel Grid.Row="4">
             <TextBlock Text="Note (minimum) :" Style="{StaticResource STextBlock}"/>
-            <Slider Name="noteMin" Minimum="0" Maximum="5" Width="150"/>
+            <Slider Name="noteMin" Minimum="0" Maximum="5" Width="150" TickPlacement="Both" IsSnapToTickEnabled="True" Margin="15 0 15 0"/>
+            <TextBlock Text="{Binding Path=Value, ElementName=noteMin, StringFormat=\{0\}/5}" Style="{StaticResource STextBlock}"/>
         </WrapPanel>
         <Button Content="Rechercher" Grid.Row="5" Style="{StaticResource SButton}" Height="20" Width="150" Click="Button_Click_Rechercher"/>
     </Grid>

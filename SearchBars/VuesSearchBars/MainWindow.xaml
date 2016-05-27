@@ -19,7 +19,7 @@
                 <ColumnDefinition/>
                 <ColumnDefinition Width=".5*"/>
             </Grid.ColumnDefinitions>
-            <Button Content="Rechercher" Grid.Column="0" Height="20" Width="100px" HorizontalAlignment="Left" Margin="10" Style="{StaticResource SButton}" />
+            <Button Content="Rechercher" Grid.Column="0" Height="20" Width="100px" HorizontalAlignment="Left" Margin="10" Style="{StaticResource SButton}" Click="Button_Click_Rechercher" />
             <TextBlock Text="SearchBars" Grid.Column="1" FontSize="30" HorizontalAlignment="Center" Style="{StaticResource STextBlock}"/>
             <Grid Grid.Column="2">
                 <Grid.ColumnDefinitions>
@@ -44,7 +44,7 @@
         </Grid>
         <Separator Grid.Row="1"/>
         <Grid Grid.Row="2" Name="GridMainControl">
-            <local:UserControlSearch x:Name="userControlSearch" Manager="{Binding}" ListVille="{Binding ListVilles}"/>
+            <local:UserControlSearch x:Name="userControlSearch" Manager="{Binding}"/>
             <!--<local:UserControlSearchResult Grid.Row="2" Margin="20 20 20 20" Loaded="UserControlSearchResult_Loaded" />-->
             <!--<local:UserControlResultBar Grid.Row="2" Loaded="UserControlResultBar_Loaded"/>-->
             <!--<local:UserControlProfil Grid.Row="2" Loaded="UserControlProfil_Loaded>-->
