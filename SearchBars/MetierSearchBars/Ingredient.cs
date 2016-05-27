@@ -21,5 +21,10 @@ namespace MetierSearchBars
         {
             mNom = nom;
         }
+
+        public override string ToString()
+        {
+            return Nom + "\n";
+        }
     }
 }

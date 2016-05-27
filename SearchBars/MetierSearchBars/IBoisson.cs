@@ -11,6 +11,6 @@ namespace MetierSearchBars
         TypeBoisson Type { get; }
         string Nom { get; }
         double Prix { get; }
-        int DegreAlcool { get; }
+        double DegreAlcool { get; }
     }
 }

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -9,6 +10,13 @@ namespace MetierSearchBars
     class Bar : IEquatable<Bar>, IBar
     {
         private Dictionary<User, Avis> commentaires = new Dictionary<User, Avis>();
+        //je n'ai pas reussi à faire un ROD de <IUser,Avis> car impossible de convertir le dico <User,Avis> en <IUser,Avis>
+        public ReadOnlyDictionary<IUser, Avis> Commentaires
+        {
+            get;
+            private set;
+        }
+
         private List<Boisson> listBoissons = new List<Boisson>();
         public IEnumerable<IBoisson> ListBoisson
         {
@@ -19,7 +27,7 @@ namespace MetierSearchBars
         }
 
         private List<string> listCheminPhoto = new List<string>();
-        public System.Collections.ObjectModel.ReadOnlyCollection<string> CheminPhotoROC
+        public ReadOnlyCollection<string> CheminPhotoROC
         {
             get;
             private set; 
@@ -45,7 +53,10 @@ namespace MetierSearchBars
             Nom = nom;
             GPS = gps;
             Restauration = restauration;
-            CheminPhotoROC = new System.Collections.ObjectModel.ReadOnlyCollection<string>(listCheminPhoto);
+            CheminPhotoROC = new ReadOnlyCollection<string>(listCheminPhoto);
+
+            //je n'ai pas reussi à faire un ROD de <IUser,Avis> car impossible de convertir le dico <User,Avis> en <IUser,Avis>
+            Commentaires = new ReadOnlyDictionary<IUser, Avis>(commentaires.ToDictionary(kvp => kvp.Key as IUser, kvp => kvp.Value)); 
         }
 
         public void ajouterBoisson(Boisson b)
@@ -104,12 +115,28 @@ namespace MetierSearchBars
 
         public override string ToString()
         {
-            string temp = "\t" + Nom + " ";
+            string temp = Nom + "\n";
             if(NoteMoyenne != null)
             {
-                temp += NoteMoyenne.ToString();
+                temp += "note moyenne : " + NoteMoyenne.ToString() + "/5\n";
             }
-            return temp + "\n";
+            if(ListBoisson != null)
+            {
+                foreach(Boisson boiss in ListBoisson)
+                {
+                    temp += boiss.ToString();
+                }
+                temp += "\n";
+            }
+            if(commentaires != null && commentaires.Count > 0)
+            {
+                temp += "Liste des avis :\n";
+                foreach(KeyValuePair<User,Avis> kvp in commentaires)
+                {
+                    temp += kvp.Key.Pseudo + " : " + kvp.Value.Note + "/5\n" + kvp.Value.Description + "\n"; 
+                }
+            }
+            return temp;
         }
     }
 }

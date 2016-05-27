@@ -10,9 +10,14 @@ namespace MetierSearchBars
     { 
         public string Marque { get; set; }
 
-        public BoissonSimple(string nom, double prix, string marque, int degreA, TypeBoisson type) : base(nom, prix, degreA, type)
+        public BoissonSimple(string nom, double prix, string marque, double degreA, TypeBoisson type) : base(nom, prix, degreA, type)
         {
             Marque = marque;
+        }
+
+        public override string ToString()
+        {
+            return base.ToString() + "marque : " + Marque + "\n";
         }
     }
 }

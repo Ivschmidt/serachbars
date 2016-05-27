@@ -29,6 +29,7 @@ namespace DataSearchBars
             starter.ajouterBoisson(new BoissonSimple("Ruby", 3.5, "Leffe", 4, TypeBoisson.Biere));
             starter.ajouterBoisson(new BoissonSimple("Jus de banane", 2, "Pago", 0, TypeBoisson.Jus));
             starter.ajouterBoisson(new BoissonSimple("Vodka", 5, "Eristoff", 37, TypeBoisson.AlcoolFort));
+            starter.ajouterBoisson(new BoissonSimple("Coca Cherry", 1.5, "Coca Cola", 0, TypeBoisson.Soda));
             clermont.ajouterBar(starter);
 
             Bar delirium = new Bar("Délirium", new CoordonneesGPS(45.776289, 3.083339), true);
@@ -40,6 +41,7 @@ namespace DataSearchBars
             ingrMojitoList.Add(new Ingredient("citron vert"));
             ingrMojitoList.Add(new Ingredient("feuilles de menthe fraiches"));
             delirium.ajouterBoisson(new BoissonComposee("Mojito", 6.5, 18, TypeBoisson.Cocktail, boissonMojitoList, ingrMojitoList));
+            delirium.ajouterBoisson(new BoissonSimple("7Up", 1.5, "SevenUp", 0, TypeBoisson.Soda));
 
             clermont.ajouterBar(delirium);
 

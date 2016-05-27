@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -13,6 +14,7 @@ namespace MetierSearchBars
         CoordonneesGPS GPS { get; }
         bool Restauration { get; }
         IEnumerable<IBoisson> ListBoisson { get; }
-        System.Collections.ObjectModel.ReadOnlyCollection<string> CheminPhotoROC { get; }
+        ReadOnlyCollection<string> CheminPhotoROC { get; }
+        ReadOnlyDictionary<IUser, Avis> Commentaires { get; }
     }
 }

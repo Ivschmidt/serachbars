@@ -39,7 +39,7 @@ namespace VuesSearchBars
             }
             else
             { 
-                MessageBox.Show("Mot de passe incorrect", "Attention", MessageBoxButton.OK, MessageBoxImage.Warning);
+                MessageBox.Show("Mot de passe ou pseudo incorrects", "Attention", MessageBoxButton.OK, MessageBoxImage.Warning);
             }
         }
 

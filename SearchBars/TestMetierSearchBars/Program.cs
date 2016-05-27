@@ -14,13 +14,14 @@ namespace TestMetierSearchBars
         {
             Manager mgr = new Manager(new StubData());
 
-            //test connexion avec User inexistant
+            Console.WriteLine("Test connexion avec User inexistant");
             if (mgr.seConnecter("toto", "123456"))
                 Console.WriteLine(mgr.CurrentUser.Nom + " connecté");
             else
                 Console.WriteLine("Connexion échoué");
 
-            //test inscription avec numTel éronné (10 chiffres)
+            Console.WriteLine();
+            Console.WriteLine("Test inscription avec numTel éronné (10 chiffres)");
             try
             {
                 mgr.sInscrire("toto", "1234", "michel", "jean", Sexe.Femme, new DateTime(1986, 9, 20), "06589636565");
@@ -30,7 +31,8 @@ namespace TestMetierSearchBars
                 Console.WriteLine(e.Message);
             }
 
-            //test inscription avec numTel éronné (lettres)
+            Console.WriteLine();
+            Console.WriteLine("Test inscription avec numTel éronné (lettres)");
             try
             {
                 mgr.sInscrire("toto", "1234", "michel", "jean", Sexe.Femme, new DateTime(1986, 9, 20), "065896c365");
@@ -40,8 +42,8 @@ namespace TestMetierSearchBars
                 Console.WriteLine(e.Message);
             }
 
-
-            //test inscription
+            Console.WriteLine();
+            Console.WriteLine("Test inscription");
             try
             {
                 mgr.sInscrire("tutu", "123", "delabierre", "Yvan", Sexe.Homme, new DateTime(1980, 1, 9), ville: "St Julien De Copel");
@@ -52,19 +54,22 @@ namespace TestMetierSearchBars
                 Console.WriteLine(e.Message);
             }
 
-            //test connexion suite à l'inscription : avec User existant et bon mdp
+            Console.WriteLine();
+            Console.WriteLine("Test connexion suite à l'inscription : avec User existant et bon mdp");
             if (mgr.seConnecter("tutu", "123"))
                 Console.WriteLine(mgr.CurrentUser.Nom + " connecté");
             else
                 Console.WriteLine("Connexion échoué");
 
-            //test connexion avec User existant et mauvais mdp
+            Console.WriteLine();
+            Console.WriteLine("Test connexion avec User existant et mauvais mdp");
             if (mgr.seConnecter("tutu", "1234"))
                 Console.WriteLine(mgr.CurrentUser.Nom + " connecté");
             else
                 Console.WriteLine("Connexion échoué");
 
-            //tentative d'inscription d'un User déja existant
+            Console.WriteLine();
+            Console.WriteLine("Tentative d'inscription d'un User déja existant");
             try
             {
                 mgr.sInscrire("tutu", "123", "delabierre", "yvan", Sexe.Homme, new DateTime(1980, 1, 9), ville: "st julien de copel");
@@ -75,7 +80,8 @@ namespace TestMetierSearchBars
                 Console.WriteLine(e.Message);
             }
 
-            //test modification avec User existant et connecté (+Mot de passe correct)
+            Console.WriteLine();
+            Console.WriteLine("Test modification d'un User (avec User existant et connecté avec Mot de passe correct)");
             try
             {
                 mgr.modifierUser("123", nprenom: "Denis", nnom: "Brognard");
@@ -88,7 +94,8 @@ namespace TestMetierSearchBars
                 Console.WriteLine(e.Message);
             }
 
-            //test modification avec User existant et connecté (+Mot de passe incorrect)
+            Console.WriteLine();
+            Console.WriteLine("Test modification d'un User (avec User existant et connecté mais Mot de passe incorrect)");
             try
             {
                 mgr.modifierUser("560", nprenom: "Denis", nnom: "Brognard");
@@ -100,15 +107,57 @@ namespace TestMetierSearchBars
                 Console.WriteLine(e.Message);
             }
 
-            //afficher les villes
+            Console.WriteLine();
+            Console.WriteLine("Test affichage des villes avec leur bars et eux-mêmes leurs boissons :");
             foreach (IVille ville in mgr.ListVilles)
             {
                 Console.WriteLine(ville);
             }
 
-            //test déconnexion 
+            Console.WriteLine("Test recherche de bars avec restauration dans ville 2 (nice)");
+            mgr.rechercherBars(mgr.ListVilles.ElementAt(1), true);
+            foreach(IBar bar in mgr.BarRecherches)
+            {
+                Console.Write(bar);
+            }
+
+            Console.WriteLine("Test recherche de bars avec comme boisson coktails dans ville 1 (clermont)");
+            mgr.rechercherBars(mgr.ListVilles.ElementAt(0), listTypeBoissonPref : new List<TypeBoisson> { TypeBoisson.Soda});
+            foreach (IBar bar in mgr.BarRecherches)
+            {
+                Console.Write(bar);
+            }
+
+            Console.WriteLine();
+            Console.WriteLine("Test laisser un avis");
+            try
+            {
+                mgr.laisserUnAvis(mgr.BarRecherches.ElementAt(0), 4, "super bar, bonne ambiance");
+            }catch(Exception e)
+            {
+                Console.WriteLine(e.Message);
+            }
+            mgr.seDeconnecter();
+
+            mgr.seConnecter("trololo", "123456");
+            try
+            {
+                mgr.laisserUnAvis(mgr.BarRecherches.ElementAt(0), 2, "un peu trop de bruit");
+            }
+            catch(Exception e)
+            {
+                Console.WriteLine(e.Message);
+            }
+
+            foreach (IBar bar in mgr.BarRecherches)
+            {
+                Console.Write(bar + "\n");
+            }
+
+            Console.WriteLine("Test de déconnexion :");
             mgr.seDeconnecter();
             Console.WriteLine("Déconnexion");
+            Console.WriteLine();
         }
     }
 }

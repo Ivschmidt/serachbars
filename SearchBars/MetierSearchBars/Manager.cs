@@ -114,25 +114,26 @@ namespace MetierSearchBars
         }
 
 
-        //public void rechercherBars(IVille ville, bool restauration = false, List<TypeBoisson> listTypeBoissonPref = null, float noteMin = 0)
-        //{
-        //    List<Bar> temp = ville.ListBar.Select(ibar => ibar as Bar).ToList();
+        public void rechercherBars(IVille ville, bool restauration = false, List<TypeBoisson> listTypeBoissonPref = null, float noteMin = 0)
+        {
+            barRecherches.Clear();
+            IEnumerable<Bar> temp = ville.ListBar.Select(ibar => ibar as Bar);
 
-        //    if (restauration)
-        //    {
-        //        temp = temp.Where(bars => bars.Restauration == true);
-        //    }
+            if (restauration)
+            {
+                temp = temp.Where(bars => bars.Restauration == true);
+            }
 
-        //    temp = temp.Where(bars => bars.NoteMoyenne >= noteMin);
+            temp = temp.Where(bars => bars.NoteMoyenne >= noteMin || bars.NoteMoyenne == null);
 
-        //    if (listTypeBoissonPref != null && listTypeBoissonPref.Count()>0)
-        //    {
-        //        temp.Where(bars => bars.ListBoisson.Select(types => types.Type).Distinct().Intersect(listTypeBoissonPref).Count() > 0);
-                
-        //    }
+            if (listTypeBoissonPref != null && listTypeBoissonPref.Count() > 0)
+            {
+                temp = temp.Where(bars => bars.ListBoisson.Select(types => types.Type).Distinct().Intersect(listTypeBoissonPref).Count() > 0);
 
-        //    barRecherches = temp;
-        //}
+            }
+
+            barRecherches = temp.ToList();
+        }
 
         /// <summary>
         /// Méthode qui modifie les paramètres utilisateurs
@@ -211,18 +212,27 @@ namespace MetierSearchBars
 
         /// <summary>
         /// Méthode qui vise à laisser un avis sur un bar donnée, cet avis contient une note et une description du bar(donc l'avis du client)
+        /// Envoi une exception si il n'y a pas de CurrentUser
+        /// Envoi une exception si le bar passé en paramètres n'existe pas
         /// </summary>
         /// <param name="bar">Bar qui doit recevoir un commentaire</param>
         /// <param name="desc">Description du bar par le Current User</param>
         /// <param name="note">Note attribuée au bar</param>
-        public void laisserUnAvis(IBar bar, String desc, int note)
+        public void laisserUnAvis(IBar bar, int note, String desc="")
         {
-            Ville v = listVille.SingleOrDefault(ville => ville.ListBar.Contains(bar));
-            if (v != null)
+            if(CurrentUser == null)
             {
-                Bar b = (Bar)v.ListBar.Single(bars => bars.Equals(bar));
-                b.laisserAvis(new Avis(note,desc),mCurrentUser);
+                throw new Exception("aucun User connecté");
             }
+
+            Ville v = listVille.SingleOrDefault(ville => ville.ListBar.Contains(bar));
+            if (v == null)
+            {
+                throw new Exception("Ce bar n'existe pas");
+            }
+
+            Bar b = (Bar)v.ListBar.Single(bars => bars.Equals(bar));
+            b.laisserAvis(new Avis(note, desc), mCurrentUser);
         }
     }
 }
