@@ -22,25 +22,12 @@ namespace VuesSearchBars
     /// </summary>
     public partial class UserControlSearch : UserControl
     {
-        public UserControlSearch()
+        //peut etre recuperer la list de villes plutot que la manager en entier
+        public UserControlSearch(Manager manager)
         {
             InitializeComponent();
-            //DataContext = Manager;
+            Manager = manager;
         }
-
-
-
-        //public IVille ListVille
-        //{
-        //    get { return (IVille)GetValue(ListVilleProperty); }
-        //    set { SetValue(ListVilleProperty, value); }
-        //}
-
-        //// Using a DependencyProperty as the backing store for ListVille.  This enables animation, styling, binding, etc...
-        //public static readonly DependencyProperty ListVilleProperty =
-        //    DependencyProperty.Register("ListVille", typeof(IVille), typeof(UserControlSearch), new PropertyMetadata(null));
-
-
 
         public Manager Manager
         {
@@ -73,10 +60,6 @@ namespace VuesSearchBars
             if(BoissonPref2.SelectedItem != null)
             {
                 listBoissonsPref.Add((TypeBoisson)BoissonPref2.SelectedItem);
-            }
-            if(listBoissonsPref == null || listBoissonsPref.Count == 0)
-            { 
-                listBoissonsPref.AddRange(Enum.GetValues(typeof(TypeBoisson)).Cast<TypeBoisson>().ToList());
             }
             OnRechercheLancee(new RechercheLanceeEventArgs(comboBox_Ville.SelectedItem as IVille, (bool) RadioButton_oui.IsChecked, noteMin.Value, listBoissonsPref));
         }

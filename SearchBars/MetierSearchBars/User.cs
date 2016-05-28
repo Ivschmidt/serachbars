@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.Serialization;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
@@ -13,11 +14,13 @@ namespace MetierSearchBars
     /// implements : IEquatable pour protocole d'égalité
     ///            : IUser : interface de facade pour wrapper User en classe immuable
     /// </summary>
+    [DataContract]
     class User : IEquatable<User>, IUser
     {
         /// <summary>
         /// Pseudo : pseudo de l'utilisateur, identifiant discriminant
         /// </summary>
+        [DataMember]
         private string pseudo;
 
         public string Pseudo
@@ -37,6 +40,7 @@ namespace MetierSearchBars
         /// <summary>
         /// Mdp : mot de passe de l'utilisateur, utilisé pour la connexion permettant de vérifier l'authenticité de l'utilisateur
         /// </summary>
+        [DataMember (Name = "motDePasse")]
         private string mdp;
 
         public string Mdp
@@ -56,6 +60,7 @@ namespace MetierSearchBars
         /// <summary>
         /// Nom : nom de l'utilisateur
         /// </summary>
+        [DataMember]
         private string nom;
 
         public string Nom
@@ -75,6 +80,7 @@ namespace MetierSearchBars
         /// <summary>
         /// Prenom : prénom de l'utilisateur
         /// </summary>
+        [DataMember]
         private string prenom;
 
         public string Prenom
@@ -94,16 +100,19 @@ namespace MetierSearchBars
         /// <summary>
         /// Sexe : sexe de l'utilisateur (homme ou femme)
         /// </summary>
+        [DataMember]
         public Sexe Sexe { get; set; }
 
         /// <summary>
         /// DdN : date de naissance de l'utilisateur 
         /// </summary>
+        [DataMember (Name = "dateDeNaissance")]
         public DateTime DdN { get; set; }
 
         /// <summary>
         /// NumTel : numero de téléphone de l'utilisateur (optionnel)
         /// </summary>
+        [DataMember (Name = "NumeroTelephone")]
         public string NumTel
         {
             get
@@ -131,17 +140,20 @@ namespace MetierSearchBars
         /// <summary>
         /// Ville : ville d'habitation de l'utilisateur (optionnel)
         /// </summary>
+        [DataMember]
         public string Ville { get; set; }
 
         /// <summary>
         /// BoissonPref : boisson préférée de l'utilisateur parmi les éléments de l'enum Type (bière, vin, etc) (optionnel) 
         /// Si champ non renseigné = null
         /// </summary>
+        [DataMember]
         public TypeBoisson? BoissonPref { get; set; }
 
         /// <summary>
         /// PhotoDeProfil : chemin pour accéder a la photo de profil de l'utilisateur (optionnel)
         /// </summary>
+        [DataMember (EmitDefaultValue = false)]
         public string PhotoDeProfil { get; set; }
 
         /// <summary>

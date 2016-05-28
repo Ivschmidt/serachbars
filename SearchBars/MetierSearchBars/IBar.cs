@@ -10,7 +10,7 @@ namespace MetierSearchBars
     public interface IBar
     {
         string Nom { get; }
-        float? NoteMoyenne { get; }
+        double? NoteMoyenne { get; }
         CoordonneesGPS GPS { get; }
         bool Restauration { get; }
         IEnumerable<IBoisson> ListBoisson { get; }

@@ -16,7 +16,8 @@ namespace DataSearchBars
             list.Add(new User("picoiffard", "090297", "Coiffard", "Pierre", Sexe.Homme, new DateTime(1997, 2, 9), "0659712062", "Bois de boulogne"));
             list.Add(new User("ivschmidt", "290497", "Schmidt", "Ivan", Sexe.Homme, new DateTime(1997, 4, 29),ville : "cantal perdu"));
             list.Add(new User("olmartin2", "131096", "Martin", "Olivier", Sexe.Homme, new DateTime(1996, 10, 13), "0626731060", "coin riche"));
-            list.Add(new User("a", "a", "TestNom", "TestPrenom", Sexe.Homme, new DateTime(1998, 10, 13), "0626731060", "coin riche"));            return list;
+            list.Add(new User("a", "a", "TestNom", "TestPrenom", Sexe.Homme, new DateTime(1998, 10, 13), "0626731060", "coin riche"));
+            return list;
         }
 
         public IEnumerable<IVille> loadVilles()
@@ -36,7 +37,9 @@ namespace DataSearchBars
             delirium.ajouterBoisson(new Vin("Chateaubriant", 15, "Duras", 12, TypeBoisson.Vin, 2009, "rouge"));
 
             List<Boisson> boissonMojitoList = new List<Boisson>();
-            boissonMojitoList.Add(new BoissonSimple("Rhum", 4, "OldNick", 40, TypeBoisson.AlcoolFort));
+            Boisson rhum = new BoissonSimple("Rhum", 4, "OldNick", 40, TypeBoisson.AlcoolFort);
+            delirium.ajouterBoisson(rhum);
+            boissonMojitoList.Add(rhum);
             List<Ingredient> ingrMojitoList = new List<Ingredient>();
             ingrMojitoList.Add(new Ingredient("citron vert"));
             ingrMojitoList.Add(new Ingredient("feuilles de menthe fraiches"));

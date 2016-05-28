@@ -99,6 +99,7 @@ namespace MetierSearchBars
 
         public void sInscrire(string pseudo, string mdp, string nom, string prenom, Sexe sexe, DateTime ddN, string numTel = "", string ville = "", TypeBoisson? boissonPref = null, string photo="")
         {
+            //vérifier que ddn > 18 ans
             if(rechercherUser(pseudo))
             {
                 throw new Exception("Ce user existe déja");
@@ -114,7 +115,7 @@ namespace MetierSearchBars
         }
 
 
-        public void rechercherBars(IVille ville, bool restauration = false, List<TypeBoisson> listTypeBoissonPref = null, float noteMin = 0)
+        public void rechercherBars(IVille ville, bool restauration = false, List<TypeBoisson> listTypeBoissonPref = null, double noteMin = 0)
         {
             barRecherches.Clear();
             IEnumerable<Bar> temp = ville.ListBar.Select(ibar => ibar as Bar);

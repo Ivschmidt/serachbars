@@ -34,7 +34,7 @@ namespace MetierSearchBars
         }
 
         public string Nom { get; set; }
-        public float? NoteMoyenne
+        public double? NoteMoyenne
         {
             get
             {
@@ -42,7 +42,7 @@ namespace MetierSearchBars
                 {
                     return null;
                 }
-                return (float) commentaires.Average(kvp => kvp.Value.Note);
+                return (double) commentaires.Average(kvp => kvp.Value.Note);
             }
         }
         public CoordonneesGPS GPS{ get; set; }

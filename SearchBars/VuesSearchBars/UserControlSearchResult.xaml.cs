@@ -22,30 +22,37 @@ namespace VuesSearchBars
     /// </summary>
     public partial class UserControlSearchResult : UserControl
     {
-        public UserControlSearchResult()
+        public UserControlSearchResult(IEnumerable<IBar> barRecherches, IVille ville)
         {
             InitializeComponent();
-            
+            ListBarRecherches = barRecherches;
+            Ville= ville;
         }
 
-        //Manager manager = new Manager(new StubData());
+        public IEnumerable<IBar> ListBarRecherches
+        {
+            get { return (IEnumerable<IBar>)GetValue(ListBarRecherchesProperty); }
+            set { SetValue(ListBarRecherchesProperty, value); }
+        }
+
+        // Using a DependencyProperty as the backing store for ListBarRecherches.  This enables animation, styling, binding, etc...
+        public static readonly DependencyProperty ListBarRecherchesProperty =
+            DependencyProperty.Register("ListBarRecherches", typeof(IEnumerable<IBar>), typeof(UserControlSearchResult), new PropertyMetadata(null));
+
+        public IVille Ville
+        {
+            get { return (IVille)GetValue(VilleProperty); }
+            set { SetValue(VilleProperty, value); }
+        }
+
+        // Using a DependencyProperty as the backing store for Ville.  This enables animation, styling, binding, etc...
+        public static readonly DependencyProperty VilleProperty =
+            DependencyProperty.Register("Ville", typeof(IVille), typeof(UserControlSearchResult), new PropertyMetadata(null));
 
 
 
 
 
 
-
-        //public string NomVille
-        //{
-        //    get { return (string)GetValue(NomVilleProperty); }
-        //    set { SetValue(NomVilleProperty, value); }
-        //}
-
-        //// Using a DependencyProperty as the backing store for NomVille.  This enables animation, styling, binding, etc...
-        //public static readonly DependencyProperty NomVilleProperty =
-        //    DependencyProperty.Register("NomVille", typeof(string), typeof(IVille), new PropertyMetadata(0));
-
-        
     }
 }

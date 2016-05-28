@@ -12,11 +12,15 @@
             <ColumnDefinition Width="200"/>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
-        <ListBox Grid.Column="0"  Margin="5 10 5 10">
-            <ListBoxItem Content="unbar"/>
+        <ListBox Grid.Column="0"  Margin="5 10 5 10" ItemsSource="{Binding ListBarRecherches, ElementName=root}">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <TextBlock Text="{Binding Nom}"/>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
         </ListBox>
         <DockPanel Grid.Column="1">
-            <TextBlock Text="{Binding NomVille, ElementName=root}" FontSize="20" DockPanel.Dock="Top" Style="{StaticResource STextBlock}"/>
+            <TextBlock Text="{Binding Ville.Nom, ElementName=root}" FontSize="20" DockPanel.Dock="Top" Style="{StaticResource STextBlock}"/>
             <map:Map ZoomLevel="10" CredentialsProvider="GPTQ32UjcuKIjSoK2k67~zsm5A0WorhEOdGW-14U77Q~AlSPzDbJPec2cvWGOg7TwCQLPRorLVoO3z2Sh1p7FR6Qd4Uu9rFdCLDAE7WWFLuY">
                 <map:Map.Center>
                     <map:Location Latitude="45.7833" Longitude="3.0833" />

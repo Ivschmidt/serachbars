@@ -29,6 +29,7 @@
         <TextBlock Text="Rechercher :" Grid.Row="0" Style="{StaticResource STextBlock}" FontSize="20"/>
         <WrapPanel Grid.Row="1">
             <TextBlock Text="Ville : " Style="{StaticResource STextBlock}"/>
+            <!-- On aurait pu juste passer listVilles en binding (peut etre TODO) -->
             <ComboBox Width="150" Name="comboBox_Ville" ItemsSource="{Binding Manager.ListVilles, ElementName=root}" SelectedIndex="0">
                 <ComboBox.ItemTemplate>
                     <DataTemplate>

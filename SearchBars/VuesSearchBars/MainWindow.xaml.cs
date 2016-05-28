@@ -27,7 +27,15 @@ namespace VuesSearchBars
             InitializeComponent();
             this.manager = manager;
             DataContext = manager;
-            userControlSearch.RechercheLancee += OnRechercheLancee;
+            loadUCSearch();
+        }
+
+        private void loadUCSearch()
+        {
+            GridMainControl.Children.Clear();
+            UserControlSearch UCSearch = new UserControlSearch(manager);
+            UCSearch.RechercheLancee += OnRechercheLancee;
+            GridMainControl.Children.Add(UCSearch);
         }
 
 
@@ -41,26 +49,14 @@ namespace VuesSearchBars
 
         public void OnRechercheLancee(object sender, RechercheLanceeEventArgs args)
         {
+            manager.rechercherBars(args.Ville, args.Restauration, args.BoissonsPref, args.NoteMin);
             GridMainControl.Children.Clear();
-            GridMainControl.Children.Add(new UserControlSearchResult());
+            GridMainControl.Children.Add(new UserControlSearchResult(manager.BarRecherches, args.Ville));
         }
 
-        //lors du bouton sur clic rechercher reutilise le userControl defini en XAML mais (bug affichage : ville pas selectionnée par defaut, 
-        //surement a cause du fait qu'on n'instancie pas a nouveau le UC 
-        //facon peut etre plus propre :
-        //ne pas geré les instances de userControls mais en creer un nouveau a chaque fois 
-        //inclus de construire le premier UC (Search) dans le MainWIndow
-        //mais attention dans ce cas il faut s'abonner a RechercheLAncee apres chaque instanciation donc dans MainWindow
-        //et dans methode qui suit 
-        //
-        //pour data binding avec le reste surement passe le manager en param des UC 
-        //
-        //private void Button_Click_Rechercher(object sender, RoutedEventArgs e)
-        //{
-        //    GridMainControl.Children.Clear();
-        //    UserControlSearch UCSearch = new UserControlSearch();
-        //    UCSearch.RechercheLancee += OnRechercheLancee;
-        //    GridMainControl.Children.Add();
-        //}
-    }
+        private void Button_Click_Rechercher(object sender, RoutedEventArgs e)
+        {
+            loadUCSearch();
+        }
+}
 }
