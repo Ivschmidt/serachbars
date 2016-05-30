@@ -24,5 +24,15 @@
             <Setter Property="Height" Value="20"/>
             <Setter Property="Width" Value="auto"/>
         </Style>
+        <Style x:Key="SComboBox" TargetType="ComboBox">
+            <Setter Property="Foreground" Value="#ABADB7"/>
+            <Setter Property="Height" Value="20"/>
+            <Setter Property="Width" Value="auto"/>
+        </Style>
+        <Style x:Key="SRadioButton" TargetType="RadioButton">
+            <Setter Property="Foreground" Value="#B5E655"/>
+            <Setter Property="Margin" Value="5"/>
+        </Style>
     </Application.Resources>
+        
 </Application>

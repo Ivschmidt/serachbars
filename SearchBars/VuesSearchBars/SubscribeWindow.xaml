@@ -35,8 +35,8 @@
         <TextBox Name="pseudo" Grid.Row="1" Grid.Column="1" Margin="0 0 5 0" Style="{StaticResource STextBox}"/>
         <TextBlock Text="Sexe : " Grid.Row="2" Grid.Column="0" Style="{StaticResource STextBlockSubscribe}" />
         <WrapPanel Grid.Row="2" Grid.Column="1" >
-            <RadioButton Content="F" Checked="msexe_checked" Tag="F" Foreground="#B5E655" Margin="5"/>
-            <RadioButton Content="M" Checked="msexe_checked" Tag="M" Foreground="#B5E655" Margin="5"/>
+            <RadioButton Content="F" Checked="msexe_checked" Tag="F" Style="{StaticResource SRadioButton}"/>
+            <RadioButton Content="M" Checked="msexe_checked" Tag="M" Style="{StaticResource SRadioButton}"/>
         </WrapPanel>
         <TextBlock Text="Nom :" Grid.Row="3" Grid.Column="0" Style="{StaticResource STextBlockSubscribe}"/>
         <TextBox Name="nom" Grid.Row="3" Grid.Column="1" Margin="0 0 5 0" Style="{StaticResource STextBox}"/>
@@ -48,18 +48,18 @@
         <PasswordBox Name="mdp2" Grid.Column="1" Grid.Row="6" Margin="0 0 5 0" Style="{StaticResource SPasswordBox}"/>
         <TextBlock Text="Date de naissance : " Grid.Row="7" Grid.Column="0" Style="{StaticResource STextBlockSubscribe}"/>
         <WrapPanel Grid.Column="1" Grid.Row="7" HorizontalAlignment="Center">
-            <ComboBox />
+            <ComboBox Style="{StaticResource SComboBox}"/>
             <TextBlock Text="/" Foreground="#B5E655" Margin="10 0 10 0"/>
-            <ComboBox/>
+            <ComboBox Style="{StaticResource SComboBox}"/>
             <TextBlock Text="/" Foreground="#B5E655" Margin="10 0 10 0"/>
-            <ComboBox/>
+            <ComboBox Style="{StaticResource SComboBox}"/>
         </WrapPanel>
         <TextBlock Text="Numéro de téléphone : " Grid.Row="8" Grid.Column="0" Style="{StaticResource STextBlockSubscribe}"/>
         <TextBox Name="numTel" Grid.Row="8" Grid.Column="1" Margin="0 0 5 0" Style="{StaticResource STextBox}"/>
         <TextBlock Text="Ville : " Grid.Row="9" Grid.Column="0" Style="{StaticResource STextBlockSubscribe}" />
         <TextBox Name="ville" Grid.Row="9" Grid.Column="1" Margin="0 0 5 0" Style="{StaticResource STextBox}"/>
         <TextBlock Text="Boisson Préférée : " Grid.Row="10" Grid.Column="0" Style="{StaticResource STextBlockSubscribe}" />
-        <ComboBox Name="bpref" Grid.Column="1" HorizontalAlignment="Left" Margin="10,0,0,0" Grid.Row="10" VerticalAlignment="Top" Width="120"/>
+        <ComboBox Name="bpref" Grid.Column="1" HorizontalAlignment="Left" Margin="10,0,0,0" Grid.Row="10" VerticalAlignment="Top" Width="120" Style="{StaticResource SComboBox}"/>
         <Image Source="Images/photoprofil.jpg" Grid.Row="11" Grid.Column="0" Width="80" Height="80" Margin="10,10,10,10"/>
         <Button Content="Parcourir" Grid.Row="11" Grid.Column="1" Width="60" Height="20" Style="{StaticResource SButton}"/>
         <Button Content="S'incrire" Grid.Row="12" Grid.Column="0" Margin="5" Style="{StaticResource SButton}" Click="Button_Click_Subscribe"/>

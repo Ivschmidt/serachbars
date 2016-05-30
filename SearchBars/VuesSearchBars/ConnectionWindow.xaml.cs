@@ -49,5 +49,13 @@ namespace VuesSearchBars
             subWind.Show();
         }
 
+        private void Connection_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.Key == Key.Enter)
+            {
+                Button_Click_Connexion(sender, e);
+            }
+        }
+
     }
 }

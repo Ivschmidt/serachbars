@@ -30,7 +30,7 @@
         <WrapPanel Grid.Row="1">
             <TextBlock Text="Ville : " Style="{StaticResource STextBlock}"/>
             <!-- On aurait pu juste passer listVilles en binding (peut etre TODO) -->
-            <ComboBox Width="150" Name="comboBox_Ville" ItemsSource="{Binding Manager.ListVilles, ElementName=root}" SelectedIndex="0">
+            <ComboBox Width="150" Name="comboBox_Ville" ItemsSource="{Binding Manager.ListVilles, ElementName=root}" SelectedIndex="0" Style="{StaticResource SComboBox}">
                 <ComboBox.ItemTemplate>
                     <DataTemplate>
                         <TextBlock Text="{Binding Path=Nom}" />
@@ -40,13 +40,13 @@
         </WrapPanel>
         <WrapPanel Grid.Row="2">
             <TextBlock Text="Restauration : " Style="{StaticResource STextBlock}"/>
-            <RadioButton Content="oui" Name="RadioButton_oui"/>
-            <RadioButton Content="non" Name="Radio_Button_non" IsChecked="True"/>
+            <RadioButton Content="oui" Name="RadioButton_oui" Style="{StaticResource SRadioButton}"/>
+            <RadioButton Content="non" Name="Radio_Button_non" IsChecked="True" Style="{StaticResource SRadioButton}"/>
         </WrapPanel>
         <WrapPanel Grid.Row="3">
             <TextBlock Text="Boisson(s) :" Style="{StaticResource STextBlock}"/>
-            <ComboBox ItemsSource="{Binding Source={StaticResource enumTypeBoisson}}" Name="BoissonPref1" MinWidth="70" Width="Auto" Margin="5 0 0 0"/>
-            <ComboBox ItemsSource="{Binding Source={StaticResource enumTypeBoisson}}" Name="BoissonPref2" MinWidth="70" Width="Auto" Margin="5 0 0 0"/>
+            <ComboBox ItemsSource="{Binding Source={StaticResource enumTypeBoisson}}" Name="BoissonPref1" MinWidth="70" Width="Auto" Margin="5 0 0 0" Style="{StaticResource SComboBox}"/>
+            <ComboBox ItemsSource="{Binding Source={StaticResource enumTypeBoisson}}" Name="BoissonPref2" MinWidth="70" Width="Auto" Margin="5 0 0 0" Style="{StaticResource SComboBox}"/>
             <Button Content="+" Style="{StaticResource SButton}" Width="20" Height="20" Margin="5 0 0 0 "/>
         </WrapPanel>
         <WrapPanel Grid.Row="4">

@@ -13,7 +13,7 @@
         </Grid.RowDefinitions>
         <DockPanel>
             <TextBlock DockPanel.Dock="Top" Text="SearchBars" HorizontalAlignment="Center" FontSize="25" Style="{StaticResource STextBlock}"/>
-            <StackPanel VerticalAlignment="Center" >
+            <StackPanel VerticalAlignment="Center"  KeyDown="Connection_KeyDown">
                 <Grid Height="50" Width="200 px" >
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="85px"/>
