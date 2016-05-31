@@ -42,6 +42,7 @@ namespace TestMetierSearchBars
                 Console.WriteLine(e.Message);
             }
 
+
             Console.WriteLine();
             Console.WriteLine("Test inscription");
             try

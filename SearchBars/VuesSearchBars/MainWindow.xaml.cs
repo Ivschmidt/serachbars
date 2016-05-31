@@ -58,5 +58,13 @@ namespace VuesSearchBars
         {
             loadUCSearch();
         }
+
+        private void Button_Click_Compte(object sender, RoutedEventArgs e)
+        {
+            GridMainControl.Children.Clear();
+            UserControlProfil UCProfil = new UserControlProfil(manager.CurrentUser);
+
+            GridMainControl.Children.Add(UCProfil);
+        }
 }
 }
