@@ -99,13 +99,24 @@ namespace MetierSearchBars
 
         public void sInscrire(string pseudo, string mdp, string nom, string prenom, Sexe sexe, DateTime ddN, string numTel = "", string ville = "", TypeBoisson? boissonPref = null, string photo="")
         {
-            //vérifier que ddn > 18 ans
+            if (this.CalculAge(ddN) < 18)
+                throw new Exception("vous n'avez pas l'age requis");
+
             if(rechercherUser(pseudo))
             {
                 throw new Exception("Ce user existe déja");
             }
             User newUser = new User(pseudo, mdp, nom, prenom, sexe, ddN, numTel, ville, boissonPref, photo);
             listUsers.Add(newUser);
+        }
+
+        public int CalculAge(DateTime anniversaire)
+        {
+            DateTime now = DateTime.Today;
+            int age = now.Year - anniversaire.Year;
+            if (anniversaire > now.AddYears(-age))
+                age--;
+            return age;
         }
 
         public void seDeconnecter()
