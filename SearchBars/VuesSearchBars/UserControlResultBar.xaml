@@ -6,14 +6,19 @@
              xmlns:map="clr-namespace:Microsoft.Maps.MapControl.WPF;assembly=Microsoft.Maps.MapControl.WPF"
              xmlns:metier ="clr-namespace:MetierSearchBars;assembly=MetierSearchBars"
              mc:Ignorable="d" 
-             d:DesignHeight="600" d:DesignWidth="700">
+             d:DesignHeight="600" d:DesignWidth="700"
+             x:Name="root">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width=".20*"/>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
-        <ListBox Grid.Column="0"  Margin="5 10 5 10" ItemsSource="{Binding Manager}">
-          
+        <ListBox Grid.Column="0"  Margin="5 10 5 10" ItemsSource="{Binding ListBarsRecherches, ElementName=root}">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <TextBlock Text="{Binding Nom}"/>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
         </ListBox>
         <Grid Grid.Column="1">
             <Grid.RowDefinitions>

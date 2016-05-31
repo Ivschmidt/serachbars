@@ -22,20 +22,22 @@ namespace VuesSearchBars
     /// </summary>
     public partial class UserControlResultBar : UserControl
     {
-        private Manager Manager
-        {
-            get;
-            set;
-        }
-
-
-        public UserControlResultBar()
+        public UserControlResultBar(IEnumerable<IBar> barRecherches)
         {
            InitializeComponent();
-
-            //Manager = new Manager(new Stubb());
-
-            DataContext = Manager;
+           ListBarsRecherches = barRecherches;
         }
+
+        public IEnumerable<IBar> ListBarsRecherches
+        {
+            get { return (IEnumerable<IBar>)GetValue(ListBarsRecherchesProperty); }
+            set { SetValue(ListBarsRecherchesProperty, value); }
+        }
+
+        // Using a DependencyProperty as the backing store for ListBarsRecherches.  This enables animation, styling, binding, etc...
+        public static readonly DependencyProperty ListBarsRecherchesProperty =
+            DependencyProperty.Register("ListBarsRecherches", typeof(IEnumerable<IBar>), typeof(UserControlResultBar), new PropertyMetadata(null));
+
+
     }
 }
