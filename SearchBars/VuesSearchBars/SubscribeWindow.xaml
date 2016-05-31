@@ -30,39 +30,40 @@
             <ColumnDefinition/>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
-        <TextBlock Text="Inscription : " Grid.Row="0" Grid.Column="0" Style="{StaticResource STextBlock}" />
+        <TextBlock Name="NomPage" Grid.Row="0" Grid.Column="0" Style="{StaticResource STextBlock}" />
         <TextBlock Text="Pseudo : " Grid.Row="1" Grid.Column="0" Style="{StaticResource STextBlockSubscribe}"/>
-        <TextBox Name="pseudo" Grid.Row="1" Grid.Column="1" Margin="0 0 5 0" Style="{StaticResource STextBox}"/>
+        <TextBox Name="pseudo" Text="{Binding Pseudo}" Grid.Row="1" Grid.Column="1" Margin="0 0 5 0" Style="{StaticResource STextBox}"/>
         <TextBlock Text="Sexe : " Grid.Row="2" Grid.Column="0" Style="{StaticResource STextBlockSubscribe}" />
         <WrapPanel Grid.Row="2" Grid.Column="1" >
-            <RadioButton Content="F" Checked="msexe_checked" Tag="F" Style="{StaticResource SRadioButton}"/>
-            <RadioButton Content="M" Checked="msexe_checked" Tag="M" Style="{StaticResource SRadioButton}"/>
+            <RadioButton Name="SexeF" Content="F" IsChecked="True" Style="{StaticResource SRadioButton}"/>
+            <RadioButton Name="SexeM" Content="M" Style="{StaticResource SRadioButton}"/>
         </WrapPanel>
         <TextBlock Text="Nom :" Grid.Row="3" Grid.Column="0" Style="{StaticResource STextBlockSubscribe}"/>
-        <TextBox Name="nom" Grid.Row="3" Grid.Column="1" Margin="0 0 5 0" Style="{StaticResource STextBox}"/>
+        <TextBox Name="nom" Text="{Binding Nom}" Grid.Row="3" Grid.Column="1" Margin="0 0 5 0" Style="{StaticResource STextBox}"/>
         <TextBlock Text="Prenom : " Grid.Row="4" Grid.Column="0" Style="{StaticResource STextBlockSubscribe}"/>
-        <TextBox Name="prenom" Grid.Row="4" Grid.Column="1" Margin="0 0 5 0" Style="{StaticResource STextBox}"/>
+        <TextBox Name="prenom" Text="{Binding Prenom}" Grid.Row="4" Grid.Column="1" Margin="0 0 5 0" Style="{StaticResource STextBox}"/>
         <TextBlock Text="Mot de passe :" Grid.Column="0" Grid.Row="5" Style="{StaticResource STextBlockSubscribe}"/>
-        <PasswordBox Name="mdp1" Grid.Column="1" Grid.Row="5" Margin="0 0 5 0" Style="{StaticResource SPasswordBox}"/>
+        <PasswordBox Name="mdp1"  Grid.Column="1" Grid.Row="5" Margin="0 0 5 0" Style="{StaticResource SPasswordBox}"/>
         <TextBlock Text="Retaper mot de passe :" Grid.Column="0" Grid.Row="6" Style="{StaticResource STextBlockSubscribe}"/>
         <PasswordBox Name="mdp2" Grid.Column="1" Grid.Row="6" Margin="0 0 5 0" Style="{StaticResource SPasswordBox}"/>
         <TextBlock Text="Date de naissance : " Grid.Row="7" Grid.Column="0" Style="{StaticResource STextBlockSubscribe}"/>
         <WrapPanel Grid.Column="1" Grid.Row="7" HorizontalAlignment="Center">
-            <ComboBox Style="{StaticResource SComboBox}"/>
+            <TextBox Text="{Binding DdN, StringFormat='dd'}" Style="{StaticResource STextBox}" Width="20" MaxLength="2" PreviewTextInput="NumberValidationTextBox"/>
             <TextBlock Text="/" Foreground="#B5E655" Margin="10 0 10 0"/>
-            <ComboBox Style="{StaticResource SComboBox}"/>
+            <TextBox Text="{Binding DdN, StringFormat='MM'}" Style="{StaticResource STextBox}" Width="20" MaxLength="2" PreviewTextInput="NumberValidationTextBox"/>
             <TextBlock Text="/" Foreground="#B5E655" Margin="10 0 10 0"/>
-            <ComboBox Style="{StaticResource SComboBox}"/>
+            <TextBox Text="{Binding DdN, StringFormat='yyyy'}" Style="{StaticResource STextBox}" Width="35" MaxLength="4" PreviewTextInput="NumberValidationTextBox"/>
         </WrapPanel>
+        
         <TextBlock Text="Numéro de téléphone : " Grid.Row="8" Grid.Column="0" Style="{StaticResource STextBlockSubscribe}"/>
-        <TextBox Name="numTel" Grid.Row="8" Grid.Column="1" Margin="0 0 5 0" Style="{StaticResource STextBox}"/>
+        <TextBox Name="numTel" Text="{Binding NumTel}" Grid.Row="8" Grid.Column="1" Margin="0 0 5 0" Style="{StaticResource STextBox}" PreviewTextInput="NumberValidationTextBox" MaxLength="10"/>
         <TextBlock Text="Ville : " Grid.Row="9" Grid.Column="0" Style="{StaticResource STextBlockSubscribe}" />
-        <TextBox Name="ville" Grid.Row="9" Grid.Column="1" Margin="0 0 5 0" Style="{StaticResource STextBox}"/>
+        <TextBox Name="ville" Text="{Binding Ville}" Grid.Row="9" Grid.Column="1" Margin="0 0 5 0" Style="{StaticResource STextBox}" />
         <TextBlock Text="Boisson Préférée : " Grid.Row="10" Grid.Column="0" Style="{StaticResource STextBlockSubscribe}" />
-        <ComboBox Name="bpref" Grid.Column="1" HorizontalAlignment="Left" Margin="10,0,0,0" Grid.Row="10" VerticalAlignment="Top" Width="120" Style="{StaticResource SComboBox}"/>
+        <ComboBox Name="bpref" Grid.Column="1" HorizontalAlignment="Left" Margin="10,0,0,0" Grid.Row="10" VerticalAlignment="Center" Width="120" Style="{StaticResource SComboBox}"/>
         <Image Source="Images/photoprofil.jpg" Grid.Row="11" Grid.Column="0" Width="80" Height="80" Margin="10,10,10,10"/>
         <Button Content="Parcourir" Grid.Row="11" Grid.Column="1" Width="60" Height="20" Style="{StaticResource SButton}"/>
-        <Button Content="S'incrire" Grid.Row="12" Grid.Column="0" Margin="5" Style="{StaticResource SButton}" Click="Button_Click_Subscribe"/>
+        <Button Name="ButtonPage" Grid.Row="12" Grid.Column="0" Margin="5" Style="{StaticResource SButton}" Click="Button_Click_Subscribe"/>
         <Button Content="Annuler" Grid.Row="12" Grid.Column="1" Margin="5" Style="{StaticResource SButton}" Click="Button_Click_Cancel"/>
     </Grid>
 </Window>

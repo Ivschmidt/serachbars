@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
@@ -21,17 +22,33 @@ namespace SearchBars
     public partial class SubscribeWindow : Window
     {
         private Manager manager;
-        private Sexe sexe;
 
-        public SubscribeWindow(Manager manager)
+        public SubscribeWindow(Manager manager, int mode)
         {
+
             InitializeComponent();
+
+            DataContext = manager.CurrentUser;
             this.manager = manager;
+            if (mode == 1)
+            {
+                NomPage.Text = "Inscription :";
+                ButtonPage.Content = "s'incrire";
+            }
+            else
+            {
+                NomPage.Text = "Modification :";
+                ButtonPage.Content = "modifier";
+                
+            }
+            
         }
 
         private void Button_Click_Subscribe(object sender, RoutedEventArgs e)
         {
             string message = "";
+
+
 
             if (!mdp1.Password.Equals(mdp2.Password))
             {
@@ -41,9 +58,15 @@ namespace SearchBars
             if (string.IsNullOrEmpty(message))
             {
                 try
-                { 
+                {
+                    Sexe sexe;
                     TypeBoisson boisson = TypeBoisson.Vin;
                     DateTime ddd = new DateTime(2016, 01, 01);
+                    if ((bool)SexeF.IsChecked)
+                        sexe = Sexe.Femme;
+                    else
+                        sexe = Sexe.Homme;
+
                     manager.sInscrire(pseudo.Text, mdp1.Password, nom.Text, prenom.Text, sexe, ddd, numTel.Text, ville.Text, boisson);
                 }
                 catch (Exception i)
@@ -51,9 +74,14 @@ namespace SearchBars
                     message += i.Message;
                 }
             }
-            if (string.IsNullOrEmpty(message))
+            if (!string.IsNullOrEmpty(message))
             {
                 MessageBox.Show(message, "Attention", MessageBoxButton.OK, MessageBoxImage.Warning);
+            }
+            else
+            {
+                MessageBox.Show("Bienvenue parmis nous :)", "Welcome", MessageBoxButton.OK);
+                this.Close();
             }
         }
 
@@ -62,21 +90,11 @@ namespace SearchBars
             this.Close();
         }
 
-        private void msexe_checked(object sender, RoutedEventArgs e)
+        private void NumberValidationTextBox(object sender, TextCompositionEventArgs e)
         {
-            var radio = sender as RadioButton;
-            if (radio.Tag.ToString().Equals("F"))
-            {
-                sexe = Sexe.Femme;
-            }else
-            {
-                sexe = Sexe.Homme;
-            }
+            Regex regex = new Regex("[^0-9]+");
+            e.Handled = regex.IsMatch(e.Text);
         }
 
-        private void ComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-
-        }
     }
 }

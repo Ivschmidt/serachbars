@@ -22,11 +22,11 @@ namespace VuesSearchBars
     /// </summary>
     public partial class UserControlProfil : UserControl
     {
-        public UserControlProfil(IUser user)
+        public UserControlProfil(IUser user, int age)
         {
             InitializeComponent();
             CurrentUser = user;
-            Age = CalculAge(CurrentUser.DdN);
+            Age = age;
 
             if (string.IsNullOrEmpty(CurrentUser.Ville))
                 Ville = "aucune ville";
@@ -43,17 +43,6 @@ namespace VuesSearchBars
             else
                 BoissonP = CurrentUser.BoissonPref.ToString();
         }
-
-        private int CalculAge(DateTime anniversaire)
-        {
-            DateTime now = DateTime.Today;
-            int age = now.Year - anniversaire.Year;
-            if (anniversaire > now.AddYears(-age))
-                age--;
-            return age;
-        }
-
-
 
         public IUser CurrentUser
         {
@@ -116,8 +105,23 @@ namespace VuesSearchBars
         public static readonly DependencyProperty BoissonPProperty =
             DependencyProperty.Register("BoissonP", typeof(string), typeof(UserControlProfil), new PropertyMetadata(null));
 
-        
+        private void Button_Click_Modification(object sender, RoutedEventArgs e)
+        {
+            PasswordVerif passVerif = new PasswordVerif();
+            passVerif.Show();
 
+            OnModificationDisplaying(new ModificationDisplayingEventArgs());
+        }
+
+        public event EventHandler<ModificationDisplayingEventArgs> ModificationDisplaying;
+
+        protected virtual void OnModificationDisplaying(ModificationDisplayingEventArgs args)
+        {
+            if (ModificationDisplaying != null)
+            {
+                ModificationDisplaying(this, args);
+            }
+        }
         
 
         

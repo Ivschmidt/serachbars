@@ -13,6 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using MetierSearchBars;
 using DataSearchBars;
+using SearchBars;
 
 namespace VuesSearchBars
 {
@@ -63,9 +64,17 @@ namespace VuesSearchBars
         private void Button_Click_Compte(object sender, RoutedEventArgs e)
         {
             GridMainControl.Children.Clear();
-            UserControlProfil UCProfil = new UserControlProfil(manager.CurrentUser);
-
+            int age = manager.CalculAge(manager.CurrentUser.DdN);
+            UserControlProfil UCProfil = new UserControlProfil(manager.CurrentUser, age);
+            UCProfil.ModificationDisplaying += this.OnModificationDisplaying;
             GridMainControl.Children.Add(UCProfil);
         }
-}
+
+        public void OnModificationDisplaying(object sender, ModificationDisplayingEventArgs args)
+        {
+            SubscribeWindow subWind = new SubscribeWindow(manager, 2);
+            subWind.Show();
+        }
+        
+    }
 }

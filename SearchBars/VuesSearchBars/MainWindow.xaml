@@ -19,7 +19,7 @@
                 <ColumnDefinition/>
                 <ColumnDefinition Width=".5*"/>
             </Grid.ColumnDefinitions>
-            <Button Content="Rechercher" Grid.Column="0" Height="20" Width="100px" HorizontalAlignment="Left" Margin="10" Style="{StaticResource SButton}" Click="Button_Click_Rechercher" />
+            <Button Content="Rechercher" Grid.Column="0"  Width="100px" HorizontalAlignment="Left" Margin="10" Style="{StaticResource SButton}" Click="Button_Click_Rechercher" />
             <TextBlock Text="SearchBars" Grid.Column="1" FontSize="30" HorizontalAlignment="Center" Style="{StaticResource STextBlock}"/>
             <Grid Grid.Column="2">
                 <Grid.ColumnDefinitions>

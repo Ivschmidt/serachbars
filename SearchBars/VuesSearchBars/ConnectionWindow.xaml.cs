@@ -45,7 +45,7 @@ namespace VuesSearchBars
 
         private void Button_Click_Subscribe(object sender, RoutedEventArgs e)
         {
-            SubscribeWindow subWind = new SubscribeWindow(manager);
+            SubscribeWindow subWind = new SubscribeWindow(manager,1);
             subWind.Show();
         }
 
