@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MetierSearchBars;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -13,6 +14,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
+
 namespace VuesSearchBars
 {
     /// <summary>
@@ -20,9 +22,104 @@ namespace VuesSearchBars
     /// </summary>
     public partial class UserControlProfil : UserControl
     {
-        public UserControlProfil()
+        public UserControlProfil(IUser user)
         {
             InitializeComponent();
+            CurrentUser = user;
+            Age = CalculAge(CurrentUser.DdN);
+
+            if (string.IsNullOrEmpty(CurrentUser.Ville))
+                Ville = "aucune ville";
+            else
+                Ville = CurrentUser.Ville;
+
+            if(string.IsNullOrEmpty(CurrentUser.NumTel))
+                Numero = "pas de numéro";
+            else
+                Numero = CurrentUser.NumTel;
+
+            if (CurrentUser.BoissonPref == null)
+                BoissonP = "pas de boisson";
+            else
+                BoissonP = CurrentUser.BoissonPref.ToString();
         }
+
+        private int CalculAge(DateTime anniversaire)
+        {
+            DateTime now = DateTime.Today;
+            int age = now.Year - anniversaire.Year;
+            if (anniversaire > now.AddYears(-age))
+                age--;
+            return age;
+        }
+
+
+
+        public IUser CurrentUser
+        {
+            get { return (IUser)GetValue(CurrentUserProperty); }
+            set { SetValue(CurrentUserProperty, value); }
+        }
+
+        // Using a DependencyProperty as the backing store for CurrentUser.  This enables animation, styling, binding, etc...
+        public static readonly DependencyProperty CurrentUserProperty =
+            DependencyProperty.Register("CurrentUser", typeof(IUser), typeof(UserControlProfil), new PropertyMetadata(null));
+
+
+
+        public int Age
+        {
+            get { return (int)GetValue(AgeProperty); }
+            set { SetValue(AgeProperty, value); }
+        }
+
+        // Using a DependencyProperty as the backing store for Age.  This enables animation, styling, binding, etc...
+        public static readonly DependencyProperty AgeProperty =
+            DependencyProperty.Register("Age", typeof(int), typeof(UserControlProfil), new PropertyMetadata(0));
+
+
+
+        public string Ville
+        {
+            get { return (string)GetValue(VilleProperty); }
+            set { SetValue(VilleProperty, value); }
+        }
+
+        // Using a DependencyProperty as the backing store for Ville.  This enables animation, styling, binding, etc...
+        public static readonly DependencyProperty VilleProperty =
+            DependencyProperty.Register("Ville", typeof(string), typeof(UserControlProfil), new PropertyMetadata("Aucune ville"));
+
+
+
+
+        public string Numero
+        {
+            get { return (string)GetValue(NumeroProperty); }
+            set { SetValue(NumeroProperty, value); }
+        }
+
+        // Using a DependencyProperty as the backing store for Numero.  This enables animation, styling, binding, etc...
+        public static readonly DependencyProperty NumeroProperty =
+            DependencyProperty.Register("Numero", typeof(string), typeof(UserControlProfil), new PropertyMetadata("Pas de numéro"));
+
+
+
+
+
+        public string BoissonP
+        {
+            get { return (string)GetValue(BoissonPProperty); }
+            set { SetValue(BoissonPProperty, value); }
+        }
+
+        // Using a DependencyProperty as the backing store for BoissonP.  This enables animation, styling, binding, etc...
+        public static readonly DependencyProperty BoissonPProperty =
+            DependencyProperty.Register("BoissonP", typeof(string), typeof(UserControlProfil), new PropertyMetadata(null));
+
+        
+
+        
+
+        
     }
 }

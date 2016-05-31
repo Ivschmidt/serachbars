@@ -34,7 +34,7 @@
                 </StackPanel>
                 <Menu Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center">
                     <MenuItem Header="Menu" >
-                        <MenuItem Header="Mon compte"/>
+                        <MenuItem Header="Mon compte" Click="Button_Click_Compte"/>
                         <Separator/>
                         <MenuItem Header="Déconnexion" Click="Button_Click_Deco"/>
                     </MenuItem>

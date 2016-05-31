@@ -4,7 +4,8 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              mc:Ignorable="d" 
-             d:DesignHeight="400" d:DesignWidth="600">
+             d:DesignHeight="400" d:DesignWidth="600"
+             x:Name="root">
     <!--<UserControl.Resources>
         <Style x:Key="STextBlockProfil">
             <Setter Property="TextBlock.Margin" Value="5 0 0 0"/>
@@ -19,7 +20,7 @@
             <RowDefinition Height=".1*"/>
             <RowDefinition/>
         </Grid.RowDefinitions>
-        <TextBlock Text="Pseudo" FontSize="40" Style="{StaticResource STextBlock}"/>
+        <TextBlock Text="{Binding CurrentUser.Pseudo, ElementName=root}" FontSize="40" Style="{StaticResource STextBlock}"/>
         <Grid Grid.Row="1">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width=".4*"/>
@@ -39,30 +40,33 @@
                     <RowDefinition/>
                     <RowDefinition/>
                     <RowDefinition/>
+                    <RowDefinition/>
                 </Grid.RowDefinitions>
                 <TextBlock Text="Nom :" Style="{StaticResource STextBlock}"/>
-                <TextBlock Text="unNom" Grid.Column="1" Style="{StaticResource STextBlock}"/>
+                <TextBlock Text="{Binding CurrentUser.Nom, ElementName=root}" Grid.Column="1" Style="{StaticResource STextBlock}"/>
 
                 <TextBlock Text="Prénom :" Grid.Row="1" Style="{StaticResource STextBlock}"/>
-                <TextBlock Text="unPrénom" Grid.Row="1" Grid.Column="1" Style="{StaticResource STextBlock}"/>
+                <TextBlock Text="{Binding CurrentUser.Prenom, ElementName=root}" Grid.Row="1" Grid.Column="1" Style="{StaticResource STextBlock}"/>
 
                 <TextBlock Text="Sexe :" Grid.Row="2" Style="{StaticResource STextBlock}"/>
-                <TextBlock Text="homme/femme" Grid.Row="2" Grid.Column="1" Style="{StaticResource STextBlock}"/>
+                <TextBlock Text="{Binding CurrentUser.Sexe, ElementName=root}" Grid.Row="2" Grid.Column="1" Style="{StaticResource STextBlock}"/>
 
                 <TextBlock Text="Age :" Grid.Row="3" Style="{StaticResource STextBlock}"/>
                 <WrapPanel Grid.Row="3" Grid.Column="1" VerticalAlignment="Center">
-                    <TextBlock Text="300" Style="{StaticResource STextBlock}"/>
-                    <TextBlock Text="ans" Style="{StaticResource STextBlock}"/>
+                    <TextBlock Text="{Binding Age, ElementName=root, StringFormat=\{0\}ans}" Style="{StaticResource STextBlock}"/>
                 </WrapPanel>
 
                 <TextBlock Text="Date de naissance : " Grid.Row="4" Style="{StaticResource STextBlock}"/>
-                <TextBlock Text="datedenaissaince" Grid.Row="4" Grid.Column="1" Style="{StaticResource STextBlock}"/>
+                <TextBlock Text="{Binding CurrentUser.DdN, ElementName=root, StringFormat=\{0:dd/MM/yyyy\}}" Grid.Row="4" Grid.Column="1" Style="{StaticResource STextBlock}"/>
 
                 <TextBlock Text="Ville :" Grid.Row="5" Style="{StaticResource STextBlock}"/>
-                <TextBlock Text="unsVille" Grid.Row="5" Grid.Column="1" Style="{StaticResource STextBlock}"/>
+                <TextBlock Text="{Binding Ville, ElementName=root}" Grid.Row="5" Grid.Column="1" Style="{StaticResource STextBlock}"/>
 
-                <TextBlock Text="Boisson préférée :" Grid.Row="6" Style="{StaticResource STextBlock}"/>
-                <TextBlock Text="uneBoisson" Grid.Row="6" Grid.Column="1" Style="{StaticResource STextBlock}"/>
+                <TextBlock Text="Numéro :" Grid.Row="6" Style="{StaticResource STextBlock}"/>
+                <TextBlock Text="{Binding Numero, ElementName=root}" Grid.Row="6" Grid.Column="1" Style="{StaticResource STextBlock}"/>
+                
+                <TextBlock Text="Boisson préférée :" Grid.Row="7" Style="{StaticResource STextBlock}"/>
+                <TextBlock Text="{Binding BoissonP, ElementName=root}" Grid.Row="7" Grid.Column="1" Style="{StaticResource STextBlock}"/>
             </Grid>
         </Grid>  
                 

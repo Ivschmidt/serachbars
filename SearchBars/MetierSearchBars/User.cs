@@ -181,7 +181,6 @@ namespace MetierSearchBars
             Ville = ville;
             BoissonPref = boissonPref;
             PhotoDeProfil = photo;
-
         }
 
         /// <summary>
