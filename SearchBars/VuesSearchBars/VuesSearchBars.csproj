@@ -72,6 +72,9 @@
     <Compile Include="SubscribeWindow.xaml.cs">
       <DependentUpon>SubscribeWindow.xaml</DependentUpon>
     </Compile>
+    <Compile Include="UserControlMaster.xaml.cs">
+      <DependentUpon>UserControlMaster.xaml</DependentUpon>
+    </Compile>
     <Compile Include="UserControlProfil.xaml.cs">
       <DependentUpon>UserControlProfil.xaml</DependentUpon>
     </Compile>
@@ -81,8 +84,8 @@
     <Compile Include="UserControlSearch.xaml.cs">
       <DependentUpon>UserControlSearch.xaml</DependentUpon>
     </Compile>
-    <Compile Include="UserControlSearchResult.xaml.cs">
-      <DependentUpon>UserControlSearchResult.xaml</DependentUpon>
+    <Compile Include="UserControlVille.xaml.cs">
+      <DependentUpon>UserControlVille.xaml</DependentUpon>
     </Compile>
     <Page Include="ConnectionWindow.xaml">
       <SubType>Designer</SubType>
@@ -104,6 +107,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="UserControlMaster.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="UserControlProfil.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -116,7 +123,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="UserControlSearchResult.xaml">
+    <Page Include="UserControlVille.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
