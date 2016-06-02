@@ -159,13 +159,8 @@ namespace MetierSearchBars
         /// <param name="nville">nouvelle ville à modifier(optionnel)</param>
         /// <param name="nBoissonPref">nouvelle boisson préférée à modifier(optionnel)</param>
         /// <param name="nphoto">nouveau chemin de photo à modifier(optionnel)</param>
-        /// <param name="mdpactuel">Mot de passe pour vérifier l'identité de l'utilisateur</param>
-        public void modifierUser(string mdpactuel, string npseudo = "", string nmdp = "", string nprenom = "", string nnom = "", DateTime? nddn = null, string nnumTel = "", string nville = "", TypeBoisson? nBoissonPref = null, string nphoto = "")
+        public void modifierUser(string npseudo = "", string nmdp = "", string nprenom = "", string nnom = "", DateTime? nddn = null, string nnumTel = "", string nville = "", TypeBoisson? nBoissonPref = null, string nphoto = "")
         {
-            if (!verifierMotDePasse(mdpactuel))
-            {
-                throw new Exception("Mot de passe incorrect");
-            }
             if (!string.IsNullOrEmpty(npseudo))
             {
                 mCurrentUser.Pseudo = npseudo;

@@ -83,30 +83,31 @@ namespace TestMetierSearchBars
 
             Console.WriteLine();
             Console.WriteLine("Test modification d'un User (avec User existant et connecté avec Mot de passe correct)");
-            try
+            if(mgr.verifierMotDePasse("123"))
             {
-                mgr.modifierUser("123", nprenom: "Denis", nnom: "Brognard");
+                mgr.modifierUser(nprenom: "Denis", nnom: "Brognard");
                 Console.WriteLine("Mot de passe correct");
-                Console.WriteLine("Nouveau nom : " + mgr.CurrentUser.Nom);
-                Console.WriteLine("Nouveau prénom : " + mgr.CurrentUser.Prenom);
             }
-            catch (Exception e)
+            else
             {
-                Console.WriteLine(e.Message);
+                Console.WriteLine("Mot de passe incorrect");
             }
+            Console.WriteLine("Nouveau nom : " + mgr.CurrentUser.Nom);
+            Console.WriteLine("Nouveau prénom : " + mgr.CurrentUser.Prenom);
 
             Console.WriteLine();
             Console.WriteLine("Test modification d'un User (avec User existant et connecté mais Mot de passe incorrect)");
-            try
+            if (mgr.verifierMotDePasse("456"))
             {
-                mgr.modifierUser("560", nprenom: "Denis", nnom: "Brognard");
-                Console.WriteLine("Nouveau nom : " + mgr.CurrentUser.Nom);
-                Console.WriteLine("Nouveau prénom : " + mgr.CurrentUser.Prenom);
+                mgr.modifierUser(nprenom: "Jacques", nnom: "Line");
+                Console.WriteLine("Mot de passe correct");
             }
-            catch (Exception e)
+            else
             {
-                Console.WriteLine(e.Message);
+                Console.WriteLine("Mot de passe incorrect");
             }
+            Console.WriteLine("Nouveau nom : " + mgr.CurrentUser.Nom);
+            Console.WriteLine("Nouveau prénom : " + mgr.CurrentUser.Prenom);
 
             Console.WriteLine();
             Console.WriteLine("Test affichage des villes avec leur bars et eux-mêmes leurs boissons :");
