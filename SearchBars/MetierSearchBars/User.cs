@@ -169,7 +169,7 @@ namespace MetierSearchBars
         /// <param name="ville">ville d'habitation de l'utilisateur à créer (optionel)</param>
         /// <param name="boissonPref">type de boisson préférée de l'utilisateur à créer (optionel)</param>
         /// <param name="photo">chemin de la photo à ajouter pour le profil de l'utilisateur(optionel)</param>
-        public User(string pseudo, string mdp, string nom, string prenom, Sexe sexe, DateTime ddN, string numTel = "", string ville = "", TypeBoisson? boissonPref = null, string photo="" )
+        public User(string pseudo, string mdp, string nom, string prenom, Sexe sexe, DateTime ddN, string numTel = "", string ville = "", TypeBoisson? boissonPref = null, string photo = "Images/photoprofil.jpg")
         {
             Pseudo = pseudo;
             Mdp = mdp;

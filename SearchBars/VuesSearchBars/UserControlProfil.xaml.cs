@@ -108,22 +108,15 @@ namespace VuesSearchBars
         private void Button_Click_Modification(object sender, RoutedEventArgs e)
         {
             PasswordVerif passVerif = new PasswordVerif();
+            passVerif.Modification += OnModification;
             passVerif.Show();
-
-            OnModificationDisplaying(new ModificationDisplayingEventArgs());
         }
 
-        public event EventHandler<ModificationDisplayingEventArgs> ModificationDisplaying;
-
-        protected virtual void OnModificationDisplaying(ModificationDisplayingEventArgs args)
+        public void OnModification(object sender, ModificationEventArgs e)
         {
-            if (ModificationDisplaying != null)
-            {
-                ModificationDisplaying(this, args);
-            }
+            
         }
-        
 
-        
+       
     }
 }

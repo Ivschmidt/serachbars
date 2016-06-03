@@ -79,5 +79,20 @@ namespace VuesSearchBars
 
 
 
+
+
+        public CoordonneesGPS CoordGPS
+        {
+            get { return (CoordonneesGPS)GetValue(CoordGPSProperty); }
+            set { SetValue(CoordGPSProperty, value); }
+        }
+
+        // Using a DependencyProperty as the backing store for CoordGPS.  This enables animation, styling, binding, etc...
+        public static readonly DependencyProperty CoordGPSProperty =
+            DependencyProperty.Register("CoordGPS", typeof(CoordonneesGPS), typeof(UserControlResultBar), new PropertyMetadata(null));
+
+
+
+
     }
 }

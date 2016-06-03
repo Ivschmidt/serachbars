@@ -26,12 +26,22 @@ namespace VuesSearchBars
 
         private void Button_Click_Valider(object sender, RoutedEventArgs e)
         {
-
+            OnModification(new ModificationEventArgs(password.Password));
         }
 
         private void Button_Click_Annuler(object sender, RoutedEventArgs e)
         {
 
+        }
+
+        public event EventHandler<ModificationEventArgs> Modification;
+
+        protected virtual void OnModification(ModificationEventArgs args)
+        {
+            if (Modification != null)
+            {
+                Modification(this, args);
+            }
         }
     }
 }
