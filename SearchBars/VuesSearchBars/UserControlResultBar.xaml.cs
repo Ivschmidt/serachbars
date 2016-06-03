@@ -65,7 +65,17 @@ namespace VuesSearchBars
 
         // Using a DependencyProperty as the backing store for NoteMoyenne.  This enables animation, styling, binding, etc...
         public static readonly DependencyProperty NoteMoyenneProperty =
-            DependencyProperty.Register("NoteMoyenne", typeof(string), typeof(UserControlResultBar), new PropertyMetadata("NC"));
+            DependencyProperty.Register("NoteMoyenne", typeof(string), typeof(UserControlResultBar), new PropertyMetadata("n.c"));
+
+        public IEnumerable<IBoisson> ListBoissons
+        {
+            get { return (IEnumerable<IBoisson>)GetValue(ListBoissonsProperty); }
+            set { SetValue(ListBoissonsProperty, value); }
+        }
+
+        // Using a DependencyProperty as the backing store for ListBoissons.  This enables animation, styling, binding, etc...
+        public static readonly DependencyProperty ListBoissonsProperty =
+            DependencyProperty.Register("ListBoissons", typeof(IEnumerable<IBoisson>), typeof(UserControlResultBar), new PropertyMetadata(null));
 
 
 

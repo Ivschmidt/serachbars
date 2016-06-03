@@ -34,10 +34,18 @@
                 </WrapPanel>
                 <WrapPanel>
                     <TextBlock Text="Boisson :" FontSize="20" Style="{StaticResource STextBlock}"/>
-                    <TextBlock Text="liste de boissons" FontSize="20" Style="{StaticResource STextBlock}"/>
+                    <ComboBox Width="150" Style="{StaticResource SComboBox}"
+                              ItemsSource="{Binding ListBoissons, ElementName=root}"
+                              SelectedIndex="0">
+                        <ComboBox.ItemTemplate>
+                            <DataTemplate>
+                                <TextBlock Text="{Binding Nom}"/>
+                            </DataTemplate>
+                        </ComboBox.ItemTemplate>
+                    </ComboBox>
                 </WrapPanel>
             </StackPanel>
-            <map:Map Grid.Column="1"  Margin="10" ZoomLevel="10" CredentialsProvider="GPTQ32UjcuKIjSoK2k67~zsm5A0WorhEOdGW-14U77Q~AlSPzDbJPec2cvWGOg7TwCQLPRorLVoO3z2Sh1p7FR6Qd4Uu9rFdCLDAE7WWFLuY" RenderTransformOrigin="1.819,0.485">
+            <map:Map Grid.Column="1"  Margin="4.6,10,15,10" ZoomLevel="10" CredentialsProvider="GPTQ32UjcuKIjSoK2k67~zsm5A0WorhEOdGW-14U77Q~AlSPzDbJPec2cvWGOg7TwCQLPRorLVoO3z2Sh1p7FR6Qd4Uu9rFdCLDAE7WWFLuY" RenderTransformOrigin="1.819,0.485">
                 <map:Map.Center>
                     <map:Location Latitude="45.7833" Longitude="3.0833" />
                 </map:Map.Center>
