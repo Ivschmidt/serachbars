@@ -65,15 +65,9 @@ namespace VuesSearchBars
             GridMainControl.Children.Clear();
             int age = manager.CalculAge(manager.CurrentUser.DdN);
             UserControlProfil UCProfil = new UserControlProfil(manager.CurrentUser, age);
-            UCProfil.ModificationDisplaying += this.OnModificationDisplaying;
             GridMainControl.Children.Add(UCProfil);
         }
 
-        public void OnModificationDisplaying(object sender, ModificationDisplayingEventArgs args)
-        {
-            SubscribeWindow subWind = new SubscribeWindow(manager, 2);
-            subWind.Show();
-        }
         
     }
 }

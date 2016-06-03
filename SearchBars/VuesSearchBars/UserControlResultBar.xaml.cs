@@ -88,10 +88,26 @@ namespace VuesSearchBars
         public static readonly DependencyProperty CommentairesProperty =
             DependencyProperty.Register("Commentaires", typeof(ReadOnlyDictionary<IUser, Avis>), typeof(UserControlResultBar), new PropertyMetadata(null));
 
+
         private void Button_Click_PosteAvis(object sender, RoutedEventArgs e)
         {
             RateWindow rateWindow = new RateWindow();
             rateWindow.Show();
         }
+
+
+        public CoordonneesGPS CoordGPS
+        {
+            get { return (CoordonneesGPS)GetValue(CoordGPSProperty); }
+            set { SetValue(CoordGPSProperty, value); }
+        }
+
+        // Using a DependencyProperty as the backing store for CoordGPS.  This enables animation, styling, binding, etc...
+        public static readonly DependencyProperty CoordGPSProperty =
+            DependencyProperty.Register("CoordGPS", typeof(CoordonneesGPS), typeof(UserControlResultBar), new PropertyMetadata(null));
+
+
+
+
     }
 }

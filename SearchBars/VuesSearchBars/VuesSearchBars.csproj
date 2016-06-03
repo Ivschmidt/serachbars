@@ -65,7 +65,7 @@
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
     </Compile>
-    <Compile Include="ModificationDisplayingEventArgs.cs" />
+    <Compile Include="ModificationEventArgs.cs" />
     <Compile Include="PasswordVerif.xaml.cs">
       <DependentUpon>PasswordVerif.xaml</DependentUpon>
     </Compile>
@@ -165,9 +165,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Images\googleMap.JPG" />
-  </ItemGroup>
-  <ItemGroup>
     <Resource Include="Images\photoprofil.jpg" />
   </ItemGroup>
   <ItemGroup>
@@ -179,6 +176,15 @@
       <Project>{6fdddc8b-de3b-4a78-841d-4f1966362c57}</Project>
       <Name>MetierSearchBars</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Images\ImagesBars\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\ImagesProfils\IvanSchmidt.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\ImagesProfils\trololo.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
