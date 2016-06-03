@@ -53,7 +53,6 @@ namespace VuesSearchBars
             manager.rechercherBars(args.Ville, args.Restauration, args.BoissonsPref, args.NoteMin);
             GridMainControl.Children.Clear();
             GridMainControl.Children.Add(new UserControlMaster(manager.BarRecherches, args.Ville));
-            //GridMainControl.Children.Add(new UserControlSearchResult(manager.BarRecherches, args.Ville)); //appelle le UC avec ville et map de la ville
         }
 
         private void Button_Click_Rechercher(object sender, RoutedEventArgs e)

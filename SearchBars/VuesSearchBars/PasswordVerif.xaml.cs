@@ -24,6 +24,14 @@ namespace VuesSearchBars
             InitializeComponent();
         }
 
-        
+        private void Button_Click_Valider(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Button_Click_Annuler(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

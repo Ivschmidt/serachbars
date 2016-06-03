@@ -7,12 +7,30 @@
              mc:Ignorable="d" 
              d:DesignHeight="300" d:DesignWidth="300"
              x:Name="root">
+    <UserControl.Resources>
+        <DataTemplate x:Key="dataTemplateVille">
+            <!-- definition du datatemplate pour affichage du UCVille -->
+            <local:UserControlVille />
+        </DataTemplate>
+        <DataTemplate x:Key="dataTemplateDetail">
+            <!-- definition du datatemplate pour affichage du UCResultBar = Detail -->
+            <local:UserControlResultBar Nom="{Binding Nom}" 
+                                        Numero="{Binding Numero}" 
+                                        Adresse="{Binding Adresse}"
+                                        NoteMoyenne="{Binding (string) NoteMoyenne}"/>
+        </DataTemplate>
+        <local:TemplateSelectorDetail x:Key="myTS" 
+                                      DTVille="{StaticResource dataTemplateVille}"
+                                      DTDetail="{StaticResource dataTemplateDetail}"/>
+    </UserControl.Resources>
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="200"/>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
-        <ListBox Grid.Column="0"  Margin="5 10 5 10" ItemsSource="{Binding ListBarsRecherches, ElementName=root}" IsSynchronizedWithCurrentItem="True" SelectionChanged="ListBox_SelectionChanged">
+        <ListBox Grid.Column="0"  Margin="5 10 5 10" 
+                 ItemsSource="{Binding ListBarsRecherches, ElementName=root}" 
+                 IsSynchronizedWithCurrentItem="True">
             <ListBox.ItemTemplate>
                 <DataTemplate>
                     <TextBlock Text="{Binding Nom}"/>
@@ -20,7 +38,8 @@
             </ListBox.ItemTemplate>
         </ListBox>
         <Grid Grid.Column="1" Name="GridMainDetail">
-            
+            <ContentControl Content="{Binding ListBarsRecherches, ElementName=root}"
+                            ContentTemplateSelector="{StaticResource myTS}" />
         </Grid>
     </Grid>
 </UserControl>

@@ -13,6 +13,8 @@ namespace MetierSearchBars
         double? NoteMoyenne { get; }
         CoordonneesGPS GPS { get; }
         bool Restauration { get; }
+        string Numero { get; }
+        string Adresse { get; }
         IEnumerable<IBoisson> ListBoisson { get; }
         ReadOnlyCollection<string> CheminPhotoROC { get; }
         ReadOnlyDictionary<IUser, Avis> Commentaires { get; }

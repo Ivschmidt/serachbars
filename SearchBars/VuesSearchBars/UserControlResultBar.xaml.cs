@@ -22,21 +22,50 @@ namespace VuesSearchBars
     /// </summary>
     public partial class UserControlResultBar : UserControl
     {
-        public UserControlResultBar(IEnumerable<IBar> listBarsRecherches)
+        public UserControlResultBar()
         {
-            ListBarsRecherches = listBarsRecherches;
            InitializeComponent();
         }
 
-        public IEnumerable<IBar> ListBarsRecherches
+        public string Nom
         {
-            get { return (IEnumerable<IBar>)GetValue(ListBarsRecherchesProperty); }
-            set { SetValue(ListBarsRecherchesProperty, value); }
+            get { return (string)GetValue(NomProperty); }
+            set { SetValue(NomProperty, value); }
         }
 
-        // Using a DependencyProperty as the backing store for ListBarsRecherches.  This enables animation, styling, binding, etc...
-        public static readonly DependencyProperty ListBarsRecherchesProperty =
-            DependencyProperty.Register("ListBarsRecherches", typeof(IEnumerable<IBar>), typeof(UserControlResultBar), new PropertyMetadata(null));
+        // Using a DependencyProperty as the backing store for Nom.  This enables animation, styling, binding, etc...
+        public static readonly DependencyProperty NomProperty =
+            DependencyProperty.Register("Nom", typeof(string), typeof(UserControlResultBar), new PropertyMetadata("aucun nom"));
+
+        public string Numero
+        {
+            get { return (string)GetValue(NumeroProperty); }
+            set { SetValue(NumeroProperty, value); }
+        }
+
+        // Using a DependencyProperty as the backing store for Numero.  This enables animation, styling, binding, etc...
+        public static readonly DependencyProperty NumeroProperty =
+            DependencyProperty.Register("Numero", typeof(string), typeof(UserControlResultBar), new PropertyMetadata("aucun numéro"));
+
+        public string Adresse
+        {
+            get { return (string)GetValue(AdresseProperty); }
+            set { SetValue(AdresseProperty, value); }
+        }
+
+        // Using a DependencyProperty as the backing store for Adresse.  This enables animation, styling, binding, etc...
+        public static readonly DependencyProperty AdresseProperty =
+            DependencyProperty.Register("Adresse", typeof(string), typeof(UserControlResultBar), new PropertyMetadata("aucune ville"));
+
+        public string NoteMoyenne
+        {
+            get { return (string)GetValue(NoteMoyenneProperty); }
+            set { SetValue(NoteMoyenneProperty, value); }
+        }
+
+        // Using a DependencyProperty as the backing store for NoteMoyenne.  This enables animation, styling, binding, etc...
+        public static readonly DependencyProperty NoteMoyenneProperty =
+            DependencyProperty.Register("NoteMoyenne", typeof(string), typeof(UserControlResultBar), new PropertyMetadata("NC"));
 
 
 

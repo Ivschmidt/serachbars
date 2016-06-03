@@ -19,18 +19,18 @@
                 <ColumnDefinition/>
             </Grid.ColumnDefinitions>
             <StackPanel Grid.Column="0">
-                <TextBlock Text="NomBar :" FontSize="40" Style="{StaticResource STextBlock}"/>
+                <TextBlock Text="{Binding Nom, ElementName=root}" FontSize="40" Style="{StaticResource STextBlock}"/>
                 <WrapPanel>
                     <TextBlock Text="note" FontSize="20" Style="{StaticResource STextBlock}"/>
-                    <TextBlock Text=".../5" FontSize="20" Style="{StaticResource STextBlock}"/>
+                    <TextBlock Text="{Binding NoteMoyenne, ElementName=root, StringFormat=\{0\}/5}" FontSize="20" Style="{StaticResource STextBlock}"/>
                 </WrapPanel>
                 <WrapPanel>
                     <TextBlock Text="Adresse :" FontSize="20" Style="{StaticResource STextBlock}"/>
-                    <TextBlock Text="un adresse" FontSize="20" Style="{StaticResource STextBlock}"/>
+                    <TextBlock Text="{Binding Adresse, ElementName=root}" FontSize="20" Style="{StaticResource STextBlock}"/>
                 </WrapPanel>
                 <WrapPanel>
                     <TextBlock Text="Numero :" FontSize="20" Style="{StaticResource STextBlock}"/>
-                    <TextBlock Text="0000000000" FontSize="20" Style="{StaticResource STextBlock}"/>
+                    <TextBlock Text="{Binding Numero, ElementName=root}" FontSize="20" Style="{StaticResource STextBlock}"/>
                 </WrapPanel>
                 <WrapPanel>
                     <TextBlock Text="Boisson :" FontSize="20" Style="{StaticResource STextBlock}"/>

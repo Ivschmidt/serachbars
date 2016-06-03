@@ -26,14 +26,14 @@ namespace DataSearchBars
 
             Ville clermont = new Ville("Clermont-ferrand", new CoordonneesGPS(45.7833, 3.0833));
 
-            Bar starter = new Bar("Le Starter", new CoordonneesGPS(45.782036, 3.081432));
+            Bar starter = new Bar("Le Starter", new CoordonneesGPS(45.782036, 3.081432), "06 98 72 04 74", "17 Rue Sainte-Claire");
             starter.ajouterBoisson(new BoissonSimple("Ruby", 3.5, "Leffe", 4, TypeBoisson.Biere));
             starter.ajouterBoisson(new BoissonSimple("Jus de banane", 2, "Pago", 0, TypeBoisson.Jus));
             starter.ajouterBoisson(new BoissonSimple("Vodka", 5, "Eristoff", 37, TypeBoisson.AlcoolFort));
             starter.ajouterBoisson(new BoissonSimple("Coca Cherry", 1.5, "Coca Cola", 0, TypeBoisson.Soda));
             clermont.ajouterBar(starter);
 
-            Bar delirium = new Bar("Délirium", new CoordonneesGPS(45.776289, 3.083339), true);
+            Bar delirium = new Bar("Délirium", new CoordonneesGPS(45.776289, 3.083339), "09 54 66 54 47", "20 rue de la Tour d'Auvergne", true);
             delirium.ajouterBoisson(new Vin("Chateaubriant", 15, "Duras", 12, TypeBoisson.Vin, 2009, "rouge"));
 
             List<Boisson> boissonMojitoList = new List<Boisson>();
@@ -48,17 +48,18 @@ namespace DataSearchBars
 
             clermont.ajouterBar(delirium);
 
-            Bar stillIrishBar = new Bar("The Still Irish Bar", new CoordonneesGPS(45.773706, 3.086125));
-            
+            Bar stillIrishBar = new Bar("The Still Irish Bar", new CoordonneesGPS(45.773706, 3.086125), "04 73 93 13 45", "7 Boulevard Léon Malfreyt");
+
+
             clermont.ajouterBar(stillIrishBar);
             list.Add(clermont);
 
 
             Ville nice = new Ville("Nice", new CoordonneesGPS(43.7, 7.25));
-            Bar jam = new Bar("Le Jam", new CoordonneesGPS(43.696485, 7.264722));
+            Bar jam = new Bar("Le Jam", new CoordonneesGPS(43.696485, 7.264722), "04 82 53 29 29", "10 Rue du Commandant Raffali");
             nice.ajouterBar(jam);
 
-            Bar akathor = new Bar("Akathor", new CoordonneesGPS(43.695566, 7.274040), true);
+            Bar akathor = new Bar("Akathor", new CoordonneesGPS(43.695566, 7.274040), "04 93 62 49 90", "32 Rue Cours Saleya", true);
             nice.ajouterBar(akathor);
             
             list.Add(nice);

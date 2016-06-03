@@ -23,12 +23,13 @@ namespace VuesSearchBars
     {
         public UserControlMaster(IEnumerable<IBar> listBarsRecherches, IVille ville)
         {
+            Ville = ville;
             ListBarsRecherches = listBarsRecherches;
             InitializeComponent();
 
-            //load le UCVille
-            GridMainDetail.Children.Clear();
-            GridMainDetail.Children.Add(new UserControlVille(ville));
+            ////load le UCVille
+            //GridMainDetail.Children.Clear();
+            //GridMainDetail.Children.Add(new UserControlVille(ville));
         }
 
         public IEnumerable<IBar> ListBarsRecherches
@@ -41,26 +42,16 @@ namespace VuesSearchBars
         public static readonly DependencyProperty ListBarsRecherchesProperty =
             DependencyProperty.Register("ListBarsRecherches", typeof(IEnumerable<IBar>), typeof(UserControlMaster), new PropertyMetadata(null));
 
-        public UserControlResultBar UCResultBar
+        public IVille Ville
         {
-            get { return (UserControlResultBar)GetValue(UCResultBarProperty); }
-            set { SetValue(UCResultBarProperty, value); }
+            get { return (IVille)GetValue(VilleProperty); }
+            set { SetValue(VilleProperty, value); }
         }
 
-        // Using a DependencyProperty as the backing store for UCResultBar.  This enables animation, styling, binding, etc...
-        public static readonly DependencyProperty UCResultBarProperty =
-            DependencyProperty.Register("UCResultBar", typeof(UserControlResultBar), typeof(UserControlMaster), new PropertyMetadata(null));
+        // Using a DependencyProperty as the backing store for Ville.  This enables animation, styling, binding, etc...
+        public static readonly DependencyProperty VilleProperty =
+            DependencyProperty.Register("Ville", typeof(IVille), typeof(UserControlMaster), new PropertyMetadata(null));
 
 
-        //private void ListBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        //{
-        //    if (UCResultBar == null)
-        //    {
-        //        UCResultBar = new UserControlResultBar(ListBarsRecherches);
-        //        GridMainDetail.Children.Clear(); //leve une exception et je sais pas pk 
-        //        GridMainDetail.Children.Add(UCResultBar);
-        //    }
-                
-        //}
     }
 }

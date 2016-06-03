@@ -47,15 +47,18 @@ namespace MetierSearchBars
         }
         public CoordonneesGPS GPS{ get; set; }
         public bool Restauration { get; set; }
+        public string Numero { get; set; }
+        public string Adresse { get; set; }
 
-        public Bar(string nom, CoordonneesGPS gps, bool restauration = false) 
+        public Bar(string nom, CoordonneesGPS gps, string numero, string adresse, bool restauration = false) 
         {
             Nom = nom;
             GPS = gps;
             Restauration = restauration;
+            Adresse = adresse;
+            Numero = numero;
             CheminPhotoROC = new ReadOnlyCollection<string>(listCheminPhoto);
 
-            //je n'ai pas reussi à faire un ROD de <IUser,Avis> car impossible de convertir le dico <User,Avis> en <IUser,Avis>
             Commentaires = new ReadOnlyDictionary<IUser, Avis>(commentaires.ToDictionary(kvp => kvp.Key as IUser, kvp => kvp.Value)); 
         }
 

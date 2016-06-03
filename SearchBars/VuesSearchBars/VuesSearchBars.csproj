@@ -76,6 +76,7 @@
     <Compile Include="SubscribeWindow.xaml.cs">
       <DependentUpon>SubscribeWindow.xaml</DependentUpon>
     </Compile>
+    <Compile Include="TemplateSelectorDetail.cs" />
     <Compile Include="UserControlMaster.xaml.cs">
       <DependentUpon>UserControlMaster.xaml</DependentUpon>
     </Compile>
