@@ -141,10 +141,10 @@ namespace TestMetierSearchBars
             }
             mgr.seDeconnecter();
 
-            mgr.seConnecter("trololo", "123456");
+            mgr.seConnecter("ivschmidt", "290497");
             try
             {
-                mgr.laisserUnAvis(mgr.BarRecherches.ElementAt(0), 2, "un peu trop de bruit");
+                mgr.laisserUnAvis(mgr.BarRecherches.ElementAt(0), 2, "je ne vais pas y retourner j'ai mal à la langue !");
             }
             catch(Exception e)
             {

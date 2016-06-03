@@ -10,14 +10,16 @@
     <UserControl.Resources>
         <DataTemplate x:Key="dataTemplateVille">
             <!-- definition du datatemplate pour affichage du UCVille -->
-            <local:UserControlVille />
+            <local:UserControlVille Ville="{Binding Ville, RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=local:UserControlMaster}}" />
         </DataTemplate>
         <DataTemplate x:Key="dataTemplateDetail">
             <!-- definition du datatemplate pour affichage du UCResultBar = Detail -->
             <local:UserControlResultBar Nom="{Binding Nom}" 
                                         Numero="{Binding Numero}" 
                                         Adresse="{Binding Adresse}"
-                                        NoteMoyenne="{Binding (string) NoteMoyenne}"/>
+                                        NoteMoyenne="{Binding (string) NoteMoyenne}"
+                                        ListBoissons="{Binding ListBoisson}"
+                                        Commentaires="{Binding Commentaires}"/>
         </DataTemplate>
         <local:TemplateSelectorDetail x:Key="myTS" 
                                       DTVille="{StaticResource dataTemplateVille}"
@@ -28,9 +30,11 @@
             <ColumnDefinition Width="200"/>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
-        <ListBox Grid.Column="0"  Margin="5 10 5 10" 
-                 ItemsSource="{Binding ListBarsRecherches, ElementName=root}" 
-                 IsSynchronizedWithCurrentItem="True">
+        <ListBox Grid.Column="0"  Margin="5 10 5 10" Name="listBoxBars"
+                 ItemsSource="{Binding ListBarsRecherches, ElementName=root}"
+                 Loaded="listBoxBars_Loaded"
+                 IsSynchronizedWithCurrentItem="True"
+                 MouseDown="listBoxBars_MouseDown">
             <ListBox.ItemTemplate>
                 <DataTemplate>
                     <TextBlock Text="{Binding Nom}"/>
@@ -38,7 +42,7 @@
             </ListBox.ItemTemplate>
         </ListBox>
         <Grid Grid.Column="1" Name="GridMainDetail">
-            <ContentControl Content="{Binding ListBarsRecherches, ElementName=root}"
+            <ContentControl Content="{Binding SelectedItem, ElementName=listBoxBars}"
                             ContentTemplateSelector="{StaticResource myTS}" />
         </Grid>
     </Grid>

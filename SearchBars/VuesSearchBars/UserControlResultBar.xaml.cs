@@ -1,4 +1,4 @@
-﻿    using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -14,6 +14,7 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using DataSearchBars;
 using MetierSearchBars;
+using System.Collections.ObjectModel;
 
 namespace VuesSearchBars
 {
@@ -77,7 +78,20 @@ namespace VuesSearchBars
         public static readonly DependencyProperty ListBoissonsProperty =
             DependencyProperty.Register("ListBoissons", typeof(IEnumerable<IBoisson>), typeof(UserControlResultBar), new PropertyMetadata(null));
 
+        public ReadOnlyDictionary<IUser, Avis> Commentaires
+        {
+            get { return (ReadOnlyDictionary<IUser, Avis>)GetValue(CommentairesProperty); }
+            set { SetValue(CommentairesProperty, value); }
+        }
 
+        // Using a DependencyProperty as the backing store for Commentaires.  This enables animation, styling, binding, etc...
+        public static readonly DependencyProperty CommentairesProperty =
+            DependencyProperty.Register("Commentaires", typeof(ReadOnlyDictionary<IUser, Avis>), typeof(UserControlResultBar), new PropertyMetadata(null));
 
+        private void Button_Click_PosteAvis(object sender, RoutedEventArgs e)
+        {
+            RateWindow rateWindow = new RateWindow();
+            rateWindow.Show();
+        }
     }
 }

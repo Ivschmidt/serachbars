@@ -121,5 +121,10 @@ namespace MetierSearchBars
         {
             return !avis1.Equals(avis2);
         }
+
+        public override string ToString()
+        {
+            return Note.ToString() + " : " + Description;
+        }
     }
 }

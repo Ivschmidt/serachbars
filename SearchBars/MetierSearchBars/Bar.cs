@@ -42,7 +42,7 @@ namespace MetierSearchBars
                 {
                     return null;
                 }
-                return (double) commentaires.Average(kvp => kvp.Value.Note);
+                return (double) Math.Round(commentaires.Average(kvp => kvp.Value.Note), 2);
             }
         }
         public CoordonneesGPS GPS{ get; set; }

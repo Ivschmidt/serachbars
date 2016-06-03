@@ -25,5 +25,19 @@ namespace VuesSearchBars
         {
             InitializeComponent();
         }
+
+        public IVille Ville
+        {
+            get { return (IVille)GetValue(VilleProperty); }
+            set { SetValue(VilleProperty, value); }
+        }
+
+        // Using a DependencyProperty as the backing store for Ville.  This enables animation, styling, binding, etc...
+        public static readonly DependencyProperty VilleProperty =
+            DependencyProperty.Register("Ville", typeof(IVille), typeof(UserControlVille), new PropertyMetadata(null, (sender, e) =>
+            {
+            }));
+
+       
     }
 }

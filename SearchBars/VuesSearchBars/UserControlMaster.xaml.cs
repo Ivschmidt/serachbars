@@ -50,8 +50,19 @@ namespace VuesSearchBars
 
         // Using a DependencyProperty as the backing store for Ville.  This enables animation, styling, binding, etc...
         public static readonly DependencyProperty VilleProperty =
-            DependencyProperty.Register("Ville", typeof(IVille), typeof(UserControlMaster), new PropertyMetadata(null));
+            DependencyProperty.Register("Ville", typeof(IVille), typeof(UserControlMaster), new PropertyMetadata(null, (sender, e) =>
+            {
+            }));
 
+        private void listBoxBars_Loaded(object sender, RoutedEventArgs e)
+        {
+            (sender as ListBox).SelectedIndex = -1;
+        }
 
+        private void listBoxBars_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            (sender as ListBox).SelectedIndex = -1;
+
+        }
     }
 }
