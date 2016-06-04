@@ -1,4 +1,5 @@
 ﻿using MetierSearchBars;
+using Microsoft.Win32;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -60,14 +61,15 @@ namespace SearchBars
                 try
                 {
                     Sexe sexe;
+                    int jour = Convert.ToInt32(DdNY.Text), mois=Convert.ToInt32(DdNM.Text), annee=Convert.ToInt32(DdNY) ;
                     TypeBoisson boisson = TypeBoisson.Vin;
-                    DateTime ddd = new DateTime(2016, 01, 01);
+                    DateTime ddd = new DateTime(annee, mois, jour);
                     if ((bool)SexeF.IsChecked)
                         sexe = Sexe.Femme;
                     else
                         sexe = Sexe.Homme;
 
-                    manager.sInscrire(pseudo.Text, mdp1.Password, nom.Text, prenom.Text, sexe, ddd, numTel.Text, ville.Text, boisson);
+                    manager.sInscrire(pseudo.Text, mdp1.Password, nom.Text, prenom.Text, sexe, ddd, numTel.Text, ville.Text, boisson,PhotoDeProfil.Source.ToString());
                 }
                 catch (Exception i)
                 {
@@ -96,5 +98,18 @@ namespace SearchBars
             e.Handled = regex.IsMatch(e.Text);
         }
 
+
+        private void Button_Click_Parcourir(object sender, RoutedEventArgs e)
+        {
+            OpenFileDialog file = new OpenFileDialog();
+            file.ShowDialog();
+
+
+            var chemin = file.FileName;
+
+            PhotoDeProfil.Source = (ImageSource)new ImageSourceConverter().ConvertFromString(chemin);
+        }
+
+       
     }
 }
