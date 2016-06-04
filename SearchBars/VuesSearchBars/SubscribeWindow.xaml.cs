@@ -61,9 +61,9 @@ namespace SearchBars
                 try
                 {
                     Sexe sexe;
-                    int jour = Convert.ToInt32(DdNY.Text), mois=Convert.ToInt32(DdNM.Text), annee=Convert.ToInt32(DdNY) ;
-                    TypeBoisson boisson = TypeBoisson.Vin;
-                    DateTime ddd = new DateTime(annee, mois, jour);
+                    TypeBoisson boisson = (TypeBoisson)bpref.SelectedItem;
+                    
+                    DateTime ddd = new DateTime(int.Parse(DdNY.Text), int.Parse(DdNM.Text), int.Parse(DdND.Text));
                     if ((bool)SexeF.IsChecked)
                         sexe = Sexe.Femme;
                     else

@@ -241,5 +241,7 @@ namespace MetierSearchBars
             Bar b = (Bar)v.ListBar.Single(bars => bars.Equals(bar));
             b.laisserAvis(new Avis(note, desc), mCurrentUser);
         }
+
+        
     }
 }
