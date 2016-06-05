@@ -36,7 +36,9 @@ namespace VuesSearchBars
 
         // Using a DependencyProperty as the backing store for Nom.  This enables animation, styling, binding, etc...
         public static readonly DependencyProperty NomProperty =
-            DependencyProperty.Register("Nom", typeof(string), typeof(UserControlResultBar), new PropertyMetadata("aucun nom"));
+            DependencyProperty.Register("Nom", typeof(string), typeof(UserControlResultBar), new PropertyMetadata("aucun nom", (sender, e) =>
+            {
+            }));
 
         public string Numero
         {
@@ -86,7 +88,9 @@ namespace VuesSearchBars
 
         // Using a DependencyProperty as the backing store for Commentaires.  This enables animation, styling, binding, etc...
         public static readonly DependencyProperty CommentairesProperty =
-            DependencyProperty.Register("Commentaires", typeof(ReadOnlyDictionary<IUser, Avis>), typeof(UserControlResultBar), new PropertyMetadata(null));
+            DependencyProperty.Register("Commentaires", typeof(ReadOnlyDictionary<IUser, Avis>), typeof(UserControlResultBar), new PropertyMetadata(null, (sender, e) => 
+            {
+            }));
 
 
         private void Button_Click_PosteAvis(object sender, RoutedEventArgs e)

@@ -40,7 +40,9 @@ namespace VuesSearchBars
 
         // Using a DependencyProperty as the backing store for ListBarsRecherches.  This enables animation, styling, binding, etc...
         public static readonly DependencyProperty ListBarsRecherchesProperty =
-            DependencyProperty.Register("ListBarsRecherches", typeof(IEnumerable<IBar>), typeof(UserControlMaster), new PropertyMetadata(null));
+            DependencyProperty.Register("ListBarsRecherches", typeof(IEnumerable<IBar>), typeof(UserControlMaster), new PropertyMetadata(null, (sender, e) =>
+            {
+            }));
 
         public IVille Ville
         {
