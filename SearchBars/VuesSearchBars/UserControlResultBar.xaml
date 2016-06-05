@@ -44,11 +44,20 @@
                     </ComboBox>
                 </WrapPanel>
             </StackPanel>
+            
+            
             <map:Map Grid.Column="1"  Margin="4.6,10,15,10" ZoomLevel="10" CredentialsProvider="GPTQ32UjcuKIjSoK2k67~zsm5A0WorhEOdGW-14U77Q~AlSPzDbJPec2cvWGOg7TwCQLPRorLVoO3z2Sh1p7FR6Qd4Uu9rFdCLDAE7WWFLuY" RenderTransformOrigin="1.819,0.485">
-                <map:Map.Center>
-                    <map:Location Latitude="45.7833" Longitude="3.0833" />
-                </map:Map.Center>
+                <!--<map:Map.Center >
+                    <map:Location Latitude="{Binding CoordGPS.Latitude,ElementName=root}" Longitude="{Binding CoordGPS.Longitude,ElementName=root}" />
+                </map:Map.Center>-->
+                <map:Pushpin IsEnabled="True">
+                    <map:MapLayer.Position>
+                        <map:Location Latitude="45.782036" Longitude="3.081432" />
+                    </map:MapLayer.Position>
+                </map:Pushpin>
             </map:Map>
+            
+
         </Grid>
         <Grid Grid.Row="1">
             <Grid.ColumnDefinitions>
