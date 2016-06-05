@@ -110,6 +110,20 @@ namespace TestMetierSearchBars
             Console.WriteLine("Nouveau prénom : " + mgr.CurrentUser.Prenom);
 
             Console.WriteLine();
+            Console.WriteLine("Test modification d'un User (avec User existant et connecté, Mot de passe correct mais envoi du meme nom)");
+            if (mgr.verifierMotDePasse("123"))
+            {
+                mgr.modifierUser(nprenom: "coco", nnom: "Brognard");
+                Console.WriteLine("Mot de passe correct");
+            }
+            else
+            {
+                Console.WriteLine("Mot de passe incorrect");
+            }
+            Console.WriteLine("Nouveau nom : " + mgr.CurrentUser.Nom);
+            Console.WriteLine("Nouveau prénom : " + mgr.CurrentUser.Prenom);
+
+            Console.WriteLine();
             Console.WriteLine("Test affichage des villes avec leur bars et eux-mêmes leurs boissons :");
             foreach (IVille ville in mgr.ListVilles)
             {

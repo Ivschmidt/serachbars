@@ -20,23 +20,41 @@ namespace VuesSearchBars
     /// </summary>
     public partial class RateWindow : Window
     {
-        public RateWindow()
+        public RateWindow(IBar bar)
         {
+            Bar = bar;
             InitializeComponent();
         }
 
+        private IBar Bar { get; set; }
+
         private void Button_Click_Poster(object sender, RoutedEventArgs e)
         {
-            Avis avis;
-            if (string.IsNullOrEmpty(textBox.Text))
-                avis = new Avis((int) note.Value);
-            else
-                avis = new Avis((int) note.Value, textBox.Text);
+            try
+            {
+                if (string.IsNullOrEmpty(textBox.Text))
+                    Manager.laisserUnAvis(Bar, (int) note.Value);
+                else
+                    Manager.laisserUnAvis(Bar, (int) note.Value, textBox.Text);
+            }catch 
+            {
+                MessageBox.Show("Vous avez déja laissé un avis pour ce bar", "Action interdite", MessageBoxButton.OK, MessageBoxImage.Stop);
+            }
+
+            Close();
         }
 
         private void Button_Click_Annuler(object sender, RoutedEventArgs e)
         {
             Close();
+        }
+
+        public Manager Manager
+        {
+            get
+            {
+                return (Application.Current as App).Manager;
+            }
         }
     }
 }

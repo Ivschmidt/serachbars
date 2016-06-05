@@ -22,19 +22,23 @@ namespace VuesSearchBars
     /// </summary>
     public partial class MainWindow : Window
     {
-        private Manager manager;
-        public MainWindow(Manager manager)
+        public MainWindow()
         {
             InitializeComponent();
-            this.manager = manager;
-            DataContext = manager;
+            DataContext = Manager;
             loadUCSearch();
         }
 
+        public Manager Manager {
+            get
+            {
+                return (Application.Current as App).Manager;
+            }
+        }
         private void loadUCSearch()
         {
             GridMainControl.Children.Clear();
-            UserControlSearch UCSearch = new UserControlSearch(manager);
+            UserControlSearch UCSearch = new UserControlSearch();
             UCSearch.RechercheLancee += OnRechercheLancee;
             GridMainControl.Children.Add(UCSearch);
         }
@@ -42,7 +46,7 @@ namespace VuesSearchBars
 
         private void Button_Click_Deco(object sender, RoutedEventArgs e)
         {
-            manager.seDeconnecter();
+            Manager.seDeconnecter();
             ConnectionWindow connect = new ConnectionWindow();
             connect.Show();
             this.Close();
@@ -50,9 +54,9 @@ namespace VuesSearchBars
 
         public void OnRechercheLancee(object sender, RechercheLanceeEventArgs args)
         {
-            manager.rechercherBars(args.Ville, args.Restauration, args.BoissonsPref, args.NoteMin);
+            Manager.rechercherBars(args.Ville, args.Restauration, args.BoissonsPref, args.NoteMin);
             GridMainControl.Children.Clear();
-            GridMainControl.Children.Add(new UserControlMaster(manager.BarRecherches, args.Ville));
+            GridMainControl.Children.Add(new UserControlMaster(Manager.BarRecherches, args.Ville));
         }
 
         private void Button_Click_Rechercher(object sender, RoutedEventArgs e)
@@ -63,8 +67,7 @@ namespace VuesSearchBars
         private void Button_Click_Compte(object sender, RoutedEventArgs e)
         {
             GridMainControl.Children.Clear();
-            int age = manager.CalculAge(manager.CurrentUser.DdN);
-            UserControlProfil UCProfil = new UserControlProfil(manager.CurrentUser, age);
+            UserControlProfil UCProfil = new UserControlProfil(Manager.CurrentUser);
             GridMainControl.Children.Add(UCProfil);
         }
 

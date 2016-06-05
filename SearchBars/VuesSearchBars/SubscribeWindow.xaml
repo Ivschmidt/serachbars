@@ -19,7 +19,7 @@
             </ObjectDataProvider.MethodParameters>
         </ObjectDataProvider>
     </Window.Resources>
-    <Grid>
+    <Grid Name="mainGrid">
         <Grid.RowDefinitions>
             <RowDefinition/>
             <RowDefinition/>
@@ -42,8 +42,8 @@
         <TextBlock Name="NomPage" Grid.Row="0" Grid.Column="0" Style="{StaticResource STextBlock}" />
         <TextBlock Text="Pseudo : " Grid.Row="1" Grid.Column="0" Style="{StaticResource STextBlockSubscribe}"/>
         <TextBox Name="pseudo" Text="{Binding Pseudo}" Grid.Row="1" Grid.Column="1" Margin="0 0 5 0" Style="{StaticResource STextBox}"/>
-        <TextBlock Text="Sexe : " Grid.Row="2" Grid.Column="0" Style="{StaticResource STextBlockSubscribe}" />
-        <WrapPanel Grid.Row="2" Grid.Column="1" >
+        <TextBlock Name="sexeText" Text="Sexe : " Grid.Row="2" Grid.Column="0" Style="{StaticResource STextBlockSubscribe}" />
+        <WrapPanel Name="sexeButtons" Grid.Row="2" Grid.Column="1" >
             <RadioButton Name="SexeF" Content="F" IsChecked="True" Style="{StaticResource SRadioButton}"/>
             <RadioButton Name="SexeM" Content="M" Style="{StaticResource SRadioButton}"/>
         </WrapPanel>

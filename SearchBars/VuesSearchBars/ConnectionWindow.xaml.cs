@@ -22,18 +22,29 @@ namespace VuesSearchBars
     /// </summary>
     public partial class ConnectionWindow : Window
     {
-        private Manager manager;
         public ConnectionWindow()
         {
-            manager = new Manager(new StubData());
+            Manager = new Manager(new StubData());
             InitializeComponent();
+        }
+
+        public Manager Manager
+        {
+            get
+            {
+                return (Application.Current as App).Manager;
+            }
+            private set
+            {
+                (Application.Current as App).Manager = value;
+            }
         }
 
         private void Button_Click_Connexion(object sender, RoutedEventArgs e)
         {
-            if (manager.seConnecter(pseudo.Text, mdp.Password))
+            if (Manager.seConnecter(pseudo.Text, mdp.Password))
             {
-                MainWindow mainWindow = new MainWindow(manager);
+                MainWindow mainWindow = new MainWindow();
                 mainWindow.Show();
                 this.Close();
             }
@@ -45,7 +56,7 @@ namespace VuesSearchBars
 
         private void Button_Click_Subscribe(object sender, RoutedEventArgs e)
         {
-            SubscribeWindow subWind = new SubscribeWindow(manager,1);
+            SubscribeWindow subWind = new SubscribeWindow(1);
             subWind.Show();
         }
 

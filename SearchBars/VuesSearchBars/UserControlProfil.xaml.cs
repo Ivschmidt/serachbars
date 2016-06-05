@@ -1,4 +1,5 @@
 ﻿using MetierSearchBars;
+using SearchBars;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -22,11 +23,11 @@ namespace VuesSearchBars
     /// </summary>
     public partial class UserControlProfil : UserControl
     {
-        public UserControlProfil(IUser user, int age)
+        public UserControlProfil(IUser user)
         {
             InitializeComponent();
             CurrentUser = user;
-            Age = age;
+            Age = Manager.CalculAge(user.DdN);
 
             if (string.IsNullOrEmpty(CurrentUser.Ville))
                 Ville = "aucune ville";
@@ -44,6 +45,13 @@ namespace VuesSearchBars
                 BoissonP = CurrentUser.BoissonPref.ToString();
         }
 
+        public Manager Manager
+        {
+            get
+            {
+                return (Application.Current as App).Manager;
+            }
+        }
         public IUser CurrentUser
         {
             get { return (IUser)GetValue(CurrentUserProperty); }
@@ -108,15 +116,8 @@ namespace VuesSearchBars
         private void Button_Click_Modification(object sender, RoutedEventArgs e)
         {
             PasswordVerif passVerif = new PasswordVerif();
-            passVerif.Modification += OnModification;
             passVerif.Show();
         }
 
-        public void OnModification(object sender, ModificationEventArgs e)
-        {
-            
-        }
-
-       
     }
 }

@@ -88,7 +88,7 @@ namespace MetierSearchBars
             return (CurrentUser != null);
         }
 
-        public bool seConnecter(string pseudo, string mdp) //il faudra faire avec un event et non un bool
+        public bool seConnecter(string pseudo, string mdp)
         {
             if(!rechercherUser(pseudo))
                 return false;
@@ -161,47 +161,47 @@ namespace MetierSearchBars
         /// <param name="nphoto">nouveau chemin de photo à modifier(optionnel)</param>
         public void modifierUser(string npseudo = "", string nmdp = "", string nprenom = "", string nnom = "", DateTime? nddn = null, string nnumTel = "", string nville = "", TypeBoisson? nBoissonPref = null, string nphoto = "")
         {
-            if (!string.IsNullOrEmpty(npseudo))
+            if (!string.IsNullOrEmpty(npseudo) && !npseudo.Equals(CurrentUser.Pseudo))
             {
                 mCurrentUser.Pseudo = npseudo;
             }
 
-            if (!string.IsNullOrEmpty(nmdp))
+            if (!string.IsNullOrEmpty(nmdp) && !nmdp.Equals(CurrentUser.Mdp))
             {
                 mCurrentUser.Mdp = nmdp;
             }
 
-            if (!string.IsNullOrEmpty(nprenom))
+            if (!string.IsNullOrEmpty(nprenom) && !nprenom.Equals(CurrentUser.Prenom))
             {
                 mCurrentUser.Prenom = nprenom;
             }
 
-            if (!string.IsNullOrEmpty(nnom))
+            if (!string.IsNullOrEmpty(nnom) && !nnom.Equals(CurrentUser.Nom))
             {
                 mCurrentUser.Nom = nnom;
             }
 
-            if (nddn != null)
+            if (nddn != null && !nddn.Equals(CurrentUser.DdN))
             {
                 mCurrentUser.DdN = (DateTime)nddn;
             }
 
-            if (!string.IsNullOrEmpty(nnumTel))
+            if (!string.IsNullOrEmpty(nnumTel) && !nnumTel.Equals(CurrentUser.NumTel))
             {
                 mCurrentUser.NumTel = nnumTel;
             }
 
-            if (!string.IsNullOrEmpty(nville))
+            if (!string.IsNullOrEmpty(nville) && !nville.Equals(CurrentUser.Ville))
             {
                 mCurrentUser.Ville = nville;
             }
 
-            if (nBoissonPref != null)
+            if (nBoissonPref != null && !nBoissonPref.Equals(CurrentUser.BoissonPref)) 
             {
                 mCurrentUser.BoissonPref = nBoissonPref;
             }
 
-            if (!string.IsNullOrEmpty(nphoto))
+            if (!string.IsNullOrEmpty(nphoto) && !nphoto.Equals(CurrentUser.PhotoDeProfil))
             {
                 mCurrentUser.PhotoDeProfil = nphoto;
             }
@@ -238,8 +238,18 @@ namespace MetierSearchBars
                 throw new Exception("Ce bar n'existe pas");
             }
 
+            Avis avis;
+            if(desc.Equals(""))
+            {
+                avis = new Avis(note);
+            }
+            else
+            {
+                avis = new Avis(note, desc);
+            }
+
             Bar b = (Bar)v.ListBar.Single(bars => bars.Equals(bar));
-            b.laisserAvis(new Avis(note, desc), mCurrentUser);
+            b.laisserAvis(avis , mCurrentUser);
         }
 
         

@@ -28,6 +28,16 @@ namespace VuesSearchBars
            InitializeComponent();
         }
 
+        public IBar CurrentBar
+        {
+            get { return (IBar)GetValue(CurrentBarProperty); }
+            set { SetValue(CurrentBarProperty, value); }
+        }
+
+        // Using a DependencyProperty as the backing store for CurrentBar.  This enables animation, styling, binding, etc...
+        public static readonly DependencyProperty CurrentBarProperty =
+            DependencyProperty.Register("CurrentBar", typeof(IBar), typeof(UserControlResultBar), new PropertyMetadata(null));
+        
         public string Nom
         {
             get { return (string)GetValue(NomProperty); }
@@ -60,15 +70,17 @@ namespace VuesSearchBars
         public static readonly DependencyProperty AdresseProperty =
             DependencyProperty.Register("Adresse", typeof(string), typeof(UserControlResultBar), new PropertyMetadata("aucune ville"));
 
-        public string NoteMoyenne
+        public double NoteMoyenne
         {
-            get { return (string)GetValue(NoteMoyenneProperty); }
+            get { return (double)GetValue(NoteMoyenneProperty); }
             set { SetValue(NoteMoyenneProperty, value); }
         }
 
         // Using a DependencyProperty as the backing store for NoteMoyenne.  This enables animation, styling, binding, etc...
         public static readonly DependencyProperty NoteMoyenneProperty =
-            DependencyProperty.Register("NoteMoyenne", typeof(string), typeof(UserControlResultBar), new PropertyMetadata("n.c"));
+            DependencyProperty.Register("NoteMoyenne", typeof(double), typeof(UserControlResultBar), new PropertyMetadata(0.0));
+
+
 
         public IEnumerable<IBoisson> ListBoissons
         {
@@ -95,7 +107,7 @@ namespace VuesSearchBars
 
         private void Button_Click_PosteAvis(object sender, RoutedEventArgs e)
         {
-            RateWindow rateWindow = new RateWindow();
+            RateWindow rateWindow = new RateWindow(CurrentBar);
             rateWindow.Show();
         }
 

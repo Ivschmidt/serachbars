@@ -23,10 +23,17 @@ namespace VuesSearchBars
     public partial class UserControlSearch : UserControl
     {
         //peut etre recuperer la list de villes plutot que la manager en entier
-        public UserControlSearch(Manager manager)
+        public UserControlSearch()
         {
             InitializeComponent();
             Manager = manager;
+        }
+
+        public Manager manager {
+            get
+            {
+                return (Application.Current as App).Manager;
+            }
         }
 
         public Manager Manager

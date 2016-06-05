@@ -14,6 +14,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using VuesSearchBars;
 
 namespace SearchBars
 {
@@ -22,28 +23,35 @@ namespace SearchBars
     /// </summary>
     public partial class SubscribeWindow : Window
     {
-        private Manager manager;
-
-        public SubscribeWindow(Manager manager, int mode)
+        public SubscribeWindow(int mode)
         {
 
             InitializeComponent();
-
-            DataContext = manager.CurrentUser;
-            this.manager = manager;
-            if (mode == 1)
+            Mode = mode;
+            DataContext = Manager.CurrentUser;
+            if (Mode == 1)
             {
                 NomPage.Text = "Inscription :";
-                ButtonPage.Content = "s'incrire";
+                ButtonPage.Content = "S'inscrire";
             }
             else
             {
                 NomPage.Text = "Modification :";
-                ButtonPage.Content = "modifier";
-                
+                ButtonPage.Content = "Modifier";
+                sexeText.Visibility = Visibility.Hidden;
+                sexeButtons.Visibility = Visibility.Hidden;
             }
-            
         }
+
+        public Manager Manager
+        {
+            get
+            {
+                return (Application.Current as App).Manager;
+            }
+        }
+
+        public int Mode { get; set; }
 
         private void Button_Click_Subscribe(object sender, RoutedEventArgs e)
         {
@@ -61,15 +69,29 @@ namespace SearchBars
                 try
                 {
                     Sexe sexe;
-                    TypeBoisson boisson = (TypeBoisson)bpref.SelectedItem;
-                    
-                    DateTime ddd = new DateTime(int.Parse(DdNY.Text), int.Parse(DdNM.Text), int.Parse(DdND.Text));
+                    TypeBoisson? boisson = (TypeBoisson?)bpref.SelectedItem;
+
+                    DateTime ddd;
+                    try
+                    {
+                        ddd = new DateTime(int.Parse(DdNY.Text), int.Parse(DdNM.Text), int.Parse(DdND.Text));
+                    } catch 
+                    {
+                        throw new Exception("La date de naissance n'est pas correcte");
+                    }
                     if ((bool)SexeF.IsChecked)
                         sexe = Sexe.Femme;
                     else
                         sexe = Sexe.Homme;
 
-                    manager.sInscrire(pseudo.Text, mdp1.Password, nom.Text, prenom.Text, sexe, ddd, numTel.Text, ville.Text, boisson,PhotoDeProfil.Source.ToString());
+                    if(Mode == 1)
+                    {
+                        Manager.sInscrire(pseudo.Text, mdp1.Password, nom.Text, prenom.Text, sexe, ddd, numTel.Text, ville.Text, boisson, PhotoDeProfil.Source.ToString());
+                    }
+                    else
+                    {
+                        Manager.modifierUser(pseudo.Text, mdp1.Password, prenom.Text, nom.Text, ddd, numTel.Text, ville.Text, boisson, PhotoDeProfil.Source.ToString());
+                    }
                 }
                 catch (Exception i)
                 {
@@ -82,14 +104,21 @@ namespace SearchBars
             }
             else
             {
-                MessageBox.Show("Bienvenue parmis nous :)", "Welcome", MessageBoxButton.OK);
-                this.Close();
+                if(Mode == 1)
+                {
+                    MessageBox.Show("Bienvenue parmis nous :)", "Welcome", MessageBoxButton.OK);
+                }
+                else
+                {
+                    //recharger le UCProfil pour aperçu des modifs en direct
+                }
+                Close();
             }
         }
 
         private void Button_Click_Cancel(object sender, RoutedEventArgs e)
         {
-            this.Close();
+            Close();
         }
 
         private void NumberValidationTextBox(object sender, TextCompositionEventArgs e)

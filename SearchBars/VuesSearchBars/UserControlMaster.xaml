@@ -14,10 +14,11 @@
         </DataTemplate>
         <DataTemplate x:Key="dataTemplateDetail">
             <!-- definition du datatemplate pour affichage du UCResultBar = Detail -->
-            <local:UserControlResultBar Nom="{Binding Nom}" 
+            <local:UserControlResultBar CurrentBar="{Binding}"
+                                        Nom="{Binding Nom}" 
                                         Numero="{Binding Numero}" 
                                         Adresse="{Binding Adresse}"
-                                        NoteMoyenne="{Binding (string) NoteMoyenne}"
+                                        NoteMoyenne="{Binding NoteMoyenne}"
                                         ListBoissons="{Binding ListBoisson}"
                                         Commentaires="{Binding Commentaires}"/>
         </DataTemplate>

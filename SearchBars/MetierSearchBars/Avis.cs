@@ -10,7 +10,7 @@ namespace MetierSearchBars
     {
         /// <summary>
         /// Propriété Note composée d'un getter public et d'un setter privé
-        /// Utilisée pour que le CurentUser note un Bar
+        /// La note /5 de l'avis laissé
         /// </summary>
         public int Note
         {
@@ -31,7 +31,7 @@ namespace MetierSearchBars
 
         /// <summary>
         /// Propriété Description composée d'un getter public et d'un setter privé
-        /// Utilisé par le CurrentUser pour donner une descirption d'un Bar
+        /// Le texte de l'avis laissé
         /// </summary>
         public string Description
         {

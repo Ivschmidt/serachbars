@@ -1,4 +1,6 @@
-﻿using System;
+﻿using MetierSearchBars;
+using SearchBars;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -24,24 +26,31 @@ namespace VuesSearchBars
             InitializeComponent();
         }
 
+        public Manager Manager {
+            get
+            {
+                return (Application.Current as App).Manager;
+            }
+        }
+
         private void Button_Click_Valider(object sender, RoutedEventArgs e)
         {
-            OnModification(new ModificationEventArgs(password.Password));
+            if (Manager.verifierMotDePasse(password.Password))
+            {
+                SubscribeWindow subWindow = new SubscribeWindow(2);
+                subWindow.Show();
+            }
+            else
+            {
+                MessageBox.Show("Mot de passe incorrect", "Attention", MessageBoxButton.OK, MessageBoxImage.Warning);
+            }
+            Close();
         }
 
         private void Button_Click_Annuler(object sender, RoutedEventArgs e)
         {
-
+            Close();
         }
 
-        public event EventHandler<ModificationEventArgs> Modification;
-
-        protected virtual void OnModification(ModificationEventArgs args)
-        {
-            if (Modification != null)
-            {
-                Modification(this, args);
-            }
-        }
     }
 }
