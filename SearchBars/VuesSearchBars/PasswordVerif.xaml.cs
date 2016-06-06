@@ -52,5 +52,13 @@ namespace VuesSearchBars
             Close();
         }
 
+        private void Enter_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.Key == Key.Enter)
+            {
+                Button_Click_Valider(sender, e);
+            }
+        }
+
     }
 }

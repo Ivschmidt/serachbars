@@ -2,7 +2,9 @@
 using Microsoft.Win32;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
@@ -130,15 +132,26 @@ namespace SearchBars
 
         private void Button_Click_Parcourir(object sender, RoutedEventArgs e)
         {
-            OpenFileDialog file = new OpenFileDialog();
-            file.ShowDialog();
+            if (!string.IsNullOrEmpty(pseudo.Text) && pseudo.Text != null)
+            {
+
+                OpenFileDialog file = new OpenFileDialog();
+                file.ShowDialog();
 
 
-            var chemin = file.FileName;
+                var chemin = file.FileName;
 
-            PhotoDeProfil.Source = (ImageSource)new ImageSourceConverter().ConvertFromString(chemin);
+                PhotoDeProfil.Source = (ImageSource)new ImageSourceConverter().ConvertFromString(chemin);
+                
+                //a finir recuperer dossier courant
+//                var directory = string.Format("{0}\\Images\\ImagesProfils\\",);
+                var fileDest = string.Format("{0}{1}", directory, pseudo.Text);
+                System.IO.File.Copy(chemin, fileDest);
+            }
+            else
+            {
+                MessageBox.Show("Veuillez mettre un pseudo valide svp", "Pseudo invalide", MessageBoxButton.OK, MessageBoxImage.Warning);
+            }
         }
-
-       
     }
 }
