@@ -145,9 +145,11 @@ namespace SearchBars
                 PhotoDeProfil.Source = (ImageSource)new ImageSourceConverter().ConvertFromString(chemin);
                 
                 //a finir recuperer dossier courant
-//                var directory = string.Format("{0}\\Images\\ImagesProfils\\",);
-                var fileDest = string.Format("{0}{1}", directory, pseudo.Text);
-                System.IO.File.Copy(chemin, fileDest);
+////                var directory = string.Format("{0}\\Images\\ImagesProfils\\",);
+//                var fileDest = string.Format("{0}{1}", directory, pseudo.Text);
+//                System.IO.File.Copy(chemin, fileDest);
+
+            //pour binding il faut afficher l'image par defaut car sinon bug lors de l'inscription 
             }
             else
             {

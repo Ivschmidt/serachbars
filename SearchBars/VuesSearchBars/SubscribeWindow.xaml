@@ -71,7 +71,8 @@
         <TextBlock Text="Boisson Préférée : " Grid.Row="10" Grid.Column="0" Style="{StaticResource STextBlockSubscribe}" />
         <ComboBox Name="bpref" Grid.Column="1" HorizontalAlignment="Left" Margin="10,0,0,0" Grid.Row="10" VerticalAlignment="Center" Width="120" Style="{StaticResource SComboBox}" ItemsSource="{Binding Source={StaticResource enumTypeBoisson}}" />
         <Border Name="bordure" Grid.Row="11" Width="85" Height="85" BorderBrush="#B5E655" BorderThickness="2"/>
-        <Image x:Name="PhotoDeProfil" Source="{Binding PhotoDeProfil}" Grid.Row="11" Grid.Column="0" Width="80" Height="80" Margin="10,10,10,10" />
+        <!--<Image x:Name="PhotoDeProfil" Source="{Binding PhotoDeProfil}" Grid.Row="11" Grid.Column="0" Width="80" Height="80" Margin="10,10,10,10" />-->
+        <Image x:Name="PhotoDeProfil" Source="/Images/photoprofil.jpg" Grid.Row="11" Grid.Column="0" Width="80" Height="80" Margin="10,10,10,10" />
         <Button Content="Parcourir" Click="Button_Click_Parcourir" Grid.Row="11" Grid.Column="1" Width="60" Height="20" Style="{StaticResource SButton}"/>
         <Button Name="ButtonPage" Grid.Row="12" Grid.Column="0" Margin="5" Style="{StaticResource SButton}" Click="Button_Click_Subscribe"/>
         <Button Content="Annuler" Grid.Row="12" Grid.Column="1" Margin="5" Style="{StaticResource SButton}" Click="Button_Click_Cancel"/>

@@ -34,7 +34,7 @@ namespace VuesSearchBars
             else
                 Ville = CurrentUser.Ville;
 
-            if(string.IsNullOrEmpty(CurrentUser.NumTel))
+            if (string.IsNullOrEmpty(CurrentUser.NumTel))
                 Numero = "pas de numéro";
             else
                 Numero = CurrentUser.NumTel;
