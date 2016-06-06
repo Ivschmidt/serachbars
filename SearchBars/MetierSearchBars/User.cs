@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Runtime.Serialization;
 using System.Text;
@@ -15,7 +16,7 @@ namespace MetierSearchBars
     ///            : IUser : interface de facade pour wrapper User en classe immuable
     /// </summary>
     [DataContract]
-    class User : IEquatable<User>, IUser
+    class User : IEquatable<User>, IUser, INotifyPropertyChanged
     {
         /// <summary>
         /// Pseudo : pseudo de l'utilisateur, identifiant discriminant
@@ -133,9 +134,20 @@ namespace MetierSearchBars
                     }
                     }
                 mNumTel = value;
+                OnPropertyChanged("NumTel");
             }
         }
         private string mNumTel;
+
+        public event PropertyChangedEventHandler PropertyChanged;
+        private void OnPropertyChanged(string info)
+        {
+            PropertyChangedEventHandler handler = PropertyChanged;
+            if(handler != null)
+            {
+                handler(this, new PropertyChangedEventArgs(info));
+            }
+        }
 
         /// <summary>
         /// Ville : ville d'habitation de l'utilisateur (optionnel)

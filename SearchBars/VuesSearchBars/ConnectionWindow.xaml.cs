@@ -26,6 +26,7 @@ namespace VuesSearchBars
         {
             Manager = new Manager(new StubData());
             InitializeComponent();
+            pseudo.Focus();
         }
 
         public Manager Manager

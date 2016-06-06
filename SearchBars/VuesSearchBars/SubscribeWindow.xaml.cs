@@ -40,6 +40,7 @@ namespace SearchBars
                 ButtonPage.Content = "Modifier";
                 sexeText.Visibility = Visibility.Hidden;
                 sexeButtons.Visibility = Visibility.Hidden;
+                bordure.Visibility = Visibility.Hidden;
             }
         }
 
