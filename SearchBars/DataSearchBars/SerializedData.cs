@@ -36,11 +36,11 @@ namespace DataSearchBars
             string xmlFile = string.Format("{0}{1}", dirData, "ville.xml");
             var serializer = new DataContractSerializer(typeof(List<Ville>));
 
-            List<Ville> list;
-            using (Stream s = File.OpenRead(xmlFile))
-            {
-                list = serializer.ReadObject(s) as List<Ville>;
-            }
+            List<Ville> list = new List<Ville>();
+            //using (Stream s = File.OpenRead(xmlFile))
+            //{
+            //    list = serializer.ReadObject(s) as List<Ville>;
+            //}
             return list;
         }
 

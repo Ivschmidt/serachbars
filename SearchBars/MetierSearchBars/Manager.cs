@@ -59,8 +59,9 @@ namespace MetierSearchBars
         /// </summary>
         public void ChargerDonnees()
         {
-            //listVille.AddRange(DataManager.loadVilles().Select(iVille => iVille as Ville));
-            listUsers.Clear(); //temp
+            listUsers.Clear();
+            listVille.Clear();
+            listVille.AddRange(DataManager.loadVilles().Select(iVille => iVille as Ville));
             listUsers.AddRange(DataManager.loadUsers().Select(iUser => iUser as User));
         }
 
@@ -70,10 +71,16 @@ namespace MetierSearchBars
         //    DataManager.saveVille(listVille.Select(ville => ville as IVille);
         }
 
-        public void copierDonner(IDataManager nDataMgr)
+        public void copierDonner(IDataManager dataManagerSource)
         {
-            DataManager = nDataMgr;
-            EnregistrerDonnees();
+            if(CurrentUser == null)
+            {
+                IDataManager lastDataManager = DataManager;
+                DataManager = dataManagerSource;
+                ChargerDonnees();
+                DataManager = lastDataManager;
+                EnregistrerDonnees();
+            }
         }
 
         /// <summary>

@@ -12,9 +12,9 @@ namespace TestMetierSearchBars
     {
         static void Main(string[] args)
         {
-            Manager manager = new Manager(new StubData());
+            Manager manager = new Manager(new SerializedData());
 
-            manager.copierDonner(new SerializedData());
+            manager.copierDonner(new StubData());
 
             manager.ChargerDonnees();
 
