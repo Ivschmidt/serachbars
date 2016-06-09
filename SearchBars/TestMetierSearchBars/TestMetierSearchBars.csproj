@@ -48,7 +48,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>TestMetierSearchBars.Program</StartupObject>
+    <StartupObject>TestMetierSearchBars.testPersistance</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -63,6 +63,7 @@
   <ItemGroup>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="testPersistance.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfUser xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.datacontract.org/2004/07/MetierSearchBars">
+  <User>
+    <BoissonPref>Biere</BoissonPref>
+    <Nom>Delabierre</Nom>
+    <NumeroTelephone>0654856952</NumeroTelephone>
+    <PhotoDeProfil>Images/ImagesProfils/trololo.jpg</PhotoDeProfil>
+    <Prenom>Yvan</Prenom>
+    <Pseudo>trololo</Pseudo>
+    <Sexe>Homme</Sexe>
+    <Ville>St Julien De Copel</Ville>
+    <dateDeNaissance>1980-01-09T00:00:00</dateDeNaissance>
+    <motDePasse>123456</motDePasse>
+  </User>
+  <User>
+    <BoissonPref i:nil="true" />
+    <Nom>Coiffard</Nom>
+    <NumeroTelephone>0659712062</NumeroTelephone>
+    <PhotoDeProfil>Images/photoprofil.jpg</PhotoDeProfil>
+    <Prenom>Pierre</Prenom>
+    <Pseudo>picoiffard</Pseudo>
+    <Sexe>Homme</Sexe>
+    <Ville>Bois de boulogne</Ville>
+    <dateDeNaissance>1997-02-09T00:00:00</dateDeNaissance>
+    <motDePasse>090297</motDePasse>
+  </User>
+  <User>
+    <BoissonPref i:nil="true" />
+    <Nom>Schmidt</Nom>
+    <NumeroTelephone></NumeroTelephone>
+    <PhotoDeProfil>Images/ImagesProfils/IvanSchmidt.jpg</PhotoDeProfil>
+    <Prenom>Ivan</Prenom>
+    <Pseudo>ivschmidt</Pseudo>
+    <Sexe>Homme</Sexe>
+    <Ville>cantal perdu</Ville>
+    <dateDeNaissance>1997-04-29T00:00:00</dateDeNaissance>
+    <motDePasse>290497</motDePasse>
+  </User>
+  <User>
+    <BoissonPref i:nil="true" />
+    <Nom>Martin</Nom>
+    <NumeroTelephone>0626731060</NumeroTelephone>
+    <PhotoDeProfil>Images/photoprofil.jpg</PhotoDeProfil>
+    <Prenom>Olivier</Prenom>
+    <Pseudo>olmartin2</Pseudo>
+    <Sexe>Homme</Sexe>
+    <Ville>coin riche</Ville>
+    <dateDeNaissance>1996-10-13T00:00:00</dateDeNaissance>
+    <motDePasse>131096</motDePasse>
+  </User>
+  <User>
+    <BoissonPref i:nil="true" />
+    <Nom>TestNom</Nom>
+    <NumeroTelephone></NumeroTelephone>
+    <PhotoDeProfil>Images/photoprofil.jpg</PhotoDeProfil>
+    <Prenom>TestPrenom</Prenom>
+    <Pseudo>a</Pseudo>
+    <Sexe>Homme</Sexe>
+    <Ville></Ville>
+    <dateDeNaissance>1995-10-13T00:00:00</dateDeNaissance>
+    <motDePasse>a</motDePasse>
+  </User>
+</ArrayOfUser>

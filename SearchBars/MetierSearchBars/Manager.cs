@@ -24,13 +24,6 @@ namespace MetierSearchBars
         private User mCurrentUser;
  
         private List<User> listUsers = new List<User>();
-        //public IEnumerable<IUser> ListUsers
-        //{
-        //    get
-        //    {
-        //        return listUsers;
-        //    }
-        //}
 
         private List<Ville> listVille = new List<Ville>();
         public IEnumerable<IVille> ListVilles
@@ -66,15 +59,21 @@ namespace MetierSearchBars
         /// </summary>
         public void ChargerDonnees()
         {
-            listVille.AddRange(DataManager.loadVilles().Select(iVille => iVille as Ville));
+            //listVille.AddRange(DataManager.loadVilles().Select(iVille => iVille as Ville));
+            listUsers.Clear(); //temp
             listUsers.AddRange(DataManager.loadUsers().Select(iUser => iUser as User));
         }
 
         public void EnregistrerDonnees()
         {
-        //    listVille = 
-        //    DataManager.saveUsers(listUsers.Select(user => user as IUser));
+              DataManager.saveUsers(listUsers.Select(user => user as IUser).ToList());
         //    DataManager.saveVille(listVille.Select(ville => ville as IVille);
+        }
+
+        public void copierDonner(IDataManager nDataMgr)
+        {
+            DataManager = nDataMgr;
+            EnregistrerDonnees();
         }
 
         /// <summary>

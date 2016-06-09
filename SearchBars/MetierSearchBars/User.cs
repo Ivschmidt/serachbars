@@ -22,8 +22,6 @@ namespace MetierSearchBars
         /// Pseudo : pseudo de l'utilisateur, identifiant discriminant
         /// </summary>
         [DataMember]
-        private string pseudo;
-
         public string Pseudo
         {
             get { return pseudo; }
@@ -36,14 +34,12 @@ namespace MetierSearchBars
                     pseudo = value;
             }
         }
-
+        private string pseudo;
 
         /// <summary>
         /// Mdp : mot de passe de l'utilisateur, utilisé pour la connexion permettant de vérifier l'authenticité de l'utilisateur
         /// </summary>
         [DataMember (Name = "motDePasse")]
-        private string mdp;
-
         public string Mdp
         {
             get { return mdp; }
@@ -56,14 +52,12 @@ namespace MetierSearchBars
                     mdp = value;
             }
         }
-
-
+        private string mdp;
+        
         /// <summary>
         /// Nom : nom de l'utilisateur
         /// </summary>
         [DataMember]
-        private string nom;
-
         public string Nom
         {
             get { return nom; }
@@ -76,14 +70,12 @@ namespace MetierSearchBars
                 nom = value;
             }
         }
-
-
+        private string nom;
+        
         /// <summary>
         /// Prenom : prénom de l'utilisateur
         /// </summary>
         [DataMember]
-        private string prenom;
-
         public string Prenom
         {
             get { return prenom; }
@@ -96,8 +88,8 @@ namespace MetierSearchBars
                 prenom = value;
             }
         }
-
-
+        private string prenom;
+        
         /// <summary>
         /// Sexe : sexe de l'utilisateur (homme ou femme)
         /// </summary>
@@ -165,7 +157,7 @@ namespace MetierSearchBars
         /// <summary>
         /// PhotoDeProfil : chemin pour accéder a la photo de profil de l'utilisateur (optionnel)
         /// </summary>
-        [DataMember (EmitDefaultValue = false)]
+        [DataMember]
         public string PhotoDeProfil { get; set; }
 
         /// <summary>
