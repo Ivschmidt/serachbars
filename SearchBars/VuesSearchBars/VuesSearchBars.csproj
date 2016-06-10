@@ -177,13 +177,22 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Images\ImagesBars\" />
+    <Resource Include="Images\ImagesBars\delirium.jpg" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Images\ImagesProfils\IvanSchmidt.jpg" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Images\ImagesProfils\trololo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\ImagesBars\defaut.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\ImagesBars\lestill.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\ImagesBars\starter.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

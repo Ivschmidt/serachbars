@@ -64,6 +64,7 @@ namespace MetierSearchBars
                 return new ReadOnlyCollection<string>(listCheminPhoto);
             }
         }
+        public string Photo { get; set; }
 
         [DataMember]
         public string Nom { get; set; }
@@ -87,19 +88,26 @@ namespace MetierSearchBars
         [DataMember]
         public string Adresse { get; set; }
 
-        public Bar(string nom, CoordonneesGPS gps, string numero, string adresse, bool restauration = false) 
+        public Bar(string nom, CoordonneesGPS gps, string numero, string adresse, bool restauration = false, string photo = "Images/ImagesBars/defaut.jpg") 
         {
             Nom = nom;
             GPS = gps;
             Restauration = restauration;
             Adresse = adresse;
             Numero = numero;
+            Photo = photo;
         }
 
         public void ajouterBoisson(Boisson b)
         {
             listBoissons.Add(b);
         }
+
+        public void ajouterPhoto(string chemin)
+        {
+            listCheminPhoto.Add(chemin);
+        }
+
         /// <summary>
         /// returns a hash code in order to use this class in hash table
         /// </summary>

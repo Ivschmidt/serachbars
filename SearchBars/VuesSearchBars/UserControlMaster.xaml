@@ -10,7 +10,8 @@
     <UserControl.Resources>
         <DataTemplate x:Key="dataTemplateVille">
             <!-- definition du datatemplate pour affichage du UCVille -->
-            <local:UserControlVille Ville="{Binding Ville, RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=local:UserControlMaster}}" />
+            <local:UserControlVille Ville="{Binding Ville, RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=local:UserControlMaster}}" 
+                                    LBars="{Binding ListBarsRecherches, RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=local:UserControlMaster}}"/>
         </DataTemplate>
         <DataTemplate x:Key="dataTemplateDetail">
             <!-- definition du datatemplate pour affichage du UCResultBar = Detail -->
@@ -20,7 +21,8 @@
                                         Adresse="{Binding Adresse}"
                                         NoteMoyenne="{Binding NoteMoyenne}"
                                         ListBoissons="{Binding ListBoisson}"
-                                        Commentaires="{Binding Commentaires}"/>
+                                        Commentaires="{Binding Commentaires}"
+                                        LPhoto="{Binding Photo}"/>
         </DataTemplate>
         <local:TemplateSelectorDetail x:Key="myTS" 
                                       DTVille="{StaticResource dataTemplateVille}"
