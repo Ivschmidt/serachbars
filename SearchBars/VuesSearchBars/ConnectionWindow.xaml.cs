@@ -24,7 +24,7 @@ namespace VuesSearchBars
     {
         public ConnectionWindow()
         {
-            Manager = new Manager(new StubData());
+            Manager = new Manager(new SerializedData());
             InitializeComponent();
             pseudo.Focus();
         }

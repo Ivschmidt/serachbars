@@ -6,7 +6,8 @@
         xmlns:local="clr-namespace:VuesSearchBars"
         xmlns:core="clr-namespace:MetierSearchBars;assembly=MetierSearchBars"
         mc:Ignorable="d"
-        Title="SearchBars" Height="350" Width="525" WindowState="Maximized" WindowStartupLocation="CenterScreen" Background="#808893">
+        Title="SearchBars" Height="350" Width="525" WindowState="Maximized" WindowStartupLocation="CenterScreen" Background="#808893"
+        Closing="Window_Closing">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height=".15*"/>

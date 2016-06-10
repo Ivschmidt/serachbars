@@ -15,9 +15,6 @@ namespace TestMetierSearchBars
             Manager manager = new Manager(new SerializedData());
 
             manager.copierDonner(new StubData());
-
-            manager.ChargerDonnees();
-
         }
     }
 }

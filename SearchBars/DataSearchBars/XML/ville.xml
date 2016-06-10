@@ -1,0 +1,199 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfanyType xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+  <anyType xmlns:d2p1="http://schemas.datacontract.org/2004/07/MetierSearchBars" i:type="d2p1:Ville">
+    <d2p1:GPS>
+      <d2p1:mLatitude>45.7833</d2p1:mLatitude>
+      <d2p1:mLongitude>3.0833</d2p1:mLongitude>
+    </d2p1:GPS>
+    <d2p1:Nom>Clermont-ferrand</d2p1:Nom>
+    <d2p1:listBar>
+      <d2p1:Bar>
+        <d2p1:Adresse>17 Rue Sainte-Claire</d2p1:Adresse>
+        <d2p1:GPS>
+          <d2p1:mLatitude>45.782036</d2p1:mLatitude>
+          <d2p1:mLongitude>3.081432</d2p1:mLongitude>
+        </d2p1:GPS>
+        <d2p1:Nom>Le Starter</d2p1:Nom>
+        <d2p1:Numero>06 98 72 04 74</d2p1:Numero>
+        <d2p1:Restauration>false</d2p1:Restauration>
+        <d2p1:commentaires>
+          <KeyValueOfUserAvisuynyfWTd>
+            <Key>
+              <d2p1:BoissonPref>Biere</d2p1:BoissonPref>
+              <d2p1:Nom>Delabierre</d2p1:Nom>
+              <d2p1:NumeroTelephone>0654856952</d2p1:NumeroTelephone>
+              <d2p1:PhotoDeProfil>Images/ImagesProfils/trololo.jpg</d2p1:PhotoDeProfil>
+              <d2p1:Prenom>Yvan</d2p1:Prenom>
+              <d2p1:Pseudo>trololo</d2p1:Pseudo>
+              <d2p1:Sexe>Homme</d2p1:Sexe>
+              <d2p1:Ville>St Julien De Copel</d2p1:Ville>
+              <d2p1:dateDeNaissance>1980-01-09T00:00:00</d2p1:dateDeNaissance>
+              <d2p1:motDePasse>123456</d2p1:motDePasse>
+            </Key>
+            <Value>
+              <d2p1:Description>j'ai failli mourir</d2p1:Description>
+              <d2p1:Note>1</d2p1:Note>
+            </Value>
+          </KeyValueOfUserAvisuynyfWTd>
+          <KeyValueOfUserAvisuynyfWTd>
+            <Key>
+              <d2p1:BoissonPref>AlcoolFort</d2p1:BoissonPref>
+              <d2p1:Nom>Devie</d2p1:Nom>
+              <d2p1:NumeroTelephone></d2p1:NumeroTelephone>
+              <d2p1:PhotoDeProfil>Images/photoprofil.jpg</d2p1:PhotoDeProfil>
+              <d2p1:Prenom>Enzo</d2p1:Prenom>
+              <d2p1:Pseudo>enzoDu93</d2p1:Pseudo>
+              <d2p1:Sexe>Homme</d2p1:Sexe>
+              <d2p1:Ville></d2p1:Ville>
+              <d2p1:dateDeNaissance>1997-04-01T00:00:00</d2p1:dateDeNaissance>
+              <d2p1:motDePasse>147</d2p1:motDePasse>
+            </Key>
+            <Value>
+              <d2p1:Description>Wesh ma gueule ça pete sa mère c'est trop bien !</d2p1:Description>
+              <d2p1:Note>4</d2p1:Note>
+            </Value>
+          </KeyValueOfUserAvisuynyfWTd>
+        </d2p1:commentaires>
+        <d2p1:listBoissons>
+          <d2p1:Boisson i:type="d2p1:BoissonSimple">
+            <d2p1:DegreAlcool>4</d2p1:DegreAlcool>
+            <d2p1:Nom>Ruby</d2p1:Nom>
+            <d2p1:Prix>3.5</d2p1:Prix>
+            <d2p1:Type>Biere</d2p1:Type>
+            <d2p1:Marque>Leffe</d2p1:Marque>
+          </d2p1:Boisson>
+          <d2p1:Boisson i:type="d2p1:BoissonSimple">
+            <d2p1:DegreAlcool>0</d2p1:DegreAlcool>
+            <d2p1:Nom>Jus de banane</d2p1:Nom>
+            <d2p1:Prix>2</d2p1:Prix>
+            <d2p1:Type>Jus</d2p1:Type>
+            <d2p1:Marque>Pago</d2p1:Marque>
+          </d2p1:Boisson>
+          <d2p1:Boisson i:type="d2p1:BoissonSimple">
+            <d2p1:DegreAlcool>37</d2p1:DegreAlcool>
+            <d2p1:Nom>Vodka</d2p1:Nom>
+            <d2p1:Prix>5</d2p1:Prix>
+            <d2p1:Type>AlcoolFort</d2p1:Type>
+            <d2p1:Marque>Eristoff</d2p1:Marque>
+          </d2p1:Boisson>
+          <d2p1:Boisson i:type="d2p1:BoissonSimple">
+            <d2p1:DegreAlcool>0</d2p1:DegreAlcool>
+            <d2p1:Nom>Coca Cherry</d2p1:Nom>
+            <d2p1:Prix>1.5</d2p1:Prix>
+            <d2p1:Type>Soda</d2p1:Type>
+            <d2p1:Marque>Coca Cola</d2p1:Marque>
+          </d2p1:Boisson>
+        </d2p1:listBoissons>
+        <d2p1:listCheminPhoto />
+      </d2p1:Bar>
+      <d2p1:Bar>
+        <d2p1:Adresse>20 rue de la Tour d'Auvergne</d2p1:Adresse>
+        <d2p1:GPS>
+          <d2p1:mLatitude>45.776289</d2p1:mLatitude>
+          <d2p1:mLongitude>3.083339</d2p1:mLongitude>
+        </d2p1:GPS>
+        <d2p1:Nom>Délirium</d2p1:Nom>
+        <d2p1:Numero>09 54 66 54 47</d2p1:Numero>
+        <d2p1:Restauration>true</d2p1:Restauration>
+        <d2p1:commentaires />
+        <d2p1:listBoissons>
+          <d2p1:Boisson i:type="d2p1:Vin">
+            <d2p1:DegreAlcool>12</d2p1:DegreAlcool>
+            <d2p1:Nom>Chateaubriant</d2p1:Nom>
+            <d2p1:Prix>15</d2p1:Prix>
+            <d2p1:Type>Vin</d2p1:Type>
+            <d2p1:Marque>Duras</d2p1:Marque>
+            <d2p1:Millesime>2009</d2p1:Millesime>
+            <d2p1:Robe>rouge</d2p1:Robe>
+          </d2p1:Boisson>
+          <d2p1:Boisson i:type="d2p1:BoissonSimple">
+            <d2p1:DegreAlcool>40</d2p1:DegreAlcool>
+            <d2p1:Nom>Rhum</d2p1:Nom>
+            <d2p1:Prix>4</d2p1:Prix>
+            <d2p1:Type>AlcoolFort</d2p1:Type>
+            <d2p1:Marque>OldNick</d2p1:Marque>
+          </d2p1:Boisson>
+          <d2p1:Boisson i:type="d2p1:BoissonComposee">
+            <d2p1:DegreAlcool>18</d2p1:DegreAlcool>
+            <d2p1:Nom>Mojito</d2p1:Nom>
+            <d2p1:Prix>6.5</d2p1:Prix>
+            <d2p1:Type>Cocktail</d2p1:Type>
+            <d2p1:listBoissons>
+              <d2p1:Boisson i:type="d2p1:BoissonSimple">
+                <d2p1:DegreAlcool>40</d2p1:DegreAlcool>
+                <d2p1:Nom>Rhum</d2p1:Nom>
+                <d2p1:Prix>4</d2p1:Prix>
+                <d2p1:Type>AlcoolFort</d2p1:Type>
+                <d2p1:Marque>OldNick</d2p1:Marque>
+              </d2p1:Boisson>
+            </d2p1:listBoissons>
+            <d2p1:listIng>
+              <d2p1:Ingredient>
+                <d2p1:Nom>citron vert</d2p1:Nom>
+              </d2p1:Ingredient>
+              <d2p1:Ingredient>
+                <d2p1:Nom>feuilles de menthe fraiches</d2p1:Nom>
+              </d2p1:Ingredient>
+            </d2p1:listIng>
+          </d2p1:Boisson>
+          <d2p1:Boisson i:type="d2p1:BoissonSimple">
+            <d2p1:DegreAlcool>0</d2p1:DegreAlcool>
+            <d2p1:Nom>7Up</d2p1:Nom>
+            <d2p1:Prix>1.5</d2p1:Prix>
+            <d2p1:Type>Soda</d2p1:Type>
+            <d2p1:Marque>SevenUp</d2p1:Marque>
+          </d2p1:Boisson>
+        </d2p1:listBoissons>
+        <d2p1:listCheminPhoto />
+      </d2p1:Bar>
+      <d2p1:Bar>
+        <d2p1:Adresse>7 Boulevard Léon Malfreyt</d2p1:Adresse>
+        <d2p1:GPS>
+          <d2p1:mLatitude>45.773706</d2p1:mLatitude>
+          <d2p1:mLongitude>3.086125</d2p1:mLongitude>
+        </d2p1:GPS>
+        <d2p1:Nom>The Still Irish Bar</d2p1:Nom>
+        <d2p1:Numero>04 73 93 13 45</d2p1:Numero>
+        <d2p1:Restauration>false</d2p1:Restauration>
+        <d2p1:commentaires />
+        <d2p1:listBoissons />
+        <d2p1:listCheminPhoto />
+      </d2p1:Bar>
+    </d2p1:listBar>
+  </anyType>
+  <anyType xmlns:d2p1="http://schemas.datacontract.org/2004/07/MetierSearchBars" i:type="d2p1:Ville">
+    <d2p1:GPS>
+      <d2p1:mLatitude>43.7</d2p1:mLatitude>
+      <d2p1:mLongitude>7.25</d2p1:mLongitude>
+    </d2p1:GPS>
+    <d2p1:Nom>Nice</d2p1:Nom>
+    <d2p1:listBar>
+      <d2p1:Bar>
+        <d2p1:Adresse>10 Rue du Commandant Raffali</d2p1:Adresse>
+        <d2p1:GPS>
+          <d2p1:mLatitude>43.696485</d2p1:mLatitude>
+          <d2p1:mLongitude>7.264722</d2p1:mLongitude>
+        </d2p1:GPS>
+        <d2p1:Nom>Le Jam</d2p1:Nom>
+        <d2p1:Numero>04 82 53 29 29</d2p1:Numero>
+        <d2p1:Restauration>false</d2p1:Restauration>
+        <d2p1:commentaires />
+        <d2p1:listBoissons />
+        <d2p1:listCheminPhoto />
+      </d2p1:Bar>
+      <d2p1:Bar>
+        <d2p1:Adresse>32 Rue Cours Saleya</d2p1:Adresse>
+        <d2p1:GPS>
+          <d2p1:mLatitude>43.695566</d2p1:mLatitude>
+          <d2p1:mLongitude>7.27404</d2p1:mLongitude>
+        </d2p1:GPS>
+        <d2p1:Nom>Akathor</d2p1:Nom>
+        <d2p1:Numero>04 93 62 49 90</d2p1:Numero>
+        <d2p1:Restauration>true</d2p1:Restauration>
+        <d2p1:commentaires />
+        <d2p1:listBoissons />
+        <d2p1:listCheminPhoto />
+      </d2p1:Bar>
+    </d2p1:listBar>
+  </anyType>
+</ArrayOfanyType>

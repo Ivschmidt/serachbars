@@ -35,22 +35,19 @@ namespace DataSearchBars
             DirectoryInfo dirInfo = Directory.GetParent(Directory.GetCurrentDirectory()).Parent.Parent;
             string dirData = string.Format("{0}\\DataSearchBars\\XML\\", dirInfo.FullName);
             string xmlFile = string.Format("{0}{1}", dirData, "ville.xml");
-            var serializer = new DataContractSerializer(typeof(List<Ville>));
+            var serializer = new DataContractSerializer(typeof(List<IVille>),
+               new Type[] { typeof(Ville), typeof(BoissonSimple), typeof(BoissonComposee), typeof(Vin) });
 
-            List<Ville> list = new List<Ville>();
-            //using (Stream s = File.OpenRead(xmlFile))
-            //{
-            //    list = serializer.ReadObject(s) as List<Ville>;
-            //}
+            List<IVille> list;
+            using (Stream s = File.OpenRead(xmlFile))
+            {
+                list = serializer.ReadObject(s) as List<IVille>;
+            }
             return list;
         }
 
         public void saveUsers(List<IUser> userList)
         {
-            //obliger de caster List<IUser> en List<User> pour serialiser car sinon exception quand on met typeof(List<IUser>) pour DataContractSerializer
-            //peut etre plus propre de faire en sorte que typeof(List<IUser>) ==> demander prof
-            //List<User> uL = userList.Select(Iuser => Iuser as User).ToList();
-
             DirectoryInfo dirInfo = Directory.GetParent(Directory.GetCurrentDirectory()).Parent.Parent;
             string dirData = string.Format("{0}\\DataSearchBars\\XML\\", dirInfo.FullName);
             string xmlFile = string.Format("{0}{1}", dirData, "user.xml");
@@ -66,18 +63,17 @@ namespace DataSearchBars
 
         public void saveVille(List<IVille> villeList)
         {
-            List<Ville> vL = villeList.Select(Iville => Iville as Ville).ToList();
-
             DirectoryInfo dirInfo = Directory.GetParent(Directory.GetCurrentDirectory()).Parent.Parent;
             string dirData = string.Format("{0}\\DataSearchBars\\XML\\", dirInfo.FullName);
             string xmlFile = string.Format("{0}{1}", dirData, "ville.xml");
-            var serializer = new DataContractSerializer(typeof(List<Ville>));
+            var serializer = new DataContractSerializer(typeof(List<IVille>),
+                new Type[] { typeof(Ville), typeof(BoissonSimple), typeof(BoissonComposee), typeof(Vin)});
 
             XmlWriterSettings settings = new XmlWriterSettings() { Indent = true };
-            //using (XmlWriter writer = XmlWriter.Create(xmlFile, settings))
-            //{
-            //    serializer.WriteObject(writer, vL);
-            //}
+            using (XmlWriter writer = XmlWriter.Create(xmlFile, settings))
+            {
+                serializer.WriteObject(writer, villeList);
+            }
         }
     }
 }
