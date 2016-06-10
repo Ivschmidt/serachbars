@@ -23,6 +23,10 @@ namespace MetierSearchBars
             {
                 return mNom;
             }
+            private set
+            {
+                mNom = value;
+            }
         }
         private string mNom;
 

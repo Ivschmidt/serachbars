@@ -169,6 +169,10 @@ namespace MetierSearchBars
         {
             if (!string.IsNullOrEmpty(npseudo) && !npseudo.Equals(CurrentUser.Pseudo))
             {
+                if (rechercherUser(npseudo))
+                {
+                    throw new Exception("Ce user existe déja");
+                }
                 mCurrentUser.Pseudo = npseudo;
             }
 
@@ -189,6 +193,8 @@ namespace MetierSearchBars
 
             if (nddn != null && !nddn.Equals(CurrentUser.DdN))
             {
+                if (this.CalculAge((DateTime)nddn) < 18)
+                    throw new Exception("vous n'avez pas l'age requis");
                 mCurrentUser.DdN = (DateTime)nddn;
             }
 

@@ -71,6 +71,9 @@ namespace VuesSearchBars
             GridMainControl.Children.Add(UCProfil);
         }
 
-        
+        private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+            Manager.seDeconnecter();
+        }
     }
 }
