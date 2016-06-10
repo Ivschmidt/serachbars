@@ -38,6 +38,33 @@ namespace VuesSearchBars
             {
             }));
 
-       
+
+
+
+        public IEnumerable<IBar> LBars
+        {
+            get { return (IEnumerable<IBar>)GetValue(LBarsProperty); }
+            set { SetValue(LBarsProperty, value); }
+        }
+
+        // Using a DependencyProperty as the backing store for LBars.  This enables animation, styling, binding, etc...
+        public static readonly DependencyProperty LBarsProperty =
+            DependencyProperty.Register("LBars", typeof(IEnumerable<IBar>), typeof(UserControlVille), new PropertyMetadata(null, (sender, e) => { }));
+
+
+
+
+        //public double GPS
+        //{
+        //    get { return (double)GetValue(GPSProperty); }
+        //    set { SetValue(GPSProperty, value); }
+        //}
+
+        //// Using a DependencyProperty as the backing store for GPS.  This enables animation, styling, binding, etc...
+        //public static readonly DependencyProperty GPSProperty =
+        //    DependencyProperty.Register("GPS", typeof(double), typeof(UserControlVille), new PropertyMetadata(0));
+
+        
+
     }
 }

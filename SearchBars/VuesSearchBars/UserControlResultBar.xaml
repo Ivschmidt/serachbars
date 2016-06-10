@@ -66,7 +66,8 @@
             </Grid.ColumnDefinitions>
             <WrapPanel Grid.Column="0" HorizontalAlignment="Center">
                 <Button Content="Prec" Width="30" Height="20" />
-                <Image Source="Images/photoprofil.jpg" Margin="10" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                <Image Source="{Binding LPhoto, ElementName=root}" Margin="10" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                <!--<TextBlock Text="{Binding LPhoto, ElementName=root}"/>-->
                 <Button Content="Suiv" Width="30" Height="20" />
             </WrapPanel>
             <StackPanel Grid.Column="1" Margin="0 0 10 0">

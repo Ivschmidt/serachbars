@@ -124,6 +124,18 @@ namespace VuesSearchBars
 
 
 
+        public string LPhoto
+        {
+            get { return (string)GetValue(LPhotoProperty); }
+            set { SetValue(LPhotoProperty, value); }
+        }
+
+        // Using a DependencyProperty as the backing store for LPhoto.  This enables animation, styling, binding, etc...
+        public static readonly DependencyProperty LPhotoProperty =
+            DependencyProperty.Register("LPhoto", typeof(string), typeof(UserControlResultBar), new PropertyMetadata("Images/ImagesBars/defaut.jpg"));
+
+        
+
 
     }
 }
