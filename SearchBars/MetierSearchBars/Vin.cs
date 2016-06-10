@@ -1,14 +1,18 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.Serialization;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace MetierSearchBars
 {
+    [DataContract]
     class Vin : BoissonSimple
     {
+        [DataMember]
         public int Millesime { get; set; }
+        [DataMember]
         public string Robe { get; set; }
 
         public Vin(string nom, double prix, string marque, double degreA, TypeBoisson type, int millesime, string robe) : base(nom, prix, marque, degreA, type)

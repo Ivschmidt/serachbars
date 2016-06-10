@@ -1,14 +1,18 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.Serialization;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace MetierSearchBars
 {
+    [DataContract]
     class BoissonComposee : Boisson
     {
+        [DataMember]
         private List<Boisson> listBoissons;
+        [DataMember]
         private List<Ingredient> listIng;
 
         public BoissonComposee(string nom, double prix, double degreA, TypeBoisson type, List<Boisson> boissonList, List<Ingredient> ingrList)

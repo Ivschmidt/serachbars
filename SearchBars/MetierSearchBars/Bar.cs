@@ -2,22 +2,51 @@
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
+using System.Runtime.Serialization;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace MetierSearchBars
 {
+    /// <summary>
+    /// Classe représentant un Bar 
+    /// </summary>
+    [DataContract]
     class Bar : IEquatable<Bar>, IBar
     {
+        /// <summary>
+        /// Représente tous les commentaires laissés pour ce Bar
+        /// La clé est un User pour avoir l'émetteur de l'Avis
+        /// La valeur est l'Avis laissé par cet User
+        /// Un User ne peut laissé qu'un seul Avis par Bar
+        /// dictionnaire privé pour être correctement protégé
+        /// </summary>
+        [DataMember]
         private Dictionary<User, Avis> commentaires = new Dictionary<User, Avis>();
-        //je n'ai pas reussi à faire un ROD de <IUser,Avis> car impossible de convertir le dico <User,Avis> en <IUser,Avis>
+        /// <summary>
+        /// Encapsulation du dictionnaire privé par un ReadOnlyDictionnary
+        /// La clé de ce ROD est IUser pour encapsuler la clé User en lecture seule
+        /// peut être set uniquement dans cette classe
+        /// initialisé dans le contructeur à base du dictionnaire privé "commentaires"
+        /// </summary>
         public ReadOnlyDictionary<IUser, Avis> Commentaires
         {
-            get;
-            private set;
+            get
+            {
+                return new ReadOnlyDictionary<IUser, Avis>(commentaires.ToDictionary(kvp => kvp.Key as IUser, kvp => kvp.Value));
+            }
         }
 
+        /// <summary>
+        /// liste des Boissons servies par ce Bar
+        /// liste privée pour être correctement protégée
+        /// </summary>
+        [DataMember]
         private List<Boisson> listBoissons = new List<Boisson>();
+        /// <summary>
+        /// Encapsulation de la liste privée par un IEnumerable
+        /// IBoisson encapusle les boissons en lecture seule
+        /// </summary>
         public IEnumerable<IBoisson> ListBoisson
         {
             get
@@ -26,13 +55,17 @@ namespace MetierSearchBars
             }
         }
 
+        [DataMember]
         private List<string> listCheminPhoto = new List<string>();
         public ReadOnlyCollection<string> CheminPhotoROC
         {
-            get;
-            private set; 
+            get
+            {
+                return new ReadOnlyCollection<string>(listCheminPhoto);
+            }
         }
 
+        [DataMember]
         public string Nom { get; set; }
         public double? NoteMoyenne
         {
@@ -45,9 +78,13 @@ namespace MetierSearchBars
                 return (double) Math.Round(commentaires.Average(kvp => kvp.Value.Note), 2);
             }
         }
+        [DataMember]
         public CoordonneesGPS GPS{ get; set; }
+        [DataMember]
         public bool Restauration { get; set; }
+        [DataMember]
         public string Numero { get; set; }
+        [DataMember]
         public string Adresse { get; set; }
 
         public Bar(string nom, CoordonneesGPS gps, string numero, string adresse, bool restauration = false) 
@@ -57,9 +94,6 @@ namespace MetierSearchBars
             Restauration = restauration;
             Adresse = adresse;
             Numero = numero;
-            CheminPhotoROC = new ReadOnlyCollection<string>(listCheminPhoto);
-
-            Commentaires = new ReadOnlyDictionary<IUser, Avis>(commentaires.ToDictionary(kvp => kvp.Key as IUser, kvp => kvp.Value)); 
         }
 
         public void ajouterBoisson(Boisson b)

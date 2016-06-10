@@ -35,6 +35,8 @@ namespace SearchBars
             {
                 NomPage.Text = "Inscription :";
                 ButtonPage.Content = "S'inscrire";
+                var chemin = string.Format("{0}\\VuesSearchBars\\Images\\photoprofil.jpg", Directory.GetParent(Directory.GetCurrentDirectory()).Parent.Parent.FullName);
+                PhotoDeProfil.Source = (ImageSource)new ImageSourceConverter().ConvertFromString(chemin);
             }
             else
             {
@@ -42,7 +44,6 @@ namespace SearchBars
                 ButtonPage.Content = "Modifier";
                 sexeText.Visibility = Visibility.Hidden;
                 sexeButtons.Visibility = Visibility.Hidden;
-                bordure.Visibility = Visibility.Hidden;
             }
         }
 
@@ -133,29 +134,27 @@ namespace SearchBars
 
         private void Button_Click_Parcourir(object sender, RoutedEventArgs e)
         {
-            //if (!string.IsNullOrEmpty(pseudo.Text) && pseudo.Text != null)
-            //{
+            if (!string.IsNullOrEmpty(pseudo.Text) && pseudo.Text != null)
+            {
 
-            //    OpenFileDialog file = new OpenFileDialog();
-            //    file.ShowDialog();
+                OpenFileDialog file = new OpenFileDialog();
+                file.ShowDialog();
 
 
-            //    var chemin = file.FileName;
+                var chemin = file.FileName;
 
-            //    PhotoDeProfil.Source = (ImageSource)new ImageSourceConverter().ConvertFromString(chemin);
+                PhotoDeProfil.Source = (ImageSource)new ImageSourceConverter().ConvertFromString(chemin);
 
-            //    a finir recuperer dossier courant
-            //    DirectoryInfo dirInfo = Directory.GetParent(Directory.GetCurrentDirectory()).Parent.Parent;
-            //    var directory = string.Format("{0}\\VuesSearchBars\\Images\\ImagesProfils\\", dirInfo.FullName);
-            //    var fileDest = string.Format("{0}{1}", directory, pseudo.Text);
-            //    System.IO.File.Copy(chemin, fileDest);
+                DirectoryInfo dirInfo = Directory.GetParent(Directory.GetCurrentDirectory()).Parent.Parent;
+                var directory = string.Format("{0}\\VuesSearchBars\\Images\\ImagesProfils\\", dirInfo.FullName);
+                var fileDest = string.Format("{0}{1}.jpg", directory, pseudo.Text);
+                System.IO.File.Copy(chemin, fileDest);
 
-            //    pour binding il faut afficher l'image par defaut car sinon bug lors de l'inscription
-            //}
-            //else
-            //{
-            //    MessageBox.Show("Veuillez mettre un pseudo valide svp", "Pseudo invalide", MessageBoxButton.OK, MessageBoxImage.Warning);
-            //}
+            }
+            else
+            {
+                MessageBox.Show("Veuillez mettre un pseudo valide svp", "Pseudo invalide", MessageBoxButton.OK, MessageBoxImage.Warning);
+            }
         }
     }
 }

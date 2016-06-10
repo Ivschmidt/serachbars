@@ -68,7 +68,7 @@ namespace MetierSearchBars
         public void EnregistrerDonnees()
         {
               DataManager.saveUsers(listUsers.Select(user => user as IUser).ToList());
-        //    DataManager.saveVille(listVille.Select(ville => ville as IVille);
+              DataManager.saveVille(listVille.Select(ville => ville as IVille).ToList());
         }
 
         public void copierDonner(IDataManager dataManagerSource)

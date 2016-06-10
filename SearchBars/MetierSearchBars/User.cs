@@ -16,10 +16,11 @@ namespace MetierSearchBars
     ///            : IUser : interface de facade pour wrapper User en classe immuable
     /// </summary>
     [DataContract]
-    class User : IEquatable<User>, IUser, INotifyPropertyChanged
+    class User : IEquatable<User>, IUser
     {
         /// <summary>
         /// Pseudo : pseudo de l'utilisateur, identifiant discriminant
+        /// ne peut pas être nul (exception)
         /// </summary>
         [DataMember]
         public string Pseudo
@@ -29,7 +30,7 @@ namespace MetierSearchBars
             {
                 if (string.IsNullOrEmpty(value))
                 {
-                    throw new Exception("Le pseudo ne peut être nul");
+                    throw new Exception("Le pseudo ne peut pas être nul");
                 }
                     pseudo = value;
             }
@@ -38,6 +39,7 @@ namespace MetierSearchBars
 
         /// <summary>
         /// Mdp : mot de passe de l'utilisateur, utilisé pour la connexion permettant de vérifier l'authenticité de l'utilisateur
+        /// Ne peut pas être nul (exception)
         /// </summary>
         [DataMember (Name = "motDePasse")]
         public string Mdp
@@ -47,15 +49,16 @@ namespace MetierSearchBars
             {
                 if (string.IsNullOrEmpty(value))
                 {
-                    throw new Exception("Le mot de passe ne peut être null");
+                    throw new Exception("Le mot de passe ne peut pas être nul");
                 }
                     mdp = value;
             }
         }
         private string mdp;
-        
+
         /// <summary>
         /// Nom : nom de l'utilisateur
+        /// ne peut pas être nul (exception)
         /// </summary>
         [DataMember]
         public string Nom
@@ -65,7 +68,7 @@ namespace MetierSearchBars
             {
                 if (string.IsNullOrEmpty(value))
                 {
-                    throw new Exception("Le nom ne peut être null");
+                    throw new Exception("Le nom ne peut pas être nul");
                 }
                 nom = value;
             }
@@ -74,6 +77,7 @@ namespace MetierSearchBars
         
         /// <summary>
         /// Prenom : prénom de l'utilisateur
+        /// Ne peut pas être nul (exception)
         /// </summary>
         [DataMember]
         public string Prenom
@@ -83,7 +87,7 @@ namespace MetierSearchBars
             {
                 if (string.IsNullOrEmpty(value))
                 {
-                    throw new Exception("Le prenom ne peut être null");
+                    throw new Exception("Le prenom ne peut pas être nul");
                 }
                 prenom = value;
             }
@@ -104,6 +108,7 @@ namespace MetierSearchBars
 
         /// <summary>
         /// NumTel : numero de téléphone de l'utilisateur (optionnel)
+        /// doit contenir 10 caractères et seulement des chiffres
         /// </summary>
         [DataMember (Name = "NumeroTelephone")]
         public string NumTel
@@ -126,20 +131,9 @@ namespace MetierSearchBars
                     }
                     }
                 mNumTel = value;
-                OnPropertyChanged("NumTel");
             }
         }
         private string mNumTel;
-
-        public event PropertyChangedEventHandler PropertyChanged;
-        private void OnPropertyChanged(string info)
-        {
-            PropertyChangedEventHandler handler = PropertyChanged;
-            if(handler != null)
-            {
-                handler(this, new PropertyChangedEventArgs(info));
-            }
-        }
 
         /// <summary>
         /// Ville : ville d'habitation de l'utilisateur (optionnel)
@@ -151,7 +145,7 @@ namespace MetierSearchBars
         /// BoissonPref : boisson préférée de l'utilisateur parmi les éléments de l'enum Type (bière, vin, etc) (optionnel) 
         /// Si champ non renseigné = null
         /// </summary>
-        [DataMember]
+        [DataMember (EmitDefaultValue = false)]
         public TypeBoisson? BoissonPref { get; set; }
 
         /// <summary>
@@ -232,6 +226,11 @@ namespace MetierSearchBars
             return (this.Pseudo.Equals(other.Pseudo));
         }
 
+        /// <summary>
+        /// Redéfinition de la méthode ToString()
+        /// Retourne le pseudo
+        /// </summary>
+        /// <returns></returns>
         public override string ToString()
         {
             return Pseudo;

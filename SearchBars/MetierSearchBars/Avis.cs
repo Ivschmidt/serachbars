@@ -1,17 +1,20 @@
-﻿    using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.Serialization;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace MetierSearchBars
 {   
+    [DataContract]
     public struct Avis : IEquatable<Avis>
     {
         /// <summary>
-        /// Propriété Note composée d'un getter public et d'un setter privé
-        /// La note /5 de l'avis laissé
+        /// Note laissé pour cet avis
+        /// doit être un entier compris entre 0 et 5 (sinon exception levée)
         /// </summary>
+        [DataMember]
         public int Note
         {
             get
@@ -30,9 +33,9 @@ namespace MetierSearchBars
         private int mNote;
 
         /// <summary>
-        /// Propriété Description composée d'un getter public et d'un setter privé
-        /// Le texte de l'avis laissé
+        /// Le texte de l'avis laissé (pas obligatoire)
         /// </summary>
+        [DataMember]
         public string Description
         {
             get
@@ -49,7 +52,7 @@ namespace MetierSearchBars
         /// <summary>
         /// Constructeur de la classe Avis avec juste une note et pas de description
         /// </summary>
-        /// <param name="note">note attribuée par le CurrentUser</param>
+        /// <param name="note">note attribuée par la personne qui poste l'avis</param>
         public Avis(int note)
         {
             mNote = note;
@@ -59,8 +62,8 @@ namespace MetierSearchBars
         /// <summary>
         /// Constructeur de la classe Avis avec une note et une description
         /// </summary>
-        /// <param name="note">note attribuée par le CurrentUser</param>
-        /// <param name="desc">description attribuée par le CurrentUser</param>
+        /// <param name="note">note attribuée par la personne qui poste l'avis</param>
+        /// <param name="desc">description attribuée par la personne qui poste l'avis</param>
         public Avis(int note, string desc) : this(note)
         {
             mDescription = desc;
@@ -103,8 +106,8 @@ namespace MetierSearchBars
         /// <summary>
         /// redéfinition de la méthode ==
         /// </summary>
-        /// <param name="avis1">1 er avis</param>
-        /// <param name="avis2">2 eme avis</param>
+        /// <param name="avis1">First Avis to be compared with the second Avis</param>
+        /// <param name="avis2">Second Avis to be compared with the first Avis</param>
         /// <returns></returns>
         public static bool operator ==(Avis avis1, Avis avis2)
         {
@@ -114,17 +117,22 @@ namespace MetierSearchBars
         /// <summary>
         /// redéfinition de la méthode !=
         /// </summary>
-        /// <param name="avis1">1 er avis</param>
-        /// <param name="avis2">2 eme avis</param>
+        /// <param name="avis1">First Avis to be compared with the second Avis</param>
+        /// <param name="avis2">Second Avis to be compared with the first Avis</param>
         /// <returns></returns>
         public static bool operator !=(Avis avis1, Avis avis2)
         {
             return !avis1.Equals(avis2);
         }
 
+        /// <summary>
+        /// redéfinition de la méthode toString()
+        /// Retourne la note suivi de la description (met un espace si rien dans Description
+        /// </summary>
+        /// <returns></returns>
         public override string ToString()
         {
-            return Note.ToString() + " : " + Description;
+            return string.Format("{0} : {1}", Note.ToString(), Description);
         }
     }
 }

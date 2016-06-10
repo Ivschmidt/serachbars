@@ -1,11 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.Serialization;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace MetierSearchBars
 {
+    [DataContract]
     public struct CoordonneesGPS : IEquatable<CoordonneesGPS>
     {
         public double Longitude
@@ -15,6 +17,7 @@ namespace MetierSearchBars
                 return mLongitude;
             }
         }
+        [DataMember]
         private double mLongitude;
 
         public double Latitude
@@ -24,6 +27,7 @@ namespace MetierSearchBars
                 return mLatitude;
             }
         }
+        [DataMember]
         private double mLatitude;
 
         public CoordonneesGPS(double latitude, double longitude)

@@ -1,16 +1,21 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.Serialization;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace MetierSearchBars
 {
+    [DataContract]
     class Ville : IVille, IEquatable<Ville>
     {
+        [DataMember]
         public string Nom { get; private set; }
+        [DataMember]
         public CoordonneesGPS GPS { get; private set; }
 
+        [DataMember]
         private List<Bar> listBar = new List<Bar>();
         public IEnumerable<IBar> ListBar
         {
