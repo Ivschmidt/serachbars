@@ -15,6 +15,7 @@ using System.Windows.Shapes;
 using DataSearchBars;
 using MetierSearchBars;
 using System.Collections.ObjectModel;
+using System.IO;
 
 namespace VuesSearchBars
 {
@@ -124,18 +125,41 @@ namespace VuesSearchBars
 
 
 
-        public string LPhoto
+
+
+        public string Photo
         {
-            get { return (string)GetValue(LPhotoProperty); }
-            set { SetValue(LPhotoProperty, value); }
+            get { return (string)GetValue(PhotoProperty); }
+            set { SetValue(PhotoProperty, value); }
         }
 
-        // Using a DependencyProperty as the backing store for LPhoto.  This enables animation, styling, binding, etc...
-        public static readonly DependencyProperty LPhotoProperty =
-            DependencyProperty.Register("LPhoto", typeof(string), typeof(UserControlResultBar), new PropertyMetadata("Images/ImagesBars/defaut.jpg"));
+        // Using a DependencyProperty as the backing store for Photo.  This enables animation, styling, binding, etc...
+        public static readonly DependencyProperty PhotoProperty =
+            DependencyProperty.Register("Photo", typeof(string), typeof(UserControlResultBar), new PropertyMetadata(""));
 
         
 
+        //public ReadOnlyCollection<string> LPhoto
+        //{
+        //    get { return (ReadOnlyCollection<string>)GetValue(LPhotoProperty); }
+        //    set { SetValue(LPhotoProperty, value); }
+        //}
+
+        //// Using a DependencyProperty as the backing store for LPhoto.  This enables animation, styling, binding, etc...
+        //public static readonly DependencyProperty LPhotoProperty =
+        //    DependencyProperty.Register("LPhoto", typeof(ReadOnlyCollection<string>), typeof(UserControlResultBar), new PropertyMetadata(null,(sender, e)=>{}));
+
+        
+
+        private void Button_Click_Precedent(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Button_Click_Suivant(object sender, RoutedEventArgs e)
+        {
+
+        }
 
     }
 }

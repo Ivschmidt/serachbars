@@ -32,16 +32,21 @@ namespace DataSearchBars
 
             Ville clermont = new Ville("Clermont-ferrand", new CoordonneesGPS(45.7833, 3.0833));
 
-            Bar starter = new Bar("Le Starter", new CoordonneesGPS(45.782036, 3.081432), "06 98 72 04 74", "17 Rue Sainte-Claire");
+            Bar starter = new Bar("Le Starter", new CoordonneesGPS(45.782036, 3.081432), "06 98 72 04 74", "17 Rue Sainte-Claire", photo: "Images/ImagesBars/starter.jpg");
             starter.ajouterBoisson(new BoissonSimple("Ruby", 3.5, "Leffe", 4, TypeBoisson.Biere));
             starter.ajouterBoisson(new BoissonSimple("Jus de banane", 2, "Pago", 0, TypeBoisson.Jus));
             starter.ajouterBoisson(new BoissonSimple("Vodka", 5, "Eristoff", 37, TypeBoisson.AlcoolFort));
             starter.ajouterBoisson(new BoissonSimple("Coca Cherry", 1.5, "Coca Cola", 0, TypeBoisson.Soda));
             starter.laisserAvis(new Avis(1, "j'ai failli mourir"), trololo);
             starter.laisserAvis(new Avis(4, "Wesh ma gueule ça pete sa mère c'est trop bien !"), enzo);
+            //starter.ajouterPhoto("Images/ImagesBars/starter.jpg");
+            //starter.ajouterPhoto("Images/ImagesBars/starter2.jpg");
+            //starter.ajouterPhoto("Images/ImagesBars/starter3.jpg");
+
             clermont.ajouterBar(starter);
 
-            Bar delirium = new Bar("Délirium", new CoordonneesGPS(45.776289, 3.083339), "09 54 66 54 47", "20 rue de la Tour d'Auvergne", true);
+
+            Bar delirium = new Bar("Délirium", new CoordonneesGPS(45.776289, 3.083339), "09 54 66 54 47", "20 rue de la Tour d'Auvergne", true, "Images/ImagesBars/delirium.jpg");
             delirium.ajouterBoisson(new Vin("Chateaubriant", 15, "Duras", 12, TypeBoisson.Vin, 2009, "rouge"));
 
             List<Boisson> boissonMojitoList = new List<Boisson>();
@@ -53,11 +58,12 @@ namespace DataSearchBars
             ingrMojitoList.Add(new Ingredient("feuilles de menthe fraiches"));
             delirium.ajouterBoisson(new BoissonComposee("Mojito", 6.5, 18, TypeBoisson.Cocktail, boissonMojitoList, ingrMojitoList));
             delirium.ajouterBoisson(new BoissonSimple("7Up", 1.5, "SevenUp", 0, TypeBoisson.Soda));
+            //delirium.ajouterPhoto("Images/ImagesBars/delirium.jpg");
 
             clermont.ajouterBar(delirium);
 
-            Bar stillIrishBar = new Bar("The Still Irish Bar", new CoordonneesGPS(45.773706, 3.086125), "04 73 93 13 45", "7 Boulevard Léon Malfreyt");
-
+            Bar stillIrishBar = new Bar("The Still Irish Bar", new CoordonneesGPS(45.773706, 3.086125), "04 73 93 13 45", "7 Boulevard Léon Malfreyt", photo: "Images/ImagesBars/lestill.jpg");
+            //stillIrishBar.ajouterPhoto("Images/ImagesBars/lestill.jpg");
 
             clermont.ajouterBar(stillIrishBar);
             list.Add(clermont);
