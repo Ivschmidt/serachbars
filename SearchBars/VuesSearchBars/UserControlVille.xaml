@@ -29,11 +29,14 @@
                 </map:Map.Children>
             </map:Map>-->
             <map:Map ZoomLevel="10" CredentialsProvider="GPTQ32UjcuKIjSoK2k67~zsm5A0WorhEOdGW-14U77Q~AlSPzDbJPec2cvWGOg7TwCQLPRorLVoO3z2Sh1p7FR6Qd4Uu9rFdCLDAE7WWFLuY">
-                <map:Pushpin>
-                    <map:MapLayer.Position>
-                        <map:Location Latitude="45.7833" Longitude="3.0833"/>
-                    </map:MapLayer.Position>
-                </map:Pushpin>
+                <map:Map.Center>
+                    <map:Location Latitude="45.7833" Longitude="3.0833" />
+                </map:Map.Center>  
+                    <map:Pushpin>
+                        <map:MapLayer.Position>
+                            <map:Location Latitude="45.7833" Longitude="3.0833"/>
+                        </map:MapLayer.Position>
+                    </map:Pushpin>
             </map:Map>
         </DockPanel>
     </Grid>
