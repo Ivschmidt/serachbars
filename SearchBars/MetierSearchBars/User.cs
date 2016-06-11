@@ -16,8 +16,19 @@ namespace MetierSearchBars
     ///            : IUser : interface de facade pour wrapper User en classe immuable
     /// </summary>
     [DataContract]
-    class User : IEquatable<User>, IUser
+    class User : IEquatable<User>, IUser, INotifyPropertyChanged
     {
+        public event PropertyChangedEventHandler PropertyChanged;
+
+        private void OnPropertyChanged(String info)
+        {
+            PropertyChangedEventHandler handler = PropertyChanged;
+            if (handler != null)
+            {
+                handler(this, new PropertyChangedEventArgs(info));
+            }
+        }
+
         /// <summary>
         /// Pseudo : pseudo de l'utilisateur, identifiant discriminant
         /// ne peut pas être nul (exception)
@@ -33,6 +44,7 @@ namespace MetierSearchBars
                     throw new Exception("Le pseudo ne peut pas être nul");
                 }
                     pseudo = value;
+                //OnPropertyChanged("Pseudo");
             }
         }
         private string pseudo;
@@ -71,6 +83,7 @@ namespace MetierSearchBars
                     throw new Exception("Le nom ne peut pas être nul");
                 }
                 nom = value;
+                OnPropertyChanged("Nom");
             }
         }
         private string nom;
@@ -90,6 +103,7 @@ namespace MetierSearchBars
                     throw new Exception("Le prenom ne peut pas être nul");
                 }
                 prenom = value;
+                OnPropertyChanged("Prenom");
             }
         }
         private string prenom;
@@ -104,8 +118,20 @@ namespace MetierSearchBars
         /// DdN : date de naissance de l'utilisateur 
         /// </summary>
         [DataMember (Name = "dateDeNaissance")]
-        public DateTime DdN { get; set; }
-
+        public DateTime DdN
+        {
+            get
+            {
+                return ddN;
+            }
+            set
+            {
+                ddN = value;
+                OnPropertyChanged("Ddn");
+            }
+        }
+        private DateTime ddN;
+        
         /// <summary>
         /// NumTel : numero de téléphone de l'utilisateur (optionnel)
         /// doit contenir 10 caractères et seulement des chiffres
@@ -131,6 +157,7 @@ namespace MetierSearchBars
                     }
                     }
                 mNumTel = value;
+                OnPropertyChanged("NumTel");
             }
         }
         private string mNumTel;
@@ -139,14 +166,38 @@ namespace MetierSearchBars
         /// Ville : ville d'habitation de l'utilisateur (optionnel)
         /// </summary>
         [DataMember]
-        public string Ville { get; set; }
+        public string Ville
+        {
+            get
+            {
+                return mVille;
+            }
+            set
+            {
+                mVille = value;
+                OnPropertyChanged("Ville");
+            }
+        }
+        private string mVille;
 
         /// <summary>
         /// BoissonPref : boisson préférée de l'utilisateur parmi les éléments de l'enum Type (bière, vin, etc) (optionnel) 
         /// Si champ non renseigné = null
         /// </summary>
-        [DataMember (EmitDefaultValue = false)]
-        public TypeBoisson? BoissonPref { get; set; }
+        [DataMember(EmitDefaultValue = false)]
+        public TypeBoisson? BoissonPref
+        {
+            get
+            {
+                return mBoissonPref;
+            }
+            set
+            {
+                mBoissonPref = value;
+                OnPropertyChanged("BoissonPref");
+            }
+        }
+        private TypeBoisson? mBoissonPref;
 
         /// <summary>
         /// PhotoDeProfil : chemin pour accéder a la photo de profil de l'utilisateur (optionnel)

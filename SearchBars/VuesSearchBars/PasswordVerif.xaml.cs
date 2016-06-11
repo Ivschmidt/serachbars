@@ -24,6 +24,7 @@ namespace VuesSearchBars
         public PasswordVerif()
         {
             InitializeComponent();
+            password.Focus();
         }
 
         public Manager Manager {

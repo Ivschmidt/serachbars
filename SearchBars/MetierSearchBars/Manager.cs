@@ -181,12 +181,12 @@ namespace MetierSearchBars
                 mCurrentUser.Mdp = nmdp;
             }
 
-            if (!string.IsNullOrEmpty(nprenom) && !nprenom.Equals(CurrentUser.Prenom))
+            if (!nprenom.Equals(CurrentUser.Prenom))
             {
                 mCurrentUser.Prenom = nprenom;
             }
 
-            if (!string.IsNullOrEmpty(nnom) && !nnom.Equals(CurrentUser.Nom))
+            if (!nnom.Equals(CurrentUser.Nom))
             {
                 mCurrentUser.Nom = nnom;
             }
@@ -198,12 +198,12 @@ namespace MetierSearchBars
                 mCurrentUser.DdN = (DateTime)nddn;
             }
 
-            if (!string.IsNullOrEmpty(nnumTel) && !nnumTel.Equals(CurrentUser.NumTel))
+            if (!nnumTel.Equals(CurrentUser.NumTel))
             {
                 mCurrentUser.NumTel = nnumTel;
             }
 
-            if (!string.IsNullOrEmpty(nville) && !nville.Equals(CurrentUser.Ville))
+            if (!nville.Equals(CurrentUser.Ville))
             {
                 mCurrentUser.Ville = nville;
             }

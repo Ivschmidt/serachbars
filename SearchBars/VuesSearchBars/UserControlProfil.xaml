@@ -62,7 +62,7 @@
 
                 <TextBlock Text="Age :" Grid.Row="3" Style="{StaticResource STextBlock}"/>
                 <WrapPanel Grid.Row="3" Grid.Column="1" VerticalAlignment="Center">
-                    <TextBlock Text="{Binding Age, ElementName=root, StringFormat=\{0\}ans}" Style="{StaticResource STextBlock}"/>
+                    <TextBlock Text="{Binding Age, ElementName=root, StringFormat=\{0\} ans}" Style="{StaticResource STextBlock}"/>
                 </WrapPanel>
 
                 <TextBlock Text="Date de naissance : " Grid.Row="4" Style="{StaticResource STextBlock}"/>

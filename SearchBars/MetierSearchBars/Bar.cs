@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.ComponentModel;
 using System.Linq;
 using System.Runtime.Serialization;
 using System.Text;
@@ -12,8 +13,19 @@ namespace MetierSearchBars
     /// Classe représentant un Bar 
     /// </summary>
     [DataContract]
-    class Bar : IEquatable<Bar>, IBar
+    class Bar : IEquatable<Bar>, IBar, INotifyPropertyChanged
     {
+        public event PropertyChangedEventHandler PropertyChanged;
+
+        private void OnPropertyChanged(String info)
+        {
+            PropertyChangedEventHandler handler = PropertyChanged;
+            if (handler != null)
+            {
+                handler(this, new PropertyChangedEventArgs(info));
+            }
+        }
+
         /// <summary>
         /// Représente tous les commentaires laissés pour ce Bar
         /// La clé est un User pour avoir l'émetteur de l'Avis
@@ -57,6 +69,7 @@ namespace MetierSearchBars
 
         [DataMember]
         private List<string> listCheminPhoto = new List<string>();
+
         public ReadOnlyCollection<string> CheminPhotoROC
         {
             get
@@ -156,6 +169,8 @@ namespace MetierSearchBars
         public void laisserAvis(Avis avis, User user)
         {
             commentaires.Add(user, avis);
+            OnPropertyChanged("NoteMoyenne");
+            OnPropertyChanged("Commentaires");
         }
 
         public override string ToString()
