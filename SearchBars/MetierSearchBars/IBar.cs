@@ -16,7 +16,8 @@ namespace MetierSearchBars
         string Numero { get; }
         string Adresse { get; }
         IEnumerable<IBoisson> ListBoisson { get; }
-        ReadOnlyCollection<string> CheminPhotoROC { get; }
+        //ReadOnlyCollection<string> CheminPhotoROC { get; }
+        string Photo { get; }
         ReadOnlyDictionary<IUser, Avis> Commentaires { get; }
     }
 }

@@ -22,8 +22,10 @@
                                         NoteMoyenne="{Binding NoteMoyenne}"
                                         ListBoissons="{Binding ListBoisson}"
                                         Commentaires="{Binding Commentaires}"
-                                        LPhoto="{Binding Photo}"/>
+                                        Photo="{Binding Photo}"
+                                        />
         </DataTemplate>
+        <!--LPhoto="{Binding CheminPhotoROC}"-->
         <local:TemplateSelectorDetail x:Key="myTS" 
                                       DTVille="{StaticResource dataTemplateVille}"
                                       DTDetail="{StaticResource dataTemplateDetail}"/>

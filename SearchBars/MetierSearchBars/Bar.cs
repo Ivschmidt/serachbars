@@ -55,15 +55,16 @@ namespace MetierSearchBars
             }
         }
 
+        //[DataMember]
+        //private List<string> listCheminPhoto = new List<string>();
+        //public ReadOnlyCollection<string> CheminPhotoROC
+        //{
+        //    get
+        //    {
+        //        return new ReadOnlyCollection<string>(listCheminPhoto);
+        //    }
+        //}
         [DataMember]
-        private List<string> listCheminPhoto = new List<string>();
-        public ReadOnlyCollection<string> CheminPhotoROC
-        {
-            get
-            {
-                return new ReadOnlyCollection<string>(listCheminPhoto);
-            }
-        }
         public string Photo { get; set; }
 
         [DataMember]
@@ -103,10 +104,10 @@ namespace MetierSearchBars
             listBoissons.Add(b);
         }
 
-        public void ajouterPhoto(string chemin)
-        {
-            listCheminPhoto.Add(chemin);
-        }
+        //public void ajouterPhoto(string chemin)
+        //{
+        //    listCheminPhoto.Add(chemin);
+        //}
 
         /// <summary>
         /// returns a hash code in order to use this class in hash table

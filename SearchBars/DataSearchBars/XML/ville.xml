@@ -15,6 +15,7 @@
         </d2p1:GPS>
         <d2p1:Nom>Le Starter</d2p1:Nom>
         <d2p1:Numero>06 98 72 04 74</d2p1:Numero>
+        <d2p1:Photo>Images/ImagesBars/starter.jpg</d2p1:Photo>
         <d2p1:Restauration>false</d2p1:Restauration>
         <d2p1:commentaires>
           <KeyValueOfUserAvisuynyfWTd>
@@ -84,7 +85,6 @@
             <d2p1:Marque>Coca Cola</d2p1:Marque>
           </d2p1:Boisson>
         </d2p1:listBoissons>
-        <d2p1:listCheminPhoto />
       </d2p1:Bar>
       <d2p1:Bar>
         <d2p1:Adresse>20 rue de la Tour d'Auvergne</d2p1:Adresse>
@@ -94,6 +94,7 @@
         </d2p1:GPS>
         <d2p1:Nom>Délirium</d2p1:Nom>
         <d2p1:Numero>09 54 66 54 47</d2p1:Numero>
+        <d2p1:Photo>Images/ImagesBars/delirium.jpg</d2p1:Photo>
         <d2p1:Restauration>true</d2p1:Restauration>
         <d2p1:commentaires />
         <d2p1:listBoissons>
@@ -144,7 +145,6 @@
             <d2p1:Marque>SevenUp</d2p1:Marque>
           </d2p1:Boisson>
         </d2p1:listBoissons>
-        <d2p1:listCheminPhoto />
       </d2p1:Bar>
       <d2p1:Bar>
         <d2p1:Adresse>7 Boulevard Léon Malfreyt</d2p1:Adresse>
@@ -154,10 +154,10 @@
         </d2p1:GPS>
         <d2p1:Nom>The Still Irish Bar</d2p1:Nom>
         <d2p1:Numero>04 73 93 13 45</d2p1:Numero>
+        <d2p1:Photo>Images/ImagesBars/lestill.jpg</d2p1:Photo>
         <d2p1:Restauration>false</d2p1:Restauration>
         <d2p1:commentaires />
         <d2p1:listBoissons />
-        <d2p1:listCheminPhoto />
       </d2p1:Bar>
     </d2p1:listBar>
   </anyType>
@@ -176,10 +176,10 @@
         </d2p1:GPS>
         <d2p1:Nom>Le Jam</d2p1:Nom>
         <d2p1:Numero>04 82 53 29 29</d2p1:Numero>
+        <d2p1:Photo>Images/ImagesBars/defaut.jpg</d2p1:Photo>
         <d2p1:Restauration>false</d2p1:Restauration>
         <d2p1:commentaires />
         <d2p1:listBoissons />
-        <d2p1:listCheminPhoto />
       </d2p1:Bar>
       <d2p1:Bar>
         <d2p1:Adresse>32 Rue Cours Saleya</d2p1:Adresse>
@@ -189,10 +189,10 @@
         </d2p1:GPS>
         <d2p1:Nom>Akathor</d2p1:Nom>
         <d2p1:Numero>04 93 62 49 90</d2p1:Numero>
+        <d2p1:Photo>Images/ImagesBars/defaut.jpg</d2p1:Photo>
         <d2p1:Restauration>true</d2p1:Restauration>
         <d2p1:commentaires />
         <d2p1:listBoissons />
-        <d2p1:listCheminPhoto />
       </d2p1:Bar>
     </d2p1:listBar>
   </anyType>
