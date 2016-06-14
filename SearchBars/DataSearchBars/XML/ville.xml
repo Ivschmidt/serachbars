@@ -92,7 +92,7 @@
           <d2p1:mLatitude>45.776289</d2p1:mLatitude>
           <d2p1:mLongitude>3.083339</d2p1:mLongitude>
         </d2p1:GPS>
-        <d2p1:Nom>Délirium</d2p1:Nom>
+        <d2p1:Nom>Le Délirium</d2p1:Nom>
         <d2p1:Numero>09 54 66 54 47</d2p1:Numero>
         <d2p1:Photo>Images/ImagesBars/delirium.jpg</d2p1:Photo>
         <d2p1:Restauration>true</d2p1:Restauration>
@@ -156,6 +156,97 @@
         <d2p1:Numero>04 73 93 13 45</d2p1:Numero>
         <d2p1:Photo>Images/ImagesBars/lestill.jpg</d2p1:Photo>
         <d2p1:Restauration>false</d2p1:Restauration>
+        <d2p1:commentaires />
+        <d2p1:listBoissons />
+      </d2p1:Bar>
+      <d2p1:Bar>
+        <d2p1:Adresse>6 Place Etoile</d2p1:Adresse>
+        <d2p1:GPS>
+          <d2p1:mLatitude>45.779581</d2p1:mLatitude>
+          <d2p1:mLongitude>3.080976</d2p1:mLongitude>
+        </d2p1:GPS>
+        <d2p1:Nom>Les Berthom</d2p1:Nom>
+        <d2p1:Numero>04 73 31 01 65</d2p1:Numero>
+        <d2p1:Photo>Images/ImagesBars/barthom.jpg</d2p1:Photo>
+        <d2p1:Restauration>true</d2p1:Restauration>
+        <d2p1:commentaires />
+        <d2p1:listBoissons />
+      </d2p1:Bar>
+      <d2p1:Bar>
+        <d2p1:Adresse>20 Avenue des États Unis</d2p1:Adresse>
+        <d2p1:GPS>
+          <d2p1:mLatitude>45.779379</d2p1:mLatitude>
+          <d2p1:mLongitude>3.081777</d2p1:mLongitude>
+        </d2p1:GPS>
+        <d2p1:Nom>Captain's Cabin</d2p1:Nom>
+        <d2p1:Numero>04 73 36 33 32</d2p1:Numero>
+        <d2p1:Photo>Images/ImagesBars/captain.jpg</d2p1:Photo>
+        <d2p1:Restauration>false</d2p1:Restauration>
+        <d2p1:commentaires />
+        <d2p1:listBoissons />
+      </d2p1:Bar>
+      <d2p1:Bar>
+        <d2p1:Adresse>25 Avenue des Paulines</d2p1:Adresse>
+        <d2p1:GPS>
+          <d2p1:mLatitude>45.774317</d2p1:mLatitude>
+          <d2p1:mLongitude>3.094291</d2p1:mLongitude>
+        </d2p1:GPS>
+        <d2p1:Nom>3 Monkeys Pub</d2p1:Nom>
+        <d2p1:Numero>04 73 90 32 46</d2p1:Numero>
+        <d2p1:Photo>Images/ImagesBars/monkey.jpg</d2p1:Photo>
+        <d2p1:Restauration>true</d2p1:Restauration>
+        <d2p1:commentaires />
+        <d2p1:listBoissons />
+      </d2p1:Bar>
+      <d2p1:Bar>
+        <d2p1:Adresse>5 Place Gilbert Gaillard</d2p1:Adresse>
+        <d2p1:GPS>
+          <d2p1:mLatitude>45.780042</d2p1:mLatitude>
+          <d2p1:mLongitude>3.083441</d2p1:mLongitude>
+        </d2p1:GPS>
+        <d2p1:Nom>Hacienda Cafe</d2p1:Nom>
+        <d2p1:Numero>04 73 16 86 41</d2p1:Numero>
+        <d2p1:Photo>Images/ImagesBars/hacienda.jpg</d2p1:Photo>
+        <d2p1:Restauration>true</d2p1:Restauration>
+        <d2p1:commentaires />
+        <d2p1:listBoissons />
+      </d2p1:Bar>
+      <d2p1:Bar>
+        <d2p1:Adresse>5 Mail d'Allagnat</d2p1:Adresse>
+        <d2p1:GPS>
+          <d2p1:mLatitude>45.775282</d2p1:mLatitude>
+          <d2p1:mLongitude>3.084487</d2p1:mLongitude>
+        </d2p1:GPS>
+        <d2p1:Nom>Le Verlaine</d2p1:Nom>
+        <d2p1:Numero>04 73 34 17 55</d2p1:Numero>
+        <d2p1:Photo>Images/ImagesBars/verlaine.jpg</d2p1:Photo>
+        <d2p1:Restauration>false</d2p1:Restauration>
+        <d2p1:commentaires />
+        <d2p1:listBoissons />
+      </d2p1:Bar>
+      <d2p1:Bar>
+        <d2p1:Adresse>Place Louis Aragon</d2p1:Adresse>
+        <d2p1:GPS>
+          <d2p1:mLatitude>45.774817</d2p1:mLatitude>
+          <d2p1:mLongitude>3.084195</d2p1:mLongitude>
+        </d2p1:GPS>
+        <d2p1:Nom>Le Rimbaud</d2p1:Nom>
+        <d2p1:Numero>04 73 34 21 39</d2p1:Numero>
+        <d2p1:Photo>Images/ImagesBars/rimbaud.jpg</d2p1:Photo>
+        <d2p1:Restauration>false</d2p1:Restauration>
+        <d2p1:commentaires />
+        <d2p1:listBoissons />
+      </d2p1:Bar>
+      <d2p1:Bar>
+        <d2p1:Adresse>6 Place Sugny</d2p1:Adresse>
+        <d2p1:GPS>
+          <d2p1:mLatitude>45.77761</d2p1:mLatitude>
+          <d2p1:mLongitude>3.084859</d2p1:mLongitude>
+        </d2p1:GPS>
+        <d2p1:Nom>L'Appart</d2p1:Nom>
+        <d2p1:Numero>04 73 91 19 00</d2p1:Numero>
+        <d2p1:Photo>Images/ImagesBars/appart.jpg</d2p1:Photo>
+        <d2p1:Restauration>true</d2p1:Restauration>
         <d2p1:commentaires />
         <d2p1:listBoissons />
       </d2p1:Bar>

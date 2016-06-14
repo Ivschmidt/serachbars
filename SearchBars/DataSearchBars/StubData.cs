@@ -43,10 +43,8 @@ namespace DataSearchBars
             //starter.ajouterPhoto("Images/ImagesBars/starter2.jpg");
             //starter.ajouterPhoto("Images/ImagesBars/starter3.jpg");
 
-            clermont.ajouterBar(starter);
 
-
-            Bar delirium = new Bar("Délirium", new CoordonneesGPS(45.776289, 3.083339), "09 54 66 54 47", "20 rue de la Tour d'Auvergne", true, "Images/ImagesBars/delirium.jpg");
+            Bar delirium = new Bar("Le Délirium", new CoordonneesGPS(45.776289, 3.083339), "09 54 66 54 47", "20 rue de la Tour d'Auvergne", true, "Images/ImagesBars/delirium.jpg");
             delirium.ajouterBoisson(new Vin("Chateaubriant", 15, "Duras", 12, TypeBoisson.Vin, 2009, "rouge"));
 
             List<Boisson> boissonMojitoList = new List<Boisson>();
@@ -60,12 +58,30 @@ namespace DataSearchBars
             delirium.ajouterBoisson(new BoissonSimple("7Up", 1.5, "SevenUp", 0, TypeBoisson.Soda));
             //delirium.ajouterPhoto("Images/ImagesBars/delirium.jpg");
 
-            clermont.ajouterBar(delirium);
-
             Bar stillIrishBar = new Bar("The Still Irish Bar", new CoordonneesGPS(45.773706, 3.086125), "04 73 93 13 45", "7 Boulevard Léon Malfreyt", photo: "Images/ImagesBars/lestill.jpg");
+            //stillIrishBar.ajouterBoisson()
             //stillIrishBar.ajouterPhoto("Images/ImagesBars/lestill.jpg");
 
+            Bar lesBerthom = new Bar("Les Berthom", new CoordonneesGPS(45.779581, 3.080976), "04 73 31 01 65", "6 Place Etoile", true, "Images/ImagesBars/barthom.jpg");
+            Bar leMarais = new Bar("Le Marais", new CoordonneesGPS(45.780716, 3.078746), "06 60 23 75 87", "49 Rue Fontgieve", photo: "Images/ImagesBars/marais.jpg");
+            Bar captainCabin = new Bar("Captain's Cabin", new CoordonneesGPS(45.779379, 3.081777), "04 73 36 33 32", "20 Avenue des États Unis", photo: "Images/ImagesBars/captain.jpg");
+            Bar monkeysPub = new Bar("3 Monkeys Pub", new CoordonneesGPS(45.774317, 3.094291), "04 73 90 32 46", "25 Avenue des Paulines", true, "Images/ImagesBars/monkey.jpg");
+            Bar HaciendaCafe = new Bar("Hacienda Cafe", new CoordonneesGPS(45.780042, 3.083441), "04 73 16 86 41", "5 Place Gilbert Gaillard", true, "Images/ImagesBars/hacienda.jpg");
+            Bar leVerlaine = new Bar("Le Verlaine", new CoordonneesGPS(45.775282, 3.084487), "04 73 34 17 55", "5 Mail d'Allagnat", photo: "Images/ImagesBars/verlaine.jpg");
+            Bar leRimbaud = new Bar("Le Rimbaud", new CoordonneesGPS(45.774817, 3.084195), "04 73 34 21 39", "Place Louis Aragon", photo: "Images/ImagesBars/rimbaud.jpg");
+            Bar lAppart = new Bar("L'Appart", new CoordonneesGPS(45.777610, 3.084859), "04 73 91 19 00", "6 Place Sugny", true, "Images/ImagesBars/appart.jpg");
+
+            clermont.ajouterBar(starter);
+            clermont.ajouterBar(delirium);
             clermont.ajouterBar(stillIrishBar);
+            clermont.ajouterBar(lesBerthom);
+            clermont.ajouterBar(captainCabin);
+            clermont.ajouterBar(monkeysPub);
+            clermont.ajouterBar(HaciendaCafe);
+            clermont.ajouterBar(leVerlaine);
+            clermont.ajouterBar(leRimbaud);
+            clermont.ajouterBar(lAppart);
+
             list.Add(clermont);
 
 
@@ -75,7 +91,15 @@ namespace DataSearchBars
 
             Bar akathor = new Bar("Akathor", new CoordonneesGPS(43.695566, 7.274040), "04 93 62 49 90", "32 Rue Cours Saleya", true);
             nice.ajouterBar(akathor);
-            
+
+            //pour ajouter nouveaux bars
+            //Bar leSpring = new Bar("Le Spring", new CoordonneesGPS(45.773706, 3.086125), "", "");
+            //Bar leSpring = new Bar("Le Spring", new CoordonneesGPS(45.773706, 3.086125), "", "");
+            //Bar leSpring = new Bar("Le Spring", new CoordonneesGPS(45.773706, 3.086125), "", "");
+            //Bar leSpring = new Bar("Le Spring", new CoordonneesGPS(45.773706, 3.086125), "", "");
+            //Bar leSpring = new Bar("Le Spring", new CoordonneesGPS(45.773706, 3.086125), "", "");
+            //Bar leSpring = new Bar("Le Spring", new CoordonneesGPS(45.773706, 3.086125), "", "");
+
             list.Add(nice);
            
             return list;
