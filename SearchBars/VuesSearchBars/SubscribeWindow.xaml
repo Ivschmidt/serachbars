@@ -3,7 +3,8 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="SubscribeWindow" Height="500" Width="350" ResizeMode="NoResize" Background="#808893"
         xmlns:system="clr-namespace:System;assembly=mscorlib"
-        xmlns:core="clr-namespace:MetierSearchBars;assembly=MetierSearchBars">
+        xmlns:core="clr-namespace:MetierSearchBars;assembly=MetierSearchBars"
+        KeyDown="Validation_KeyDown">
     <Window.Resources>
         <Style x:Key="STextBlockSubscribe">
             <Setter Property="TextBlock.Margin" Value="5 0 0 0"/>

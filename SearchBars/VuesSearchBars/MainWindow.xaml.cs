@@ -66,9 +66,20 @@ namespace VuesSearchBars
 
         private void Button_Click_Compte(object sender, RoutedEventArgs e)
         {
+            loadUCProfil();
+        }
+
+        public void loadUCProfil()
+        {
             GridMainControl.Children.Clear();
             UserControlProfil UCProfil = new UserControlProfil(Manager.CurrentUser);
+            UCProfil.ProfilUpdated += OnProfilUpdated;
             GridMainControl.Children.Add(UCProfil);
+        }
+
+        public void OnProfilUpdated(object sender, ProfilUpdatedEventArgs args)
+        {
+            loadUCProfil();
         }
 
         private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)

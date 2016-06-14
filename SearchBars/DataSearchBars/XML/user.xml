@@ -60,7 +60,7 @@
   <anyType xmlns:d2p1="http://schemas.datacontract.org/2004/07/MetierSearchBars" i:type="d2p1:User">
     <d2p1:Nom>TestNom</d2p1:Nom>
     <d2p1:NumeroTelephone></d2p1:NumeroTelephone>
-    <d2p1:PhotoDeProfil>pack://application:,,,/VuesSearchBars;component/Images/photoprofil.jpg</d2p1:PhotoDeProfil>
+    <d2p1:PhotoDeProfil>Images/photoprofil.jpg</d2p1:PhotoDeProfil>
     <d2p1:Prenom>TestPrenom</d2p1:Prenom>
     <d2p1:Pseudo>a</d2p1:Pseudo>
     <d2p1:Sexe>Homme</d2p1:Sexe>

@@ -115,9 +115,18 @@ namespace SearchBars
                 }
                 else
                 {
-                    //recharger le UCProfil pour aperçu des modifs en direct
+                    OnProfilUpdated(new ProfilUpdatedEventArgs());
                 }
                 Close();
+            }
+        }
+
+        public event EventHandler<ProfilUpdatedEventArgs> ProfilUpdated;
+        protected virtual void OnProfilUpdated(ProfilUpdatedEventArgs args)
+        {
+            if(ProfilUpdated != null)
+            {
+                ProfilUpdated(this, args);
             }
         }
 
@@ -155,6 +164,14 @@ namespace SearchBars
             else
             {
                 MessageBox.Show("Veuillez mettre un pseudo valide svp", "Pseudo invalide", MessageBoxButton.OK, MessageBoxImage.Warning);
+            }
+        }
+
+        private void Validation_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.Key == Key.Enter)
+            {
+                Button_Click_Subscribe(sender, e);
             }
         }
     }

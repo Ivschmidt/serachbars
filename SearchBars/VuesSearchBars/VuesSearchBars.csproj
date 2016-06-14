@@ -68,6 +68,7 @@
     <Compile Include="PasswordVerif.xaml.cs">
       <DependentUpon>PasswordVerif.xaml</DependentUpon>
     </Compile>
+    <Compile Include="ProfilUpdatedEventArgs.cs" />
     <Compile Include="RateWindow.xaml.cs">
       <DependentUpon>RateWindow.xaml</DependentUpon>
     </Compile>

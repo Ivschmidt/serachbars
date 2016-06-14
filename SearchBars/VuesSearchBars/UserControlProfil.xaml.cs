@@ -116,7 +116,23 @@ namespace VuesSearchBars
         private void Button_Click_Modification(object sender, RoutedEventArgs e)
         {
             PasswordVerif passVerif = new PasswordVerif();
+            passVerif.ProfilUpdated += OnProfilUpdated;
             passVerif.Show();
+        }
+
+        public void OnProfilUpdated(object sender, ProfilUpdatedEventArgs args)
+        {
+            OnProfilUpdated(args);
+        }
+
+        public event EventHandler<ProfilUpdatedEventArgs> ProfilUpdated;
+
+        protected virtual void OnProfilUpdated(ProfilUpdatedEventArgs args)
+        {
+            if (ProfilUpdated != null)
+            {
+                ProfilUpdated(this, args);
+            }
         }
 
     }

@@ -39,6 +39,7 @@ namespace VuesSearchBars
             if (Manager.verifierMotDePasse(password.Password))
             {
                 SubscribeWindow subWindow = new SubscribeWindow(2);
+                subWindow.ProfilUpdated += OnProfilUpdated;
                 subWindow.Show();
             }
             else
@@ -46,6 +47,21 @@ namespace VuesSearchBars
                 MessageBox.Show("Mot de passe incorrect", "Attention", MessageBoxButton.OK, MessageBoxImage.Warning);
             }
             Close();
+        }
+
+        public void OnProfilUpdated(object sender, ProfilUpdatedEventArgs args)
+        {
+            OnProfilUpdated(args);
+        }
+
+        public event EventHandler<ProfilUpdatedEventArgs> ProfilUpdated;
+
+        protected virtual void OnProfilUpdated(ProfilUpdatedEventArgs args)
+        {
+            if (ProfilUpdated != null)
+            {
+                ProfilUpdated(this, args);
+            }
         }
 
         private void Button_Click_Annuler(object sender, RoutedEventArgs e)

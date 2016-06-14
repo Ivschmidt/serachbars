@@ -3,8 +3,6 @@
 -regler le bug du currentUser = null si modif du pseudo
 -binder map
 -toutes la docs
--update du UCProfil pour numero ville, etc 
-  -> a voir comment faire pour avoir des valeurs pas defaut si rien dans user
 - voir pour list photos
 - ordonner le XML
 - binder pushpins + center
