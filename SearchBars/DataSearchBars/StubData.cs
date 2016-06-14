@@ -47,19 +47,22 @@ namespace DataSearchBars
             Bar delirium = new Bar("Le Délirium", new CoordonneesGPS(45.776289, 3.083339), "09 54 66 54 47", "20 rue de la Tour d'Auvergne", true, "Images/ImagesBars/delirium.jpg");
             delirium.ajouterBoisson(new Vin("Chateaubriant", 15, "Duras", 12, TypeBoisson.Vin, 2009, "rouge"));
 
-            List<Boisson> boissonMojitoList = new List<Boisson>();
             Boisson rhum = new BoissonSimple("Rhum", 4, "OldNick", 40, TypeBoisson.AlcoolFort);
             delirium.ajouterBoisson(rhum);
-            boissonMojitoList.Add(rhum);
-            List<Ingredient> ingrMojitoList = new List<Ingredient>();
-            ingrMojitoList.Add(new Ingredient("citron vert"));
-            ingrMojitoList.Add(new Ingredient("feuilles de menthe fraiches"));
-            delirium.ajouterBoisson(new BoissonComposee("Mojito", 6.5, 18, TypeBoisson.Cocktail, boissonMojitoList, ingrMojitoList));
+            delirium.ajouterBoisson(new BoissonComposee("Mojito", 6.5, 18, TypeBoisson.Cocktail, new List<Boisson> { rhum }, new List<Ingredient> { new Ingredient("citron vert"), new Ingredient("feuilles de menthe fraiches") }));
             delirium.ajouterBoisson(new BoissonSimple("7Up", 1.5, "SevenUp", 0, TypeBoisson.Soda));
             //delirium.ajouterPhoto("Images/ImagesBars/delirium.jpg");
 
             Bar stillIrishBar = new Bar("The Still Irish Bar", new CoordonneesGPS(45.773706, 3.086125), "04 73 93 13 45", "7 Boulevard Léon Malfreyt", photo: "Images/ImagesBars/lestill.jpg");
-            //stillIrishBar.ajouterBoisson()
+            stillIrishBar.ajouterBoisson(new BoissonSimple("K Mangue", 3.2, "Kronenbourg", 4.5, TypeBoisson.Biere));
+            List<Boisson> boissonTequilaSunrise = new List<Boisson>();
+            Boisson tequila = new BoissonSimple("Tequila", 4, "Gordon", 25, TypeBoisson.AlcoolFort);
+            Boisson siropGrenadine = new BoissonSimple("Sirop de grenadine", 3, "Teisseire", 0, TypeBoisson.Sirop);
+            Boisson jusOrange = new BoissonSimple("Jus d'orange", 2, "Pago", 0, TypeBoisson.Jus);
+            stillIrishBar.ajouterBoisson(new BoissonComposee("Tequila Sunrise", 8.5, 16, TypeBoisson.Cocktail, new List<Boisson>{ tequila, siropGrenadine, jusOrange}, new List<Ingredient>()));
+            stillIrishBar.ajouterBoisson(tequila);
+            stillIrishBar.ajouterBoisson(siropGrenadine);
+            stillIrishBar.ajouterBoisson(jusOrange);
             //stillIrishBar.ajouterPhoto("Images/ImagesBars/lestill.jpg");
 
             Bar lesBerthom = new Bar("Les Berthom", new CoordonneesGPS(45.779581, 3.080976), "04 73 31 01 65", "6 Place Etoile", true, "Images/ImagesBars/barthom.jpg");

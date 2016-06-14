@@ -157,7 +157,66 @@
         <d2p1:Photo>Images/ImagesBars/lestill.jpg</d2p1:Photo>
         <d2p1:Restauration>false</d2p1:Restauration>
         <d2p1:commentaires />
-        <d2p1:listBoissons />
+        <d2p1:listBoissons>
+          <d2p1:Boisson i:type="d2p1:BoissonSimple">
+            <d2p1:DegreAlcool>4.5</d2p1:DegreAlcool>
+            <d2p1:Nom>K Mangue</d2p1:Nom>
+            <d2p1:Prix>3.2</d2p1:Prix>
+            <d2p1:Type>Biere</d2p1:Type>
+            <d2p1:Marque>Kronenbourg</d2p1:Marque>
+          </d2p1:Boisson>
+          <d2p1:Boisson i:type="d2p1:BoissonComposee">
+            <d2p1:DegreAlcool>16</d2p1:DegreAlcool>
+            <d2p1:Nom>Tequila Sunrise</d2p1:Nom>
+            <d2p1:Prix>8.5</d2p1:Prix>
+            <d2p1:Type>Cocktail</d2p1:Type>
+            <d2p1:listBoissons>
+              <d2p1:Boisson i:type="d2p1:BoissonSimple">
+                <d2p1:DegreAlcool>25</d2p1:DegreAlcool>
+                <d2p1:Nom>Tequila</d2p1:Nom>
+                <d2p1:Prix>4</d2p1:Prix>
+                <d2p1:Type>AlcoolFort</d2p1:Type>
+                <d2p1:Marque>Gordon</d2p1:Marque>
+              </d2p1:Boisson>
+              <d2p1:Boisson i:type="d2p1:BoissonSimple">
+                <d2p1:DegreAlcool>0</d2p1:DegreAlcool>
+                <d2p1:Nom>Sirop de grenadine</d2p1:Nom>
+                <d2p1:Prix>3</d2p1:Prix>
+                <d2p1:Type>Sirop</d2p1:Type>
+                <d2p1:Marque>Teisseire</d2p1:Marque>
+              </d2p1:Boisson>
+              <d2p1:Boisson i:type="d2p1:BoissonSimple">
+                <d2p1:DegreAlcool>0</d2p1:DegreAlcool>
+                <d2p1:Nom>Jus d'orange</d2p1:Nom>
+                <d2p1:Prix>2</d2p1:Prix>
+                <d2p1:Type>Jus</d2p1:Type>
+                <d2p1:Marque>Pago</d2p1:Marque>
+              </d2p1:Boisson>
+            </d2p1:listBoissons>
+            <d2p1:listIng />
+          </d2p1:Boisson>
+          <d2p1:Boisson i:type="d2p1:BoissonSimple">
+            <d2p1:DegreAlcool>25</d2p1:DegreAlcool>
+            <d2p1:Nom>Tequila</d2p1:Nom>
+            <d2p1:Prix>4</d2p1:Prix>
+            <d2p1:Type>AlcoolFort</d2p1:Type>
+            <d2p1:Marque>Gordon</d2p1:Marque>
+          </d2p1:Boisson>
+          <d2p1:Boisson i:type="d2p1:BoissonSimple">
+            <d2p1:DegreAlcool>0</d2p1:DegreAlcool>
+            <d2p1:Nom>Sirop de grenadine</d2p1:Nom>
+            <d2p1:Prix>3</d2p1:Prix>
+            <d2p1:Type>Sirop</d2p1:Type>
+            <d2p1:Marque>Teisseire</d2p1:Marque>
+          </d2p1:Boisson>
+          <d2p1:Boisson i:type="d2p1:BoissonSimple">
+            <d2p1:DegreAlcool>0</d2p1:DegreAlcool>
+            <d2p1:Nom>Jus d'orange</d2p1:Nom>
+            <d2p1:Prix>2</d2p1:Prix>
+            <d2p1:Type>Jus</d2p1:Type>
+            <d2p1:Marque>Pago</d2p1:Marque>
+          </d2p1:Boisson>
+        </d2p1:listBoissons>
       </d2p1:Bar>
       <d2p1:Bar>
         <d2p1:Adresse>6 Place Etoile</d2p1:Adresse>

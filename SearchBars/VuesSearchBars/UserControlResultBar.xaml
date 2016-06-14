@@ -71,8 +71,8 @@
                 <ColumnDefinition/>
             </Grid.ColumnDefinitions>
             <WrapPanel Grid.Column="0" HorizontalAlignment="Center">
-                <Button Click="Button_Click_Precedent" Content="Prec" Width="30"  Style="{StaticResource SButton}"/>
-                <Image Source="{Binding Photo, ElementName=root}" Margin="10" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                <!--<Button Click="Button_Click_Precedent" Content="Prec" Width="30"  Style="{StaticResource SButton}"/>-->
+                <Image Source="{Binding Photo, ElementName=root}" Margin="10" HorizontalAlignment="Center" VerticalAlignment="Center" MaxWidth="500"/>
                 <!--<TextBlock Text="{Binding LPhoto, ElementName=root}"/>-->
 
                 <!--<ListView Width="Auto" ItemsSource="{Binding LPhoto, ElementName=root}" SelectedIndex="0">
@@ -83,7 +83,7 @@
                     </ListView.ItemTemplate>
                 </ListView>-->
 
-                <Button Click="Button_Click_Suivant" Content="Suiv" Width="30" Style="{StaticResource SButton}"/>
+                <!--<Button Click="Button_Click_Suivant" Content="Suiv" Width="30" Style="{StaticResource SButton}"/>-->
             </WrapPanel>
             <StackPanel Grid.Column="1" Margin="0 0 10 0">
                 <TextBlock Text="Avis clients :" FontSize="30" Style="{StaticResource STextBlock}"/>
