@@ -346,4 +346,269 @@
       </d2p1:Bar>
     </d2p1:listBar>
   </anyType>
+  <anyType xmlns:d2p1="http://schemas.datacontract.org/2004/07/MetierSearchBars" i:type="d2p1:Ville">
+    <d2p1:GPS>
+      <d2p1:mLatitude>45.441</d2p1:mLatitude>
+      <d2p1:mLongitude>4.39</d2p1:mLongitude>
+    </d2p1:GPS>
+    <d2p1:Nom>Sainte Etienne</d2p1:Nom>
+    <d2p1:listBar>
+      <d2p1:Bar>
+        <d2p1:Adresse>5 Rue Georges Dupré</d2p1:Adresse>
+        <d2p1:GPS>
+          <d2p1:mLatitude>45.436414</d2p1:mLatitude>
+          <d2p1:mLongitude>4.390269</d2p1:mLongitude>
+        </d2p1:GPS>
+        <d2p1:Nom>The Smoking Dog</d2p1:Nom>
+        <d2p1:Numero>04 77 47 23 57</d2p1:Numero>
+        <d2p1:Photo>Images/ImagesBars/theSmokingDog.jpg</d2p1:Photo>
+        <d2p1:Restauration>false</d2p1:Restauration>
+        <d2p1:commentaires />
+        <d2p1:listBoissons />
+      </d2p1:Bar>
+      <d2p1:Bar>
+        <d2p1:Adresse>44 Rue des Martyrs de Vingré</d2p1:Adresse>
+        <d2p1:GPS>
+          <d2p1:mLatitude>45.435488</d2p1:mLatitude>
+          <d2p1:mLongitude>4.390237</d2p1:mLongitude>
+        </d2p1:GPS>
+        <d2p1:Nom>Le Saint Patrick</d2p1:Nom>
+        <d2p1:Numero>04 77 25 11 52</d2p1:Numero>
+        <d2p1:Photo>Images/ImagesBars/leSaintPatrick.jpg</d2p1:Photo>
+        <d2p1:Restauration>false</d2p1:Restauration>
+        <d2p1:commentaires />
+        <d2p1:listBoissons />
+      </d2p1:Bar>
+      <d2p1:Bar>
+        <d2p1:Adresse>9 Rue de la Résistance</d2p1:Adresse>
+        <d2p1:GPS>
+          <d2p1:mLatitude>45.439672</d2p1:mLatitude>
+          <d2p1:mLongitude>4.385902</d2p1:mLongitude>
+        </d2p1:GPS>
+        <d2p1:Nom>Soggy Bottom</d2p1:Nom>
+        <d2p1:Numero>04 77 32 95 98</d2p1:Numero>
+        <d2p1:Photo>Images/ImagesBars/soggyBottom.jpg</d2p1:Photo>
+        <d2p1:Restauration>false</d2p1:Restauration>
+        <d2p1:commentaires />
+        <d2p1:listBoissons />
+      </d2p1:Bar>
+      <d2p1:Bar>
+        <d2p1:Adresse>5 Rue Saint-François</d2p1:Adresse>
+        <d2p1:GPS>
+          <d2p1:mLatitude>45.435617</d2p1:mLatitude>
+          <d2p1:mLongitude>4.388625</d2p1:mLongitude>
+        </d2p1:GPS>
+        <d2p1:Nom>Lipopette Bar</d2p1:Nom>
+        <d2p1:Numero>04 77 32 64 08</d2p1:Numero>
+        <d2p1:Photo>Images/ImagesBars/lipopetteBar.jpg</d2p1:Photo>
+        <d2p1:Restauration>false</d2p1:Restauration>
+        <d2p1:commentaires />
+        <d2p1:listBoissons />
+      </d2p1:Bar>
+      <d2p1:Bar>
+        <d2p1:Adresse>27 Rue Léon Nautin</d2p1:Adresse>
+        <d2p1:GPS>
+          <d2p1:mLatitude>45.435023</d2p1:mLatitude>
+          <d2p1:mLongitude>4.391136</d2p1:mLongitude>
+        </d2p1:GPS>
+        <d2p1:Nom>Le Barberousse</d2p1:Nom>
+        <d2p1:Numero>04 77 95 14 79</d2p1:Numero>
+        <d2p1:Photo>Images/ImagesBars/leBarberousse.jpg</d2p1:Photo>
+        <d2p1:Restauration>false</d2p1:Restauration>
+        <d2p1:commentaires />
+        <d2p1:listBoissons />
+      </d2p1:Bar>
+      <d2p1:Bar>
+        <d2p1:Adresse>27 Rue Léon Nautin</d2p1:Adresse>
+        <d2p1:GPS>
+          <d2p1:mLatitude>45.437129</d2p1:mLatitude>
+          <d2p1:mLongitude>4.392145</d2p1:mLongitude>
+        </d2p1:GPS>
+        <d2p1:Nom>Zoobar</d2p1:Nom>
+        <d2p1:Numero>04 77 80 85 84</d2p1:Numero>
+        <d2p1:Photo>Images/ImagesBars/zoobar.jpg</d2p1:Photo>
+        <d2p1:Restauration>true</d2p1:Restauration>
+        <d2p1:commentaires />
+        <d2p1:listBoissons />
+      </d2p1:Bar>
+      <d2p1:Bar>
+        <d2p1:Adresse>12 Rue Elise Gervais</d2p1:Adresse>
+        <d2p1:GPS>
+          <d2p1:mLatitude>45.438293</d2p1:mLatitude>
+          <d2p1:mLongitude>4.392548</d2p1:mLongitude>
+        </d2p1:GPS>
+        <d2p1:Nom>Vol de Nuit</d2p1:Nom>
+        <d2p1:Numero>04 77 33 48 02</d2p1:Numero>
+        <d2p1:Photo>Images/ImagesBars/volDeNuit.jpg</d2p1:Photo>
+        <d2p1:Restauration>false</d2p1:Restauration>
+        <d2p1:commentaires />
+        <d2p1:listBoissons />
+      </d2p1:Bar>
+      <d2p1:Bar>
+        <d2p1:Adresse>32 Rue du Onze Novembre</d2p1:Adresse>
+        <d2p1:GPS>
+          <d2p1:mLatitude>45.427643</d2p1:mLatitude>
+          <d2p1:mLongitude>4.390312</d2p1:mLongitude>
+        </d2p1:GPS>
+        <d2p1:Nom>LE CHANTIER</d2p1:Nom>
+        <d2p1:Numero>04 77 41 75 13</d2p1:Numero>
+        <d2p1:Photo>Images/ImagesBars/leChantier.jpg</d2p1:Photo>
+        <d2p1:Restauration>false</d2p1:Restauration>
+        <d2p1:commentaires />
+        <d2p1:listBoissons />
+      </d2p1:Bar>
+      <d2p1:Bar>
+        <d2p1:Adresse>13 Rue des Martyrs de Vingré</d2p1:Adresse>
+        <d2p1:GPS>
+          <d2p1:mLatitude>45.436357</d2p1:mLatitude>
+          <d2p1:mLongitude>4.39007</d2p1:mLongitude>
+        </d2p1:GPS>
+        <d2p1:Nom>Le Café St Jacques</d2p1:Nom>
+        <d2p1:Numero>04 77 32 00 79</d2p1:Numero>
+        <d2p1:Photo>Images/ImagesBars/leCafeStJacques.jpg</d2p1:Photo>
+        <d2p1:Restauration>false</d2p1:Restauration>
+        <d2p1:commentaires />
+        <d2p1:listBoissons />
+      </d2p1:Bar>
+    </d2p1:listBar>
+  </anyType>
+  <anyType xmlns:d2p1="http://schemas.datacontract.org/2004/07/MetierSearchBars" i:type="d2p1:Ville">
+    <d2p1:GPS>
+      <d2p1:mLatitude>48.856579</d2p1:mLatitude>
+      <d2p1:mLongitude>2.345495</d2p1:mLongitude>
+    </d2p1:GPS>
+    <d2p1:Nom>Paris</d2p1:Nom>
+    <d2p1:listBar>
+      <d2p1:Bar>
+        <d2p1:Adresse>6 Passage Thiéré</d2p1:Adresse>
+        <d2p1:GPS>
+          <d2p1:mLatitude>48.853555</d2p1:mLatitude>
+          <d2p1:mLongitude>2.374861</d2p1:mLongitude>
+        </d2p1:GPS>
+        <d2p1:Nom>Meltdown</d2p1:Nom>
+        <d2p1:Numero>01 77 11 81 78</d2p1:Numero>
+        <d2p1:Photo>Images/ImagesBars/meltdown.jpg</d2p1:Photo>
+        <d2p1:Restauration>true</d2p1:Restauration>
+        <d2p1:commentaires />
+        <d2p1:listBoissons />
+      </d2p1:Bar>
+      <d2p1:Bar>
+        <d2p1:Adresse>52 Rue de Saintonge</d2p1:Adresse>
+        <d2p1:GPS>
+          <d2p1:mLatitude>48.862938</d2p1:mLatitude>
+          <d2p1:mLongitude>2.364019</d2p1:mLongitude>
+        </d2p1:GPS>
+        <d2p1:Nom>Candelaria</d2p1:Nom>
+        <d2p1:Numero>pas de numero</d2p1:Numero>
+        <d2p1:Photo>Images/ImagesBars/candelaria.jpg</d2p1:Photo>
+        <d2p1:Restauration>true</d2p1:Restauration>
+        <d2p1:commentaires />
+        <d2p1:listBoissons />
+      </d2p1:Bar>
+      <d2p1:Bar>
+        <d2p1:Adresse>26 Rue François Miron</d2p1:Adresse>
+        <d2p1:GPS>
+          <d2p1:mLatitude>48.855739</d2p1:mLatitude>
+          <d2p1:mLongitude>2.356165</d2p1:mLongitude>
+        </d2p1:GPS>
+        <d2p1:Nom>La Perla Bar</d2p1:Nom>
+        <d2p1:Numero>01 42 77 59 40</d2p1:Numero>
+        <d2p1:Photo>Images/ImagesBars/laPerlaBar.jpg</d2p1:Photo>
+        <d2p1:Restauration>true</d2p1:Restauration>
+        <d2p1:commentaires />
+        <d2p1:listBoissons />
+      </d2p1:Bar>
+      <d2p1:Bar>
+        <d2p1:Adresse>62 Rue Quincampoix</d2p1:Adresse>
+        <d2p1:GPS>
+          <d2p1:mLatitude>48.855739</d2p1:mLatitude>
+          <d2p1:mLongitude>2.356165</d2p1:mLongitude>
+        </d2p1:GPS>
+        <d2p1:Nom>Bar Demory Paris</d2p1:Nom>
+        <d2p1:Numero>09 81 12 53 06</d2p1:Numero>
+        <d2p1:Photo>Images/ImagesBars/barDemoryParis.jpg</d2p1:Photo>
+        <d2p1:Restauration>false</d2p1:Restauration>
+        <d2p1:commentaires />
+        <d2p1:listBoissons />
+      </d2p1:Bar>
+      <d2p1:Bar>
+        <d2p1:Adresse>101 Rue Amelot</d2p1:Adresse>
+        <d2p1:GPS>
+          <d2p1:mLatitude>48.861313</d2p1:mLatitude>
+          <d2p1:mLongitude>2.367645</d2p1:mLongitude>
+        </d2p1:GPS>
+        <d2p1:Nom>Panic Room</d2p1:Nom>
+        <d2p1:Numero>01 58 30 93 43</d2p1:Numero>
+        <d2p1:Photo>Images/ImagesBars/panicRoom.jpg</d2p1:Photo>
+        <d2p1:Restauration>false</d2p1:Restauration>
+        <d2p1:commentaires />
+        <d2p1:listBoissons />
+      </d2p1:Bar>
+      <d2p1:Bar>
+        <d2p1:Adresse>25 Rue des Grands Augustins</d2p1:Adresse>
+        <d2p1:GPS>
+          <d2p1:mLatitude>48.853746</d2p1:mLatitude>
+          <d2p1:mLongitude>2.340308</d2p1:mLongitude>
+        </d2p1:GPS>
+        <d2p1:Nom>Les Caractères Bar Paris</d2p1:Nom>
+        <d2p1:Numero>07 61 74 47 89</d2p1:Numero>
+        <d2p1:Photo>Images/ImagesBars/lesCaractèresBarParis.jpg</d2p1:Photo>
+        <d2p1:Restauration>false</d2p1:Restauration>
+        <d2p1:commentaires />
+        <d2p1:listBoissons />
+      </d2p1:Bar>
+      <d2p1:Bar>
+        <d2p1:Adresse>5 Rue Sedaine</d2p1:Adresse>
+        <d2p1:GPS>
+          <d2p1:mLatitude>48.855638</d2p1:mLatitude>
+          <d2p1:mLongitude>2.371293</d2p1:mLongitude>
+        </d2p1:GPS>
+        <d2p1:Nom>Moonshiner</d2p1:Nom>
+        <d2p1:Numero>09 50 73 12 99</d2p1:Numero>
+        <d2p1:Photo>Images/ImagesBars/moonshiner.jpg</d2p1:Photo>
+        <d2p1:Restauration>true</d2p1:Restauration>
+        <d2p1:commentaires />
+        <d2p1:listBoissons />
+      </d2p1:Bar>
+      <d2p1:Bar>
+        <d2p1:Adresse>5 Rue Daunou</d2p1:Adresse>
+        <d2p1:GPS>
+          <d2p1:mLatitude>48.853746</d2p1:mLatitude>
+          <d2p1:mLongitude>2.340308</d2p1:mLongitude>
+        </d2p1:GPS>
+        <d2p1:Nom>Harry's New York Bar</d2p1:Nom>
+        <d2p1:Numero>01 42 61 71 14</d2p1:Numero>
+        <d2p1:Photo>Images/ImagesBars/harrysNewYorkBar.jpg</d2p1:Photo>
+        <d2p1:Restauration>false</d2p1:Restauration>
+        <d2p1:commentaires />
+        <d2p1:listBoissons />
+      </d2p1:Bar>
+      <d2p1:Bar>
+        <d2p1:Adresse>46 Rue Jean-Pierre Timbaud</d2p1:Adresse>
+        <d2p1:GPS>
+          <d2p1:mLatitude>48.866367</d2p1:mLatitude>
+          <d2p1:mLongitude>2.372194</d2p1:mLongitude>
+        </d2p1:GPS>
+        <d2p1:Nom>Downtown Cafe</d2p1:Nom>
+        <d2p1:Numero>01 43 14 29 66</d2p1:Numero>
+        <d2p1:Photo>Images/ImagesBars/downtownCafe.jpg</d2p1:Photo>
+        <d2p1:Restauration>false</d2p1:Restauration>
+        <d2p1:commentaires />
+        <d2p1:listBoissons />
+      </d2p1:Bar>
+      <d2p1:Bar>
+        <d2p1:Adresse>5 Passage Ruelle</d2p1:Adresse>
+        <d2p1:GPS>
+          <d2p1:mLatitude>48.886584</d2p1:mLatitude>
+          <d2p1:mLongitude>2.358854</d2p1:mLongitude>
+        </d2p1:GPS>
+        <d2p1:Nom>Ice Kube Bar</d2p1:Nom>
+        <d2p1:Numero>01 42 05 20 00</d2p1:Numero>
+        <d2p1:Photo>Images/ImagesBars/iceKubeBar.jpg</d2p1:Photo>
+        <d2p1:Restauration>false</d2p1:Restauration>
+        <d2p1:commentaires />
+        <d2p1:listBoissons />
+      </d2p1:Bar>
+    </d2p1:listBar>
+  </anyType>
 </ArrayOfanyType>

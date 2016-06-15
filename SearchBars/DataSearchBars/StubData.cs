@@ -104,6 +104,56 @@ namespace DataSearchBars
             //Bar leSpring = new Bar("Le Spring", new CoordonneesGPS(45.773706, 3.086125), "", "");
 
             list.Add(nice);
+
+            Ville sainteEtienne = new Ville("Sainte Etienne", new CoordonneesGPS(45.441, 4.39));
+
+            Bar theSmokingDog = new Bar("The Smoking Dog", new CoordonneesGPS(45.436414, 4.390269), "04 77 47 23 57", "5 Rue Georges Dupré", false, "Images/ImagesBars/theSmokingDog.jpg");
+            Bar leSaintPatrick = new Bar("Le Saint Patrick", new CoordonneesGPS(45.435488, 4.390237), "04 77 25 11 52", "44 Rue des Martyrs de Vingré", false, "Images/ImagesBars/leSaintPatrick.jpg");
+            Bar soggyBottom = new Bar("Soggy Bottom", new CoordonneesGPS(45.439672, 4.385902), "04 77 32 95 98", "9 Rue de la Résistance", false, "Images/ImagesBars/soggyBottom.jpg");
+            Bar lipopetteBar = new Bar("Lipopette Bar", new CoordonneesGPS(45.435617, 4.388625), "04 77 32 64 08", "5 Rue Saint-François", false, "Images/ImagesBars/lipopetteBar.jpg");
+            Bar leBarberousse = new Bar("Le Barberousse", new CoordonneesGPS(45.435023, 4.391136), "04 77 95 14 79", "27 Rue Léon Nautin", false, "Images/ImagesBars/leBarberousse.jpg");
+            Bar zoobar = new Bar("Zoobar", new CoordonneesGPS(45.437129, 4.392145), "04 77 80 85 84", "27 Rue Léon Nautin", true, "Images/ImagesBars/zoobar.jpg");
+            Bar volDeNuit = new Bar("Vol de Nuit", new CoordonneesGPS(45.438293, 4.392548), "04 77 33 48 02", "12 Rue Elise Gervais", false, "Images/ImagesBars/volDeNuit.jpg");
+            Bar leChantier = new Bar("LE CHANTIER", new CoordonneesGPS(45.427643, 4.390312), "04 77 41 75 13", "32 Rue du Onze Novembre", false, "Images/ImagesBars/leChantier.jpg");
+            Bar leCafeStJacques = new Bar("Le Café St Jacques", new CoordonneesGPS(45.436357, 4.390070), "04 77 32 00 79", "13 Rue des Martyrs de Vingré", false, "Images/ImagesBars/leCafeStJacques.jpg");
+
+            sainteEtienne.ajouterBar(theSmokingDog);
+            sainteEtienne.ajouterBar(leSaintPatrick);
+            sainteEtienne.ajouterBar(soggyBottom);
+            sainteEtienne.ajouterBar(lipopetteBar);
+            sainteEtienne.ajouterBar(leBarberousse);
+            sainteEtienne.ajouterBar(zoobar);
+            sainteEtienne.ajouterBar(volDeNuit);
+            sainteEtienne.ajouterBar(leChantier);
+            sainteEtienne.ajouterBar(leCafeStJacques);
+
+            list.Add(sainteEtienne);
+
+            Ville paris = new Ville("Paris", new CoordonneesGPS(48.856579, 2.345495));
+
+            Bar meltdown = new Bar("Meltdown", new CoordonneesGPS(48.853555, 2.374861), "01 77 11 81 78", "6 Passage Thiéré", true, "Images/ImagesBars/meltdown.jpg");
+            Bar candelaria = new Bar("Candelaria", new CoordonneesGPS(48.862938, 2.364019), "pas de numero", "52 Rue de Saintonge", true, "Images/ImagesBars/candelaria.jpg");
+            Bar laPerlaBar = new Bar("La Perla Bar", new CoordonneesGPS(48.855739, 2.356165), "01 42 77 59 40", "26 Rue François Miron", true, "Images/ImagesBars/laPerlaBar.jpg");
+            Bar barDemoryParis = new Bar("Bar Demory Paris", new CoordonneesGPS(48.855739, 2.356165), "09 81 12 53 06", "62 Rue Quincampoix", false, "Images/ImagesBars/barDemoryParis.jpg");
+            Bar panicRoom = new Bar("Panic Room", new CoordonneesGPS(48.861313, 2.367645), "01 58 30 93 43", "101 Rue Amelot", false, "Images/ImagesBars/panicRoom.jpg");
+            Bar lesCaractèresBarParis = new Bar("Les Caractères Bar Paris", new CoordonneesGPS(48.853746, 2.340308), "07 61 74 47 89", "25 Rue des Grands Augustins", false, "Images/ImagesBars/lesCaractèresBarParis.jpg");
+            Bar moonshiner = new Bar("Moonshiner", new CoordonneesGPS(48.855638, 2.371293), "09 50 73 12 99", "5 Rue Sedaine", true, "Images/ImagesBars/moonshiner.jpg");
+            Bar harrysNewYorkBar = new Bar("Harry's New York Bar", new CoordonneesGPS(48.853746, 2.340308), "01 42 61 71 14", "5 Rue Daunou", false, "Images/ImagesBars/harrysNewYorkBar.jpg");
+            Bar downtownCafe = new Bar("Downtown Cafe", new CoordonneesGPS(48.866367, 2.372194), "01 43 14 29 66", "46 Rue Jean-Pierre Timbaud", false, "Images/ImagesBars/downtownCafe.jpg");
+            Bar iceKubeBar = new Bar("Ice Kube Bar", new CoordonneesGPS(48.886584, 2.358854), "01 42 05 20 00", "5 Passage Ruelle", false, "Images/ImagesBars/iceKubeBar.jpg");
+
+            paris.ajouterBar(meltdown);
+            paris.ajouterBar(candelaria);
+            paris.ajouterBar(laPerlaBar);
+            paris.ajouterBar(barDemoryParis);
+            paris.ajouterBar(panicRoom);
+            paris.ajouterBar(lesCaractèresBarParis);
+            paris.ajouterBar(moonshiner);
+            paris.ajouterBar(harrysNewYorkBar);
+            paris.ajouterBar(downtownCafe);
+            paris.ajouterBar(iceKubeBar);
+
+            list.Add(paris);
            
             return list;
         }

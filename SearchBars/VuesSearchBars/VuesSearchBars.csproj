@@ -213,6 +213,27 @@
     <Resource Include="Images\ImagesBars\rimbaud.jpg" />
     <Resource Include="Images\ImagesBars\verlaine.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\ImagesBars\barDemoryParis.jpg" />
+    <Resource Include="Images\ImagesBars\candelaria.jpg" />
+    <Resource Include="Images\ImagesBars\downtownCafe.jpg" />
+    <Resource Include="Images\ImagesBars\harrysNewYorkBar.jpg" />
+    <Resource Include="Images\ImagesBars\iceKubeBar.jpg" />
+    <Resource Include="Images\ImagesBars\laPerlaBar.jpg" />
+    <Resource Include="Images\ImagesBars\leBarberousse.jpg" />
+    <Resource Include="Images\ImagesBars\leCafeStJacques.jpg" />
+    <Resource Include="Images\ImagesBars\leChantier.jpg" />
+    <Resource Include="Images\ImagesBars\leSaintPatrick.jpg" />
+    <Resource Include="Images\ImagesBars\lesCaractèresBarParis.jpg" />
+    <Resource Include="Images\ImagesBars\lipopetteBar.jpg" />
+    <Resource Include="Images\ImagesBars\meltdown.jpg" />
+    <Resource Include="Images\ImagesBars\moonshiner.jpg" />
+    <Resource Include="Images\ImagesBars\panicRoom.jpg" />
+    <Resource Include="Images\ImagesBars\soggyBottom.jpg" />
+    <Resource Include="Images\ImagesBars\theSmokingDog.jpg" />
+    <Resource Include="Images\ImagesBars\volDeNuit.jpg" />
+    <Resource Include="Images\ImagesBars\zoobar.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
