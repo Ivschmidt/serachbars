@@ -1,8 +1,8 @@
 -diagramme de sequence
 -ajouter les classes de sauvegarde
--regler le bug du currentUser = null si modif du pseudo
 -binder map
 -toutes la docs
 - voir pour list photos
-- ordonner le XML
 - binder pushpins + center
+- faire un event depuis metier sur vues
+- seprarer tests

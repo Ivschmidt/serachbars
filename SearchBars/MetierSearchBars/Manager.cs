@@ -51,7 +51,7 @@ namespace MetierSearchBars
         {
             DataManager = dataManager;
             mCurrentUser = null;
-            //ChargerDonnees();
+            ChargerDonnees();
         }
 
         /// <summary>
