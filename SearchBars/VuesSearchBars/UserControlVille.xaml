@@ -9,7 +9,7 @@
              d:DesignHeight="300" d:DesignWidth="300"
              x:Name="root">
     <UserControl.Resources>
-        <DataTemplate x:Key="LogoTemplate">
+        <DataTemplate x:Key="VilleTemplate">
             <map:Pushpin x:Name="ppp" >
                 <map:MapLayer.Position>
                     <map:Location Latitude="{Binding Ville.GPSVille.Latitude, ElementName=root}" Longitude="{Binding Ville.GPSVille.Longitude,ElementName=root}" />
@@ -25,7 +25,7 @@
                     <map:Pushpin x:Name="pushPin" Width="30">
                         <map:Location/>
                     </map:Pushpin>
-                    <!--<map:MapItemsControl ItemTemplate="{StaticResource LogoTemplate}"  map:MapLayer.Position="{Binding}"/>-->
+                    <!--<map:MapItemsControl ItemTemplate="{StaticResource VilleTemplate}"  map:MapLayer.Position="{Binding}"/>-->
 
                 </map:Map.Children>
 

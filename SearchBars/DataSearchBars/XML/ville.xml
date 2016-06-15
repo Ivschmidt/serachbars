@@ -3,15 +3,15 @@
   <anyType xmlns:d2p1="http://schemas.datacontract.org/2004/07/MetierSearchBars" i:type="d2p1:Ville">
     <d2p1:Nom>Clermont-ferrand</d2p1:Nom>
     <d2p1:GPSVille>
-      <d2p1:Latitude>0</d2p1:Latitude>
-      <d2p1:Longitude>0</d2p1:Longitude>
+      <d2p1:Latitude>45.7833</d2p1:Latitude>
+      <d2p1:Longitude>3.0833</d2p1:Longitude>
     </d2p1:GPSVille>
     <d2p1:listeDesBarsDeLaVille>
       <d2p1:Bar>
         <d2p1:Nom>Le Starter</d2p1:Nom>
         <d2p1:GPSBar>
-          <d2p1:Latitude>0</d2p1:Latitude>
-          <d2p1:Longitude>0</d2p1:Longitude>
+          <d2p1:Latitude>45.782036</d2p1:Latitude>
+          <d2p1:Longitude>3.081432</d2p1:Longitude>
         </d2p1:GPSBar>
         <d2p1:Restauration>false</d2p1:Restauration>
         <d2p1:Adresse>17 Rue Sainte-Claire</d2p1:Adresse>
@@ -89,8 +89,8 @@
       <d2p1:Bar>
         <d2p1:Nom>Le Délirium</d2p1:Nom>
         <d2p1:GPSBar>
-          <d2p1:Latitude>0</d2p1:Latitude>
-          <d2p1:Longitude>0</d2p1:Longitude>
+          <d2p1:Latitude>45.776289</d2p1:Latitude>
+          <d2p1:Longitude>3.083339</d2p1:Longitude>
         </d2p1:GPSBar>
         <d2p1:Restauration>true</d2p1:Restauration>
         <d2p1:Adresse>20 rue de la Tour d'Auvergne</d2p1:Adresse>
@@ -149,8 +149,8 @@
       <d2p1:Bar>
         <d2p1:Nom>The Still Irish Bar</d2p1:Nom>
         <d2p1:GPSBar>
-          <d2p1:Latitude>0</d2p1:Latitude>
-          <d2p1:Longitude>0</d2p1:Longitude>
+          <d2p1:Latitude>45.773706</d2p1:Latitude>
+          <d2p1:Longitude>3.086125</d2p1:Longitude>
         </d2p1:GPSBar>
         <d2p1:Restauration>false</d2p1:Restauration>
         <d2p1:Adresse>7 Boulevard Léon Malfreyt</d2p1:Adresse>
@@ -221,8 +221,8 @@
       <d2p1:Bar>
         <d2p1:Nom>Les Berthom</d2p1:Nom>
         <d2p1:GPSBar>
-          <d2p1:Latitude>0</d2p1:Latitude>
-          <d2p1:Longitude>0</d2p1:Longitude>
+          <d2p1:Latitude>45.779581</d2p1:Latitude>
+          <d2p1:Longitude>3.080976</d2p1:Longitude>
         </d2p1:GPSBar>
         <d2p1:Restauration>true</d2p1:Restauration>
         <d2p1:Adresse>6 Place Etoile</d2p1:Adresse>
@@ -234,8 +234,8 @@
       <d2p1:Bar>
         <d2p1:Nom>Captain's Cabin</d2p1:Nom>
         <d2p1:GPSBar>
-          <d2p1:Latitude>0</d2p1:Latitude>
-          <d2p1:Longitude>0</d2p1:Longitude>
+          <d2p1:Latitude>45.779379</d2p1:Latitude>
+          <d2p1:Longitude>3.081777</d2p1:Longitude>
         </d2p1:GPSBar>
         <d2p1:Restauration>false</d2p1:Restauration>
         <d2p1:Adresse>20 Avenue des États Unis</d2p1:Adresse>
@@ -247,8 +247,8 @@
       <d2p1:Bar>
         <d2p1:Nom>3 Monkeys Pub</d2p1:Nom>
         <d2p1:GPSBar>
-          <d2p1:Latitude>0</d2p1:Latitude>
-          <d2p1:Longitude>0</d2p1:Longitude>
+          <d2p1:Latitude>45.774317</d2p1:Latitude>
+          <d2p1:Longitude>3.094291</d2p1:Longitude>
         </d2p1:GPSBar>
         <d2p1:Restauration>true</d2p1:Restauration>
         <d2p1:Adresse>25 Avenue des Paulines</d2p1:Adresse>
@@ -260,8 +260,8 @@
       <d2p1:Bar>
         <d2p1:Nom>Hacienda Cafe</d2p1:Nom>
         <d2p1:GPSBar>
-          <d2p1:Latitude>0</d2p1:Latitude>
-          <d2p1:Longitude>0</d2p1:Longitude>
+          <d2p1:Latitude>45.780042</d2p1:Latitude>
+          <d2p1:Longitude>3.083441</d2p1:Longitude>
         </d2p1:GPSBar>
         <d2p1:Restauration>true</d2p1:Restauration>
         <d2p1:Adresse>5 Place Gilbert Gaillard</d2p1:Adresse>
@@ -273,8 +273,8 @@
       <d2p1:Bar>
         <d2p1:Nom>Le Verlaine</d2p1:Nom>
         <d2p1:GPSBar>
-          <d2p1:Latitude>0</d2p1:Latitude>
-          <d2p1:Longitude>0</d2p1:Longitude>
+          <d2p1:Latitude>45.775282</d2p1:Latitude>
+          <d2p1:Longitude>3.084487</d2p1:Longitude>
         </d2p1:GPSBar>
         <d2p1:Restauration>false</d2p1:Restauration>
         <d2p1:Adresse>5 Mail d'Allagnat</d2p1:Adresse>
@@ -286,8 +286,8 @@
       <d2p1:Bar>
         <d2p1:Nom>Le Rimbaud</d2p1:Nom>
         <d2p1:GPSBar>
-          <d2p1:Latitude>0</d2p1:Latitude>
-          <d2p1:Longitude>0</d2p1:Longitude>
+          <d2p1:Latitude>45.774817</d2p1:Latitude>
+          <d2p1:Longitude>3.084195</d2p1:Longitude>
         </d2p1:GPSBar>
         <d2p1:Restauration>false</d2p1:Restauration>
         <d2p1:Adresse>Place Louis Aragon</d2p1:Adresse>
@@ -299,8 +299,8 @@
       <d2p1:Bar>
         <d2p1:Nom>L'Appart</d2p1:Nom>
         <d2p1:GPSBar>
-          <d2p1:Latitude>0</d2p1:Latitude>
-          <d2p1:Longitude>0</d2p1:Longitude>
+          <d2p1:Latitude>45.77761</d2p1:Latitude>
+          <d2p1:Longitude>3.084859</d2p1:Longitude>
         </d2p1:GPSBar>
         <d2p1:Restauration>true</d2p1:Restauration>
         <d2p1:Adresse>6 Place Sugny</d2p1:Adresse>
@@ -314,15 +314,15 @@
   <anyType xmlns:d2p1="http://schemas.datacontract.org/2004/07/MetierSearchBars" i:type="d2p1:Ville">
     <d2p1:Nom>Nice</d2p1:Nom>
     <d2p1:GPSVille>
-      <d2p1:Latitude>0</d2p1:Latitude>
-      <d2p1:Longitude>0</d2p1:Longitude>
+      <d2p1:Latitude>43.7</d2p1:Latitude>
+      <d2p1:Longitude>7.25</d2p1:Longitude>
     </d2p1:GPSVille>
     <d2p1:listeDesBarsDeLaVille>
       <d2p1:Bar>
         <d2p1:Nom>Le Jam</d2p1:Nom>
         <d2p1:GPSBar>
-          <d2p1:Latitude>0</d2p1:Latitude>
-          <d2p1:Longitude>0</d2p1:Longitude>
+          <d2p1:Latitude>43.696485</d2p1:Latitude>
+          <d2p1:Longitude>7.264722</d2p1:Longitude>
         </d2p1:GPSBar>
         <d2p1:Restauration>false</d2p1:Restauration>
         <d2p1:Adresse>10 Rue du Commandant Raffali</d2p1:Adresse>
@@ -334,8 +334,8 @@
       <d2p1:Bar>
         <d2p1:Nom>Akathor</d2p1:Nom>
         <d2p1:GPSBar>
-          <d2p1:Latitude>0</d2p1:Latitude>
-          <d2p1:Longitude>0</d2p1:Longitude>
+          <d2p1:Latitude>43.695566</d2p1:Latitude>
+          <d2p1:Longitude>7.27404</d2p1:Longitude>
         </d2p1:GPSBar>
         <d2p1:Restauration>true</d2p1:Restauration>
         <d2p1:Adresse>32 Rue Cours Saleya</d2p1:Adresse>
@@ -349,15 +349,15 @@
   <anyType xmlns:d2p1="http://schemas.datacontract.org/2004/07/MetierSearchBars" i:type="d2p1:Ville">
     <d2p1:Nom>Saint Etienne</d2p1:Nom>
     <d2p1:GPSVille>
-      <d2p1:Latitude>0</d2p1:Latitude>
-      <d2p1:Longitude>0</d2p1:Longitude>
+      <d2p1:Latitude>45.441</d2p1:Latitude>
+      <d2p1:Longitude>4.39</d2p1:Longitude>
     </d2p1:GPSVille>
     <d2p1:listeDesBarsDeLaVille>
       <d2p1:Bar>
         <d2p1:Nom>The Smoking Dog</d2p1:Nom>
         <d2p1:GPSBar>
-          <d2p1:Latitude>0</d2p1:Latitude>
-          <d2p1:Longitude>0</d2p1:Longitude>
+          <d2p1:Latitude>45.436414</d2p1:Latitude>
+          <d2p1:Longitude>4.390269</d2p1:Longitude>
         </d2p1:GPSBar>
         <d2p1:Restauration>false</d2p1:Restauration>
         <d2p1:Adresse>5 Rue Georges Dupré</d2p1:Adresse>
@@ -369,8 +369,8 @@
       <d2p1:Bar>
         <d2p1:Nom>Le Saint Patrick</d2p1:Nom>
         <d2p1:GPSBar>
-          <d2p1:Latitude>0</d2p1:Latitude>
-          <d2p1:Longitude>0</d2p1:Longitude>
+          <d2p1:Latitude>45.435488</d2p1:Latitude>
+          <d2p1:Longitude>4.390237</d2p1:Longitude>
         </d2p1:GPSBar>
         <d2p1:Restauration>false</d2p1:Restauration>
         <d2p1:Adresse>44 Rue des Martyrs de Vingré</d2p1:Adresse>
@@ -382,8 +382,8 @@
       <d2p1:Bar>
         <d2p1:Nom>Soggy Bottom</d2p1:Nom>
         <d2p1:GPSBar>
-          <d2p1:Latitude>0</d2p1:Latitude>
-          <d2p1:Longitude>0</d2p1:Longitude>
+          <d2p1:Latitude>45.439672</d2p1:Latitude>
+          <d2p1:Longitude>4.385902</d2p1:Longitude>
         </d2p1:GPSBar>
         <d2p1:Restauration>false</d2p1:Restauration>
         <d2p1:Adresse>9 Rue de la Résistance</d2p1:Adresse>
@@ -395,8 +395,8 @@
       <d2p1:Bar>
         <d2p1:Nom>Lipopette Bar</d2p1:Nom>
         <d2p1:GPSBar>
-          <d2p1:Latitude>0</d2p1:Latitude>
-          <d2p1:Longitude>0</d2p1:Longitude>
+          <d2p1:Latitude>45.435617</d2p1:Latitude>
+          <d2p1:Longitude>4.388625</d2p1:Longitude>
         </d2p1:GPSBar>
         <d2p1:Restauration>false</d2p1:Restauration>
         <d2p1:Adresse>5 Rue Saint-François</d2p1:Adresse>
@@ -408,8 +408,8 @@
       <d2p1:Bar>
         <d2p1:Nom>Le Barberousse</d2p1:Nom>
         <d2p1:GPSBar>
-          <d2p1:Latitude>0</d2p1:Latitude>
-          <d2p1:Longitude>0</d2p1:Longitude>
+          <d2p1:Latitude>45.435023</d2p1:Latitude>
+          <d2p1:Longitude>4.391136</d2p1:Longitude>
         </d2p1:GPSBar>
         <d2p1:Restauration>false</d2p1:Restauration>
         <d2p1:Adresse>27 Rue Léon Nautin</d2p1:Adresse>
@@ -421,8 +421,8 @@
       <d2p1:Bar>
         <d2p1:Nom>Zoobar</d2p1:Nom>
         <d2p1:GPSBar>
-          <d2p1:Latitude>0</d2p1:Latitude>
-          <d2p1:Longitude>0</d2p1:Longitude>
+          <d2p1:Latitude>45.437129</d2p1:Latitude>
+          <d2p1:Longitude>4.392145</d2p1:Longitude>
         </d2p1:GPSBar>
         <d2p1:Restauration>true</d2p1:Restauration>
         <d2p1:Adresse>27 Rue Léon Nautin</d2p1:Adresse>
@@ -434,8 +434,8 @@
       <d2p1:Bar>
         <d2p1:Nom>Vol de Nuit</d2p1:Nom>
         <d2p1:GPSBar>
-          <d2p1:Latitude>0</d2p1:Latitude>
-          <d2p1:Longitude>0</d2p1:Longitude>
+          <d2p1:Latitude>45.438293</d2p1:Latitude>
+          <d2p1:Longitude>4.392548</d2p1:Longitude>
         </d2p1:GPSBar>
         <d2p1:Restauration>false</d2p1:Restauration>
         <d2p1:Adresse>12 Rue Elise Gervais</d2p1:Adresse>
@@ -447,8 +447,8 @@
       <d2p1:Bar>
         <d2p1:Nom>LE CHANTIER</d2p1:Nom>
         <d2p1:GPSBar>
-          <d2p1:Latitude>0</d2p1:Latitude>
-          <d2p1:Longitude>0</d2p1:Longitude>
+          <d2p1:Latitude>45.427643</d2p1:Latitude>
+          <d2p1:Longitude>4.390312</d2p1:Longitude>
         </d2p1:GPSBar>
         <d2p1:Restauration>false</d2p1:Restauration>
         <d2p1:Adresse>32 Rue du Onze Novembre</d2p1:Adresse>
@@ -460,8 +460,8 @@
       <d2p1:Bar>
         <d2p1:Nom>Le Café St Jacques</d2p1:Nom>
         <d2p1:GPSBar>
-          <d2p1:Latitude>0</d2p1:Latitude>
-          <d2p1:Longitude>0</d2p1:Longitude>
+          <d2p1:Latitude>45.436357</d2p1:Latitude>
+          <d2p1:Longitude>4.39007</d2p1:Longitude>
         </d2p1:GPSBar>
         <d2p1:Restauration>false</d2p1:Restauration>
         <d2p1:Adresse>13 Rue des Martyrs de Vingré</d2p1:Adresse>
@@ -475,15 +475,15 @@
   <anyType xmlns:d2p1="http://schemas.datacontract.org/2004/07/MetierSearchBars" i:type="d2p1:Ville">
     <d2p1:Nom>Paris</d2p1:Nom>
     <d2p1:GPSVille>
-      <d2p1:Latitude>0</d2p1:Latitude>
-      <d2p1:Longitude>0</d2p1:Longitude>
+      <d2p1:Latitude>48.856579</d2p1:Latitude>
+      <d2p1:Longitude>2.345495</d2p1:Longitude>
     </d2p1:GPSVille>
     <d2p1:listeDesBarsDeLaVille>
       <d2p1:Bar>
         <d2p1:Nom>Meltdown</d2p1:Nom>
         <d2p1:GPSBar>
-          <d2p1:Latitude>0</d2p1:Latitude>
-          <d2p1:Longitude>0</d2p1:Longitude>
+          <d2p1:Latitude>48.853555</d2p1:Latitude>
+          <d2p1:Longitude>2.374861</d2p1:Longitude>
         </d2p1:GPSBar>
         <d2p1:Restauration>true</d2p1:Restauration>
         <d2p1:Adresse>6 Passage Thiéré</d2p1:Adresse>
@@ -495,8 +495,8 @@
       <d2p1:Bar>
         <d2p1:Nom>Candelaria</d2p1:Nom>
         <d2p1:GPSBar>
-          <d2p1:Latitude>0</d2p1:Latitude>
-          <d2p1:Longitude>0</d2p1:Longitude>
+          <d2p1:Latitude>48.862938</d2p1:Latitude>
+          <d2p1:Longitude>2.364019</d2p1:Longitude>
         </d2p1:GPSBar>
         <d2p1:Restauration>true</d2p1:Restauration>
         <d2p1:Adresse>52 Rue de Saintonge</d2p1:Adresse>
@@ -508,8 +508,8 @@
       <d2p1:Bar>
         <d2p1:Nom>La Perla Bar</d2p1:Nom>
         <d2p1:GPSBar>
-          <d2p1:Latitude>0</d2p1:Latitude>
-          <d2p1:Longitude>0</d2p1:Longitude>
+          <d2p1:Latitude>48.855739</d2p1:Latitude>
+          <d2p1:Longitude>2.356165</d2p1:Longitude>
         </d2p1:GPSBar>
         <d2p1:Restauration>true</d2p1:Restauration>
         <d2p1:Adresse>26 Rue François Miron</d2p1:Adresse>
@@ -521,8 +521,8 @@
       <d2p1:Bar>
         <d2p1:Nom>Bar Demory Paris</d2p1:Nom>
         <d2p1:GPSBar>
-          <d2p1:Latitude>0</d2p1:Latitude>
-          <d2p1:Longitude>0</d2p1:Longitude>
+          <d2p1:Latitude>48.855739</d2p1:Latitude>
+          <d2p1:Longitude>2.356165</d2p1:Longitude>
         </d2p1:GPSBar>
         <d2p1:Restauration>false</d2p1:Restauration>
         <d2p1:Adresse>62 Rue Quincampoix</d2p1:Adresse>
@@ -534,8 +534,8 @@
       <d2p1:Bar>
         <d2p1:Nom>Panic Room</d2p1:Nom>
         <d2p1:GPSBar>
-          <d2p1:Latitude>0</d2p1:Latitude>
-          <d2p1:Longitude>0</d2p1:Longitude>
+          <d2p1:Latitude>48.861313</d2p1:Latitude>
+          <d2p1:Longitude>2.367645</d2p1:Longitude>
         </d2p1:GPSBar>
         <d2p1:Restauration>false</d2p1:Restauration>
         <d2p1:Adresse>101 Rue Amelot</d2p1:Adresse>
@@ -547,8 +547,8 @@
       <d2p1:Bar>
         <d2p1:Nom>Les Caractères Bar Paris</d2p1:Nom>
         <d2p1:GPSBar>
-          <d2p1:Latitude>0</d2p1:Latitude>
-          <d2p1:Longitude>0</d2p1:Longitude>
+          <d2p1:Latitude>48.853746</d2p1:Latitude>
+          <d2p1:Longitude>2.340308</d2p1:Longitude>
         </d2p1:GPSBar>
         <d2p1:Restauration>false</d2p1:Restauration>
         <d2p1:Adresse>25 Rue des Grands Augustins</d2p1:Adresse>
@@ -560,8 +560,8 @@
       <d2p1:Bar>
         <d2p1:Nom>Moonshiner</d2p1:Nom>
         <d2p1:GPSBar>
-          <d2p1:Latitude>0</d2p1:Latitude>
-          <d2p1:Longitude>0</d2p1:Longitude>
+          <d2p1:Latitude>48.855638</d2p1:Latitude>
+          <d2p1:Longitude>2.371293</d2p1:Longitude>
         </d2p1:GPSBar>
         <d2p1:Restauration>true</d2p1:Restauration>
         <d2p1:Adresse>5 Rue Sedaine</d2p1:Adresse>
@@ -573,8 +573,8 @@
       <d2p1:Bar>
         <d2p1:Nom>Harry's New York Bar</d2p1:Nom>
         <d2p1:GPSBar>
-          <d2p1:Latitude>0</d2p1:Latitude>
-          <d2p1:Longitude>0</d2p1:Longitude>
+          <d2p1:Latitude>48.853746</d2p1:Latitude>
+          <d2p1:Longitude>2.340308</d2p1:Longitude>
         </d2p1:GPSBar>
         <d2p1:Restauration>false</d2p1:Restauration>
         <d2p1:Adresse>5 Rue Daunou</d2p1:Adresse>
@@ -586,8 +586,8 @@
       <d2p1:Bar>
         <d2p1:Nom>Downtown Cafe</d2p1:Nom>
         <d2p1:GPSBar>
-          <d2p1:Latitude>0</d2p1:Latitude>
-          <d2p1:Longitude>0</d2p1:Longitude>
+          <d2p1:Latitude>48.866367</d2p1:Latitude>
+          <d2p1:Longitude>2.372194</d2p1:Longitude>
         </d2p1:GPSBar>
         <d2p1:Restauration>false</d2p1:Restauration>
         <d2p1:Adresse>46 Rue Jean-Pierre Timbaud</d2p1:Adresse>
@@ -599,8 +599,8 @@
       <d2p1:Bar>
         <d2p1:Nom>Ice Kube Bar</d2p1:Nom>
         <d2p1:GPSBar>
-          <d2p1:Latitude>0</d2p1:Latitude>
-          <d2p1:Longitude>0</d2p1:Longitude>
+          <d2p1:Latitude>48.886584</d2p1:Latitude>
+          <d2p1:Longitude>2.358854</d2p1:Longitude>
         </d2p1:GPSBar>
         <d2p1:Restauration>false</d2p1:Restauration>
         <d2p1:Adresse>5 Passage Ruelle</d2p1:Adresse>
