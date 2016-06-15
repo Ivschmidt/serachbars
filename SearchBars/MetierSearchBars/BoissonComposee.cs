@@ -10,9 +10,9 @@ namespace MetierSearchBars
     [DataContract]
     class BoissonComposee : Boisson
     {
-        [DataMember]
+        [DataMember (Order = 0, Name = "listeDesBoissons")]
         private List<Boisson> listBoissons;
-        [DataMember]
+        [DataMember (Order = 1, Name = "listeDesIngredients")]
         private List<Ingredient> listIng;
 
         public BoissonComposee(string nom, double prix, double degreA, TypeBoisson type, List<Boisson> boissonList, List<Ingredient> ingrList)

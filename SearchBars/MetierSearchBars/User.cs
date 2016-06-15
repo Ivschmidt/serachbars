@@ -33,7 +33,7 @@ namespace MetierSearchBars
         /// Pseudo : pseudo de l'utilisateur, identifiant discriminant
         /// ne peut pas être nul (exception)
         /// </summary>
-        [DataMember]
+        [DataMember (Order = 0)]
         public string Pseudo
         {
             get { return pseudo; }
@@ -53,7 +53,7 @@ namespace MetierSearchBars
         /// Mdp : mot de passe de l'utilisateur, utilisé pour la connexion permettant de vérifier l'authenticité de l'utilisateur
         /// Ne peut pas être nul (exception)
         /// </summary>
-        [DataMember (Name = "motDePasse")]
+        [DataMember (Name = "motDePasse", Order = 7)]
         public string Mdp
         {
             get { return mdp; }
@@ -72,7 +72,7 @@ namespace MetierSearchBars
         /// Nom : nom de l'utilisateur
         /// ne peut pas être nul (exception)
         /// </summary>
-        [DataMember]
+        [DataMember (Order = 1)]
         public string Nom
         {
             get { return nom; }
@@ -92,7 +92,7 @@ namespace MetierSearchBars
         /// Prenom : prénom de l'utilisateur
         /// Ne peut pas être nul (exception)
         /// </summary>
-        [DataMember]
+        [DataMember (Order = 1)]
         public string Prenom
         {
             get { return prenom; }
@@ -111,13 +111,13 @@ namespace MetierSearchBars
         /// <summary>
         /// Sexe : sexe de l'utilisateur (homme ou femme)
         /// </summary>
-        [DataMember]
+        [DataMember (Order = 2)]
         public Sexe Sexe { get; set; }
 
         /// <summary>
         /// DdN : date de naissance de l'utilisateur 
         /// </summary>
-        [DataMember (Name = "dateDeNaissance")]
+        [DataMember (Name = "dateDeNaissance", Order = 3)]
         public DateTime DdN
         {
             get
@@ -136,7 +136,7 @@ namespace MetierSearchBars
         /// NumTel : numero de téléphone de l'utilisateur (optionnel)
         /// doit contenir 10 caractères et seulement des chiffres
         /// </summary>
-        [DataMember (Name = "NumeroTelephone")]
+        [DataMember (Name = "NumeroTelephone", Order = 4)]
         public string NumTel
         {
             get
@@ -165,7 +165,7 @@ namespace MetierSearchBars
         /// <summary>
         /// Ville : ville d'habitation de l'utilisateur (optionnel)
         /// </summary>
-        [DataMember]
+        [DataMember (Order = 4)]
         public string Ville
         {
             get
@@ -184,7 +184,7 @@ namespace MetierSearchBars
         /// BoissonPref : boisson préférée de l'utilisateur parmi les éléments de l'enum Type (bière, vin, etc) (optionnel) 
         /// Si champ non renseigné = null
         /// </summary>
-        [DataMember(EmitDefaultValue = false)]
+        [DataMember(EmitDefaultValue = false, Order = 5)]
         public TypeBoisson? BoissonPref
         {
             get
@@ -202,7 +202,7 @@ namespace MetierSearchBars
         /// <summary>
         /// PhotoDeProfil : chemin pour accéder a la photo de profil de l'utilisateur (optionnel)
         /// </summary>
-        [DataMember]
+        [DataMember (Order = 6)]
         public string PhotoDeProfil { get; set; }
 
         /// <summary>

@@ -38,7 +38,7 @@ namespace DataSearchBars
             starter.ajouterBoisson(new BoissonSimple("Vodka", 5, "Eristoff", 37, TypeBoisson.AlcoolFort));
             starter.ajouterBoisson(new BoissonSimple("Coca Cherry", 1.5, "Coca Cola", 0, TypeBoisson.Soda));
             starter.laisserAvis(new Avis(1, "j'ai failli mourir"), trololo);
-            starter.laisserAvis(new Avis(4, "Wesh ma gueule ça pete sa mère c'est trop bien !"), enzo);
+            starter.laisserAvis(new Avis(4, "Wesh c'est trop bien ce bar !"), enzo);
             //starter.ajouterPhoto("Images/ImagesBars/starter.jpg");
             //starter.ajouterPhoto("Images/ImagesBars/starter2.jpg");
             //starter.ajouterPhoto("Images/ImagesBars/starter3.jpg");
@@ -105,7 +105,7 @@ namespace DataSearchBars
 
             list.Add(nice);
 
-            Ville sainteEtienne = new Ville("Sainte Etienne", new CoordonneesGPS(45.441, 4.39));
+            Ville saintEtienne = new Ville("Saint Etienne", new CoordonneesGPS(45.441, 4.39));
 
             Bar theSmokingDog = new Bar("The Smoking Dog", new CoordonneesGPS(45.436414, 4.390269), "04 77 47 23 57", "5 Rue Georges Dupré", false, "Images/ImagesBars/theSmokingDog.jpg");
             Bar leSaintPatrick = new Bar("Le Saint Patrick", new CoordonneesGPS(45.435488, 4.390237), "04 77 25 11 52", "44 Rue des Martyrs de Vingré", false, "Images/ImagesBars/leSaintPatrick.jpg");
@@ -117,17 +117,17 @@ namespace DataSearchBars
             Bar leChantier = new Bar("LE CHANTIER", new CoordonneesGPS(45.427643, 4.390312), "04 77 41 75 13", "32 Rue du Onze Novembre", false, "Images/ImagesBars/leChantier.jpg");
             Bar leCafeStJacques = new Bar("Le Café St Jacques", new CoordonneesGPS(45.436357, 4.390070), "04 77 32 00 79", "13 Rue des Martyrs de Vingré", false, "Images/ImagesBars/leCafeStJacques.jpg");
 
-            sainteEtienne.ajouterBar(theSmokingDog);
-            sainteEtienne.ajouterBar(leSaintPatrick);
-            sainteEtienne.ajouterBar(soggyBottom);
-            sainteEtienne.ajouterBar(lipopetteBar);
-            sainteEtienne.ajouterBar(leBarberousse);
-            sainteEtienne.ajouterBar(zoobar);
-            sainteEtienne.ajouterBar(volDeNuit);
-            sainteEtienne.ajouterBar(leChantier);
-            sainteEtienne.ajouterBar(leCafeStJacques);
+            saintEtienne.ajouterBar(theSmokingDog);
+            saintEtienne.ajouterBar(leSaintPatrick);
+            saintEtienne.ajouterBar(soggyBottom);
+            saintEtienne.ajouterBar(lipopetteBar);
+            saintEtienne.ajouterBar(leBarberousse);
+            saintEtienne.ajouterBar(zoobar);
+            saintEtienne.ajouterBar(volDeNuit);
+            saintEtienne.ajouterBar(leChantier);
+            saintEtienne.ajouterBar(leCafeStJacques);
 
-            list.Add(sainteEtienne);
+            list.Add(saintEtienne);
 
             Ville paris = new Ville("Paris", new CoordonneesGPS(48.856579, 2.345495));
 

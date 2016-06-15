@@ -10,13 +10,13 @@ namespace MetierSearchBars
     [DataContract]
     abstract class Boisson : IBoisson
     {
-        [DataMember]
+        [DataMember (Order = 0, Name = "typeDeLaBoisson")]
         public TypeBoisson Type{ get; set; }
-        [DataMember]
+        [DataMember (Order = 1)]
         public string Nom { get; set; }
-        [DataMember]
+        [DataMember (Order = 2)]
         public double Prix { get; set; }
-        [DataMember]
+        [DataMember (Order = 3)]
         public double DegreAlcool { get; set; }
 
         public Boisson(string nom, double prix, double degreA, TypeBoisson type)

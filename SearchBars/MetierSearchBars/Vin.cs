@@ -10,9 +10,9 @@ namespace MetierSearchBars
     [DataContract]
     class Vin : BoissonSimple
     {
-        [DataMember]
+        [DataMember (Order = 0)]
         public int Millesime { get; set; }
-        [DataMember]
+        [DataMember (Order = 1)]
         public string Robe { get; set; }
 
         public Vin(string nom, double prix, string marque, double degreA, TypeBoisson type, int millesime, string robe) : base(nom, prix, marque, degreA, type)

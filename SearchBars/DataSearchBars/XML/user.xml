@@ -1,71 +1,71 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ArrayOfanyType xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
   <anyType xmlns:d2p1="http://schemas.datacontract.org/2004/07/MetierSearchBars" i:type="d2p1:User">
-    <d2p1:BoissonPref>Biere</d2p1:BoissonPref>
-    <d2p1:Nom>Delabierre</d2p1:Nom>
-    <d2p1:NumeroTelephone>0654856952</d2p1:NumeroTelephone>
-    <d2p1:PhotoDeProfil>Images/ImagesProfils/trololo.jpg</d2p1:PhotoDeProfil>
-    <d2p1:Prenom>Yvan</d2p1:Prenom>
     <d2p1:Pseudo>trololo</d2p1:Pseudo>
+    <d2p1:Nom>Delabierre</d2p1:Nom>
+    <d2p1:Prenom>Yvan</d2p1:Prenom>
     <d2p1:Sexe>Homme</d2p1:Sexe>
-    <d2p1:Ville>St Julien De Copel</d2p1:Ville>
     <d2p1:dateDeNaissance>1980-01-09T00:00:00</d2p1:dateDeNaissance>
+    <d2p1:NumeroTelephone>0654856952</d2p1:NumeroTelephone>
+    <d2p1:Ville>St Julien De Copel</d2p1:Ville>
+    <d2p1:BoissonPref>Biere</d2p1:BoissonPref>
+    <d2p1:PhotoDeProfil>Images/ImagesProfils/trololo.jpg</d2p1:PhotoDeProfil>
     <d2p1:motDePasse>123456</d2p1:motDePasse>
   </anyType>
   <anyType xmlns:d2p1="http://schemas.datacontract.org/2004/07/MetierSearchBars" i:type="d2p1:User">
-    <d2p1:BoissonPref>AlcoolFort</d2p1:BoissonPref>
-    <d2p1:Nom>Devie</d2p1:Nom>
-    <d2p1:NumeroTelephone></d2p1:NumeroTelephone>
-    <d2p1:PhotoDeProfil>Images/photoprofil.jpg</d2p1:PhotoDeProfil>
-    <d2p1:Prenom>Enzo</d2p1:Prenom>
     <d2p1:Pseudo>enzoDu93</d2p1:Pseudo>
+    <d2p1:Nom>Devie</d2p1:Nom>
+    <d2p1:Prenom>Enzo</d2p1:Prenom>
     <d2p1:Sexe>Homme</d2p1:Sexe>
-    <d2p1:Ville></d2p1:Ville>
     <d2p1:dateDeNaissance>1997-04-01T00:00:00</d2p1:dateDeNaissance>
+    <d2p1:NumeroTelephone></d2p1:NumeroTelephone>
+    <d2p1:Ville></d2p1:Ville>
+    <d2p1:BoissonPref>AlcoolFort</d2p1:BoissonPref>
+    <d2p1:PhotoDeProfil>Images/photoprofil.jpg</d2p1:PhotoDeProfil>
     <d2p1:motDePasse>147</d2p1:motDePasse>
   </anyType>
   <anyType xmlns:d2p1="http://schemas.datacontract.org/2004/07/MetierSearchBars" i:type="d2p1:User">
-    <d2p1:Nom>Coiffard</d2p1:Nom>
-    <d2p1:NumeroTelephone>0659712062</d2p1:NumeroTelephone>
-    <d2p1:PhotoDeProfil>Images/photoprofil.jpg</d2p1:PhotoDeProfil>
-    <d2p1:Prenom>Pierre</d2p1:Prenom>
     <d2p1:Pseudo>picoiffard</d2p1:Pseudo>
+    <d2p1:Nom>Coiffard</d2p1:Nom>
+    <d2p1:Prenom>Pierre</d2p1:Prenom>
     <d2p1:Sexe>Homme</d2p1:Sexe>
-    <d2p1:Ville>Bois de boulogne</d2p1:Ville>
     <d2p1:dateDeNaissance>1997-02-09T00:00:00</d2p1:dateDeNaissance>
+    <d2p1:NumeroTelephone>0659712062</d2p1:NumeroTelephone>
+    <d2p1:Ville>Bois de boulogne</d2p1:Ville>
+    <d2p1:PhotoDeProfil>Images/photoprofil.jpg</d2p1:PhotoDeProfil>
     <d2p1:motDePasse>090297</d2p1:motDePasse>
   </anyType>
   <anyType xmlns:d2p1="http://schemas.datacontract.org/2004/07/MetierSearchBars" i:type="d2p1:User">
-    <d2p1:Nom>Schmidt</d2p1:Nom>
-    <d2p1:NumeroTelephone></d2p1:NumeroTelephone>
-    <d2p1:PhotoDeProfil>Images/ImagesProfils/IvanSchmidt.jpg</d2p1:PhotoDeProfil>
-    <d2p1:Prenom>Ivan</d2p1:Prenom>
     <d2p1:Pseudo>ivschmidt</d2p1:Pseudo>
+    <d2p1:Nom>Schmidt</d2p1:Nom>
+    <d2p1:Prenom>Ivan</d2p1:Prenom>
     <d2p1:Sexe>Homme</d2p1:Sexe>
-    <d2p1:Ville>cantal perdu</d2p1:Ville>
     <d2p1:dateDeNaissance>1997-04-29T00:00:00</d2p1:dateDeNaissance>
+    <d2p1:NumeroTelephone></d2p1:NumeroTelephone>
+    <d2p1:Ville>cantal perdu</d2p1:Ville>
+    <d2p1:PhotoDeProfil>Images/ImagesProfils/IvanSchmidt.jpg</d2p1:PhotoDeProfil>
     <d2p1:motDePasse>290497</d2p1:motDePasse>
   </anyType>
   <anyType xmlns:d2p1="http://schemas.datacontract.org/2004/07/MetierSearchBars" i:type="d2p1:User">
-    <d2p1:Nom>Martin</d2p1:Nom>
-    <d2p1:NumeroTelephone>0626731060</d2p1:NumeroTelephone>
-    <d2p1:PhotoDeProfil>Images/photoprofil.jpg</d2p1:PhotoDeProfil>
-    <d2p1:Prenom>Olivier</d2p1:Prenom>
     <d2p1:Pseudo>olmartin2</d2p1:Pseudo>
+    <d2p1:Nom>Martin</d2p1:Nom>
+    <d2p1:Prenom>Olivier</d2p1:Prenom>
     <d2p1:Sexe>Homme</d2p1:Sexe>
-    <d2p1:Ville>coin riche</d2p1:Ville>
     <d2p1:dateDeNaissance>1996-10-13T00:00:00</d2p1:dateDeNaissance>
+    <d2p1:NumeroTelephone>0626731060</d2p1:NumeroTelephone>
+    <d2p1:Ville>coin riche</d2p1:Ville>
+    <d2p1:PhotoDeProfil>Images/photoprofil.jpg</d2p1:PhotoDeProfil>
     <d2p1:motDePasse>131096</d2p1:motDePasse>
   </anyType>
   <anyType xmlns:d2p1="http://schemas.datacontract.org/2004/07/MetierSearchBars" i:type="d2p1:User">
-    <d2p1:Nom>TestNom</d2p1:Nom>
-    <d2p1:NumeroTelephone></d2p1:NumeroTelephone>
-    <d2p1:PhotoDeProfil>Images/photoprofil.jpg</d2p1:PhotoDeProfil>
-    <d2p1:Prenom>TestPrenom</d2p1:Prenom>
     <d2p1:Pseudo>a</d2p1:Pseudo>
+    <d2p1:Nom>TestNom</d2p1:Nom>
+    <d2p1:Prenom>TestPrenom</d2p1:Prenom>
     <d2p1:Sexe>Homme</d2p1:Sexe>
-    <d2p1:Ville></d2p1:Ville>
     <d2p1:dateDeNaissance>1995-10-13T00:00:00</d2p1:dateDeNaissance>
+    <d2p1:NumeroTelephone></d2p1:NumeroTelephone>
+    <d2p1:Ville></d2p1:Ville>
+    <d2p1:PhotoDeProfil>Images/photoprofil.jpg</d2p1:PhotoDeProfil>
     <d2p1:motDePasse>a</d2p1:motDePasse>
   </anyType>
 </ArrayOfanyType>

@@ -17,7 +17,7 @@ namespace MetierSearchBars
                 return mLongitude;
             }
         }
-        [DataMember]
+        [DataMember (Name = "Longitude")]
         private double mLongitude;
 
         public double Latitude
@@ -27,7 +27,7 @@ namespace MetierSearchBars
                 return mLatitude;
             }
         }
-        [DataMember]
+        [DataMember (Name = "Latitude")]
         private double mLatitude;
 
         public CoordonneesGPS(double latitude, double longitude)

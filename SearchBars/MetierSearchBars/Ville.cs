@@ -10,12 +10,12 @@ namespace MetierSearchBars
     [DataContract]
     class Ville : IVille, IEquatable<Ville>
     {
-        [DataMember]
+        [DataMember (Order = 0)]
         public string Nom { get; private set; }
-        [DataMember]
+        [DataMember (Order = 1)]
         public CoordonneesGPS GPS { get; private set; }
 
-        [DataMember]
+        [DataMember (Order = 2, Name = "listeDesBarsDeLaVille")]
         private List<Bar> listBar = new List<Bar>();
         public IEnumerable<IBar> ListBar
         {

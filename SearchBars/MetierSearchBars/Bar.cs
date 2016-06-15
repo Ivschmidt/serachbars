@@ -33,7 +33,7 @@ namespace MetierSearchBars
         /// Un User ne peut laissé qu'un seul Avis par Bar
         /// dictionnaire privé pour être correctement protégé
         /// </summary>
-        [DataMember]
+        [DataMember (Order = 6, Name = "listeDesAvisLaissés")]
         private Dictionary<User, Avis> commentaires = new Dictionary<User, Avis>();
         /// <summary>
         /// Encapsulation du dictionnaire privé par un ReadOnlyDictionnary
@@ -53,7 +53,7 @@ namespace MetierSearchBars
         /// liste des Boissons servies par ce Bar
         /// liste privée pour être correctement protégée
         /// </summary>
-        [DataMember]
+        [DataMember (Order = 5, Name = "listeDesBoissonsDuBar")]
         private List<Boisson> listBoissons = new List<Boisson>();
         /// <summary>
         /// Encapsulation de la liste privée par un IEnumerable
@@ -76,10 +76,10 @@ namespace MetierSearchBars
         //        return new ReadOnlyCollection<string>(listCheminPhoto);
         //    }
         //}
-        [DataMember]
+        [DataMember (Order = 4)]
         public string Photo { get; set; }
 
-        [DataMember]
+        [DataMember (Order = 0)]
         public string Nom { get; set; }
         public double? NoteMoyenne
         {
@@ -92,13 +92,13 @@ namespace MetierSearchBars
                 return (double) Math.Round(commentaires.Average(kvp => kvp.Value.Note), 2);
             }
         }
-        [DataMember]
+        [DataMember (Order = 1)]
         public CoordonneesGPS GPS{ get; set; }
-        [DataMember]
+        [DataMember (Order = 2)]
         public bool Restauration { get; set; }
-        [DataMember]
+        [DataMember (Order = 3)]
         public string Numero { get; set; }
-        [DataMember]
+        [DataMember (Order = 3)]
         public string Adresse { get; set; }
 
         public Bar(string nom, CoordonneesGPS gps, string numero, string adresse, bool restauration = false, string photo = "Images/ImagesBars/defaut.jpg") 
