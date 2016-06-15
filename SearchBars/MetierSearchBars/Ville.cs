@@ -13,7 +13,7 @@ namespace MetierSearchBars
         [DataMember (Order = 0)]
         public string Nom { get; private set; }
         [DataMember (Order = 1)]
-        public CoordonneesGPS GPS { get; private set; }
+        public CoordonneesGPS GPSVille { get; private set; }
 
         [DataMember (Order = 2, Name = "listeDesBarsDeLaVille")]
         private List<Bar> listBar = new List<Bar>();
@@ -28,7 +28,7 @@ namespace MetierSearchBars
         public Ville(string nom, CoordonneesGPS gps)
         {
             Nom = nom;
-            GPS = gps;
+            GPSVille = gps;
         }
 
         public void ajouterBar(Bar bar)
@@ -53,7 +53,7 @@ namespace MetierSearchBars
         /// <returns></returns>
         public override int GetHashCode()
         {
-            return Nom.GetHashCode() + GPS.GetHashCode();
+            return Nom.GetHashCode() + GPSVille.GetHashCode();
         }
 
         /// <summary>
@@ -89,7 +89,7 @@ namespace MetierSearchBars
         /// <returns>true if equals</returns>
         public bool Equals(Ville other)
         {
-            return (this.Nom.Equals(other.Nom) && this.GPS.Equals(other.GPS));
+            return (this.Nom.Equals(other.Nom) && this.GPSVille.Equals(other.GPSVille));
         }
 
     }

@@ -93,7 +93,7 @@ namespace MetierSearchBars
             }
         }
         [DataMember (Order = 1)]
-        public CoordonneesGPS GPS{ get; set; }
+        public CoordonneesGPS GPSBar{ get; set; }
         [DataMember (Order = 2)]
         public bool Restauration { get; set; }
         [DataMember (Order = 3)]
@@ -104,7 +104,7 @@ namespace MetierSearchBars
         public Bar(string nom, CoordonneesGPS gps, string numero, string adresse, bool restauration = false, string photo = "Images/ImagesBars/defaut.jpg") 
         {
             Nom = nom;
-            GPS = gps;
+            GPSBar = gps;
             Restauration = restauration;
             Adresse = adresse;
             Numero = numero;
@@ -127,7 +127,7 @@ namespace MetierSearchBars
         /// <returns>hash code</returns>
         public override int GetHashCode()
         {
-            return GPS.GetHashCode() + Nom.GetHashCode();
+            return GPSBar.GetHashCode() + Nom.GetHashCode();
         }
 
         /// <summary>
@@ -163,7 +163,7 @@ namespace MetierSearchBars
         /// <returns>true if equals</returns>
         public bool Equals(Bar other)
         {
-            return (this.GPS.Equals(other.GPS) && this.Nom.Equals(other.Nom));
+            return (this.GPSBar.Equals(other.GPSBar) && this.Nom.Equals(other.Nom));
         }
 
         public void laisserAvis(Avis avis, User user)

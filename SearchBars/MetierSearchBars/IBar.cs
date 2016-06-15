@@ -11,7 +11,7 @@ namespace MetierSearchBars
     {
         string Nom { get; }
         double? NoteMoyenne { get; }
-        CoordonneesGPS GPS { get; }
+        CoordonneesGPS GPSBar { get; }
         bool Restauration { get; }
         string Numero { get; }
         string Adresse { get; }

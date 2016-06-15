@@ -9,7 +9,7 @@ namespace MetierSearchBars
     public interface IVille
     {
         string Nom { get;}
-        CoordonneesGPS GPS { get;}
+        CoordonneesGPS GPSVille { get;}
         IEnumerable<IBar> ListBar { get; }
     }
 }
