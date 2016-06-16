@@ -76,11 +76,23 @@ namespace MetierSearchBars
         //        return new ReadOnlyCollection<string>(listCheminPhoto);
         //    }
         //}
+        /// <summary>
+        /// Photo du bar
+        /// </summary>
         [DataMember (Order = 4)]
         public string Photo { get; set; }
 
+        /// <summary>
+        /// Nom du bar permettant de le distinguer
+        /// </summary>
         [DataMember (Order = 0)]
         public string Nom { get; set; }
+        
+        /// <summary>
+        /// note moyenne du bar
+        /// propriété calculée automatiquement à l'aide de tous ls commentaires laissés sur le bar
+        /// Cette note est nulle si il n'y a aucun commentaire
+        /// </summary>
         public double? NoteMoyenne
         {
             get
@@ -92,15 +104,40 @@ namespace MetierSearchBars
                 return (double) Math.Round(commentaires.Average(kvp => kvp.Value.Note), 2);
             }
         }
+
+        /// <summary>
+        /// Coordonnées GPS permmettant de repérer le bar géographiquement
+        /// </summary>
         [DataMember (Order = 1)]
         public CoordonneesGPS GPSBar{ get; set; }
+
+        /// <summary>
+        ///propriété permettant de savoir si le bar sert à manger ou non
+        /// </summary>
         [DataMember (Order = 2)]
         public bool Restauration { get; set; }
+
+        /// <summary>
+        /// numéro de téléphone du bar pour pouvoir le contacter
+        /// </summary>
         [DataMember (Order = 3)]
         public string Numero { get; set; }
+
+        /// <summary>
+        /// adresse du bar permettant de le situer et de s'y rendre
+        /// </summary>
         [DataMember (Order = 3)]
         public string Adresse { get; set; }
 
+        /// <summary>
+        /// Constructeur d'un bar
+        /// </summary>
+        /// <param name="nom">nom que l'on souhaite donner aux bars</param>
+        /// <param name="gps">coordonnées GPS du bar que l'on souhaite créer</param>
+        /// <param name="numero">numéro de téléphone du bar à ajouter</param>
+        /// <param name="adresse">adresse du bar à ajouter</param>
+        /// <param name="restauration">paramètre falcutatif indiquant si le bar sert à manger, "pas de restauration" par défaut si rien n'est indiqué lors de l'instanciation</param>
+        /// <param name="photo">paramètre facultatif permettant d'ajouter une unique photo au bar, photo par défaut si rien n'est indiqué lors de l'instanciation</param>
         public Bar(string nom, CoordonneesGPS gps, string numero, string adresse, bool restauration = false, string photo = "Images/ImagesBars/defaut.jpg") 
         {
             Nom = nom;
@@ -111,6 +148,10 @@ namespace MetierSearchBars
             Photo = photo;
         }
 
+        /// <summary>
+        /// méthode permettant d'ajouter une boisson à la liste des boissons servies par la bar
+        /// </summary>
+        /// <param name="b">la boisson à ajouter</param>
         public void ajouterBoisson(Boisson b)
         {
             listBoissons.Add(b);
@@ -166,6 +207,11 @@ namespace MetierSearchBars
             return (this.GPSBar.Equals(other.GPSBar) && this.Nom.Equals(other.Nom));
         }
 
+        /// <summary>
+        /// permettant à un avis 
+        /// </summary>
+        /// <param name="avis"></param>
+        /// <param name="user"></param>
         public void laisserAvis(Avis avis, User user)
         {
             commentaires.Add(user, avis);

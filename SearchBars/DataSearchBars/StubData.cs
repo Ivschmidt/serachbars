@@ -63,11 +63,25 @@ namespace DataSearchBars
             stillIrishBar.ajouterBoisson(tequila);
             stillIrishBar.ajouterBoisson(siropGrenadine);
             stillIrishBar.ajouterBoisson(jusOrange);
+            stillIrishBar.ajouterBoisson(new BoissonSimple("Oasis Tropical", 1.5, "Oasis", 0, TypeBoisson.Soda));
             //stillIrishBar.ajouterPhoto("Images/ImagesBars/lestill.jpg");
 
+            Boisson vodka = new BoissonSimple("Vodka", 5, "Poliakov", 41, TypeBoisson.AlcoolFort);
             Bar lesBerthom = new Bar("Les Berthom", new CoordonneesGPS(45.779581, 3.080976), "04 73 31 01 65", "6 Place Etoile", true, "Images/ImagesBars/barthom.jpg");
+            lesBerthom.ajouterBoisson(new Vin("Côte de Beaune", 16, "Bourgogne", 12, TypeBoisson.Vin, 2007, "rouge"));
+            lesBerthom.ajouterBoisson(new BoissonSimple("RedBull Energy Drink", 2.8, "Redbull", 0, TypeBoisson.Soda));
+            lesBerthom.ajouterBoisson(vodka);
             Bar leMarais = new Bar("Le Marais", new CoordonneesGPS(45.780716, 3.078746), "06 60 23 75 87", "49 Rue Fontgieve", photo: "Images/ImagesBars/marais.jpg");
+            leMarais.ajouterBoisson(new BoissonSimple("Whisky", 6, "Jack's Daniel", 38, TypeBoisson.AlcoolFort));
+            Boisson schnapsPeche = new BoissonSimple("Schnaps Pêche", 4, "Berentzen", 42, TypeBoisson.AlcoolFort);
+            Boisson jusCanneberge = new BoissonSimple("Jus de Canneberge", 2, "Pago", 3, TypeBoisson.Jus);
+            leMarais.ajouterBoisson(vodka);
+            leMarais.ajouterBoisson(schnapsPeche);
+            leMarais.ajouterBoisson(jusOrange);
+            leMarais.ajouterBoisson(jusCanneberge);
+            leMarais.ajouterBoisson(new BoissonComposee("Sex On the Beach", 8, 25, TypeBoisson.Cocktail, new List<Boisson> { vodka, schnapsPeche, jusOrange, jusCanneberge }, new List<Ingredient>()));
             Bar captainCabin = new Bar("Captain's Cabin", new CoordonneesGPS(45.779379, 3.081777), "04 73 36 33 32", "20 Avenue des États Unis", photo: "Images/ImagesBars/captain.jpg");
+            
             Bar monkeysPub = new Bar("3 Monkeys Pub", new CoordonneesGPS(45.774317, 3.094291), "04 73 90 32 46", "25 Avenue des Paulines", true, "Images/ImagesBars/monkey.jpg");
             Bar HaciendaCafe = new Bar("Hacienda Cafe", new CoordonneesGPS(45.780042, 3.083441), "04 73 16 86 41", "5 Place Gilbert Gaillard", true, "Images/ImagesBars/hacienda.jpg");
             Bar leVerlaine = new Bar("Le Verlaine", new CoordonneesGPS(45.775282, 3.084487), "04 73 34 17 55", "5 Mail d'Allagnat", photo: "Images/ImagesBars/verlaine.jpg");
