@@ -25,16 +25,16 @@ namespace VuesSearchBars
         {
             InitializeComponent();
 
-            if (pushPin.Location == null)
-            {
-                pushPin.Location = new Microsoft.Maps.MapControl.WPF.Location();
-            }
-            if(Ville != null)
-            {
-                pushPin.Location.Latitude = Ville.GPSVille.Latitude;
+            //if (pushPin.Location == null)
+            //{
+            //    pushPin.Location = new Microsoft.Maps.MapControl.WPF.Location();
+            //}
+            //if (Ville != null)
+            //{
+            //    pushPin.Location.Latitude = Ville.GPSVille.Latitude;
 
-                pushPin.Location.Longitude = Ville.GPSVille.Longitude;
-            }
+            //    pushPin.Location.Longitude = Ville.GPSVille.Longitude;
+            //}
         }
 
         public IVille Ville

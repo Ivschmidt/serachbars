@@ -8,7 +8,7 @@
              mc:Ignorable="d" 
              d:DesignHeight="300" d:DesignWidth="300"
              x:Name="root">
-    <UserControl.Resources>
+    <!--<UserControl.Resources>
         <DataTemplate x:Key="VilleTemplate">
             <map:Pushpin x:Name="ppp" >
                 <map:MapLayer.Position>
@@ -16,18 +16,23 @@
                 </map:MapLayer.Position>
             </map:Pushpin>
         </DataTemplate>
-    </UserControl.Resources>
+    </UserControl.Resources>-->
     <Grid>
         <DockPanel>
             <TextBlock Text="{Binding Ville.Nom, ElementName=root}" FontSize="20" DockPanel.Dock="Top" Style="{StaticResource STextBlock}"/>
-            <map:Map Name="map1"   ZoomLevel="10" CredentialsProvider="GPTQ32UjcuKIjSoK2k67~zsm5A0WorhEOdGW-14U77Q~AlSPzDbJPec2cvWGOg7TwCQLPRorLVoO3z2Sh1p7FR6Qd4Uu9rFdCLDAE7WWFLuY" RenderTransformOrigin="1.819,0.485"  >
-                <map:Map.Children>
-                    <map:Pushpin x:Name="pushPin" Width="30">
+            <!--<TextBlock Text="{Binding Ville.GPSVille, ElementName=root, Converter={StaticResource gps2LocationConverter}}" />-->
+            <map:Map Name="map1" ZoomLevel="5" CredentialsProvider="GPTQ32UjcuKIjSoK2k67~zsm5A0WorhEOdGW-14U77Q~AlSPzDbJPec2cvWGOg7TwCQLPRorLVoO3z2Sh1p7FR6Qd4Uu9rFdCLDAE7WWFLuY"
+                     >
+
+                <map:Pushpin Location="{Binding Ville.GPSVille, ElementName=root, Converter={StaticResource gps2LocationConverter}}" />
+               
+                <!--<map:Map.Children>-->
+                    <!--<map:Pushpin x:Name="pushPin" Width="30">
                         <map:Location/>
-                    </map:Pushpin>
+                    </map:Pushpin>-->
                     <!--<map:MapItemsControl ItemTemplate="{StaticResource VilleTemplate}"  map:MapLayer.Position="{Binding}"/>-->
 
-                </map:Map.Children>
+                <!--</map:Map.Children>-->
 
             </map:Map>
         </DockPanel>

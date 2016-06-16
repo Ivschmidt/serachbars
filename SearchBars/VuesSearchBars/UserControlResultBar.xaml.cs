@@ -105,27 +105,22 @@ namespace VuesSearchBars
             {
             }));
 
+        public CoordonneesGPS GPSBar
+        {
+            get { return (CoordonneesGPS)GetValue(GPSBarProperty); }
+            set { SetValue(GPSBarProperty, value); }
+        }
+
+        // Using a DependencyProperty as the backing store for GPSBar.  This enables animation, styling, binding, etc...
+        public static readonly DependencyProperty GPSBarProperty =
+            DependencyProperty.Register("GPSBar", typeof(CoordonneesGPS), typeof(UserControlResultBar), new PropertyMetadata(null));
+
 
         private void Button_Click_PosteAvis(object sender, RoutedEventArgs e)
         {
             RateWindow rateWindow = new RateWindow(CurrentBar);
             rateWindow.Show();
         }
-
-
-        //public CoordonneesGPS CoordGPS
-        //{
-        //    get { return (CoordonneesGPS)GetValue(CoordGPSProperty); }
-        //    set { SetValue(CoordGPSProperty, value); }
-        //}
-
-        //// Using a DependencyProperty as the backing store for CoordGPS.  This enables animation, styling, binding, etc...
-        //public static readonly DependencyProperty CoordGPSProperty =
-        //    DependencyProperty.Register("CoordGPS", typeof(CoordonneesGPS), typeof(UserControlResultBar), new PropertyMetadata(""));
-
-
-
-
 
         public string Photo
         {
@@ -151,15 +146,15 @@ namespace VuesSearchBars
 
         
 
-        private void Button_Click_Precedent(object sender, RoutedEventArgs e)
-        {
+        //private void Button_Click_Precedent(object sender, RoutedEventArgs e)
+        //{
 
-        }
+        //}
 
-        private void Button_Click_Suivant(object sender, RoutedEventArgs e)
-        {
+        //private void Button_Click_Suivant(object sender, RoutedEventArgs e)
+        //{
 
-        }
+        //}
 
     }
 }

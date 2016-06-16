@@ -23,6 +23,7 @@
                                         ListBoissons="{Binding ListBoisson}"
                                         Commentaires="{Binding Commentaires}"
                                         Photo="{Binding Photo}"
+                                        GPSBar="{Binding GPSBar}"
                                         />
         </DataTemplate>
         <!--LPhoto="{Binding CheminPhotoROC}"-->

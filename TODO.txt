@@ -1,8 +1,18 @@
--diagramme de sequence
--ajouter les classes de sauvegarde
--binder map
--toutes la docs
+-toute la doc
+ - diagramme de sequence
+ - diagramme de classe = descr
+ - persistance + parts perso = diag de classe
+ - doc du code
+ - 
+ - deploiement
+ - ergonomie
+ - accessibilté
+
 - voir pour list photos
 - binder pushpins + center
+  - ville pas centrée
+  - liste de pushpins pas mises pour ville
+  - center sur un bar seulement au 1er clic apres juste pushpin qui changent = a fix
+  
 - faire un event depuis metier sur vues
 - seprarer tests

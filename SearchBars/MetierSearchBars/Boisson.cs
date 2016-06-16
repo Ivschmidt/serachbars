@@ -7,9 +7,16 @@ using System.Threading.Tasks;
 
 namespace MetierSearchBars
 {
+    /// <summary>
+    /// Classe abstraite représentant une boisson
+    /// implémente IBoisson qui est une facade immuable permettant d'encapsuler une Boisson
+    /// </summary>
     [DataContract]
     abstract class Boisson : IBoisson
     {
+        /// <summary>
+        /// 
+        /// </summary>
         [DataMember (Order = 0, Name = "typeDeLaBoisson")]
         public TypeBoisson Type{ get; set; }
         [DataMember (Order = 1)]

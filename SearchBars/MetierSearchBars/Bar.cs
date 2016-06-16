@@ -11,6 +11,8 @@ namespace MetierSearchBars
 {
     /// <summary>
     /// Classe représentant un Bar 
+    /// implémente IBar qui est une facade immuable permettant d'encapsuler un Bar
+    /// implémente IEquatable 
     /// </summary>
     [DataContract]
     class Bar : IEquatable<Bar>, IBar, INotifyPropertyChanged
@@ -208,10 +210,11 @@ namespace MetierSearchBars
         }
 
         /// <summary>
-        /// permettant à un avis 
+        /// permettant de laisser un avis sur ce bar 
+        /// envoie des événements indiquants que la noteMoyenne et les commentaires ont été mis à jour
         /// </summary>
-        /// <param name="avis"></param>
-        /// <param name="user"></param>
+        /// <param name="avis">Avis a laisser sur ce bar</param>
+        /// <param name="user">User qui laisse la vie</param>
         public void laisserAvis(Avis avis, User user)
         {
             commentaires.Add(user, avis);
@@ -219,6 +222,12 @@ namespace MetierSearchBars
             OnPropertyChanged("Commentaires");
         }
 
+        /// <summary>
+        /// redéfinition de la méthode ToString()
+        /// affiche le nom suivi de la note moyenne si elle existe, de la liste de boissons si elle n'est pas vide,
+        /// puis la liste des avis s'il y en a 
+        /// </summary>
+        /// <returns></returns>
         public override string ToString()
         {
             string temp = Nom + "\n";
@@ -226,7 +235,7 @@ namespace MetierSearchBars
             {
                 temp += "note moyenne : " + NoteMoyenne.ToString() + "/5\n";
             }
-            if(ListBoisson != null)
+            if(ListBoisson != null && ListBoisson.Count() > 0)
             {
                 foreach(Boisson boiss in ListBoisson)
                 {
