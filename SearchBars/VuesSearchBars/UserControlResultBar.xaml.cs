@@ -16,6 +16,7 @@ using DataSearchBars;
 using MetierSearchBars;
 using System.Collections.ObjectModel;
 using System.IO;
+using Microsoft.Maps.MapControl.WPF;
 
 namespace VuesSearchBars
 {
@@ -113,7 +114,11 @@ namespace VuesSearchBars
 
         // Using a DependencyProperty as the backing store for GPSBar.  This enables animation, styling, binding, etc...
         public static readonly DependencyProperty GPSBarProperty =
-            DependencyProperty.Register("GPSBar", typeof(CoordonneesGPS), typeof(UserControlResultBar), new PropertyMetadata(null));
+            DependencyProperty.Register("GPSBar", typeof(CoordonneesGPS), typeof(UserControlResultBar), new PropertyMetadata(new CoordonneesGPS(), (sender, e) => 
+            {
+                CoordonneesGPS gpsCoord = (CoordonneesGPS)e.NewValue;
+                (sender as UserControlResultBar).mapVille.Center = new Location(gpsCoord.Latitude, gpsCoord.Longitude);
+            }));
 
 
         private void Button_Click_PosteAvis(object sender, RoutedEventArgs e)

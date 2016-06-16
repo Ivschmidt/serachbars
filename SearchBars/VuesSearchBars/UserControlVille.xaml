@@ -24,7 +24,7 @@
             <map:Map Name="map1" ZoomLevel="5" CredentialsProvider="GPTQ32UjcuKIjSoK2k67~zsm5A0WorhEOdGW-14U77Q~AlSPzDbJPec2cvWGOg7TwCQLPRorLVoO3z2Sh1p7FR6Qd4Uu9rFdCLDAE7WWFLuY"
                      >
 
-                <map:Pushpin Location="{Binding Ville.GPSVille, ElementName=root, Converter={StaticResource gps2LocationConverter}}" />
+                <map:Pushpin Location="{Binding GPSVille, ElementName=root, Converter={StaticResource gps2LocationConverter}}" />
                
                 <!--<map:Map.Children>-->
                     <!--<map:Pushpin x:Name="pushPin" Width="30">

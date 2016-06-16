@@ -1,4 +1,5 @@
 ﻿using MetierSearchBars;
+using Microsoft.Maps.MapControl.WPF;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -37,19 +38,31 @@ namespace VuesSearchBars
             //}
         }
 
-        public IVille Ville
+        //public IVille Ville
+        //{
+        //    get { return (IVille)GetValue(VilleProperty); }
+        //    set { SetValue(VilleProperty, value); }
+        //}
+
+        //// Using a DependencyProperty as the backing store for Ville.  This enables animation, styling, binding, etc...
+        //public static readonly DependencyProperty VilleProperty =
+        //    DependencyProperty.Register("Ville", typeof(IVille), typeof(UserControlVille), new PropertyMetadata(null, (sender, e) =>
+        //    {
+        //    }));
+
+        public CoordonneesGPS GPSVille
         {
-            get { return (IVille)GetValue(VilleProperty); }
-            set { SetValue(VilleProperty, value); }
+            get { return (CoordonneesGPS)GetValue(GPSVilleProperty); }
+            set { SetValue(GPSVilleProperty, value); }
         }
 
-        // Using a DependencyProperty as the backing store for Ville.  This enables animation, styling, binding, etc...
-        public static readonly DependencyProperty VilleProperty =
-            DependencyProperty.Register("Ville", typeof(IVille), typeof(UserControlVille), new PropertyMetadata(null, (sender, e) =>
+        // Using a DependencyProperty as the backing store for GPSBar.  This enables animation, styling, binding, etc...
+        public static readonly DependencyProperty GPSVilleProperty =
+            DependencyProperty.Register("GPSVille", typeof(CoordonneesGPS), typeof(UserControlVille), new PropertyMetadata(new CoordonneesGPS(), (sender, e) =>
             {
+                CoordonneesGPS gpsCoord = (CoordonneesGPS)e.NewValue;
+                (sender as UserControlVille).map1.Center = new Location(gpsCoord.Latitude, gpsCoord.Longitude);
             }));
-
-
 
 
         public IEnumerable<IBar> LBars
