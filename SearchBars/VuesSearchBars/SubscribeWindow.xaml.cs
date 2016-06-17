@@ -35,6 +35,9 @@ namespace SearchBars
             {
                 NomPage.Text = "Inscription :";
                 ButtonPage.Content = "S'inscrire";
+                DdND.Text = "jj";
+                DdNM.Text = "mm";
+                DdNY.Text = "aaaa";
                 var chemin = string.Format("{0}\\VuesSearchBars\\Images\\photoprofil.jpg", Directory.GetParent(Directory.GetCurrentDirectory()).Parent.Parent.FullName);
                 PhotoDeProfil.Source = (ImageSource)new ImageSourceConverter().ConvertFromString(chemin);
             }
@@ -173,6 +176,13 @@ namespace SearchBars
             {
                 Button_Click_Subscribe(sender, e);
             }
+        }
+
+        public void TextBox_GotFocus(object sender, RoutedEventArgs e)
+        {
+            TextBox tb = (TextBox)sender;
+            tb.Text = string.Empty;
+            tb.GotFocus -= TextBox_GotFocus;
         }
     }
 }

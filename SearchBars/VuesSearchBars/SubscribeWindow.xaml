@@ -58,11 +58,11 @@
         <PasswordBox Name="mdp2" Grid.Column="1" Grid.Row="6" Margin="0 0 5 0" Style="{StaticResource SPasswordBox}"/>
         <TextBlock Text="Date de naissance : " Grid.Row="7" Grid.Column="0" Style="{StaticResource STextBlockSubscribe}"/>
         <WrapPanel Grid.Column="1" Grid.Row="7" HorizontalAlignment="Center">
-            <TextBox Name="DdND" Text="{Binding DdN, StringFormat='dd', Mode=OneWay}" Style="{StaticResource STextBox}" Width="20" MaxLength="2" PreviewTextInput="NumberValidationTextBox"/>
+            <TextBox Name="DdND" Text="{Binding DdN, StringFormat='dd', Mode=OneWay}" Style="{StaticResource STextBox}" Width="20" MaxLength="2" PreviewTextInput="NumberValidationTextBox" GotFocus="TextBox_GotFocus"/>
             <TextBlock Text="/" Foreground="#B5E655" Margin="10 0 10 0"/>
-            <TextBox Name="DdNM" Text="{Binding DdN, StringFormat='MM', Mode=OneWay}" Style="{StaticResource STextBox}" Width="20" MaxLength="2" PreviewTextInput="NumberValidationTextBox"/>
+            <TextBox Name="DdNM" Text="{Binding DdN, StringFormat='MM', Mode=OneWay}" Style="{StaticResource STextBox}" Width="27" MaxLength="2" PreviewTextInput="NumberValidationTextBox" GotFocus="TextBox_GotFocus"/>
             <TextBlock Text="/" Foreground="#B5E655" Margin="10 0 10 0"/>
-            <TextBox Name="DdNY" Text="{Binding DdN, StringFormat='yyyy', Mode=OneWay}" Style="{StaticResource STextBox}" Width="35" MaxLength="4" PreviewTextInput="NumberValidationTextBox"/>
+            <TextBox Name="DdNY" Text="{Binding DdN, StringFormat='yyyy', Mode=OneWay}" Style="{StaticResource STextBox}" Width="35" MaxLength="4" PreviewTextInput="NumberValidationTextBox" GotFocus="TextBox_GotFocus"/>
         </WrapPanel>
         
         <TextBlock Text="Numéro de téléphone : " Grid.Row="8" Grid.Column="0" Style="{StaticResource STextBlockSubscribe}"/>
