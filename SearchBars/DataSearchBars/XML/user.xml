@@ -8,7 +8,7 @@
     <d2p1:dateDeNaissance>1980-01-09T00:00:00</d2p1:dateDeNaissance>
     <d2p1:NumeroTelephone>0654856952</d2p1:NumeroTelephone>
     <d2p1:Ville>St Julien De Copel</d2p1:Ville>
-    <d2p1:BoissonPref>Biere</d2p1:BoissonPref>
+    <d2p1:BoissonPref>AlcoolFort</d2p1:BoissonPref>
     <d2p1:PhotoDeProfil>pack://application:,,,/VuesSearchBars;component/Images/ImagesProfils/trololo.jpg</d2p1:PhotoDeProfil>
     <d2p1:motDePasse>123456</d2p1:motDePasse>
   </anyType>
