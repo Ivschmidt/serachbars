@@ -83,8 +83,8 @@
             </WrapPanel>
             <StackPanel Grid.Column="1" Margin="0 0 10 0">
                 <TextBlock Text="Avis clients :" FontSize="30" Style="{StaticResource STextBlock}"/>
-                <ListBox Height="200" ItemsSource="{Binding Commentaires, ElementName=root}">
-                    <ListBox.ItemTemplate>
+                <ListView Height="200" ItemsSource="{Binding Commentaires, ElementName=root}" >
+                    <ListView.ItemTemplate>
                         <DataTemplate>
                             <Grid>
                                 <Grid.RowDefinitions>
@@ -110,8 +110,8 @@
                                            />
                             </Grid>
                         </DataTemplate>
-                    </ListBox.ItemTemplate>
-                </ListBox>
+                    </ListView.ItemTemplate>
+                </ListView>
                 <Button Content="Poster un avis" Margin="0 5 0 5" Click="Button_Click_PosteAvis"/>
             </StackPanel>
         </Grid>

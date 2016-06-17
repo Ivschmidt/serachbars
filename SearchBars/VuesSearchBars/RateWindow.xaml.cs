@@ -56,5 +56,13 @@ namespace VuesSearchBars
                 return (Application.Current as App).Manager;
             }
         }
+
+        private void Window_KeyDown(object sender, KeyEventArgs e)
+        {
+            if(e.Key == Key.Enter)
+            {
+                Button_Click_Poster(sender, e);
+            }
+        }
     }
 }

@@ -35,10 +35,13 @@ namespace VuesSearchBars
                 return (Application.Current as App).Manager;
             }
         }
+
+        private UserControlSearch UCSearch { get; set; }
+
         private void loadUCSearch()
         {
             GridMainControl.Children.Clear();
-            UserControlSearch UCSearch = new UserControlSearch();
+            UCSearch = new UserControlSearch();
             UCSearch.RechercheLancee += OnRechercheLancee;
             GridMainControl.Children.Add(UCSearch);
         }
@@ -100,6 +103,10 @@ namespace VuesSearchBars
             if (e.Key == Key.F3)
             {
                 Button_Click_Deco(sender, e);
+            }
+            if(e.Key == Key.Enter)
+            {
+                UCSearch.Recherche_KeyDown(sender, e);
             }
             
         }
