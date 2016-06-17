@@ -1,7 +1,7 @@
 -toute la doc
  - diagramme de sequence
- - diagramme de classe metier + persistance = descr
- - doc du code
+ - diagramme de classe persistance = descr a finir
+ - doc du code metier fait (persistance et vue peut etre)
  - 
  - deploiement
  - ergonomie
