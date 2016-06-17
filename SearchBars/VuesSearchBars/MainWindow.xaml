@@ -7,22 +7,22 @@
         xmlns:core="clr-namespace:MetierSearchBars;assembly=MetierSearchBars"
         mc:Ignorable="d"
         Title="SearchBars" Height="350" Width="525" WindowState="Maximized" WindowStartupLocation="CenterScreen" Background="#808893"
-        Closing="Window_Closing">
-    <Grid>
-        <Grid.RowDefinitions>
+        Closing="Window_Closing" KeyDown="ColumnDefinition_KeyDown">
+    <Grid >
+        <Grid.RowDefinitions >
             <RowDefinition Height=".15*"/>
             <RowDefinition Height="auto"/>
             <RowDefinition/>
         </Grid.RowDefinitions>
-        <Grid Grid.Row="0">
+        <Grid Grid.Row="0" >
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width=".5*" />
+                <ColumnDefinition Width=".5*"/>
                 <ColumnDefinition/>
                 <ColumnDefinition Width=".5*"/>
             </Grid.ColumnDefinitions>
-            <Button Content="Rechercher" Grid.Column="0"  Width="100px" HorizontalAlignment="Left" Margin="10" Style="{StaticResource SButton}" Click="Button_Click_Rechercher" />
+            <Button Content="Rechercher" Grid.Column="0"  Width="100px" HorizontalAlignment="Left" Margin="10" Style="{StaticResource SButton}" Click="Button_Click_Rechercher" ToolTip="Faire une recherche (F1)" />
             <TextBlock Text="SearchBars" Grid.Column="1" FontSize="30" HorizontalAlignment="Center" Style="{StaticResource STextBlock}"/>
-            <Grid Grid.Column="2">
+            <Grid Grid.Column="2" >
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition/>
                     <ColumnDefinition/>
@@ -35,16 +35,16 @@
                 </StackPanel>
                 <Menu Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center">
                     <MenuItem Header="Menu" >
-                        <MenuItem Header="Mon compte" Click="Button_Click_Compte"/>
+                        <MenuItem Header="Mon compte" Click="Button_Click_Compte" ToolTip="Consulter votre compte (F2)"/>
                         <Separator/>
-                        <MenuItem Header="Déconnexion" Click="Button_Click_Deco"/>
+                        <MenuItem Header="Déconnexion" Click="Button_Click_Deco" ToolTip="Quitter l'application (F3)"/>
                     </MenuItem>
                 </Menu>
             </Grid>
 
         </Grid>
         <Separator Grid.Row="1"/>
-        <Grid Grid.Row="2" Name="GridMainControl">
+        <Grid Grid.Row="2" Name="GridMainControl" >
             <!--<local:UserControlSearch x:Name="userControlSearch" Manager="{Binding}"/>-->
             <!--<local:UserControlSearchResult Grid.Row="2" Margin="20 20 20 20" Loaded="UserControlSearchResult_Loaded" />-->
             <!--<local:UserControlResultBar Grid.Row="2" Loaded="UserControlResultBar_Loaded"/>-->

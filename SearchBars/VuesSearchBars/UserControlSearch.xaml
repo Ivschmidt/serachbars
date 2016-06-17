@@ -17,14 +17,14 @@
             </ObjectDataProvider.MethodParameters>
         </ObjectDataProvider>
     </UserControl.Resources>
-    <Grid>
+    <Grid >
         <Grid.RowDefinitions>
             <RowDefinition/>
             <RowDefinition/>
             <RowDefinition/>
             <RowDefinition/>
             <RowDefinition/>
-            <RowDefinition/>
+            <RowDefinition />
         </Grid.RowDefinitions>
         <TextBlock Text="Rechercher :" Grid.Row="0" Style="{StaticResource STextBlock}" FontSize="20"/>
         <WrapPanel Grid.Row="1">
@@ -52,6 +52,6 @@
             <Slider Name="noteMin" Minimum="0" Maximum="5" Width="150" TickPlacement="BottomRight" IsSnapToTickEnabled="True" Margin="15 0 15 0"/>
             <TextBlock Text="{Binding Path=Value, ElementName=noteMin, StringFormat=\{0\}/5}" Style="{StaticResource STextBlock}"/>
         </WrapPanel>
-        <Button Content="Rechercher" Grid.Row="5" Style="{StaticResource SButton}" Height="20" Width="150" Click="Button_Click_Rechercher"/>
+        <Button Content="Rechercher" Grid.Row="5" Style="{StaticResource SButton}" Height="20" Width="150" Click="Button_Click_Rechercher" />
     </Grid>
 </UserControl>

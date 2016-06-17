@@ -5,7 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:VuesSearchBars"
         mc:Ignorable="d"
-        Title="SearchBars" Height="350" Width="525" WindowState="Maximized" WindowStartupLocation="CenterScreen" Background="#808893">
+        Title="SearchBars" Height="350" Width="525" WindowState="Maximized" WindowStartupLocation="CenterScreen" Background="#808893"
+        KeyDown="Connection_KeyDown">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition/>
@@ -13,7 +14,7 @@
         </Grid.RowDefinitions>
         <DockPanel>
             <TextBlock DockPanel.Dock="Top" Text="SearchBars" HorizontalAlignment="Center" FontSize="25" Style="{StaticResource STextBlock}"/>
-            <StackPanel VerticalAlignment="Center"  KeyDown="Connection_KeyDown">
+            <StackPanel VerticalAlignment="Center"  >
                 <Grid Height="50" Width="200 px" >
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="85px"/>
@@ -28,8 +29,8 @@
                     <TextBlock Text="mot de passe :" Grid.Column="0" Grid.Row="1" Style="{StaticResource STextBlock}" FontSize="12"/>
                     <PasswordBox Name="mdp" Grid.Column="1" Grid.Row="1" Style="{StaticResource SPasswordBox}"/>
                 </Grid>
-                <Button Content="Connexion" Width="80px" Margin=" 0 50 0 5" Style="{StaticResource SButton}" Click="Button_Click_Connexion"/>
-                <Button Content="S'inscrire" Width="60px" FontSize="10px" Style="{StaticResource SButton}" Click="Button_Click_Subscribe"/>
+                <Button Content="Connexion" Width="80px" Margin=" 0 50 0 5" Style="{StaticResource SButton}" Click="Button_Click_Connexion" ToolTip="Ce connecter (ENTER ou F1)"/>
+                <Button Content="S'inscrire" Width="60px" FontSize="10px" Style="{StaticResource SButton}" Click="Button_Click_Subscribe" ToolTip="Nous rejoindre ! (F2)"/>
             </StackPanel>
         </DockPanel>
         <TextBlock Text="/!\ L'abus d'alcool est dangereux pour la santé. /!\" Grid.Row="1" Style="{StaticResource STextBlock}" FontSize="10"/>

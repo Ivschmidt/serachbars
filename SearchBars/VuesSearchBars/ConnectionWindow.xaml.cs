@@ -63,9 +63,13 @@ namespace VuesSearchBars
 
         private void Connection_KeyDown(object sender, KeyEventArgs e)
         {
-            if (e.Key == Key.Enter)
+            if (e.Key == Key.Enter || e.Key == Key.F1)
             {
                 Button_Click_Connexion(sender, e);
+            }
+            if (e.Key == Key.F2)
+            {
+                Button_Click_Subscribe(sender, e);
             }
         }
 
