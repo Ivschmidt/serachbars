@@ -29,7 +29,7 @@
                     <TextBlock Text="mot de passe :" Grid.Column="0" Grid.Row="1" Style="{StaticResource STextBlock}" FontSize="12"/>
                     <PasswordBox Name="mdp" Grid.Column="1" Grid.Row="1" Style="{StaticResource SPasswordBox}"/>
                 </Grid>
-                <Button Content="Connexion" Width="80px" Margin=" 0 50 0 5" Style="{StaticResource SButton}" Click="Button_Click_Connexion" ToolTip="Ce connecter (ENTER ou F1)"/>
+                <Button Content="Connexion" Width="80px" Margin=" 0 50 0 5" Style="{StaticResource SButton}" Click="Button_Click_Connexion" ToolTip="Se connecter (ENTER ou F1)"/>
                 <Button Content="S'inscrire" Width="60px" FontSize="10px" Style="{StaticResource SButton}" Click="Button_Click_Subscribe" ToolTip="Nous rejoindre ! (F2)"/>
             </StackPanel>
         </DockPanel>
