@@ -38,17 +38,17 @@ namespace VuesSearchBars
             //}
         }
 
-        //public IVille Ville
-        //{
-        //    get { return (IVille)GetValue(VilleProperty); }
-        //    set { SetValue(VilleProperty, value); }
-        //}
+        public string NomVille
+        {
+            get { return (string)GetValue(NomVilleProperty); }
+            set { SetValue(NomVilleProperty, value); }
+        }
 
-        //// Using a DependencyProperty as the backing store for Ville.  This enables animation, styling, binding, etc...
-        //public static readonly DependencyProperty VilleProperty =
-        //    DependencyProperty.Register("Ville", typeof(IVille), typeof(UserControlVille), new PropertyMetadata(null, (sender, e) =>
-        //    {
-        //    }));
+        // Using a DependencyProperty as the backing store for NomVille.  This enables animation, styling, binding, etc...
+        public static readonly DependencyProperty NomVilleProperty =
+            DependencyProperty.Register("NomVille", typeof(string), typeof(UserControlVille), new PropertyMetadata("Aucune ville à afficher"));
+
+
 
         public CoordonneesGPS GPSVille
         {
@@ -74,21 +74,5 @@ namespace VuesSearchBars
         // Using a DependencyProperty as the backing store for LBars.  This enables animation, styling, binding, etc...
         public static readonly DependencyProperty LBarsProperty =
             DependencyProperty.Register("LBars", typeof(IEnumerable<IBar>), typeof(UserControlVille), new PropertyMetadata(null, (sender, e) => { }));
-
-
-
-
-        //public double GPS
-        //{
-        //    get { return (double)GetValue(GPSProperty); }
-        //    set { SetValue(GPSProperty, value); }
-        //}
-
-        //// Using a DependencyProperty as the backing store for GPS.  This enables animation, styling, binding, etc...
-        //public static readonly DependencyProperty GPSProperty =
-        //    DependencyProperty.Register("GPS", typeof(double), typeof(UserControlVille), new PropertyMetadata(0));
-
-        
-
     }
 }

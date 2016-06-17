@@ -19,13 +19,11 @@
     </UserControl.Resources>-->
     <Grid>
         <DockPanel>
-            <TextBlock Text="{Binding Ville.Nom, ElementName=root}" FontSize="20" DockPanel.Dock="Top" Style="{StaticResource STextBlock}"/>
-            <!--<TextBlock Text="{Binding Ville.GPSVille, ElementName=root, Converter={StaticResource gps2LocationConverter}}" />-->
-            <map:Map Name="map1" ZoomLevel="5" CredentialsProvider="GPTQ32UjcuKIjSoK2k67~zsm5A0WorhEOdGW-14U77Q~AlSPzDbJPec2cvWGOg7TwCQLPRorLVoO3z2Sh1p7FR6Qd4Uu9rFdCLDAE7WWFLuY"
-                     >
+            <TextBlock Text="{Binding NomVille, ElementName=root}" FontSize="20" DockPanel.Dock="Top" Style="{StaticResource STextBlock}"/>
+            <map:Map Name="map1" ZoomLevel="12" CredentialsProvider="GPTQ32UjcuKIjSoK2k67~zsm5A0WorhEOdGW-14U77Q~AlSPzDbJPec2cvWGOg7TwCQLPRorLVoO3z2Sh1p7FR6Qd4Uu9rFdCLDAE7WWFLuY">
 
                 <map:Pushpin Location="{Binding GPSVille, ElementName=root, Converter={StaticResource gps2LocationConverter}}" />
-               
+               <!--ajouter la liste des pushpins et enlever le pushpin de la ville-->
                 <!--<map:Map.Children>-->
                     <!--<map:Pushpin x:Name="pushPin" Width="30">
                         <map:Location/>
