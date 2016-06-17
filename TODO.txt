@@ -1,7 +1,6 @@
 -toute la doc
  - diagramme de sequence
- - diagramme de classe = descr
- - persistance + parts perso = diag de classe
+ - diagramme de classe metier + persistance = descr
  - doc du code
  - 
  - deploiement
@@ -9,10 +8,8 @@
  - accessibilté
 
 - voir pour list photos
-- binder pushpins + center
-  - ville pas centrée
+- binder pushpins
   - liste de pushpins pas mises pour ville
-  - center sur un bar seulement au 1er clic apres juste pushpin qui changent = a fix
   
 - faire un event depuis metier sur vues
 - seprarer tests

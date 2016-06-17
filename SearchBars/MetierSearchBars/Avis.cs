@@ -7,6 +7,9 @@ using System.Threading.Tasks;
 
 namespace MetierSearchBars
 {   
+    /// <summary>
+    /// Structure représentant un Avis laissé par une Utilisateur sur un Bar
+    /// </summary>
     [DataContract]
     public struct Avis : IEquatable<Avis>
     {
@@ -108,7 +111,7 @@ namespace MetierSearchBars
         /// </summary>
         /// <param name="avis1">First Avis to be compared with the second Avis</param>
         /// <param name="avis2">Second Avis to be compared with the first Avis</param>
-        /// <returns></returns>
+        /// <returns>true if equals</returns>
         public static bool operator ==(Avis avis1, Avis avis2)
         {
             return avis1.Equals(avis2);
@@ -119,7 +122,7 @@ namespace MetierSearchBars
         /// </summary>
         /// <param name="avis1">First Avis to be compared with the second Avis</param>
         /// <param name="avis2">Second Avis to be compared with the first Avis</param>
-        /// <returns></returns>
+        /// <returns>true if non-equals</returns>
         public static bool operator !=(Avis avis1, Avis avis2)
         {
             return !avis1.Equals(avis2);
@@ -127,9 +130,8 @@ namespace MetierSearchBars
 
         /// <summary>
         /// redéfinition de la méthode toString()
-        /// Retourne la note suivi de la description (met un espace si rien dans Description
         /// </summary>
-        /// <returns></returns>
+        /// <returns>La note suivi de la description (met un espace si rien dans Description</returns>
         public override string ToString()
         {
             return string.Format("{0} : {1}", Note.ToString(), Description);

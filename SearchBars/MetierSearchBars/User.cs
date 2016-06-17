@@ -12,7 +12,7 @@ namespace MetierSearchBars
     /// <summary>
     /// classe de User
     /// utilisée pour la connexion à l'application
-    /// implements : IEquatable pour protocole d'égalité
+    /// implements : IEquatable pour protocole d'égalité entre 2 Users
     ///            : IUser : interface de facade pour wrapper User en classe immuable
     /// </summary>
     [DataContract]
@@ -279,9 +279,8 @@ namespace MetierSearchBars
 
         /// <summary>
         /// Redéfinition de la méthode ToString()
-        /// Retourne le pseudo
         /// </summary>
-        /// <returns></returns>
+        /// <returns>Le pseudo</returns>
         public override string ToString()
         {
             return Pseudo;

@@ -7,9 +7,15 @@ using System.Threading.Tasks;
 
 namespace MetierSearchBars
 {
+    /// <summary>
+    /// Structure permettant de rassembler une longitude et une latitude sous forme de Coordonnées GPS utilisables pour situer un lieu
+    /// </summary>
     [DataContract]
     public struct CoordonneesGPS : IEquatable<CoordonneesGPS>
     {
+        /// <summary>
+        /// La longitude de ce lieu
+        /// </summary>
         public double Longitude
         {
             get
@@ -20,6 +26,9 @@ namespace MetierSearchBars
         [DataMember (Name = "Longitude")]
         private double mLongitude;
 
+        /// <summary>
+        /// La latitude de ce lieu
+        /// </summary>
         public double Latitude
         {
             get
@@ -30,6 +39,11 @@ namespace MetierSearchBars
         [DataMember (Name = "Latitude")]
         private double mLatitude;
 
+        /// <summary>
+        /// Constructeur d'une coordonnées GPS
+        /// </summary>
+        /// <param name="latitude">La latitude de le coordonnée à créer</param>
+        /// <param name="longitude">La longitude la coordonnée à créer</param>
         public CoordonneesGPS(double latitude, double longitude)
         {
             mLatitude = latitude;
@@ -71,11 +85,23 @@ namespace MetierSearchBars
             return (this.Latitude == other.Latitude && this.Longitude == other.Longitude);
         }
 
+        /// <summary>
+        /// redéfinition de la méthode ==
+        /// </summary>
+        /// <param name="gps1">First CoordonneesGPS to be compared with the second CoordonneesGPS</param>
+        /// <param name="gps2">CoordonneesGPS Avis to be compared with the first CoordonneesGPS</param>
+        /// <returns>true if equals</returns>
         public static bool operator ==(CoordonneesGPS gps1, CoordonneesGPS gps2)
         {
             return gps1.Equals(gps2);
         }
 
+        /// <summary>
+        /// redéfinition de la méthode !=
+        /// </summary>
+        /// <param name="gps1">First CoordonneesGPS to be compared with the second CoordonneesGPS</param>
+        /// <param name="gps2">CoordonneesGPS Avis to be compared with the first CoordonneesGPS</param>
+        /// <returns>true if non-equals</returns>
         public static bool operator !=(CoordonneesGPS gps1, CoordonneesGPS gps2)
         {
             return !gps1.Equals(gps2);

@@ -41,9 +41,8 @@ namespace MetierSearchBars
 
         /// <summary>
         /// Redéfinition de la méthode ToString()
-        /// Retourne le nom suivi d'un retour à la ligne
         /// </summary>
-        /// <returns></returns>
+        /// <returns>Le nom suivi d'un retour à la ligne</returns>
         public override string ToString()
         {
             return string.Format("{0}\n", Nom);

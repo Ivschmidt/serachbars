@@ -12,13 +12,21 @@ namespace MetierSearchBars
     /// <summary>
     /// Classe représentant un Bar 
     /// implémente IBar qui est une facade immuable permettant d'encapsuler un Bar
-    /// implémente IEquatable 
+    /// implémente IEquatable pour implémenter les protocoles d'égalité entre 2 Bars
+    /// implémente INotifyPropertyChanged pour l'envoi d'événements lorsqu'une propriété est modifiée
     /// </summary>
     [DataContract]
     class Bar : IEquatable<Bar>, IBar, INotifyPropertyChanged
     {
+        /// <summary>
+        /// Evenement envoyé lorsque qu'une propriété est modifiée
+        /// </summary>
         public event PropertyChangedEventHandler PropertyChanged;
 
+        /// <summary>
+        /// méthode privée qui envoie l'événement PropertyChanged
+        /// </summary>
+        /// <param name="info">Nom de la propriété qui a été modifiée</param>
         private void OnPropertyChanged(String info)
         {
             PropertyChangedEventHandler handler = PropertyChanged;
@@ -58,7 +66,7 @@ namespace MetierSearchBars
         [DataMember (Order = 5, Name = "listeDesBoissonsDuBar")]
         private List<Boisson> listBoissons = new List<Boisson>();
         /// <summary>
-        /// Encapsulation de la liste privée par un IEnumerable
+        /// Encapsulation de la liste de boissons privée par un IEnumerable
         /// IBoisson encapusle les boissons en lecture seule
         /// </summary>
         public IEnumerable<IBoisson> ListBoisson
@@ -224,10 +232,9 @@ namespace MetierSearchBars
 
         /// <summary>
         /// redéfinition de la méthode ToString()
-        /// affiche le nom suivi de la note moyenne si elle existe, de la liste de boissons si elle n'est pas vide,
-        /// puis la liste des avis s'il y en a 
         /// </summary>
-        /// <returns></returns>
+        /// <returns>Le nom suivi de la note moyenne si elle existe, de la liste de boissons si elle n'est pas vide,
+        /// puis la liste des avis s'il y en a </returns>
         public override string ToString()
         {
             string temp = Nom + "\n";
@@ -239,7 +246,7 @@ namespace MetierSearchBars
             {
                 foreach(Boisson boiss in ListBoisson)
                 {
-                    temp += boiss.ToString();
+                    temp += boiss.ToString() + "\n";
                 }
                 temp += "\n";
             }
