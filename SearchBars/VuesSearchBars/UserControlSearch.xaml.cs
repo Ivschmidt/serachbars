@@ -71,6 +71,9 @@ namespace VuesSearchBars
             OnRechercheLancee(new RechercheLanceeEventArgs(comboBox_Ville.SelectedItem as IVille, (bool) RadioButton_oui.IsChecked, noteMin.Value, listBoissonsPref));
         }
 
-       
+        public void Recherche_KeyDown(object sender, KeyEventArgs e)
+        {
+            Button_Click_Rechercher(sender, e);
+        }
     }
 }
