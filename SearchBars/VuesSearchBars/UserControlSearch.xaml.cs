@@ -70,5 +70,7 @@ namespace VuesSearchBars
             }
             OnRechercheLancee(new RechercheLanceeEventArgs(comboBox_Ville.SelectedItem as IVille, (bool) RadioButton_oui.IsChecked, noteMin.Value, listBoissonsPref));
         }
+
+       
     }
 }

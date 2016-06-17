@@ -86,5 +86,22 @@ namespace VuesSearchBars
         {
             Manager.seDeconnecter();
         }
+
+        private void ColumnDefinition_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.Key == Key.F1)
+            {
+                Button_Click_Rechercher(sender,e);
+            }
+            if (e.Key == Key.F2)
+            {
+                Button_Click_Compte(sender, e);
+            }
+            if (e.Key == Key.F3)
+            {
+                Button_Click_Deco(sender, e);
+            }
+            
+        }
     }
 }
