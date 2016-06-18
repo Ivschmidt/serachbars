@@ -38,6 +38,9 @@ namespace VuesSearchBars
 
         private UserControlSearch UCSearch { get; set; }
 
+        private UserControlProfil UCProfil { get; set; }
+
+
         private void loadUCSearch()
         {
             GridMainControl.Children.Clear();
@@ -75,7 +78,7 @@ namespace VuesSearchBars
         public void loadUCProfil()
         {
             GridMainControl.Children.Clear();
-            UserControlProfil UCProfil = new UserControlProfil(Manager.CurrentUser);
+            UCProfil = new UserControlProfil(Manager.CurrentUser);
             UCProfil.ProfilUpdated += OnProfilUpdated;
             GridMainControl.Children.Add(UCProfil);
         }
@@ -104,9 +107,13 @@ namespace VuesSearchBars
             {
                 Button_Click_Deco(sender, e);
             }
-            if(e.Key == Key.Enter)
+            if (e.Key == Key.Enter && GridMainControl.Children.Contains(UCSearch))
             {
                 UCSearch.Recherche_KeyDown(sender, e);
+            }
+            if (e.Key == Key.F4 && GridMainControl.Children.Contains(UCProfil))
+            {
+                UCProfil.Modification_KeyDown(sender, e);
             }
             
         }

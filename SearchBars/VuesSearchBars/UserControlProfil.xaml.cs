@@ -135,5 +135,9 @@ namespace VuesSearchBars
             }
         }
 
+        public void Modification_KeyDown(object sender, KeyEventArgs e)
+        {
+            Button_Click_Modification(sender, e);
+        }
     }
 }

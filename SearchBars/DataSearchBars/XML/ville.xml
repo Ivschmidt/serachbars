@@ -20,10 +20,125 @@
         <d2p1:listeDesBoissonsDuBar>
           <d2p1:Boisson i:type="d2p1:BoissonSimple">
             <d2p1:typeDeLaBoisson>Biere</d2p1:typeDeLaBoisson>
-            <d2p1:Nom>Ruby</d2p1:Nom>
-            <d2p1:Prix>3.5</d2p1:Prix>
-            <d2p1:DegreAlcool>4</d2p1:DegreAlcool>
-            <d2p1:Marque>Leffe</d2p1:Marque>
+            <d2p1:Nom>Blonde</d2p1:Nom>
+            <d2p1:Prix>3.2</d2p1:Prix>
+            <d2p1:DegreAlcool>2.5</d2p1:DegreAlcool>
+            <d2p1:Marque>Heineken</d2p1:Marque>
+          </d2p1:Boisson>
+          <d2p1:Boisson i:type="d2p1:BoissonSimple">
+            <d2p1:typeDeLaBoisson>Biere</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>Blonde</d2p1:Nom>
+            <d2p1:Prix>3.2</d2p1:Prix>
+            <d2p1:DegreAlcool>2.5</d2p1:DegreAlcool>
+            <d2p1:Marque>Kronenbourg</d2p1:Marque>
+          </d2p1:Boisson>
+          <d2p1:Boisson i:type="d2p1:BoissonComposee">
+            <d2p1:typeDeLaBoisson>AlcoolFort</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>Jeager Bombe</d2p1:Nom>
+            <d2p1:Prix>4.5</d2p1:Prix>
+            <d2p1:DegreAlcool>35</d2p1:DegreAlcool>
+            <d2p1:listeDesBoissons>
+              <d2p1:Boisson i:type="d2p1:BoissonSimple">
+                <d2p1:typeDeLaBoisson>AlcoolFort</d2p1:typeDeLaBoisson>
+                <d2p1:Nom>Jeagermeister</d2p1:Nom>
+                <d2p1:Prix>4</d2p1:Prix>
+                <d2p1:DegreAlcool>35</d2p1:DegreAlcool>
+                <d2p1:Marque>Jeagermeister</d2p1:Marque>
+              </d2p1:Boisson>
+              <d2p1:Boisson i:type="d2p1:BoissonSimple">
+                <d2p1:typeDeLaBoisson>Soda</d2p1:typeDeLaBoisson>
+                <d2p1:Nom>RedBull Energy Drink</d2p1:Nom>
+                <d2p1:Prix>2.8</d2p1:Prix>
+                <d2p1:DegreAlcool>0</d2p1:DegreAlcool>
+                <d2p1:Marque>Redbull</d2p1:Marque>
+              </d2p1:Boisson>
+            </d2p1:listeDesBoissons>
+            <d2p1:listeDesIngredients />
+          </d2p1:Boisson>
+          <d2p1:Boisson i:type="d2p1:BoissonSimple">
+            <d2p1:typeDeLaBoisson>AlcoolFort</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>Jeagermeister</d2p1:Nom>
+            <d2p1:Prix>4</d2p1:Prix>
+            <d2p1:DegreAlcool>35</d2p1:DegreAlcool>
+            <d2p1:Marque>Jeagermeister</d2p1:Marque>
+          </d2p1:Boisson>
+          <d2p1:Boisson i:type="d2p1:BoissonComposee">
+            <d2p1:typeDeLaBoisson>AlcoolFort</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>Shooter Crash Naya</d2p1:Nom>
+            <d2p1:Prix>1</d2p1:Prix>
+            <d2p1:DegreAlcool>40</d2p1:DegreAlcool>
+            <d2p1:listeDesBoissons>
+              <d2p1:Boisson i:type="d2p1:BoissonSimple">
+                <d2p1:typeDeLaBoisson>AlcoolFort</d2p1:typeDeLaBoisson>
+                <d2p1:Nom>Vodka</d2p1:Nom>
+                <d2p1:Prix>5</d2p1:Prix>
+                <d2p1:DegreAlcool>37</d2p1:DegreAlcool>
+                <d2p1:Marque>Eristoff</d2p1:Marque>
+              </d2p1:Boisson>
+            </d2p1:listeDesBoissons>
+            <d2p1:listeDesIngredients>
+              <d2p1:Ingredient>
+                <d2p1:Nom>sel</d2p1:Nom>
+              </d2p1:Ingredient>
+              <d2p1:Ingredient>
+                <d2p1:Nom>Tabasco</d2p1:Nom>
+              </d2p1:Ingredient>
+            </d2p1:listeDesIngredients>
+          </d2p1:Boisson>
+          <d2p1:Boisson i:type="d2p1:BoissonComposee">
+            <d2p1:typeDeLaBoisson>AlcoolFort</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>Shooter Pêche Piment</d2p1:Nom>
+            <d2p1:Prix>1</d2p1:Prix>
+            <d2p1:DegreAlcool>40</d2p1:DegreAlcool>
+            <d2p1:listeDesBoissons>
+              <d2p1:Boisson i:type="d2p1:BoissonSimple">
+                <d2p1:typeDeLaBoisson>AlcoolFort</d2p1:typeDeLaBoisson>
+                <d2p1:Nom>Vodka</d2p1:Nom>
+                <d2p1:Prix>5</d2p1:Prix>
+                <d2p1:DegreAlcool>37</d2p1:DegreAlcool>
+                <d2p1:Marque>Eristoff</d2p1:Marque>
+              </d2p1:Boisson>
+              <d2p1:Boisson i:type="d2p1:BoissonSimple">
+                <d2p1:typeDeLaBoisson>Sirop</d2p1:typeDeLaBoisson>
+                <d2p1:Nom>Sirop de peche</d2p1:Nom>
+                <d2p1:Prix>3</d2p1:Prix>
+                <d2p1:DegreAlcool>0</d2p1:DegreAlcool>
+                <d2p1:Marque>Teisseire</d2p1:Marque>
+              </d2p1:Boisson>
+            </d2p1:listeDesBoissons>
+            <d2p1:listeDesIngredients>
+              <d2p1:Ingredient>
+                <d2p1:Nom>piments</d2p1:Nom>
+              </d2p1:Ingredient>
+            </d2p1:listeDesIngredients>
+          </d2p1:Boisson>
+          <d2p1:Boisson i:type="d2p1:BoissonSimple">
+            <d2p1:typeDeLaBoisson>Soda</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>Coca cola</d2p1:Nom>
+            <d2p1:Prix>1.5</d2p1:Prix>
+            <d2p1:DegreAlcool>0</d2p1:DegreAlcool>
+            <d2p1:Marque>Coca Cola</d2p1:Marque>
+          </d2p1:Boisson>
+          <d2p1:Boisson i:type="d2p1:BoissonSimple">
+            <d2p1:typeDeLaBoisson>Soda</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>Oasis Orange</d2p1:Nom>
+            <d2p1:Prix>1.5</d2p1:Prix>
+            <d2p1:DegreAlcool>0</d2p1:DegreAlcool>
+            <d2p1:Marque>Oasis</d2p1:Marque>
+          </d2p1:Boisson>
+          <d2p1:Boisson i:type="d2p1:BoissonSimple">
+            <d2p1:typeDeLaBoisson>Soda</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>7Up</d2p1:Nom>
+            <d2p1:Prix>1.5</d2p1:Prix>
+            <d2p1:DegreAlcool>0</d2p1:DegreAlcool>
+            <d2p1:Marque>SevenUp</d2p1:Marque>
+          </d2p1:Boisson>
+          <d2p1:Boisson i:type="d2p1:BoissonSimple">
+            <d2p1:typeDeLaBoisson>Soda</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>Orangina</d2p1:Nom>
+            <d2p1:Prix>1.5</d2p1:Prix>
+            <d2p1:DegreAlcool>0</d2p1:DegreAlcool>
+            <d2p1:Marque>Orangina</d2p1:Marque>
           </d2p1:Boisson>
           <d2p1:Boisson i:type="d2p1:BoissonSimple">
             <d2p1:typeDeLaBoisson>Jus</d2p1:typeDeLaBoisson>
@@ -33,39 +148,14 @@
             <d2p1:Marque>Pago</d2p1:Marque>
           </d2p1:Boisson>
           <d2p1:Boisson i:type="d2p1:BoissonSimple">
-            <d2p1:typeDeLaBoisson>AlcoolFort</d2p1:typeDeLaBoisson>
-            <d2p1:Nom>Vodka</d2p1:Nom>
-            <d2p1:Prix>5</d2p1:Prix>
-            <d2p1:DegreAlcool>37</d2p1:DegreAlcool>
-            <d2p1:Marque>Eristoff</d2p1:Marque>
-          </d2p1:Boisson>
-          <d2p1:Boisson i:type="d2p1:BoissonSimple">
             <d2p1:typeDeLaBoisson>Soda</d2p1:typeDeLaBoisson>
-            <d2p1:Nom>Coca Cherry</d2p1:Nom>
-            <d2p1:Prix>1.5</d2p1:Prix>
+            <d2p1:Nom>RedBull Energy Drink</d2p1:Nom>
+            <d2p1:Prix>2.8</d2p1:Prix>
             <d2p1:DegreAlcool>0</d2p1:DegreAlcool>
-            <d2p1:Marque>Coca Cola</d2p1:Marque>
+            <d2p1:Marque>Redbull</d2p1:Marque>
           </d2p1:Boisson>
         </d2p1:listeDesBoissonsDuBar>
         <d2p1:listeDesAvisLaissés>
-          <KeyValueOfUserAvisuynyfWTd>
-            <Key>
-              <d2p1:Pseudo>trololo</d2p1:Pseudo>
-              <d2p1:Nom>Delabierre</d2p1:Nom>
-              <d2p1:Prenom>Yvan</d2p1:Prenom>
-              <d2p1:Sexe>Homme</d2p1:Sexe>
-              <d2p1:dateDeNaissance>1980-01-09T00:00:00</d2p1:dateDeNaissance>
-              <d2p1:NumeroTelephone>0654856952</d2p1:NumeroTelephone>
-              <d2p1:Ville>St Julien De Copel</d2p1:Ville>
-              <d2p1:BoissonPref>Biere</d2p1:BoissonPref>
-              <d2p1:PhotoDeProfil>Images/ImagesProfils/trololo.jpg</d2p1:PhotoDeProfil>
-              <d2p1:motDePasse>123456</d2p1:motDePasse>
-            </Key>
-            <Value>
-              <d2p1:Description>j'ai failli mourir</d2p1:Description>
-              <d2p1:Note>1</d2p1:Note>
-            </Value>
-          </KeyValueOfUserAvisuynyfWTd>
           <KeyValueOfUserAvisuynyfWTd>
             <Key>
               <d2p1:Pseudo>enzoDu93</d2p1:Pseudo>
@@ -82,6 +172,24 @@
             <Value>
               <d2p1:Description>Wesh c'est trop bien ce bar !</d2p1:Description>
               <d2p1:Note>4</d2p1:Note>
+            </Value>
+          </KeyValueOfUserAvisuynyfWTd>
+          <KeyValueOfUserAvisuynyfWTd>
+            <Key>
+              <d2p1:Pseudo>trololo</d2p1:Pseudo>
+              <d2p1:Nom>Delabierre</d2p1:Nom>
+              <d2p1:Prenom>Yvan</d2p1:Prenom>
+              <d2p1:Sexe>Homme</d2p1:Sexe>
+              <d2p1:dateDeNaissance>1980-01-09T00:00:00</d2p1:dateDeNaissance>
+              <d2p1:NumeroTelephone>0654856952</d2p1:NumeroTelephone>
+              <d2p1:Ville>St Julien De Copel</d2p1:Ville>
+              <d2p1:BoissonPref>Biere</d2p1:BoissonPref>
+              <d2p1:PhotoDeProfil>Images/ImagesProfils/trololo.jpg</d2p1:PhotoDeProfil>
+              <d2p1:motDePasse>123456</d2p1:motDePasse>
+            </Key>
+            <Value>
+              <d2p1:Description>19h Ce bar est d'une pureté qui n'a pas d'égal !</d2p1:Description>
+              <d2p1:Note>5</d2p1:Note>
             </Value>
           </KeyValueOfUserAvisuynyfWTd>
         </d2p1:listeDesAvisLaissés>
@@ -113,38 +221,76 @@
             <d2p1:DegreAlcool>40</d2p1:DegreAlcool>
             <d2p1:Marque>OldNick</d2p1:Marque>
           </d2p1:Boisson>
-          <d2p1:Boisson i:type="d2p1:BoissonComposee">
-            <d2p1:typeDeLaBoisson>Cocktail</d2p1:typeDeLaBoisson>
-            <d2p1:Nom>Mojito</d2p1:Nom>
-            <d2p1:Prix>6.5</d2p1:Prix>
-            <d2p1:DegreAlcool>18</d2p1:DegreAlcool>
-            <d2p1:listeDesBoissons>
-              <d2p1:Boisson i:type="d2p1:BoissonSimple">
-                <d2p1:typeDeLaBoisson>AlcoolFort</d2p1:typeDeLaBoisson>
-                <d2p1:Nom>Rhum</d2p1:Nom>
-                <d2p1:Prix>4</d2p1:Prix>
-                <d2p1:DegreAlcool>40</d2p1:DegreAlcool>
-                <d2p1:Marque>OldNick</d2p1:Marque>
-              </d2p1:Boisson>
-            </d2p1:listeDesBoissons>
-            <d2p1:listeDesIngredients>
-              <d2p1:Ingredient>
-                <d2p1:Nom>citron vert</d2p1:Nom>
-              </d2p1:Ingredient>
-              <d2p1:Ingredient>
-                <d2p1:Nom>feuilles de menthe fraiches</d2p1:Nom>
-              </d2p1:Ingredient>
-            </d2p1:listeDesIngredients>
+          <d2p1:Boisson i:type="d2p1:BoissonSimple">
+            <d2p1:typeDeLaBoisson>Biere</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>Blonde</d2p1:Nom>
+            <d2p1:Prix>2.5</d2p1:Prix>
+            <d2p1:DegreAlcool>4</d2p1:DegreAlcool>
+            <d2p1:Marque>Leffe</d2p1:Marque>
           </d2p1:Boisson>
           <d2p1:Boisson i:type="d2p1:BoissonSimple">
-            <d2p1:typeDeLaBoisson>Soda</d2p1:typeDeLaBoisson>
-            <d2p1:Nom>7Up</d2p1:Nom>
-            <d2p1:Prix>1.5</d2p1:Prix>
-            <d2p1:DegreAlcool>0</d2p1:DegreAlcool>
-            <d2p1:Marque>SevenUp</d2p1:Marque>
+            <d2p1:typeDeLaBoisson>Biere</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>Ambré</d2p1:Nom>
+            <d2p1:Prix>3.5</d2p1:Prix>
+            <d2p1:DegreAlcool>4</d2p1:DegreAlcool>
+            <d2p1:Marque>Leffe</d2p1:Marque>
+          </d2p1:Boisson>
+          <d2p1:Boisson i:type="d2p1:BoissonSimple">
+            <d2p1:typeDeLaBoisson>Biere</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>Ruby</d2p1:Nom>
+            <d2p1:Prix>3.5</d2p1:Prix>
+            <d2p1:DegreAlcool>4</d2p1:DegreAlcool>
+            <d2p1:Marque>Leffe</d2p1:Marque>
+          </d2p1:Boisson>
+          <d2p1:Boisson i:type="d2p1:BoissonSimple">
+            <d2p1:typeDeLaBoisson>Biere</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>K Mangue</d2p1:Nom>
+            <d2p1:Prix>3.2</d2p1:Prix>
+            <d2p1:DegreAlcool>4.5</d2p1:DegreAlcool>
+            <d2p1:Marque>Kronenbourg</d2p1:Marque>
+          </d2p1:Boisson>
+          <d2p1:Boisson i:type="d2p1:BoissonSimple">
+            <d2p1:typeDeLaBoisson>Biere</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>Blonde</d2p1:Nom>
+            <d2p1:Prix>3.5</d2p1:Prix>
+            <d2p1:DegreAlcool>4.7</d2p1:DegreAlcool>
+            <d2p1:Marque>Peroni</d2p1:Marque>
+          </d2p1:Boisson>
+          <d2p1:Boisson i:type="d2p1:BoissonSimple">
+            <d2p1:typeDeLaBoisson>Biere</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>Blonde</d2p1:Nom>
+            <d2p1:Prix>3.2</d2p1:Prix>
+            <d2p1:DegreAlcool>2.5</d2p1:DegreAlcool>
+            <d2p1:Marque>Kronenbourg</d2p1:Marque>
+          </d2p1:Boisson>
+          <d2p1:Boisson i:type="d2p1:BoissonSimple">
+            <d2p1:typeDeLaBoisson>Biere</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>Blonde</d2p1:Nom>
+            <d2p1:Prix>3.2</d2p1:Prix>
+            <d2p1:DegreAlcool>2.5</d2p1:DegreAlcool>
+            <d2p1:Marque>Heineken</d2p1:Marque>
           </d2p1:Boisson>
         </d2p1:listeDesBoissonsDuBar>
-        <d2p1:listeDesAvisLaissés />
+        <d2p1:listeDesAvisLaissés>
+          <KeyValueOfUserAvisuynyfWTd>
+            <Key>
+              <d2p1:Pseudo>trololo</d2p1:Pseudo>
+              <d2p1:Nom>Delabierre</d2p1:Nom>
+              <d2p1:Prenom>Yvan</d2p1:Prenom>
+              <d2p1:Sexe>Homme</d2p1:Sexe>
+              <d2p1:dateDeNaissance>1980-01-09T00:00:00</d2p1:dateDeNaissance>
+              <d2p1:NumeroTelephone>0654856952</d2p1:NumeroTelephone>
+              <d2p1:Ville>St Julien De Copel</d2p1:Ville>
+              <d2p1:BoissonPref>Biere</d2p1:BoissonPref>
+              <d2p1:PhotoDeProfil>Images/ImagesProfils/trololo.jpg</d2p1:PhotoDeProfil>
+              <d2p1:motDePasse>123456</d2p1:motDePasse>
+            </Key>
+            <Value>
+              <d2p1:Description>20h Des excelentes bières, le choix y est riche.</d2p1:Description>
+              <d2p1:Note>4</d2p1:Note>
+            </Value>
+          </KeyValueOfUserAvisuynyfWTd>
+        </d2p1:listeDesAvisLaissés>
       </d2p1:Bar>
       <d2p1:Bar>
         <d2p1:Nom>The Still Irish Bar</d2p1:Nom>
@@ -215,23 +361,31 @@
             <d2p1:DegreAlcool>0</d2p1:DegreAlcool>
             <d2p1:Marque>Pago</d2p1:Marque>
           </d2p1:Boisson>
+          <d2p1:Boisson i:type="d2p1:BoissonSimple">
+            <d2p1:typeDeLaBoisson>Soda</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>Oasis Tropical</d2p1:Nom>
+            <d2p1:Prix>1.5</d2p1:Prix>
+            <d2p1:DegreAlcool>0</d2p1:DegreAlcool>
+            <d2p1:Marque>Oasis</d2p1:Marque>
+          </d2p1:Boisson>
         </d2p1:listeDesBoissonsDuBar>
         <d2p1:listeDesAvisLaissés>
           <KeyValueOfUserAvisuynyfWTd>
             <Key>
-              <d2p1:Pseudo>ivschmidt</d2p1:Pseudo>
-              <d2p1:Nom>Schmidt</d2p1:Nom>
-              <d2p1:Prenom>Ivan</d2p1:Prenom>
+              <d2p1:Pseudo>trololo</d2p1:Pseudo>
+              <d2p1:Nom>Delabierre</d2p1:Nom>
+              <d2p1:Prenom>Yvan</d2p1:Prenom>
               <d2p1:Sexe>Homme</d2p1:Sexe>
-              <d2p1:dateDeNaissance>1997-04-29T00:00:00</d2p1:dateDeNaissance>
-              <d2p1:NumeroTelephone></d2p1:NumeroTelephone>
-              <d2p1:Ville>cantal perdu</d2p1:Ville>
-              <d2p1:PhotoDeProfil>Images/ImagesProfils/IvanSchmidt.jpg</d2p1:PhotoDeProfil>
-              <d2p1:motDePasse>290497</d2p1:motDePasse>
+              <d2p1:dateDeNaissance>1980-01-09T00:00:00</d2p1:dateDeNaissance>
+              <d2p1:NumeroTelephone>0654856952</d2p1:NumeroTelephone>
+              <d2p1:Ville>St Julien De Copel</d2p1:Ville>
+              <d2p1:BoissonPref>Biere</d2p1:BoissonPref>
+              <d2p1:PhotoDeProfil>Images/ImagesProfils/trololo.jpg</d2p1:PhotoDeProfil>
+              <d2p1:motDePasse>123456</d2p1:motDePasse>
             </Key>
             <Value>
-              <d2p1:Description>J'ai passé une superbe soirée</d2p1:Description>
-              <d2p1:Note>4</d2p1:Note>
+              <d2p1:Description>21h Ouais c'est pas mal on y est bien.</d2p1:Description>
+              <d2p1:Note>3</d2p1:Note>
             </Value>
           </KeyValueOfUserAvisuynyfWTd>
         </d2p1:listeDesAvisLaissés>
@@ -246,8 +400,51 @@
         <d2p1:Adresse>6 Place Etoile</d2p1:Adresse>
         <d2p1:Numero>04 73 31 01 65</d2p1:Numero>
         <d2p1:Photo>Images/ImagesBars/barthom.jpg</d2p1:Photo>
-        <d2p1:listeDesBoissonsDuBar />
-        <d2p1:listeDesAvisLaissés />
+        <d2p1:listeDesBoissonsDuBar>
+          <d2p1:Boisson i:type="d2p1:Vin">
+            <d2p1:typeDeLaBoisson>Vin</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>Côte de Beaune</d2p1:Nom>
+            <d2p1:Prix>16</d2p1:Prix>
+            <d2p1:DegreAlcool>12</d2p1:DegreAlcool>
+            <d2p1:Marque>Bourgogne</d2p1:Marque>
+            <d2p1:Millesime>2007</d2p1:Millesime>
+            <d2p1:Robe>rouge</d2p1:Robe>
+          </d2p1:Boisson>
+          <d2p1:Boisson i:type="d2p1:BoissonSimple">
+            <d2p1:typeDeLaBoisson>Soda</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>RedBull Energy Drink</d2p1:Nom>
+            <d2p1:Prix>2.8</d2p1:Prix>
+            <d2p1:DegreAlcool>0</d2p1:DegreAlcool>
+            <d2p1:Marque>Redbull</d2p1:Marque>
+          </d2p1:Boisson>
+          <d2p1:Boisson i:type="d2p1:BoissonSimple">
+            <d2p1:typeDeLaBoisson>AlcoolFort</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>Vodka</d2p1:Nom>
+            <d2p1:Prix>5</d2p1:Prix>
+            <d2p1:DegreAlcool>37</d2p1:DegreAlcool>
+            <d2p1:Marque>Eristoff</d2p1:Marque>
+          </d2p1:Boisson>
+        </d2p1:listeDesBoissonsDuBar>
+        <d2p1:listeDesAvisLaissés>
+          <KeyValueOfUserAvisuynyfWTd>
+            <Key>
+              <d2p1:Pseudo>trololo</d2p1:Pseudo>
+              <d2p1:Nom>Delabierre</d2p1:Nom>
+              <d2p1:Prenom>Yvan</d2p1:Prenom>
+              <d2p1:Sexe>Homme</d2p1:Sexe>
+              <d2p1:dateDeNaissance>1980-01-09T00:00:00</d2p1:dateDeNaissance>
+              <d2p1:NumeroTelephone>0654856952</d2p1:NumeroTelephone>
+              <d2p1:Ville>St Julien De Copel</d2p1:Ville>
+              <d2p1:BoissonPref>Biere</d2p1:BoissonPref>
+              <d2p1:PhotoDeProfil>Images/ImagesProfils/trololo.jpg</d2p1:PhotoDeProfil>
+              <d2p1:motDePasse>123456</d2p1:motDePasse>
+            </Key>
+            <Value>
+              <d2p1:Description>22h beaucoup de bière, les toilettes sont sympa #tropDeBiere</d2p1:Description>
+              <d2p1:Note>4</d2p1:Note>
+            </Value>
+          </KeyValueOfUserAvisuynyfWTd>
+        </d2p1:listeDesAvisLaissés>
       </d2p1:Bar>
       <d2p1:Bar>
         <d2p1:Nom>Captain's Cabin</d2p1:Nom>
@@ -259,8 +456,70 @@
         <d2p1:Adresse>20 Avenue des États Unis</d2p1:Adresse>
         <d2p1:Numero>04 73 36 33 32</d2p1:Numero>
         <d2p1:Photo>Images/ImagesBars/captain.jpg</d2p1:Photo>
-        <d2p1:listeDesBoissonsDuBar />
-        <d2p1:listeDesAvisLaissés />
+        <d2p1:listeDesBoissonsDuBar>
+          <d2p1:Boisson i:type="d2p1:BoissonSimple">
+            <d2p1:typeDeLaBoisson>AlcoolFort</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>Whisky</d2p1:Nom>
+            <d2p1:Prix>4</d2p1:Prix>
+            <d2p1:DegreAlcool>40</d2p1:DegreAlcool>
+            <d2p1:Marque>William Peel</d2p1:Marque>
+          </d2p1:Boisson>
+          <d2p1:Boisson i:type="d2p1:BoissonSimple">
+            <d2p1:typeDeLaBoisson>AlcoolFort</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>Vodka</d2p1:Nom>
+            <d2p1:Prix>5</d2p1:Prix>
+            <d2p1:DegreAlcool>37</d2p1:DegreAlcool>
+            <d2p1:Marque>Eristoff</d2p1:Marque>
+          </d2p1:Boisson>
+          <d2p1:Boisson i:type="d2p1:BoissonSimple">
+            <d2p1:typeDeLaBoisson>Soda</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>Coca cola</d2p1:Nom>
+            <d2p1:Prix>1.5</d2p1:Prix>
+            <d2p1:DegreAlcool>0</d2p1:DegreAlcool>
+            <d2p1:Marque>Coca Cola</d2p1:Marque>
+          </d2p1:Boisson>
+          <d2p1:Boisson i:type="d2p1:BoissonSimple">
+            <d2p1:typeDeLaBoisson>Soda</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>Oasis Orange</d2p1:Nom>
+            <d2p1:Prix>1.5</d2p1:Prix>
+            <d2p1:DegreAlcool>0</d2p1:DegreAlcool>
+            <d2p1:Marque>Oasis</d2p1:Marque>
+          </d2p1:Boisson>
+          <d2p1:Boisson i:type="d2p1:BoissonSimple">
+            <d2p1:typeDeLaBoisson>AlcoolFort</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>Schnaps Pêche</d2p1:Nom>
+            <d2p1:Prix>4</d2p1:Prix>
+            <d2p1:DegreAlcool>42</d2p1:DegreAlcool>
+            <d2p1:Marque>Berentzen</d2p1:Marque>
+          </d2p1:Boisson>
+          <d2p1:Boisson i:type="d2p1:BoissonSimple">
+            <d2p1:typeDeLaBoisson>AlcoolFort</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>Tequila</d2p1:Nom>
+            <d2p1:Prix>4</d2p1:Prix>
+            <d2p1:DegreAlcool>25</d2p1:DegreAlcool>
+            <d2p1:Marque>Gordon</d2p1:Marque>
+          </d2p1:Boisson>
+        </d2p1:listeDesBoissonsDuBar>
+        <d2p1:listeDesAvisLaissés>
+          <KeyValueOfUserAvisuynyfWTd>
+            <Key>
+              <d2p1:Pseudo>trololo</d2p1:Pseudo>
+              <d2p1:Nom>Delabierre</d2p1:Nom>
+              <d2p1:Prenom>Yvan</d2p1:Prenom>
+              <d2p1:Sexe>Homme</d2p1:Sexe>
+              <d2p1:dateDeNaissance>1980-01-09T00:00:00</d2p1:dateDeNaissance>
+              <d2p1:NumeroTelephone>0654856952</d2p1:NumeroTelephone>
+              <d2p1:Ville>St Julien De Copel</d2p1:Ville>
+              <d2p1:BoissonPref>Biere</d2p1:BoissonPref>
+              <d2p1:PhotoDeProfil>Images/ImagesProfils/trololo.jpg</d2p1:PhotoDeProfil>
+              <d2p1:motDePasse>123456</d2p1:motDePasse>
+            </Key>
+            <Value>
+              <d2p1:Description>23h30 DU RHUM DES FEMMES ET D'LA BIERE NON DE DIEU !</d2p1:Description>
+              <d2p1:Note>5</d2p1:Note>
+            </Value>
+          </KeyValueOfUserAvisuynyfWTd>
+        </d2p1:listeDesAvisLaissés>
       </d2p1:Bar>
       <d2p1:Bar>
         <d2p1:Nom>3 Monkeys Pub</d2p1:Nom>
@@ -272,8 +531,93 @@
         <d2p1:Adresse>25 Avenue des Paulines</d2p1:Adresse>
         <d2p1:Numero>04 73 90 32 46</d2p1:Numero>
         <d2p1:Photo>Images/ImagesBars/monkey.jpg</d2p1:Photo>
-        <d2p1:listeDesBoissonsDuBar />
-        <d2p1:listeDesAvisLaissés />
+        <d2p1:listeDesBoissonsDuBar>
+          <d2p1:Boisson i:type="d2p1:Vin">
+            <d2p1:typeDeLaBoisson>Vin</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>Chateaubriant</d2p1:Nom>
+            <d2p1:Prix>15</d2p1:Prix>
+            <d2p1:DegreAlcool>12</d2p1:DegreAlcool>
+            <d2p1:Marque>Duras</d2p1:Marque>
+            <d2p1:Millesime>2009</d2p1:Millesime>
+            <d2p1:Robe>rouge</d2p1:Robe>
+          </d2p1:Boisson>
+          <d2p1:Boisson i:type="d2p1:BoissonSimple">
+            <d2p1:typeDeLaBoisson>AlcoolFort</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>Rhum</d2p1:Nom>
+            <d2p1:Prix>4</d2p1:Prix>
+            <d2p1:DegreAlcool>40</d2p1:DegreAlcool>
+            <d2p1:Marque>OldNick</d2p1:Marque>
+          </d2p1:Boisson>
+          <d2p1:Boisson i:type="d2p1:BoissonSimple">
+            <d2p1:typeDeLaBoisson>Biere</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>Blonde</d2p1:Nom>
+            <d2p1:Prix>2.5</d2p1:Prix>
+            <d2p1:DegreAlcool>4</d2p1:DegreAlcool>
+            <d2p1:Marque>Leffe</d2p1:Marque>
+          </d2p1:Boisson>
+          <d2p1:Boisson i:type="d2p1:BoissonSimple">
+            <d2p1:typeDeLaBoisson>Biere</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>Ambré</d2p1:Nom>
+            <d2p1:Prix>3.5</d2p1:Prix>
+            <d2p1:DegreAlcool>4</d2p1:DegreAlcool>
+            <d2p1:Marque>Leffe</d2p1:Marque>
+          </d2p1:Boisson>
+          <d2p1:Boisson i:type="d2p1:BoissonSimple">
+            <d2p1:typeDeLaBoisson>Biere</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>Ruby</d2p1:Nom>
+            <d2p1:Prix>3.5</d2p1:Prix>
+            <d2p1:DegreAlcool>4</d2p1:DegreAlcool>
+            <d2p1:Marque>Leffe</d2p1:Marque>
+          </d2p1:Boisson>
+          <d2p1:Boisson i:type="d2p1:BoissonSimple">
+            <d2p1:typeDeLaBoisson>Biere</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>K Mangue</d2p1:Nom>
+            <d2p1:Prix>3.2</d2p1:Prix>
+            <d2p1:DegreAlcool>4.5</d2p1:DegreAlcool>
+            <d2p1:Marque>Kronenbourg</d2p1:Marque>
+          </d2p1:Boisson>
+          <d2p1:Boisson i:type="d2p1:BoissonSimple">
+            <d2p1:typeDeLaBoisson>Biere</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>Blonde</d2p1:Nom>
+            <d2p1:Prix>3.5</d2p1:Prix>
+            <d2p1:DegreAlcool>4.7</d2p1:DegreAlcool>
+            <d2p1:Marque>Peroni</d2p1:Marque>
+          </d2p1:Boisson>
+          <d2p1:Boisson i:type="d2p1:BoissonSimple">
+            <d2p1:typeDeLaBoisson>Biere</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>Blonde</d2p1:Nom>
+            <d2p1:Prix>3.2</d2p1:Prix>
+            <d2p1:DegreAlcool>2.5</d2p1:DegreAlcool>
+            <d2p1:Marque>Kronenbourg</d2p1:Marque>
+          </d2p1:Boisson>
+          <d2p1:Boisson i:type="d2p1:BoissonSimple">
+            <d2p1:typeDeLaBoisson>Biere</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>Blonde</d2p1:Nom>
+            <d2p1:Prix>3.2</d2p1:Prix>
+            <d2p1:DegreAlcool>2.5</d2p1:DegreAlcool>
+            <d2p1:Marque>Heineken</d2p1:Marque>
+          </d2p1:Boisson>
+        </d2p1:listeDesBoissonsDuBar>
+        <d2p1:listeDesAvisLaissés>
+          <KeyValueOfUserAvisuynyfWTd>
+            <Key>
+              <d2p1:Pseudo>trololo</d2p1:Pseudo>
+              <d2p1:Nom>Delabierre</d2p1:Nom>
+              <d2p1:Prenom>Yvan</d2p1:Prenom>
+              <d2p1:Sexe>Homme</d2p1:Sexe>
+              <d2p1:dateDeNaissance>1980-01-09T00:00:00</d2p1:dateDeNaissance>
+              <d2p1:NumeroTelephone>0654856952</d2p1:NumeroTelephone>
+              <d2p1:Ville>St Julien De Copel</d2p1:Ville>
+              <d2p1:BoissonPref>Biere</d2p1:BoissonPref>
+              <d2p1:PhotoDeProfil>Images/ImagesProfils/trololo.jpg</d2p1:PhotoDeProfil>
+              <d2p1:motDePasse>123456</d2p1:motDePasse>
+            </Key>
+            <Value>
+              <d2p1:Description>1h TROLOLO LEVE TON VERRE ! ET SURTOUUUT NE LE RENVERSE PAS ! CA RISQUE PAS !</d2p1:Description>
+              <d2p1:Note>4</d2p1:Note>
+            </Value>
+          </KeyValueOfUserAvisuynyfWTd>
+        </d2p1:listeDesAvisLaissés>
       </d2p1:Bar>
       <d2p1:Bar>
         <d2p1:Nom>Hacienda Cafe</d2p1:Nom>
@@ -285,8 +629,100 @@
         <d2p1:Adresse>5 Place Gilbert Gaillard</d2p1:Adresse>
         <d2p1:Numero>04 73 16 86 41</d2p1:Numero>
         <d2p1:Photo>Images/ImagesBars/hacienda.jpg</d2p1:Photo>
-        <d2p1:listeDesBoissonsDuBar />
-        <d2p1:listeDesAvisLaissés />
+        <d2p1:listeDesBoissonsDuBar>
+          <d2p1:Boisson i:type="d2p1:BoissonSimple">
+            <d2p1:typeDeLaBoisson>AlcoolFort</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>Whisky</d2p1:Nom>
+            <d2p1:Prix>6</d2p1:Prix>
+            <d2p1:DegreAlcool>45</d2p1:DegreAlcool>
+            <d2p1:Marque>Jack's Daniel</d2p1:Marque>
+          </d2p1:Boisson>
+          <d2p1:Boisson i:type="d2p1:BoissonSimple">
+            <d2p1:typeDeLaBoisson>AlcoolFort</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>Vodka</d2p1:Nom>
+            <d2p1:Prix>5</d2p1:Prix>
+            <d2p1:DegreAlcool>41</d2p1:DegreAlcool>
+            <d2p1:Marque>Poliakov</d2p1:Marque>
+          </d2p1:Boisson>
+          <d2p1:Boisson i:type="d2p1:BoissonSimple">
+            <d2p1:typeDeLaBoisson>AlcoolFort</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>Schnaps Pêche</d2p1:Nom>
+            <d2p1:Prix>4</d2p1:Prix>
+            <d2p1:DegreAlcool>42</d2p1:DegreAlcool>
+            <d2p1:Marque>Berentzen</d2p1:Marque>
+          </d2p1:Boisson>
+          <d2p1:Boisson i:type="d2p1:BoissonSimple">
+            <d2p1:typeDeLaBoisson>Jus</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>Jus d'orange</d2p1:Nom>
+            <d2p1:Prix>2</d2p1:Prix>
+            <d2p1:DegreAlcool>0</d2p1:DegreAlcool>
+            <d2p1:Marque>Pago</d2p1:Marque>
+          </d2p1:Boisson>
+          <d2p1:Boisson i:type="d2p1:BoissonSimple">
+            <d2p1:typeDeLaBoisson>Jus</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>Jus de Canneberge</d2p1:Nom>
+            <d2p1:Prix>2</d2p1:Prix>
+            <d2p1:DegreAlcool>3</d2p1:DegreAlcool>
+            <d2p1:Marque>Pago</d2p1:Marque>
+          </d2p1:Boisson>
+          <d2p1:Boisson i:type="d2p1:BoissonComposee">
+            <d2p1:typeDeLaBoisson>Cocktail</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>Sex On the Beach</d2p1:Nom>
+            <d2p1:Prix>8</d2p1:Prix>
+            <d2p1:DegreAlcool>25</d2p1:DegreAlcool>
+            <d2p1:listeDesBoissons>
+              <d2p1:Boisson i:type="d2p1:BoissonSimple">
+                <d2p1:typeDeLaBoisson>AlcoolFort</d2p1:typeDeLaBoisson>
+                <d2p1:Nom>Vodka</d2p1:Nom>
+                <d2p1:Prix>5</d2p1:Prix>
+                <d2p1:DegreAlcool>41</d2p1:DegreAlcool>
+                <d2p1:Marque>Poliakov</d2p1:Marque>
+              </d2p1:Boisson>
+              <d2p1:Boisson i:type="d2p1:BoissonSimple">
+                <d2p1:typeDeLaBoisson>AlcoolFort</d2p1:typeDeLaBoisson>
+                <d2p1:Nom>Schnaps Pêche</d2p1:Nom>
+                <d2p1:Prix>4</d2p1:Prix>
+                <d2p1:DegreAlcool>42</d2p1:DegreAlcool>
+                <d2p1:Marque>Berentzen</d2p1:Marque>
+              </d2p1:Boisson>
+              <d2p1:Boisson i:type="d2p1:BoissonSimple">
+                <d2p1:typeDeLaBoisson>Jus</d2p1:typeDeLaBoisson>
+                <d2p1:Nom>Jus d'orange</d2p1:Nom>
+                <d2p1:Prix>2</d2p1:Prix>
+                <d2p1:DegreAlcool>0</d2p1:DegreAlcool>
+                <d2p1:Marque>Pago</d2p1:Marque>
+              </d2p1:Boisson>
+              <d2p1:Boisson i:type="d2p1:BoissonSimple">
+                <d2p1:typeDeLaBoisson>Jus</d2p1:typeDeLaBoisson>
+                <d2p1:Nom>Jus de Canneberge</d2p1:Nom>
+                <d2p1:Prix>2</d2p1:Prix>
+                <d2p1:DegreAlcool>3</d2p1:DegreAlcool>
+                <d2p1:Marque>Pago</d2p1:Marque>
+              </d2p1:Boisson>
+            </d2p1:listeDesBoissons>
+            <d2p1:listeDesIngredients />
+          </d2p1:Boisson>
+        </d2p1:listeDesBoissonsDuBar>
+        <d2p1:listeDesAvisLaissés>
+          <KeyValueOfUserAvisuynyfWTd>
+            <Key>
+              <d2p1:Pseudo>trololo</d2p1:Pseudo>
+              <d2p1:Nom>Delabierre</d2p1:Nom>
+              <d2p1:Prenom>Yvan</d2p1:Prenom>
+              <d2p1:Sexe>Homme</d2p1:Sexe>
+              <d2p1:dateDeNaissance>1980-01-09T00:00:00</d2p1:dateDeNaissance>
+              <d2p1:NumeroTelephone>0654856952</d2p1:NumeroTelephone>
+              <d2p1:Ville>St Julien De Copel</d2p1:Ville>
+              <d2p1:BoissonPref>Biere</d2p1:BoissonPref>
+              <d2p1:PhotoDeProfil>Images/ImagesProfils/trololo.jpg</d2p1:PhotoDeProfil>
+              <d2p1:motDePasse>123456</d2p1:motDePasse>
+            </Key>
+            <Value>
+              <d2p1:Description>2h oklm snapchat : trololo63</d2p1:Description>
+              <d2p1:Note>2</d2p1:Note>
+            </Value>
+          </KeyValueOfUserAvisuynyfWTd>
+        </d2p1:listeDesAvisLaissés>
       </d2p1:Bar>
       <d2p1:Bar>
         <d2p1:Nom>Le Verlaine</d2p1:Nom>
@@ -298,8 +734,164 @@
         <d2p1:Adresse>5 Mail d'Allagnat</d2p1:Adresse>
         <d2p1:Numero>04 73 34 17 55</d2p1:Numero>
         <d2p1:Photo>Images/ImagesBars/verlaine.jpg</d2p1:Photo>
-        <d2p1:listeDesBoissonsDuBar />
-        <d2p1:listeDesAvisLaissés />
+        <d2p1:listeDesBoissonsDuBar>
+          <d2p1:Boisson i:type="d2p1:BoissonSimple">
+            <d2p1:typeDeLaBoisson>Biere</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>Blonde</d2p1:Nom>
+            <d2p1:Prix>3.2</d2p1:Prix>
+            <d2p1:DegreAlcool>2.5</d2p1:DegreAlcool>
+            <d2p1:Marque>Heineken</d2p1:Marque>
+          </d2p1:Boisson>
+          <d2p1:Boisson i:type="d2p1:BoissonSimple">
+            <d2p1:typeDeLaBoisson>Biere</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>Blonde</d2p1:Nom>
+            <d2p1:Prix>3.2</d2p1:Prix>
+            <d2p1:DegreAlcool>2.5</d2p1:DegreAlcool>
+            <d2p1:Marque>Kronenbourg</d2p1:Marque>
+          </d2p1:Boisson>
+          <d2p1:Boisson i:type="d2p1:BoissonComposee">
+            <d2p1:typeDeLaBoisson>AlcoolFort</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>Jeager Bombe</d2p1:Nom>
+            <d2p1:Prix>4.5</d2p1:Prix>
+            <d2p1:DegreAlcool>35</d2p1:DegreAlcool>
+            <d2p1:listeDesBoissons>
+              <d2p1:Boisson i:type="d2p1:BoissonSimple">
+                <d2p1:typeDeLaBoisson>AlcoolFort</d2p1:typeDeLaBoisson>
+                <d2p1:Nom>Jeagermeister</d2p1:Nom>
+                <d2p1:Prix>4</d2p1:Prix>
+                <d2p1:DegreAlcool>35</d2p1:DegreAlcool>
+                <d2p1:Marque>Jeagermeister</d2p1:Marque>
+              </d2p1:Boisson>
+              <d2p1:Boisson i:type="d2p1:BoissonSimple">
+                <d2p1:typeDeLaBoisson>Soda</d2p1:typeDeLaBoisson>
+                <d2p1:Nom>RedBull Energy Drink</d2p1:Nom>
+                <d2p1:Prix>2.8</d2p1:Prix>
+                <d2p1:DegreAlcool>0</d2p1:DegreAlcool>
+                <d2p1:Marque>Redbull</d2p1:Marque>
+              </d2p1:Boisson>
+            </d2p1:listeDesBoissons>
+            <d2p1:listeDesIngredients />
+          </d2p1:Boisson>
+          <d2p1:Boisson i:type="d2p1:BoissonSimple">
+            <d2p1:typeDeLaBoisson>AlcoolFort</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>Jeagermeister</d2p1:Nom>
+            <d2p1:Prix>4</d2p1:Prix>
+            <d2p1:DegreAlcool>35</d2p1:DegreAlcool>
+            <d2p1:Marque>Jeagermeister</d2p1:Marque>
+          </d2p1:Boisson>
+          <d2p1:Boisson i:type="d2p1:BoissonComposee">
+            <d2p1:typeDeLaBoisson>AlcoolFort</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>Shooter Crash Naya</d2p1:Nom>
+            <d2p1:Prix>1</d2p1:Prix>
+            <d2p1:DegreAlcool>40</d2p1:DegreAlcool>
+            <d2p1:listeDesBoissons>
+              <d2p1:Boisson i:type="d2p1:BoissonSimple">
+                <d2p1:typeDeLaBoisson>AlcoolFort</d2p1:typeDeLaBoisson>
+                <d2p1:Nom>Vodka</d2p1:Nom>
+                <d2p1:Prix>5</d2p1:Prix>
+                <d2p1:DegreAlcool>37</d2p1:DegreAlcool>
+                <d2p1:Marque>Eristoff</d2p1:Marque>
+              </d2p1:Boisson>
+            </d2p1:listeDesBoissons>
+            <d2p1:listeDesIngredients>
+              <d2p1:Ingredient>
+                <d2p1:Nom>sel</d2p1:Nom>
+              </d2p1:Ingredient>
+              <d2p1:Ingredient>
+                <d2p1:Nom>Tabasco</d2p1:Nom>
+              </d2p1:Ingredient>
+            </d2p1:listeDesIngredients>
+          </d2p1:Boisson>
+          <d2p1:Boisson i:type="d2p1:BoissonComposee">
+            <d2p1:typeDeLaBoisson>AlcoolFort</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>Shooter Pêche Piment</d2p1:Nom>
+            <d2p1:Prix>1</d2p1:Prix>
+            <d2p1:DegreAlcool>40</d2p1:DegreAlcool>
+            <d2p1:listeDesBoissons>
+              <d2p1:Boisson i:type="d2p1:BoissonSimple">
+                <d2p1:typeDeLaBoisson>AlcoolFort</d2p1:typeDeLaBoisson>
+                <d2p1:Nom>Vodka</d2p1:Nom>
+                <d2p1:Prix>5</d2p1:Prix>
+                <d2p1:DegreAlcool>37</d2p1:DegreAlcool>
+                <d2p1:Marque>Eristoff</d2p1:Marque>
+              </d2p1:Boisson>
+              <d2p1:Boisson i:type="d2p1:BoissonSimple">
+                <d2p1:typeDeLaBoisson>Sirop</d2p1:typeDeLaBoisson>
+                <d2p1:Nom>Sirop de peche</d2p1:Nom>
+                <d2p1:Prix>3</d2p1:Prix>
+                <d2p1:DegreAlcool>0</d2p1:DegreAlcool>
+                <d2p1:Marque>Teisseire</d2p1:Marque>
+              </d2p1:Boisson>
+            </d2p1:listeDesBoissons>
+            <d2p1:listeDesIngredients>
+              <d2p1:Ingredient>
+                <d2p1:Nom>piments</d2p1:Nom>
+              </d2p1:Ingredient>
+            </d2p1:listeDesIngredients>
+          </d2p1:Boisson>
+          <d2p1:Boisson i:type="d2p1:BoissonSimple">
+            <d2p1:typeDeLaBoisson>Soda</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>Coca cola</d2p1:Nom>
+            <d2p1:Prix>1.5</d2p1:Prix>
+            <d2p1:DegreAlcool>0</d2p1:DegreAlcool>
+            <d2p1:Marque>Coca Cola</d2p1:Marque>
+          </d2p1:Boisson>
+          <d2p1:Boisson i:type="d2p1:BoissonSimple">
+            <d2p1:typeDeLaBoisson>Soda</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>Oasis Orange</d2p1:Nom>
+            <d2p1:Prix>1.5</d2p1:Prix>
+            <d2p1:DegreAlcool>0</d2p1:DegreAlcool>
+            <d2p1:Marque>Oasis</d2p1:Marque>
+          </d2p1:Boisson>
+          <d2p1:Boisson i:type="d2p1:BoissonSimple">
+            <d2p1:typeDeLaBoisson>Soda</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>7Up</d2p1:Nom>
+            <d2p1:Prix>1.5</d2p1:Prix>
+            <d2p1:DegreAlcool>0</d2p1:DegreAlcool>
+            <d2p1:Marque>SevenUp</d2p1:Marque>
+          </d2p1:Boisson>
+          <d2p1:Boisson i:type="d2p1:BoissonSimple">
+            <d2p1:typeDeLaBoisson>Soda</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>Orangina</d2p1:Nom>
+            <d2p1:Prix>1.5</d2p1:Prix>
+            <d2p1:DegreAlcool>0</d2p1:DegreAlcool>
+            <d2p1:Marque>Orangina</d2p1:Marque>
+          </d2p1:Boisson>
+          <d2p1:Boisson i:type="d2p1:BoissonSimple">
+            <d2p1:typeDeLaBoisson>Jus</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>Jus de banane</d2p1:Nom>
+            <d2p1:Prix>2</d2p1:Prix>
+            <d2p1:DegreAlcool>0</d2p1:DegreAlcool>
+            <d2p1:Marque>Pago</d2p1:Marque>
+          </d2p1:Boisson>
+          <d2p1:Boisson i:type="d2p1:BoissonSimple">
+            <d2p1:typeDeLaBoisson>Soda</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>RedBull Energy Drink</d2p1:Nom>
+            <d2p1:Prix>2.8</d2p1:Prix>
+            <d2p1:DegreAlcool>0</d2p1:DegreAlcool>
+            <d2p1:Marque>Redbull</d2p1:Marque>
+          </d2p1:Boisson>
+        </d2p1:listeDesBoissonsDuBar>
+        <d2p1:listeDesAvisLaissés>
+          <KeyValueOfUserAvisuynyfWTd>
+            <Key>
+              <d2p1:Pseudo>trololo</d2p1:Pseudo>
+              <d2p1:Nom>Delabierre</d2p1:Nom>
+              <d2p1:Prenom>Yvan</d2p1:Prenom>
+              <d2p1:Sexe>Homme</d2p1:Sexe>
+              <d2p1:dateDeNaissance>1980-01-09T00:00:00</d2p1:dateDeNaissance>
+              <d2p1:NumeroTelephone>0654856952</d2p1:NumeroTelephone>
+              <d2p1:Ville>St Julien De Copel</d2p1:Ville>
+              <d2p1:BoissonPref>Biere</d2p1:BoissonPref>
+              <d2p1:PhotoDeProfil>Images/ImagesProfils/trololo.jpg</d2p1:PhotoDeProfil>
+              <d2p1:motDePasse>123456</d2p1:motDePasse>
+            </Key>
+            <Value>
+              <d2p1:Description>2h30 SUPER BONNE ! La vodka aussi !</d2p1:Description>
+              <d2p1:Note>5</d2p1:Note>
+            </Value>
+          </KeyValueOfUserAvisuynyfWTd>
+        </d2p1:listeDesAvisLaissés>
       </d2p1:Bar>
       <d2p1:Bar>
         <d2p1:Nom>Le Rimbaud</d2p1:Nom>
@@ -311,8 +903,164 @@
         <d2p1:Adresse>Place Louis Aragon</d2p1:Adresse>
         <d2p1:Numero>04 73 34 21 39</d2p1:Numero>
         <d2p1:Photo>Images/ImagesBars/rimbaud.jpg</d2p1:Photo>
-        <d2p1:listeDesBoissonsDuBar />
-        <d2p1:listeDesAvisLaissés />
+        <d2p1:listeDesBoissonsDuBar>
+          <d2p1:Boisson i:type="d2p1:BoissonSimple">
+            <d2p1:typeDeLaBoisson>Biere</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>Blonde</d2p1:Nom>
+            <d2p1:Prix>3.2</d2p1:Prix>
+            <d2p1:DegreAlcool>2.5</d2p1:DegreAlcool>
+            <d2p1:Marque>Heineken</d2p1:Marque>
+          </d2p1:Boisson>
+          <d2p1:Boisson i:type="d2p1:BoissonSimple">
+            <d2p1:typeDeLaBoisson>Biere</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>Blonde</d2p1:Nom>
+            <d2p1:Prix>3.2</d2p1:Prix>
+            <d2p1:DegreAlcool>2.5</d2p1:DegreAlcool>
+            <d2p1:Marque>Kronenbourg</d2p1:Marque>
+          </d2p1:Boisson>
+          <d2p1:Boisson i:type="d2p1:BoissonComposee">
+            <d2p1:typeDeLaBoisson>AlcoolFort</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>Jeager Bombe</d2p1:Nom>
+            <d2p1:Prix>4.5</d2p1:Prix>
+            <d2p1:DegreAlcool>35</d2p1:DegreAlcool>
+            <d2p1:listeDesBoissons>
+              <d2p1:Boisson i:type="d2p1:BoissonSimple">
+                <d2p1:typeDeLaBoisson>AlcoolFort</d2p1:typeDeLaBoisson>
+                <d2p1:Nom>Jeagermeister</d2p1:Nom>
+                <d2p1:Prix>4</d2p1:Prix>
+                <d2p1:DegreAlcool>35</d2p1:DegreAlcool>
+                <d2p1:Marque>Jeagermeister</d2p1:Marque>
+              </d2p1:Boisson>
+              <d2p1:Boisson i:type="d2p1:BoissonSimple">
+                <d2p1:typeDeLaBoisson>Soda</d2p1:typeDeLaBoisson>
+                <d2p1:Nom>RedBull Energy Drink</d2p1:Nom>
+                <d2p1:Prix>2.8</d2p1:Prix>
+                <d2p1:DegreAlcool>0</d2p1:DegreAlcool>
+                <d2p1:Marque>Redbull</d2p1:Marque>
+              </d2p1:Boisson>
+            </d2p1:listeDesBoissons>
+            <d2p1:listeDesIngredients />
+          </d2p1:Boisson>
+          <d2p1:Boisson i:type="d2p1:BoissonSimple">
+            <d2p1:typeDeLaBoisson>AlcoolFort</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>Jeagermeister</d2p1:Nom>
+            <d2p1:Prix>4</d2p1:Prix>
+            <d2p1:DegreAlcool>35</d2p1:DegreAlcool>
+            <d2p1:Marque>Jeagermeister</d2p1:Marque>
+          </d2p1:Boisson>
+          <d2p1:Boisson i:type="d2p1:BoissonComposee">
+            <d2p1:typeDeLaBoisson>AlcoolFort</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>Shooter Crash Naya</d2p1:Nom>
+            <d2p1:Prix>1</d2p1:Prix>
+            <d2p1:DegreAlcool>40</d2p1:DegreAlcool>
+            <d2p1:listeDesBoissons>
+              <d2p1:Boisson i:type="d2p1:BoissonSimple">
+                <d2p1:typeDeLaBoisson>AlcoolFort</d2p1:typeDeLaBoisson>
+                <d2p1:Nom>Vodka</d2p1:Nom>
+                <d2p1:Prix>5</d2p1:Prix>
+                <d2p1:DegreAlcool>37</d2p1:DegreAlcool>
+                <d2p1:Marque>Eristoff</d2p1:Marque>
+              </d2p1:Boisson>
+            </d2p1:listeDesBoissons>
+            <d2p1:listeDesIngredients>
+              <d2p1:Ingredient>
+                <d2p1:Nom>sel</d2p1:Nom>
+              </d2p1:Ingredient>
+              <d2p1:Ingredient>
+                <d2p1:Nom>Tabasco</d2p1:Nom>
+              </d2p1:Ingredient>
+            </d2p1:listeDesIngredients>
+          </d2p1:Boisson>
+          <d2p1:Boisson i:type="d2p1:BoissonComposee">
+            <d2p1:typeDeLaBoisson>AlcoolFort</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>Shooter Pêche Piment</d2p1:Nom>
+            <d2p1:Prix>1</d2p1:Prix>
+            <d2p1:DegreAlcool>40</d2p1:DegreAlcool>
+            <d2p1:listeDesBoissons>
+              <d2p1:Boisson i:type="d2p1:BoissonSimple">
+                <d2p1:typeDeLaBoisson>AlcoolFort</d2p1:typeDeLaBoisson>
+                <d2p1:Nom>Vodka</d2p1:Nom>
+                <d2p1:Prix>5</d2p1:Prix>
+                <d2p1:DegreAlcool>37</d2p1:DegreAlcool>
+                <d2p1:Marque>Eristoff</d2p1:Marque>
+              </d2p1:Boisson>
+              <d2p1:Boisson i:type="d2p1:BoissonSimple">
+                <d2p1:typeDeLaBoisson>Sirop</d2p1:typeDeLaBoisson>
+                <d2p1:Nom>Sirop de peche</d2p1:Nom>
+                <d2p1:Prix>3</d2p1:Prix>
+                <d2p1:DegreAlcool>0</d2p1:DegreAlcool>
+                <d2p1:Marque>Teisseire</d2p1:Marque>
+              </d2p1:Boisson>
+            </d2p1:listeDesBoissons>
+            <d2p1:listeDesIngredients>
+              <d2p1:Ingredient>
+                <d2p1:Nom>piments</d2p1:Nom>
+              </d2p1:Ingredient>
+            </d2p1:listeDesIngredients>
+          </d2p1:Boisson>
+          <d2p1:Boisson i:type="d2p1:BoissonSimple">
+            <d2p1:typeDeLaBoisson>Soda</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>Coca cola</d2p1:Nom>
+            <d2p1:Prix>1.5</d2p1:Prix>
+            <d2p1:DegreAlcool>0</d2p1:DegreAlcool>
+            <d2p1:Marque>Coca Cola</d2p1:Marque>
+          </d2p1:Boisson>
+          <d2p1:Boisson i:type="d2p1:BoissonSimple">
+            <d2p1:typeDeLaBoisson>Soda</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>Oasis Orange</d2p1:Nom>
+            <d2p1:Prix>1.5</d2p1:Prix>
+            <d2p1:DegreAlcool>0</d2p1:DegreAlcool>
+            <d2p1:Marque>Oasis</d2p1:Marque>
+          </d2p1:Boisson>
+          <d2p1:Boisson i:type="d2p1:BoissonSimple">
+            <d2p1:typeDeLaBoisson>Soda</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>7Up</d2p1:Nom>
+            <d2p1:Prix>1.5</d2p1:Prix>
+            <d2p1:DegreAlcool>0</d2p1:DegreAlcool>
+            <d2p1:Marque>SevenUp</d2p1:Marque>
+          </d2p1:Boisson>
+          <d2p1:Boisson i:type="d2p1:BoissonSimple">
+            <d2p1:typeDeLaBoisson>Soda</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>Orangina</d2p1:Nom>
+            <d2p1:Prix>1.5</d2p1:Prix>
+            <d2p1:DegreAlcool>0</d2p1:DegreAlcool>
+            <d2p1:Marque>Orangina</d2p1:Marque>
+          </d2p1:Boisson>
+          <d2p1:Boisson i:type="d2p1:BoissonSimple">
+            <d2p1:typeDeLaBoisson>Jus</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>Jus de banane</d2p1:Nom>
+            <d2p1:Prix>2</d2p1:Prix>
+            <d2p1:DegreAlcool>0</d2p1:DegreAlcool>
+            <d2p1:Marque>Pago</d2p1:Marque>
+          </d2p1:Boisson>
+          <d2p1:Boisson i:type="d2p1:BoissonSimple">
+            <d2p1:typeDeLaBoisson>Soda</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>RedBull Energy Drink</d2p1:Nom>
+            <d2p1:Prix>2.8</d2p1:Prix>
+            <d2p1:DegreAlcool>0</d2p1:DegreAlcool>
+            <d2p1:Marque>Redbull</d2p1:Marque>
+          </d2p1:Boisson>
+        </d2p1:listeDesBoissonsDuBar>
+        <d2p1:listeDesAvisLaissés>
+          <KeyValueOfUserAvisuynyfWTd>
+            <Key>
+              <d2p1:Pseudo>trololo</d2p1:Pseudo>
+              <d2p1:Nom>Delabierre</d2p1:Nom>
+              <d2p1:Prenom>Yvan</d2p1:Prenom>
+              <d2p1:Sexe>Homme</d2p1:Sexe>
+              <d2p1:dateDeNaissance>1980-01-09T00:00:00</d2p1:dateDeNaissance>
+              <d2p1:NumeroTelephone>0654856952</d2p1:NumeroTelephone>
+              <d2p1:Ville>St Julien De Copel</d2p1:Ville>
+              <d2p1:BoissonPref>Biere</d2p1:BoissonPref>
+              <d2p1:PhotoDeProfil>Images/ImagesProfils/trololo.jpg</d2p1:PhotoDeProfil>
+              <d2p1:motDePasse>123456</d2p1:motDePasse>
+            </Key>
+            <Value>
+              <d2p1:Description>4h g pa pu rentrer c pa normal RT si t triste</d2p1:Description>
+              <d2p1:Note>0</d2p1:Note>
+            </Value>
+          </KeyValueOfUserAvisuynyfWTd>
+        </d2p1:listeDesAvisLaissés>
       </d2p1:Bar>
       <d2p1:Bar>
         <d2p1:Nom>L'Appart</d2p1:Nom>
@@ -324,8 +1072,128 @@
         <d2p1:Adresse>6 Place Sugny</d2p1:Adresse>
         <d2p1:Numero>04 73 91 19 00</d2p1:Numero>
         <d2p1:Photo>Images/ImagesBars/appart.jpg</d2p1:Photo>
-        <d2p1:listeDesBoissonsDuBar />
-        <d2p1:listeDesAvisLaissés />
+        <d2p1:listeDesBoissonsDuBar>
+          <d2p1:Boisson i:type="d2p1:BoissonSimple">
+            <d2p1:typeDeLaBoisson>Biere</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>Blonde</d2p1:Nom>
+            <d2p1:Prix>3.2</d2p1:Prix>
+            <d2p1:DegreAlcool>2.5</d2p1:DegreAlcool>
+            <d2p1:Marque>Heineken</d2p1:Marque>
+          </d2p1:Boisson>
+          <d2p1:Boisson i:type="d2p1:BoissonSimple">
+            <d2p1:typeDeLaBoisson>Biere</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>Blonde</d2p1:Nom>
+            <d2p1:Prix>3.2</d2p1:Prix>
+            <d2p1:DegreAlcool>2.5</d2p1:DegreAlcool>
+            <d2p1:Marque>Kronenbourg</d2p1:Marque>
+          </d2p1:Boisson>
+          <d2p1:Boisson i:type="d2p1:BoissonComposee">
+            <d2p1:typeDeLaBoisson>AlcoolFort</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>Jeager Bombe</d2p1:Nom>
+            <d2p1:Prix>4.5</d2p1:Prix>
+            <d2p1:DegreAlcool>35</d2p1:DegreAlcool>
+            <d2p1:listeDesBoissons>
+              <d2p1:Boisson i:type="d2p1:BoissonSimple">
+                <d2p1:typeDeLaBoisson>AlcoolFort</d2p1:typeDeLaBoisson>
+                <d2p1:Nom>Jeagermeister</d2p1:Nom>
+                <d2p1:Prix>4</d2p1:Prix>
+                <d2p1:DegreAlcool>35</d2p1:DegreAlcool>
+                <d2p1:Marque>Jeagermeister</d2p1:Marque>
+              </d2p1:Boisson>
+              <d2p1:Boisson i:type="d2p1:BoissonSimple">
+                <d2p1:typeDeLaBoisson>Soda</d2p1:typeDeLaBoisson>
+                <d2p1:Nom>RedBull Energy Drink</d2p1:Nom>
+                <d2p1:Prix>2.8</d2p1:Prix>
+                <d2p1:DegreAlcool>0</d2p1:DegreAlcool>
+                <d2p1:Marque>Redbull</d2p1:Marque>
+              </d2p1:Boisson>
+            </d2p1:listeDesBoissons>
+            <d2p1:listeDesIngredients />
+          </d2p1:Boisson>
+          <d2p1:Boisson i:type="d2p1:BoissonSimple">
+            <d2p1:typeDeLaBoisson>AlcoolFort</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>Jeagermeister</d2p1:Nom>
+            <d2p1:Prix>4</d2p1:Prix>
+            <d2p1:DegreAlcool>35</d2p1:DegreAlcool>
+            <d2p1:Marque>Jeagermeister</d2p1:Marque>
+          </d2p1:Boisson>
+          <d2p1:Boisson i:type="d2p1:BoissonSimple">
+            <d2p1:typeDeLaBoisson>AlcoolFort</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>Whisky</d2p1:Nom>
+            <d2p1:Prix>6</d2p1:Prix>
+            <d2p1:DegreAlcool>45</d2p1:DegreAlcool>
+            <d2p1:Marque>Jack's Daniel</d2p1:Marque>
+          </d2p1:Boisson>
+          <d2p1:Boisson i:type="d2p1:BoissonSimple">
+            <d2p1:typeDeLaBoisson>AlcoolFort</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>Whisky</d2p1:Nom>
+            <d2p1:Prix>4</d2p1:Prix>
+            <d2p1:DegreAlcool>40</d2p1:DegreAlcool>
+            <d2p1:Marque>William Peel</d2p1:Marque>
+          </d2p1:Boisson>
+          <d2p1:Boisson i:type="d2p1:BoissonSimple">
+            <d2p1:typeDeLaBoisson>Soda</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>Coca cola</d2p1:Nom>
+            <d2p1:Prix>1.5</d2p1:Prix>
+            <d2p1:DegreAlcool>0</d2p1:DegreAlcool>
+            <d2p1:Marque>Coca Cola</d2p1:Marque>
+          </d2p1:Boisson>
+          <d2p1:Boisson i:type="d2p1:BoissonSimple">
+            <d2p1:typeDeLaBoisson>Soda</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>Oasis Orange</d2p1:Nom>
+            <d2p1:Prix>1.5</d2p1:Prix>
+            <d2p1:DegreAlcool>0</d2p1:DegreAlcool>
+            <d2p1:Marque>Oasis</d2p1:Marque>
+          </d2p1:Boisson>
+          <d2p1:Boisson i:type="d2p1:BoissonSimple">
+            <d2p1:typeDeLaBoisson>Soda</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>7Up</d2p1:Nom>
+            <d2p1:Prix>1.5</d2p1:Prix>
+            <d2p1:DegreAlcool>0</d2p1:DegreAlcool>
+            <d2p1:Marque>SevenUp</d2p1:Marque>
+          </d2p1:Boisson>
+          <d2p1:Boisson i:type="d2p1:BoissonSimple">
+            <d2p1:typeDeLaBoisson>Soda</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>Orangina</d2p1:Nom>
+            <d2p1:Prix>1.5</d2p1:Prix>
+            <d2p1:DegreAlcool>0</d2p1:DegreAlcool>
+            <d2p1:Marque>Orangina</d2p1:Marque>
+          </d2p1:Boisson>
+          <d2p1:Boisson i:type="d2p1:BoissonSimple">
+            <d2p1:typeDeLaBoisson>Jus</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>Jus de banane</d2p1:Nom>
+            <d2p1:Prix>2</d2p1:Prix>
+            <d2p1:DegreAlcool>0</d2p1:DegreAlcool>
+            <d2p1:Marque>Pago</d2p1:Marque>
+          </d2p1:Boisson>
+          <d2p1:Boisson i:type="d2p1:BoissonSimple">
+            <d2p1:typeDeLaBoisson>Soda</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>RedBull Energy Drink</d2p1:Nom>
+            <d2p1:Prix>2.8</d2p1:Prix>
+            <d2p1:DegreAlcool>0</d2p1:DegreAlcool>
+            <d2p1:Marque>Redbull</d2p1:Marque>
+          </d2p1:Boisson>
+        </d2p1:listeDesBoissonsDuBar>
+        <d2p1:listeDesAvisLaissés>
+          <KeyValueOfUserAvisuynyfWTd>
+            <Key>
+              <d2p1:Pseudo>trololo</d2p1:Pseudo>
+              <d2p1:Nom>Delabierre</d2p1:Nom>
+              <d2p1:Prenom>Yvan</d2p1:Prenom>
+              <d2p1:Sexe>Homme</d2p1:Sexe>
+              <d2p1:dateDeNaissance>1980-01-09T00:00:00</d2p1:dateDeNaissance>
+              <d2p1:NumeroTelephone>0654856952</d2p1:NumeroTelephone>
+              <d2p1:Ville>St Julien De Copel</d2p1:Ville>
+              <d2p1:BoissonPref>Biere</d2p1:BoissonPref>
+              <d2p1:PhotoDeProfil>Images/ImagesProfils/trololo.jpg</d2p1:PhotoDeProfil>
+              <d2p1:motDePasse>123456</d2p1:motDePasse>
+            </Key>
+            <Value>
+              <d2p1:Description>4h30 bleuaaah yeee ouee zt ro keol</d2p1:Description>
+              <d2p1:Note>5</d2p1:Note>
+            </Value>
+          </KeyValueOfUserAvisuynyfWTd>
+        </d2p1:listeDesAvisLaissés>
       </d2p1:Bar>
     </d2p1:listeDesBarsDeLaVille>
   </anyType>
@@ -345,8 +1213,109 @@
         <d2p1:Restauration>false</d2p1:Restauration>
         <d2p1:Adresse>10 Rue du Commandant Raffali</d2p1:Adresse>
         <d2p1:Numero>04 82 53 29 29</d2p1:Numero>
-        <d2p1:Photo>Images/ImagesBars/defaut.jpg</d2p1:Photo>
-        <d2p1:listeDesBoissonsDuBar />
+        <d2p1:Photo>Images/ImagesBars/jam.jpg</d2p1:Photo>
+        <d2p1:listeDesBoissonsDuBar>
+          <d2p1:Boisson i:type="d2p1:BoissonSimple">
+            <d2p1:typeDeLaBoisson>Biere</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>Blonde</d2p1:Nom>
+            <d2p1:Prix>3.2</d2p1:Prix>
+            <d2p1:DegreAlcool>2.5</d2p1:DegreAlcool>
+            <d2p1:Marque>Heineken</d2p1:Marque>
+          </d2p1:Boisson>
+          <d2p1:Boisson i:type="d2p1:BoissonSimple">
+            <d2p1:typeDeLaBoisson>Biere</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>Blonde</d2p1:Nom>
+            <d2p1:Prix>3.2</d2p1:Prix>
+            <d2p1:DegreAlcool>2.5</d2p1:DegreAlcool>
+            <d2p1:Marque>Kronenbourg</d2p1:Marque>
+          </d2p1:Boisson>
+          <d2p1:Boisson i:type="d2p1:BoissonComposee">
+            <d2p1:typeDeLaBoisson>AlcoolFort</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>Jeager Bombe</d2p1:Nom>
+            <d2p1:Prix>4.5</d2p1:Prix>
+            <d2p1:DegreAlcool>35</d2p1:DegreAlcool>
+            <d2p1:listeDesBoissons>
+              <d2p1:Boisson i:type="d2p1:BoissonSimple">
+                <d2p1:typeDeLaBoisson>AlcoolFort</d2p1:typeDeLaBoisson>
+                <d2p1:Nom>Jeagermeister</d2p1:Nom>
+                <d2p1:Prix>4</d2p1:Prix>
+                <d2p1:DegreAlcool>35</d2p1:DegreAlcool>
+                <d2p1:Marque>Jeagermeister</d2p1:Marque>
+              </d2p1:Boisson>
+              <d2p1:Boisson i:type="d2p1:BoissonSimple">
+                <d2p1:typeDeLaBoisson>Soda</d2p1:typeDeLaBoisson>
+                <d2p1:Nom>RedBull Energy Drink</d2p1:Nom>
+                <d2p1:Prix>2.8</d2p1:Prix>
+                <d2p1:DegreAlcool>0</d2p1:DegreAlcool>
+                <d2p1:Marque>Redbull</d2p1:Marque>
+              </d2p1:Boisson>
+            </d2p1:listeDesBoissons>
+            <d2p1:listeDesIngredients />
+          </d2p1:Boisson>
+          <d2p1:Boisson i:type="d2p1:BoissonSimple">
+            <d2p1:typeDeLaBoisson>AlcoolFort</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>Jeagermeister</d2p1:Nom>
+            <d2p1:Prix>4</d2p1:Prix>
+            <d2p1:DegreAlcool>35</d2p1:DegreAlcool>
+            <d2p1:Marque>Jeagermeister</d2p1:Marque>
+          </d2p1:Boisson>
+          <d2p1:Boisson i:type="d2p1:BoissonSimple">
+            <d2p1:typeDeLaBoisson>AlcoolFort</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>Whisky</d2p1:Nom>
+            <d2p1:Prix>6</d2p1:Prix>
+            <d2p1:DegreAlcool>45</d2p1:DegreAlcool>
+            <d2p1:Marque>Jack's Daniel</d2p1:Marque>
+          </d2p1:Boisson>
+          <d2p1:Boisson i:type="d2p1:BoissonSimple">
+            <d2p1:typeDeLaBoisson>AlcoolFort</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>Whisky</d2p1:Nom>
+            <d2p1:Prix>4</d2p1:Prix>
+            <d2p1:DegreAlcool>40</d2p1:DegreAlcool>
+            <d2p1:Marque>William Peel</d2p1:Marque>
+          </d2p1:Boisson>
+          <d2p1:Boisson i:type="d2p1:BoissonSimple">
+            <d2p1:typeDeLaBoisson>Soda</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>Coca cola</d2p1:Nom>
+            <d2p1:Prix>1.5</d2p1:Prix>
+            <d2p1:DegreAlcool>0</d2p1:DegreAlcool>
+            <d2p1:Marque>Coca Cola</d2p1:Marque>
+          </d2p1:Boisson>
+          <d2p1:Boisson i:type="d2p1:BoissonSimple">
+            <d2p1:typeDeLaBoisson>Soda</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>Oasis Orange</d2p1:Nom>
+            <d2p1:Prix>1.5</d2p1:Prix>
+            <d2p1:DegreAlcool>0</d2p1:DegreAlcool>
+            <d2p1:Marque>Oasis</d2p1:Marque>
+          </d2p1:Boisson>
+          <d2p1:Boisson i:type="d2p1:BoissonSimple">
+            <d2p1:typeDeLaBoisson>Soda</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>7Up</d2p1:Nom>
+            <d2p1:Prix>1.5</d2p1:Prix>
+            <d2p1:DegreAlcool>0</d2p1:DegreAlcool>
+            <d2p1:Marque>SevenUp</d2p1:Marque>
+          </d2p1:Boisson>
+          <d2p1:Boisson i:type="d2p1:BoissonSimple">
+            <d2p1:typeDeLaBoisson>Soda</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>Orangina</d2p1:Nom>
+            <d2p1:Prix>1.5</d2p1:Prix>
+            <d2p1:DegreAlcool>0</d2p1:DegreAlcool>
+            <d2p1:Marque>Orangina</d2p1:Marque>
+          </d2p1:Boisson>
+          <d2p1:Boisson i:type="d2p1:BoissonSimple">
+            <d2p1:typeDeLaBoisson>Jus</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>Jus de banane</d2p1:Nom>
+            <d2p1:Prix>2</d2p1:Prix>
+            <d2p1:DegreAlcool>0</d2p1:DegreAlcool>
+            <d2p1:Marque>Pago</d2p1:Marque>
+          </d2p1:Boisson>
+          <d2p1:Boisson i:type="d2p1:BoissonSimple">
+            <d2p1:typeDeLaBoisson>Soda</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>RedBull Energy Drink</d2p1:Nom>
+            <d2p1:Prix>2.8</d2p1:Prix>
+            <d2p1:DegreAlcool>0</d2p1:DegreAlcool>
+            <d2p1:Marque>Redbull</d2p1:Marque>
+          </d2p1:Boisson>
+        </d2p1:listeDesBoissonsDuBar>
         <d2p1:listeDesAvisLaissés />
       </d2p1:Bar>
       <d2p1:Bar>
@@ -358,8 +1327,434 @@
         <d2p1:Restauration>true</d2p1:Restauration>
         <d2p1:Adresse>32 Rue Cours Saleya</d2p1:Adresse>
         <d2p1:Numero>04 93 62 49 90</d2p1:Numero>
-        <d2p1:Photo>Images/ImagesBars/defaut.jpg</d2p1:Photo>
-        <d2p1:listeDesBoissonsDuBar />
+        <d2p1:Photo>Images/ImagesBars/aka.jpg</d2p1:Photo>
+        <d2p1:listeDesBoissonsDuBar>
+          <d2p1:Boisson i:type="d2p1:BoissonSimple">
+            <d2p1:typeDeLaBoisson>AlcoolFort</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>Whisky</d2p1:Nom>
+            <d2p1:Prix>6</d2p1:Prix>
+            <d2p1:DegreAlcool>45</d2p1:DegreAlcool>
+            <d2p1:Marque>Jack's Daniel</d2p1:Marque>
+          </d2p1:Boisson>
+          <d2p1:Boisson i:type="d2p1:BoissonSimple">
+            <d2p1:typeDeLaBoisson>AlcoolFort</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>Vodka</d2p1:Nom>
+            <d2p1:Prix>5</d2p1:Prix>
+            <d2p1:DegreAlcool>41</d2p1:DegreAlcool>
+            <d2p1:Marque>Poliakov</d2p1:Marque>
+          </d2p1:Boisson>
+          <d2p1:Boisson i:type="d2p1:BoissonSimple">
+            <d2p1:typeDeLaBoisson>AlcoolFort</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>Schnaps Pêche</d2p1:Nom>
+            <d2p1:Prix>4</d2p1:Prix>
+            <d2p1:DegreAlcool>42</d2p1:DegreAlcool>
+            <d2p1:Marque>Berentzen</d2p1:Marque>
+          </d2p1:Boisson>
+          <d2p1:Boisson i:type="d2p1:BoissonSimple">
+            <d2p1:typeDeLaBoisson>Jus</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>Jus d'orange</d2p1:Nom>
+            <d2p1:Prix>2</d2p1:Prix>
+            <d2p1:DegreAlcool>0</d2p1:DegreAlcool>
+            <d2p1:Marque>Pago</d2p1:Marque>
+          </d2p1:Boisson>
+          <d2p1:Boisson i:type="d2p1:BoissonSimple">
+            <d2p1:typeDeLaBoisson>Jus</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>Jus de Canneberge</d2p1:Nom>
+            <d2p1:Prix>2</d2p1:Prix>
+            <d2p1:DegreAlcool>3</d2p1:DegreAlcool>
+            <d2p1:Marque>Pago</d2p1:Marque>
+          </d2p1:Boisson>
+          <d2p1:Boisson i:type="d2p1:BoissonComposee">
+            <d2p1:typeDeLaBoisson>Cocktail</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>Sex On the Beach</d2p1:Nom>
+            <d2p1:Prix>8</d2p1:Prix>
+            <d2p1:DegreAlcool>25</d2p1:DegreAlcool>
+            <d2p1:listeDesBoissons>
+              <d2p1:Boisson i:type="d2p1:BoissonSimple">
+                <d2p1:typeDeLaBoisson>AlcoolFort</d2p1:typeDeLaBoisson>
+                <d2p1:Nom>Vodka</d2p1:Nom>
+                <d2p1:Prix>5</d2p1:Prix>
+                <d2p1:DegreAlcool>41</d2p1:DegreAlcool>
+                <d2p1:Marque>Poliakov</d2p1:Marque>
+              </d2p1:Boisson>
+              <d2p1:Boisson i:type="d2p1:BoissonSimple">
+                <d2p1:typeDeLaBoisson>AlcoolFort</d2p1:typeDeLaBoisson>
+                <d2p1:Nom>Schnaps Pêche</d2p1:Nom>
+                <d2p1:Prix>4</d2p1:Prix>
+                <d2p1:DegreAlcool>42</d2p1:DegreAlcool>
+                <d2p1:Marque>Berentzen</d2p1:Marque>
+              </d2p1:Boisson>
+              <d2p1:Boisson i:type="d2p1:BoissonSimple">
+                <d2p1:typeDeLaBoisson>Jus</d2p1:typeDeLaBoisson>
+                <d2p1:Nom>Jus d'orange</d2p1:Nom>
+                <d2p1:Prix>2</d2p1:Prix>
+                <d2p1:DegreAlcool>0</d2p1:DegreAlcool>
+                <d2p1:Marque>Pago</d2p1:Marque>
+              </d2p1:Boisson>
+              <d2p1:Boisson i:type="d2p1:BoissonSimple">
+                <d2p1:typeDeLaBoisson>Jus</d2p1:typeDeLaBoisson>
+                <d2p1:Nom>Jus de Canneberge</d2p1:Nom>
+                <d2p1:Prix>2</d2p1:Prix>
+                <d2p1:DegreAlcool>3</d2p1:DegreAlcool>
+                <d2p1:Marque>Pago</d2p1:Marque>
+              </d2p1:Boisson>
+            </d2p1:listeDesBoissons>
+            <d2p1:listeDesIngredients />
+          </d2p1:Boisson>
+        </d2p1:listeDesBoissonsDuBar>
+        <d2p1:listeDesAvisLaissés />
+      </d2p1:Bar>
+      <d2p1:Bar>
+        <d2p1:Nom>Le Nomad</d2p1:Nom>
+        <d2p1:GPSBar>
+          <d2p1:Latitude>43.698997</d2p1:Latitude>
+          <d2p1:Longitude>7.277781</d2p1:Longitude>
+        </d2p1:GPSBar>
+        <d2p1:Restauration>true</d2p1:Restauration>
+        <d2p1:Adresse>3, Place Saint-François</d2p1:Adresse>
+        <d2p1:Numero> 04 97 08 34 86</d2p1:Numero>
+        <d2p1:Photo>Images/ImagesBars/Nomad.jpg</d2p1:Photo>
+        <d2p1:listeDesBoissonsDuBar>
+          <d2p1:Boisson i:type="d2p1:BoissonSimple">
+            <d2p1:typeDeLaBoisson>Biere</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>K Mangue</d2p1:Nom>
+            <d2p1:Prix>3.2</d2p1:Prix>
+            <d2p1:DegreAlcool>4.5</d2p1:DegreAlcool>
+            <d2p1:Marque>Kronenbourg</d2p1:Marque>
+          </d2p1:Boisson>
+          <d2p1:Boisson i:type="d2p1:BoissonComposee">
+            <d2p1:typeDeLaBoisson>Cocktail</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>Tequila Sunrise</d2p1:Nom>
+            <d2p1:Prix>8.5</d2p1:Prix>
+            <d2p1:DegreAlcool>16</d2p1:DegreAlcool>
+            <d2p1:listeDesBoissons>
+              <d2p1:Boisson i:type="d2p1:BoissonSimple">
+                <d2p1:typeDeLaBoisson>AlcoolFort</d2p1:typeDeLaBoisson>
+                <d2p1:Nom>Tequila</d2p1:Nom>
+                <d2p1:Prix>4</d2p1:Prix>
+                <d2p1:DegreAlcool>25</d2p1:DegreAlcool>
+                <d2p1:Marque>Gordon</d2p1:Marque>
+              </d2p1:Boisson>
+              <d2p1:Boisson i:type="d2p1:BoissonSimple">
+                <d2p1:typeDeLaBoisson>Sirop</d2p1:typeDeLaBoisson>
+                <d2p1:Nom>Sirop de grenadine</d2p1:Nom>
+                <d2p1:Prix>3</d2p1:Prix>
+                <d2p1:DegreAlcool>0</d2p1:DegreAlcool>
+                <d2p1:Marque>Teisseire</d2p1:Marque>
+              </d2p1:Boisson>
+              <d2p1:Boisson i:type="d2p1:BoissonSimple">
+                <d2p1:typeDeLaBoisson>Jus</d2p1:typeDeLaBoisson>
+                <d2p1:Nom>Jus d'orange</d2p1:Nom>
+                <d2p1:Prix>2</d2p1:Prix>
+                <d2p1:DegreAlcool>0</d2p1:DegreAlcool>
+                <d2p1:Marque>Pago</d2p1:Marque>
+              </d2p1:Boisson>
+            </d2p1:listeDesBoissons>
+            <d2p1:listeDesIngredients />
+          </d2p1:Boisson>
+          <d2p1:Boisson i:type="d2p1:BoissonSimple">
+            <d2p1:typeDeLaBoisson>AlcoolFort</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>Tequila</d2p1:Nom>
+            <d2p1:Prix>4</d2p1:Prix>
+            <d2p1:DegreAlcool>25</d2p1:DegreAlcool>
+            <d2p1:Marque>Gordon</d2p1:Marque>
+          </d2p1:Boisson>
+          <d2p1:Boisson i:type="d2p1:BoissonSimple">
+            <d2p1:typeDeLaBoisson>Sirop</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>Sirop de grenadine</d2p1:Nom>
+            <d2p1:Prix>3</d2p1:Prix>
+            <d2p1:DegreAlcool>0</d2p1:DegreAlcool>
+            <d2p1:Marque>Teisseire</d2p1:Marque>
+          </d2p1:Boisson>
+          <d2p1:Boisson i:type="d2p1:BoissonSimple">
+            <d2p1:typeDeLaBoisson>Jus</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>Jus d'orange</d2p1:Nom>
+            <d2p1:Prix>2</d2p1:Prix>
+            <d2p1:DegreAlcool>0</d2p1:DegreAlcool>
+            <d2p1:Marque>Pago</d2p1:Marque>
+          </d2p1:Boisson>
+          <d2p1:Boisson i:type="d2p1:BoissonSimple">
+            <d2p1:typeDeLaBoisson>Soda</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>Oasis Tropical</d2p1:Nom>
+            <d2p1:Prix>1.5</d2p1:Prix>
+            <d2p1:DegreAlcool>0</d2p1:DegreAlcool>
+            <d2p1:Marque>Oasis</d2p1:Marque>
+          </d2p1:Boisson>
+        </d2p1:listeDesBoissonsDuBar>
+        <d2p1:listeDesAvisLaissés />
+      </d2p1:Bar>
+      <d2p1:Bar>
+        <d2p1:Nom>Le Ghost Pub</d2p1:Nom>
+        <d2p1:GPSBar>
+          <d2p1:Latitude>43.695728</d2p1:Latitude>
+          <d2p1:Longitude>7.27658</d2p1:Longitude>
+        </d2p1:GPSBar>
+        <d2p1:Restauration>true</d2p1:Restauration>
+        <d2p1:Adresse>3, Rue Barillerie</d2p1:Adresse>
+        <d2p1:Numero>04 93 92 93 37</d2p1:Numero>
+        <d2p1:Photo>Images/ImagesBars/Ghost Pub.jpg</d2p1:Photo>
+        <d2p1:listeDesBoissonsDuBar>
+          <d2p1:Boisson i:type="d2p1:Vin">
+            <d2p1:typeDeLaBoisson>Vin</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>Chateaubriant</d2p1:Nom>
+            <d2p1:Prix>15</d2p1:Prix>
+            <d2p1:DegreAlcool>12</d2p1:DegreAlcool>
+            <d2p1:Marque>Duras</d2p1:Marque>
+            <d2p1:Millesime>2009</d2p1:Millesime>
+            <d2p1:Robe>rouge</d2p1:Robe>
+          </d2p1:Boisson>
+          <d2p1:Boisson i:type="d2p1:BoissonSimple">
+            <d2p1:typeDeLaBoisson>AlcoolFort</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>Rhum</d2p1:Nom>
+            <d2p1:Prix>4</d2p1:Prix>
+            <d2p1:DegreAlcool>40</d2p1:DegreAlcool>
+            <d2p1:Marque>OldNick</d2p1:Marque>
+          </d2p1:Boisson>
+          <d2p1:Boisson i:type="d2p1:BoissonSimple">
+            <d2p1:typeDeLaBoisson>Biere</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>Blonde</d2p1:Nom>
+            <d2p1:Prix>2.5</d2p1:Prix>
+            <d2p1:DegreAlcool>4</d2p1:DegreAlcool>
+            <d2p1:Marque>Leffe</d2p1:Marque>
+          </d2p1:Boisson>
+          <d2p1:Boisson i:type="d2p1:BoissonSimple">
+            <d2p1:typeDeLaBoisson>Biere</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>Ambré</d2p1:Nom>
+            <d2p1:Prix>3.5</d2p1:Prix>
+            <d2p1:DegreAlcool>4</d2p1:DegreAlcool>
+            <d2p1:Marque>Leffe</d2p1:Marque>
+          </d2p1:Boisson>
+          <d2p1:Boisson i:type="d2p1:BoissonSimple">
+            <d2p1:typeDeLaBoisson>Biere</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>Ruby</d2p1:Nom>
+            <d2p1:Prix>3.5</d2p1:Prix>
+            <d2p1:DegreAlcool>4</d2p1:DegreAlcool>
+            <d2p1:Marque>Leffe</d2p1:Marque>
+          </d2p1:Boisson>
+          <d2p1:Boisson i:type="d2p1:BoissonSimple">
+            <d2p1:typeDeLaBoisson>Biere</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>K Mangue</d2p1:Nom>
+            <d2p1:Prix>3.2</d2p1:Prix>
+            <d2p1:DegreAlcool>4.5</d2p1:DegreAlcool>
+            <d2p1:Marque>Kronenbourg</d2p1:Marque>
+          </d2p1:Boisson>
+          <d2p1:Boisson i:type="d2p1:BoissonSimple">
+            <d2p1:typeDeLaBoisson>Biere</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>Blonde</d2p1:Nom>
+            <d2p1:Prix>3.5</d2p1:Prix>
+            <d2p1:DegreAlcool>4.7</d2p1:DegreAlcool>
+            <d2p1:Marque>Peroni</d2p1:Marque>
+          </d2p1:Boisson>
+          <d2p1:Boisson i:type="d2p1:BoissonSimple">
+            <d2p1:typeDeLaBoisson>Biere</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>Blonde</d2p1:Nom>
+            <d2p1:Prix>3.2</d2p1:Prix>
+            <d2p1:DegreAlcool>2.5</d2p1:DegreAlcool>
+            <d2p1:Marque>Kronenbourg</d2p1:Marque>
+          </d2p1:Boisson>
+          <d2p1:Boisson i:type="d2p1:BoissonSimple">
+            <d2p1:typeDeLaBoisson>Biere</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>Blonde</d2p1:Nom>
+            <d2p1:Prix>3.2</d2p1:Prix>
+            <d2p1:DegreAlcool>2.5</d2p1:DegreAlcool>
+            <d2p1:Marque>Heineken</d2p1:Marque>
+          </d2p1:Boisson>
+        </d2p1:listeDesBoissonsDuBar>
+        <d2p1:listeDesAvisLaissés />
+      </d2p1:Bar>
+      <d2p1:Bar>
+        <d2p1:Nom>Loop'S Bar</d2p1:Nom>
+        <d2p1:GPSBar>
+          <d2p1:Latitude>43.702583</d2p1:Latitude>
+          <d2p1:Longitude>7.280003</d2p1:Longitude>
+        </d2p1:GPSBar>
+        <d2p1:Restauration>false</d2p1:Restauration>
+        <d2p1:Adresse>52, Boulevard Risso</d2p1:Adresse>
+        <d2p1:Numero>04 92 04 53 35</d2p1:Numero>
+        <d2p1:Photo>Images/ImagesBars/loopsbar.jpg</d2p1:Photo>
+        <d2p1:listeDesBoissonsDuBar>
+          <d2p1:Boisson i:type="d2p1:BoissonSimple">
+            <d2p1:typeDeLaBoisson>Biere</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>K Mangue</d2p1:Nom>
+            <d2p1:Prix>3.2</d2p1:Prix>
+            <d2p1:DegreAlcool>4.5</d2p1:DegreAlcool>
+            <d2p1:Marque>Kronenbourg</d2p1:Marque>
+          </d2p1:Boisson>
+          <d2p1:Boisson i:type="d2p1:BoissonComposee">
+            <d2p1:typeDeLaBoisson>Cocktail</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>Tequila Sunrise</d2p1:Nom>
+            <d2p1:Prix>8.5</d2p1:Prix>
+            <d2p1:DegreAlcool>16</d2p1:DegreAlcool>
+            <d2p1:listeDesBoissons>
+              <d2p1:Boisson i:type="d2p1:BoissonSimple">
+                <d2p1:typeDeLaBoisson>AlcoolFort</d2p1:typeDeLaBoisson>
+                <d2p1:Nom>Tequila</d2p1:Nom>
+                <d2p1:Prix>4</d2p1:Prix>
+                <d2p1:DegreAlcool>25</d2p1:DegreAlcool>
+                <d2p1:Marque>Gordon</d2p1:Marque>
+              </d2p1:Boisson>
+              <d2p1:Boisson i:type="d2p1:BoissonSimple">
+                <d2p1:typeDeLaBoisson>Sirop</d2p1:typeDeLaBoisson>
+                <d2p1:Nom>Sirop de grenadine</d2p1:Nom>
+                <d2p1:Prix>3</d2p1:Prix>
+                <d2p1:DegreAlcool>0</d2p1:DegreAlcool>
+                <d2p1:Marque>Teisseire</d2p1:Marque>
+              </d2p1:Boisson>
+              <d2p1:Boisson i:type="d2p1:BoissonSimple">
+                <d2p1:typeDeLaBoisson>Jus</d2p1:typeDeLaBoisson>
+                <d2p1:Nom>Jus d'orange</d2p1:Nom>
+                <d2p1:Prix>2</d2p1:Prix>
+                <d2p1:DegreAlcool>0</d2p1:DegreAlcool>
+                <d2p1:Marque>Pago</d2p1:Marque>
+              </d2p1:Boisson>
+            </d2p1:listeDesBoissons>
+            <d2p1:listeDesIngredients />
+          </d2p1:Boisson>
+          <d2p1:Boisson i:type="d2p1:BoissonSimple">
+            <d2p1:typeDeLaBoisson>AlcoolFort</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>Tequila</d2p1:Nom>
+            <d2p1:Prix>4</d2p1:Prix>
+            <d2p1:DegreAlcool>25</d2p1:DegreAlcool>
+            <d2p1:Marque>Gordon</d2p1:Marque>
+          </d2p1:Boisson>
+          <d2p1:Boisson i:type="d2p1:BoissonSimple">
+            <d2p1:typeDeLaBoisson>Sirop</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>Sirop de grenadine</d2p1:Nom>
+            <d2p1:Prix>3</d2p1:Prix>
+            <d2p1:DegreAlcool>0</d2p1:DegreAlcool>
+            <d2p1:Marque>Teisseire</d2p1:Marque>
+          </d2p1:Boisson>
+          <d2p1:Boisson i:type="d2p1:BoissonSimple">
+            <d2p1:typeDeLaBoisson>Jus</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>Jus d'orange</d2p1:Nom>
+            <d2p1:Prix>2</d2p1:Prix>
+            <d2p1:DegreAlcool>0</d2p1:DegreAlcool>
+            <d2p1:Marque>Pago</d2p1:Marque>
+          </d2p1:Boisson>
+          <d2p1:Boisson i:type="d2p1:BoissonSimple">
+            <d2p1:typeDeLaBoisson>Soda</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>Oasis Tropical</d2p1:Nom>
+            <d2p1:Prix>1.5</d2p1:Prix>
+            <d2p1:DegreAlcool>0</d2p1:DegreAlcool>
+            <d2p1:Marque>Oasis</d2p1:Marque>
+          </d2p1:Boisson>
+        </d2p1:listeDesBoissonsDuBar>
+        <d2p1:listeDesAvisLaissés />
+      </d2p1:Bar>
+      <d2p1:Bar>
+        <d2p1:Nom>Master Home</d2p1:Nom>
+        <d2p1:GPSBar>
+          <d2p1:Latitude>43.696781</d2p1:Latitude>
+          <d2p1:Longitude>7.274456</d2p1:Longitude>
+        </d2p1:GPSBar>
+        <d2p1:Restauration>true</d2p1:Restauration>
+        <d2p1:Adresse>11, Rue de la Préfecture</d2p1:Adresse>
+        <d2p1:Numero>04 93 80 33 82</d2p1:Numero>
+        <d2p1:Photo>Images/ImagesBars/masterhome.jpg</d2p1:Photo>
+        <d2p1:listeDesBoissonsDuBar>
+          <d2p1:Boisson i:type="d2p1:Vin">
+            <d2p1:typeDeLaBoisson>Vin</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>Chateaubriant</d2p1:Nom>
+            <d2p1:Prix>15</d2p1:Prix>
+            <d2p1:DegreAlcool>12</d2p1:DegreAlcool>
+            <d2p1:Marque>Duras</d2p1:Marque>
+            <d2p1:Millesime>2009</d2p1:Millesime>
+            <d2p1:Robe>rouge</d2p1:Robe>
+          </d2p1:Boisson>
+          <d2p1:Boisson i:type="d2p1:BoissonSimple">
+            <d2p1:typeDeLaBoisson>AlcoolFort</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>Rhum</d2p1:Nom>
+            <d2p1:Prix>4</d2p1:Prix>
+            <d2p1:DegreAlcool>40</d2p1:DegreAlcool>
+            <d2p1:Marque>OldNick</d2p1:Marque>
+          </d2p1:Boisson>
+          <d2p1:Boisson i:type="d2p1:BoissonSimple">
+            <d2p1:typeDeLaBoisson>Biere</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>Blonde</d2p1:Nom>
+            <d2p1:Prix>2.5</d2p1:Prix>
+            <d2p1:DegreAlcool>4</d2p1:DegreAlcool>
+            <d2p1:Marque>Leffe</d2p1:Marque>
+          </d2p1:Boisson>
+          <d2p1:Boisson i:type="d2p1:BoissonSimple">
+            <d2p1:typeDeLaBoisson>Biere</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>Ambré</d2p1:Nom>
+            <d2p1:Prix>3.5</d2p1:Prix>
+            <d2p1:DegreAlcool>4</d2p1:DegreAlcool>
+            <d2p1:Marque>Leffe</d2p1:Marque>
+          </d2p1:Boisson>
+          <d2p1:Boisson i:type="d2p1:BoissonSimple">
+            <d2p1:typeDeLaBoisson>Biere</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>Ruby</d2p1:Nom>
+            <d2p1:Prix>3.5</d2p1:Prix>
+            <d2p1:DegreAlcool>4</d2p1:DegreAlcool>
+            <d2p1:Marque>Leffe</d2p1:Marque>
+          </d2p1:Boisson>
+          <d2p1:Boisson i:type="d2p1:BoissonSimple">
+            <d2p1:typeDeLaBoisson>Biere</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>K Mangue</d2p1:Nom>
+            <d2p1:Prix>3.2</d2p1:Prix>
+            <d2p1:DegreAlcool>4.5</d2p1:DegreAlcool>
+            <d2p1:Marque>Kronenbourg</d2p1:Marque>
+          </d2p1:Boisson>
+          <d2p1:Boisson i:type="d2p1:BoissonSimple">
+            <d2p1:typeDeLaBoisson>Biere</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>Blonde</d2p1:Nom>
+            <d2p1:Prix>3.5</d2p1:Prix>
+            <d2p1:DegreAlcool>4.7</d2p1:DegreAlcool>
+            <d2p1:Marque>Peroni</d2p1:Marque>
+          </d2p1:Boisson>
+          <d2p1:Boisson i:type="d2p1:BoissonSimple">
+            <d2p1:typeDeLaBoisson>Biere</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>Blonde</d2p1:Nom>
+            <d2p1:Prix>3.2</d2p1:Prix>
+            <d2p1:DegreAlcool>2.5</d2p1:DegreAlcool>
+            <d2p1:Marque>Kronenbourg</d2p1:Marque>
+          </d2p1:Boisson>
+          <d2p1:Boisson i:type="d2p1:BoissonSimple">
+            <d2p1:typeDeLaBoisson>Biere</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>Blonde</d2p1:Nom>
+            <d2p1:Prix>3.2</d2p1:Prix>
+            <d2p1:DegreAlcool>2.5</d2p1:DegreAlcool>
+            <d2p1:Marque>Heineken</d2p1:Marque>
+          </d2p1:Boisson>
+        </d2p1:listeDesBoissonsDuBar>
+        <d2p1:listeDesAvisLaissés />
+      </d2p1:Bar>
+      <d2p1:Bar>
+        <d2p1:Nom>Le Bar'Oc</d2p1:Nom>
+        <d2p1:GPSBar>
+          <d2p1:Latitude>43.699535</d2p1:Latitude>
+          <d2p1:Longitude>7.285229</d2p1:Longitude>
+        </d2p1:GPSBar>
+        <d2p1:Restauration>true</d2p1:Restauration>
+        <d2p1:Adresse>10, Rue Bavastro</d2p1:Adresse>
+        <d2p1:Numero>06 43 64 68 05</d2p1:Numero>
+        <d2p1:Photo>Images/ImagesBars/Bar'OC.jpg</d2p1:Photo>
+        <d2p1:listeDesBoissonsDuBar>
+          <d2p1:Boisson i:type="d2p1:Vin">
+            <d2p1:typeDeLaBoisson>Vin</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>Côte de Beaune</d2p1:Nom>
+            <d2p1:Prix>16</d2p1:Prix>
+            <d2p1:DegreAlcool>12</d2p1:DegreAlcool>
+            <d2p1:Marque>Bourgogne</d2p1:Marque>
+            <d2p1:Millesime>2007</d2p1:Millesime>
+            <d2p1:Robe>rouge</d2p1:Robe>
+          </d2p1:Boisson>
+          <d2p1:Boisson i:type="d2p1:BoissonSimple">
+            <d2p1:typeDeLaBoisson>Soda</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>RedBull Energy Drink</d2p1:Nom>
+            <d2p1:Prix>2.8</d2p1:Prix>
+            <d2p1:DegreAlcool>0</d2p1:DegreAlcool>
+            <d2p1:Marque>Redbull</d2p1:Marque>
+          </d2p1:Boisson>
+          <d2p1:Boisson i:type="d2p1:BoissonSimple">
+            <d2p1:typeDeLaBoisson>AlcoolFort</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>Vodka</d2p1:Nom>
+            <d2p1:Prix>5</d2p1:Prix>
+            <d2p1:DegreAlcool>37</d2p1:DegreAlcool>
+            <d2p1:Marque>Eristoff</d2p1:Marque>
+          </d2p1:Boisson>
+        </d2p1:listeDesBoissonsDuBar>
         <d2p1:listeDesAvisLaissés />
       </d2p1:Bar>
     </d2p1:listeDesBarsDeLaVille>
@@ -381,7 +1776,108 @@
         <d2p1:Adresse>5 Rue Georges Dupré</d2p1:Adresse>
         <d2p1:Numero>04 77 47 23 57</d2p1:Numero>
         <d2p1:Photo>Images/ImagesBars/theSmokingDog.jpg</d2p1:Photo>
-        <d2p1:listeDesBoissonsDuBar />
+        <d2p1:listeDesBoissonsDuBar>
+          <d2p1:Boisson i:type="d2p1:BoissonSimple">
+            <d2p1:typeDeLaBoisson>Biere</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>Blonde</d2p1:Nom>
+            <d2p1:Prix>3.2</d2p1:Prix>
+            <d2p1:DegreAlcool>2.5</d2p1:DegreAlcool>
+            <d2p1:Marque>Heineken</d2p1:Marque>
+          </d2p1:Boisson>
+          <d2p1:Boisson i:type="d2p1:BoissonSimple">
+            <d2p1:typeDeLaBoisson>Biere</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>Blonde</d2p1:Nom>
+            <d2p1:Prix>3.2</d2p1:Prix>
+            <d2p1:DegreAlcool>2.5</d2p1:DegreAlcool>
+            <d2p1:Marque>Kronenbourg</d2p1:Marque>
+          </d2p1:Boisson>
+          <d2p1:Boisson i:type="d2p1:BoissonComposee">
+            <d2p1:typeDeLaBoisson>AlcoolFort</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>Jeager Bombe</d2p1:Nom>
+            <d2p1:Prix>4.5</d2p1:Prix>
+            <d2p1:DegreAlcool>35</d2p1:DegreAlcool>
+            <d2p1:listeDesBoissons>
+              <d2p1:Boisson i:type="d2p1:BoissonSimple">
+                <d2p1:typeDeLaBoisson>AlcoolFort</d2p1:typeDeLaBoisson>
+                <d2p1:Nom>Jeagermeister</d2p1:Nom>
+                <d2p1:Prix>4</d2p1:Prix>
+                <d2p1:DegreAlcool>35</d2p1:DegreAlcool>
+                <d2p1:Marque>Jeagermeister</d2p1:Marque>
+              </d2p1:Boisson>
+              <d2p1:Boisson i:type="d2p1:BoissonSimple">
+                <d2p1:typeDeLaBoisson>Soda</d2p1:typeDeLaBoisson>
+                <d2p1:Nom>RedBull Energy Drink</d2p1:Nom>
+                <d2p1:Prix>2.8</d2p1:Prix>
+                <d2p1:DegreAlcool>0</d2p1:DegreAlcool>
+                <d2p1:Marque>Redbull</d2p1:Marque>
+              </d2p1:Boisson>
+            </d2p1:listeDesBoissons>
+            <d2p1:listeDesIngredients />
+          </d2p1:Boisson>
+          <d2p1:Boisson i:type="d2p1:BoissonSimple">
+            <d2p1:typeDeLaBoisson>AlcoolFort</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>Jeagermeister</d2p1:Nom>
+            <d2p1:Prix>4</d2p1:Prix>
+            <d2p1:DegreAlcool>35</d2p1:DegreAlcool>
+            <d2p1:Marque>Jeagermeister</d2p1:Marque>
+          </d2p1:Boisson>
+          <d2p1:Boisson i:type="d2p1:BoissonSimple">
+            <d2p1:typeDeLaBoisson>AlcoolFort</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>Whisky</d2p1:Nom>
+            <d2p1:Prix>6</d2p1:Prix>
+            <d2p1:DegreAlcool>45</d2p1:DegreAlcool>
+            <d2p1:Marque>Jack's Daniel</d2p1:Marque>
+          </d2p1:Boisson>
+          <d2p1:Boisson i:type="d2p1:BoissonSimple">
+            <d2p1:typeDeLaBoisson>AlcoolFort</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>Whisky</d2p1:Nom>
+            <d2p1:Prix>4</d2p1:Prix>
+            <d2p1:DegreAlcool>40</d2p1:DegreAlcool>
+            <d2p1:Marque>William Peel</d2p1:Marque>
+          </d2p1:Boisson>
+          <d2p1:Boisson i:type="d2p1:BoissonSimple">
+            <d2p1:typeDeLaBoisson>Soda</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>Coca cola</d2p1:Nom>
+            <d2p1:Prix>1.5</d2p1:Prix>
+            <d2p1:DegreAlcool>0</d2p1:DegreAlcool>
+            <d2p1:Marque>Coca Cola</d2p1:Marque>
+          </d2p1:Boisson>
+          <d2p1:Boisson i:type="d2p1:BoissonSimple">
+            <d2p1:typeDeLaBoisson>Soda</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>Oasis Orange</d2p1:Nom>
+            <d2p1:Prix>1.5</d2p1:Prix>
+            <d2p1:DegreAlcool>0</d2p1:DegreAlcool>
+            <d2p1:Marque>Oasis</d2p1:Marque>
+          </d2p1:Boisson>
+          <d2p1:Boisson i:type="d2p1:BoissonSimple">
+            <d2p1:typeDeLaBoisson>Soda</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>7Up</d2p1:Nom>
+            <d2p1:Prix>1.5</d2p1:Prix>
+            <d2p1:DegreAlcool>0</d2p1:DegreAlcool>
+            <d2p1:Marque>SevenUp</d2p1:Marque>
+          </d2p1:Boisson>
+          <d2p1:Boisson i:type="d2p1:BoissonSimple">
+            <d2p1:typeDeLaBoisson>Soda</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>Orangina</d2p1:Nom>
+            <d2p1:Prix>1.5</d2p1:Prix>
+            <d2p1:DegreAlcool>0</d2p1:DegreAlcool>
+            <d2p1:Marque>Orangina</d2p1:Marque>
+          </d2p1:Boisson>
+          <d2p1:Boisson i:type="d2p1:BoissonSimple">
+            <d2p1:typeDeLaBoisson>Jus</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>Jus de banane</d2p1:Nom>
+            <d2p1:Prix>2</d2p1:Prix>
+            <d2p1:DegreAlcool>0</d2p1:DegreAlcool>
+            <d2p1:Marque>Pago</d2p1:Marque>
+          </d2p1:Boisson>
+          <d2p1:Boisson i:type="d2p1:BoissonSimple">
+            <d2p1:typeDeLaBoisson>Soda</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>RedBull Energy Drink</d2p1:Nom>
+            <d2p1:Prix>2.8</d2p1:Prix>
+            <d2p1:DegreAlcool>0</d2p1:DegreAlcool>
+            <d2p1:Marque>Redbull</d2p1:Marque>
+          </d2p1:Boisson>
+        </d2p1:listeDesBoissonsDuBar>
         <d2p1:listeDesAvisLaissés />
       </d2p1:Bar>
       <d2p1:Bar>
@@ -394,7 +1890,73 @@
         <d2p1:Adresse>44 Rue des Martyrs de Vingré</d2p1:Adresse>
         <d2p1:Numero>04 77 25 11 52</d2p1:Numero>
         <d2p1:Photo>Images/ImagesBars/leSaintPatrick.jpg</d2p1:Photo>
-        <d2p1:listeDesBoissonsDuBar />
+        <d2p1:listeDesBoissonsDuBar>
+          <d2p1:Boisson i:type="d2p1:Vin">
+            <d2p1:typeDeLaBoisson>Vin</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>Chateaubriant</d2p1:Nom>
+            <d2p1:Prix>15</d2p1:Prix>
+            <d2p1:DegreAlcool>12</d2p1:DegreAlcool>
+            <d2p1:Marque>Duras</d2p1:Marque>
+            <d2p1:Millesime>2009</d2p1:Millesime>
+            <d2p1:Robe>rouge</d2p1:Robe>
+          </d2p1:Boisson>
+          <d2p1:Boisson i:type="d2p1:BoissonSimple">
+            <d2p1:typeDeLaBoisson>AlcoolFort</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>Rhum</d2p1:Nom>
+            <d2p1:Prix>4</d2p1:Prix>
+            <d2p1:DegreAlcool>40</d2p1:DegreAlcool>
+            <d2p1:Marque>OldNick</d2p1:Marque>
+          </d2p1:Boisson>
+          <d2p1:Boisson i:type="d2p1:BoissonSimple">
+            <d2p1:typeDeLaBoisson>Biere</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>Blonde</d2p1:Nom>
+            <d2p1:Prix>2.5</d2p1:Prix>
+            <d2p1:DegreAlcool>4</d2p1:DegreAlcool>
+            <d2p1:Marque>Leffe</d2p1:Marque>
+          </d2p1:Boisson>
+          <d2p1:Boisson i:type="d2p1:BoissonSimple">
+            <d2p1:typeDeLaBoisson>Biere</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>Ambré</d2p1:Nom>
+            <d2p1:Prix>3.5</d2p1:Prix>
+            <d2p1:DegreAlcool>4</d2p1:DegreAlcool>
+            <d2p1:Marque>Leffe</d2p1:Marque>
+          </d2p1:Boisson>
+          <d2p1:Boisson i:type="d2p1:BoissonSimple">
+            <d2p1:typeDeLaBoisson>Biere</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>Ruby</d2p1:Nom>
+            <d2p1:Prix>3.5</d2p1:Prix>
+            <d2p1:DegreAlcool>4</d2p1:DegreAlcool>
+            <d2p1:Marque>Leffe</d2p1:Marque>
+          </d2p1:Boisson>
+          <d2p1:Boisson i:type="d2p1:BoissonSimple">
+            <d2p1:typeDeLaBoisson>Biere</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>K Mangue</d2p1:Nom>
+            <d2p1:Prix>3.2</d2p1:Prix>
+            <d2p1:DegreAlcool>4.5</d2p1:DegreAlcool>
+            <d2p1:Marque>Kronenbourg</d2p1:Marque>
+          </d2p1:Boisson>
+          <d2p1:Boisson i:type="d2p1:BoissonSimple">
+            <d2p1:typeDeLaBoisson>Biere</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>Blonde</d2p1:Nom>
+            <d2p1:Prix>3.5</d2p1:Prix>
+            <d2p1:DegreAlcool>4.7</d2p1:DegreAlcool>
+            <d2p1:Marque>Peroni</d2p1:Marque>
+          </d2p1:Boisson>
+          <d2p1:Boisson i:type="d2p1:BoissonSimple">
+            <d2p1:typeDeLaBoisson>Biere</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>Blonde</d2p1:Nom>
+            <d2p1:Prix>3.2</d2p1:Prix>
+            <d2p1:DegreAlcool>2.5</d2p1:DegreAlcool>
+            <d2p1:Marque>Kronenbourg</d2p1:Marque>
+          </d2p1:Boisson>
+          <d2p1:Boisson i:type="d2p1:BoissonSimple">
+            <d2p1:typeDeLaBoisson>Biere</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>Blonde</d2p1:Nom>
+            <d2p1:Prix>3.2</d2p1:Prix>
+            <d2p1:DegreAlcool>2.5</d2p1:DegreAlcool>
+            <d2p1:Marque>Heineken</d2p1:Marque>
+          </d2p1:Boisson>
+        </d2p1:listeDesBoissonsDuBar>
         <d2p1:listeDesAvisLaissés />
       </d2p1:Bar>
       <d2p1:Bar>
@@ -407,7 +1969,108 @@
         <d2p1:Adresse>9 Rue de la Résistance</d2p1:Adresse>
         <d2p1:Numero>04 77 32 95 98</d2p1:Numero>
         <d2p1:Photo>Images/ImagesBars/soggyBottom.jpg</d2p1:Photo>
-        <d2p1:listeDesBoissonsDuBar />
+        <d2p1:listeDesBoissonsDuBar>
+          <d2p1:Boisson i:type="d2p1:BoissonSimple">
+            <d2p1:typeDeLaBoisson>Biere</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>Blonde</d2p1:Nom>
+            <d2p1:Prix>3.2</d2p1:Prix>
+            <d2p1:DegreAlcool>2.5</d2p1:DegreAlcool>
+            <d2p1:Marque>Heineken</d2p1:Marque>
+          </d2p1:Boisson>
+          <d2p1:Boisson i:type="d2p1:BoissonSimple">
+            <d2p1:typeDeLaBoisson>Biere</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>Blonde</d2p1:Nom>
+            <d2p1:Prix>3.2</d2p1:Prix>
+            <d2p1:DegreAlcool>2.5</d2p1:DegreAlcool>
+            <d2p1:Marque>Kronenbourg</d2p1:Marque>
+          </d2p1:Boisson>
+          <d2p1:Boisson i:type="d2p1:BoissonComposee">
+            <d2p1:typeDeLaBoisson>AlcoolFort</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>Jeager Bombe</d2p1:Nom>
+            <d2p1:Prix>4.5</d2p1:Prix>
+            <d2p1:DegreAlcool>35</d2p1:DegreAlcool>
+            <d2p1:listeDesBoissons>
+              <d2p1:Boisson i:type="d2p1:BoissonSimple">
+                <d2p1:typeDeLaBoisson>AlcoolFort</d2p1:typeDeLaBoisson>
+                <d2p1:Nom>Jeagermeister</d2p1:Nom>
+                <d2p1:Prix>4</d2p1:Prix>
+                <d2p1:DegreAlcool>35</d2p1:DegreAlcool>
+                <d2p1:Marque>Jeagermeister</d2p1:Marque>
+              </d2p1:Boisson>
+              <d2p1:Boisson i:type="d2p1:BoissonSimple">
+                <d2p1:typeDeLaBoisson>Soda</d2p1:typeDeLaBoisson>
+                <d2p1:Nom>RedBull Energy Drink</d2p1:Nom>
+                <d2p1:Prix>2.8</d2p1:Prix>
+                <d2p1:DegreAlcool>0</d2p1:DegreAlcool>
+                <d2p1:Marque>Redbull</d2p1:Marque>
+              </d2p1:Boisson>
+            </d2p1:listeDesBoissons>
+            <d2p1:listeDesIngredients />
+          </d2p1:Boisson>
+          <d2p1:Boisson i:type="d2p1:BoissonSimple">
+            <d2p1:typeDeLaBoisson>AlcoolFort</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>Jeagermeister</d2p1:Nom>
+            <d2p1:Prix>4</d2p1:Prix>
+            <d2p1:DegreAlcool>35</d2p1:DegreAlcool>
+            <d2p1:Marque>Jeagermeister</d2p1:Marque>
+          </d2p1:Boisson>
+          <d2p1:Boisson i:type="d2p1:BoissonSimple">
+            <d2p1:typeDeLaBoisson>AlcoolFort</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>Whisky</d2p1:Nom>
+            <d2p1:Prix>6</d2p1:Prix>
+            <d2p1:DegreAlcool>45</d2p1:DegreAlcool>
+            <d2p1:Marque>Jack's Daniel</d2p1:Marque>
+          </d2p1:Boisson>
+          <d2p1:Boisson i:type="d2p1:BoissonSimple">
+            <d2p1:typeDeLaBoisson>AlcoolFort</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>Whisky</d2p1:Nom>
+            <d2p1:Prix>4</d2p1:Prix>
+            <d2p1:DegreAlcool>40</d2p1:DegreAlcool>
+            <d2p1:Marque>William Peel</d2p1:Marque>
+          </d2p1:Boisson>
+          <d2p1:Boisson i:type="d2p1:BoissonSimple">
+            <d2p1:typeDeLaBoisson>Soda</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>Coca cola</d2p1:Nom>
+            <d2p1:Prix>1.5</d2p1:Prix>
+            <d2p1:DegreAlcool>0</d2p1:DegreAlcool>
+            <d2p1:Marque>Coca Cola</d2p1:Marque>
+          </d2p1:Boisson>
+          <d2p1:Boisson i:type="d2p1:BoissonSimple">
+            <d2p1:typeDeLaBoisson>Soda</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>Oasis Orange</d2p1:Nom>
+            <d2p1:Prix>1.5</d2p1:Prix>
+            <d2p1:DegreAlcool>0</d2p1:DegreAlcool>
+            <d2p1:Marque>Oasis</d2p1:Marque>
+          </d2p1:Boisson>
+          <d2p1:Boisson i:type="d2p1:BoissonSimple">
+            <d2p1:typeDeLaBoisson>Soda</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>7Up</d2p1:Nom>
+            <d2p1:Prix>1.5</d2p1:Prix>
+            <d2p1:DegreAlcool>0</d2p1:DegreAlcool>
+            <d2p1:Marque>SevenUp</d2p1:Marque>
+          </d2p1:Boisson>
+          <d2p1:Boisson i:type="d2p1:BoissonSimple">
+            <d2p1:typeDeLaBoisson>Soda</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>Orangina</d2p1:Nom>
+            <d2p1:Prix>1.5</d2p1:Prix>
+            <d2p1:DegreAlcool>0</d2p1:DegreAlcool>
+            <d2p1:Marque>Orangina</d2p1:Marque>
+          </d2p1:Boisson>
+          <d2p1:Boisson i:type="d2p1:BoissonSimple">
+            <d2p1:typeDeLaBoisson>Jus</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>Jus de banane</d2p1:Nom>
+            <d2p1:Prix>2</d2p1:Prix>
+            <d2p1:DegreAlcool>0</d2p1:DegreAlcool>
+            <d2p1:Marque>Pago</d2p1:Marque>
+          </d2p1:Boisson>
+          <d2p1:Boisson i:type="d2p1:BoissonSimple">
+            <d2p1:typeDeLaBoisson>Soda</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>RedBull Energy Drink</d2p1:Nom>
+            <d2p1:Prix>2.8</d2p1:Prix>
+            <d2p1:DegreAlcool>0</d2p1:DegreAlcool>
+            <d2p1:Marque>Redbull</d2p1:Marque>
+          </d2p1:Boisson>
+        </d2p1:listeDesBoissonsDuBar>
         <d2p1:listeDesAvisLaissés />
       </d2p1:Bar>
       <d2p1:Bar>
@@ -420,7 +2083,73 @@
         <d2p1:Adresse>5 Rue Saint-François</d2p1:Adresse>
         <d2p1:Numero>04 77 32 64 08</d2p1:Numero>
         <d2p1:Photo>Images/ImagesBars/lipopetteBar.jpg</d2p1:Photo>
-        <d2p1:listeDesBoissonsDuBar />
+        <d2p1:listeDesBoissonsDuBar>
+          <d2p1:Boisson i:type="d2p1:BoissonSimple">
+            <d2p1:typeDeLaBoisson>Biere</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>K Mangue</d2p1:Nom>
+            <d2p1:Prix>3.2</d2p1:Prix>
+            <d2p1:DegreAlcool>4.5</d2p1:DegreAlcool>
+            <d2p1:Marque>Kronenbourg</d2p1:Marque>
+          </d2p1:Boisson>
+          <d2p1:Boisson i:type="d2p1:BoissonComposee">
+            <d2p1:typeDeLaBoisson>Cocktail</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>Tequila Sunrise</d2p1:Nom>
+            <d2p1:Prix>8.5</d2p1:Prix>
+            <d2p1:DegreAlcool>16</d2p1:DegreAlcool>
+            <d2p1:listeDesBoissons>
+              <d2p1:Boisson i:type="d2p1:BoissonSimple">
+                <d2p1:typeDeLaBoisson>AlcoolFort</d2p1:typeDeLaBoisson>
+                <d2p1:Nom>Tequila</d2p1:Nom>
+                <d2p1:Prix>4</d2p1:Prix>
+                <d2p1:DegreAlcool>25</d2p1:DegreAlcool>
+                <d2p1:Marque>Gordon</d2p1:Marque>
+              </d2p1:Boisson>
+              <d2p1:Boisson i:type="d2p1:BoissonSimple">
+                <d2p1:typeDeLaBoisson>Sirop</d2p1:typeDeLaBoisson>
+                <d2p1:Nom>Sirop de grenadine</d2p1:Nom>
+                <d2p1:Prix>3</d2p1:Prix>
+                <d2p1:DegreAlcool>0</d2p1:DegreAlcool>
+                <d2p1:Marque>Teisseire</d2p1:Marque>
+              </d2p1:Boisson>
+              <d2p1:Boisson i:type="d2p1:BoissonSimple">
+                <d2p1:typeDeLaBoisson>Jus</d2p1:typeDeLaBoisson>
+                <d2p1:Nom>Jus d'orange</d2p1:Nom>
+                <d2p1:Prix>2</d2p1:Prix>
+                <d2p1:DegreAlcool>0</d2p1:DegreAlcool>
+                <d2p1:Marque>Pago</d2p1:Marque>
+              </d2p1:Boisson>
+            </d2p1:listeDesBoissons>
+            <d2p1:listeDesIngredients />
+          </d2p1:Boisson>
+          <d2p1:Boisson i:type="d2p1:BoissonSimple">
+            <d2p1:typeDeLaBoisson>AlcoolFort</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>Tequila</d2p1:Nom>
+            <d2p1:Prix>4</d2p1:Prix>
+            <d2p1:DegreAlcool>25</d2p1:DegreAlcool>
+            <d2p1:Marque>Gordon</d2p1:Marque>
+          </d2p1:Boisson>
+          <d2p1:Boisson i:type="d2p1:BoissonSimple">
+            <d2p1:typeDeLaBoisson>Sirop</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>Sirop de grenadine</d2p1:Nom>
+            <d2p1:Prix>3</d2p1:Prix>
+            <d2p1:DegreAlcool>0</d2p1:DegreAlcool>
+            <d2p1:Marque>Teisseire</d2p1:Marque>
+          </d2p1:Boisson>
+          <d2p1:Boisson i:type="d2p1:BoissonSimple">
+            <d2p1:typeDeLaBoisson>Jus</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>Jus d'orange</d2p1:Nom>
+            <d2p1:Prix>2</d2p1:Prix>
+            <d2p1:DegreAlcool>0</d2p1:DegreAlcool>
+            <d2p1:Marque>Pago</d2p1:Marque>
+          </d2p1:Boisson>
+          <d2p1:Boisson i:type="d2p1:BoissonSimple">
+            <d2p1:typeDeLaBoisson>Soda</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>Oasis Tropical</d2p1:Nom>
+            <d2p1:Prix>1.5</d2p1:Prix>
+            <d2p1:DegreAlcool>0</d2p1:DegreAlcool>
+            <d2p1:Marque>Oasis</d2p1:Marque>
+          </d2p1:Boisson>
+        </d2p1:listeDesBoissonsDuBar>
         <d2p1:listeDesAvisLaissés />
       </d2p1:Bar>
       <d2p1:Bar>
@@ -433,7 +2162,108 @@
         <d2p1:Adresse>27 Rue Léon Nautin</d2p1:Adresse>
         <d2p1:Numero>04 77 95 14 79</d2p1:Numero>
         <d2p1:Photo>Images/ImagesBars/leBarberousse.jpg</d2p1:Photo>
-        <d2p1:listeDesBoissonsDuBar />
+        <d2p1:listeDesBoissonsDuBar>
+          <d2p1:Boisson i:type="d2p1:BoissonSimple">
+            <d2p1:typeDeLaBoisson>Biere</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>Blonde</d2p1:Nom>
+            <d2p1:Prix>3.2</d2p1:Prix>
+            <d2p1:DegreAlcool>2.5</d2p1:DegreAlcool>
+            <d2p1:Marque>Heineken</d2p1:Marque>
+          </d2p1:Boisson>
+          <d2p1:Boisson i:type="d2p1:BoissonSimple">
+            <d2p1:typeDeLaBoisson>Biere</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>Blonde</d2p1:Nom>
+            <d2p1:Prix>3.2</d2p1:Prix>
+            <d2p1:DegreAlcool>2.5</d2p1:DegreAlcool>
+            <d2p1:Marque>Kronenbourg</d2p1:Marque>
+          </d2p1:Boisson>
+          <d2p1:Boisson i:type="d2p1:BoissonComposee">
+            <d2p1:typeDeLaBoisson>AlcoolFort</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>Jeager Bombe</d2p1:Nom>
+            <d2p1:Prix>4.5</d2p1:Prix>
+            <d2p1:DegreAlcool>35</d2p1:DegreAlcool>
+            <d2p1:listeDesBoissons>
+              <d2p1:Boisson i:type="d2p1:BoissonSimple">
+                <d2p1:typeDeLaBoisson>AlcoolFort</d2p1:typeDeLaBoisson>
+                <d2p1:Nom>Jeagermeister</d2p1:Nom>
+                <d2p1:Prix>4</d2p1:Prix>
+                <d2p1:DegreAlcool>35</d2p1:DegreAlcool>
+                <d2p1:Marque>Jeagermeister</d2p1:Marque>
+              </d2p1:Boisson>
+              <d2p1:Boisson i:type="d2p1:BoissonSimple">
+                <d2p1:typeDeLaBoisson>Soda</d2p1:typeDeLaBoisson>
+                <d2p1:Nom>RedBull Energy Drink</d2p1:Nom>
+                <d2p1:Prix>2.8</d2p1:Prix>
+                <d2p1:DegreAlcool>0</d2p1:DegreAlcool>
+                <d2p1:Marque>Redbull</d2p1:Marque>
+              </d2p1:Boisson>
+            </d2p1:listeDesBoissons>
+            <d2p1:listeDesIngredients />
+          </d2p1:Boisson>
+          <d2p1:Boisson i:type="d2p1:BoissonSimple">
+            <d2p1:typeDeLaBoisson>AlcoolFort</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>Jeagermeister</d2p1:Nom>
+            <d2p1:Prix>4</d2p1:Prix>
+            <d2p1:DegreAlcool>35</d2p1:DegreAlcool>
+            <d2p1:Marque>Jeagermeister</d2p1:Marque>
+          </d2p1:Boisson>
+          <d2p1:Boisson i:type="d2p1:BoissonSimple">
+            <d2p1:typeDeLaBoisson>AlcoolFort</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>Whisky</d2p1:Nom>
+            <d2p1:Prix>6</d2p1:Prix>
+            <d2p1:DegreAlcool>45</d2p1:DegreAlcool>
+            <d2p1:Marque>Jack's Daniel</d2p1:Marque>
+          </d2p1:Boisson>
+          <d2p1:Boisson i:type="d2p1:BoissonSimple">
+            <d2p1:typeDeLaBoisson>AlcoolFort</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>Whisky</d2p1:Nom>
+            <d2p1:Prix>4</d2p1:Prix>
+            <d2p1:DegreAlcool>40</d2p1:DegreAlcool>
+            <d2p1:Marque>William Peel</d2p1:Marque>
+          </d2p1:Boisson>
+          <d2p1:Boisson i:type="d2p1:BoissonSimple">
+            <d2p1:typeDeLaBoisson>Soda</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>Coca cola</d2p1:Nom>
+            <d2p1:Prix>1.5</d2p1:Prix>
+            <d2p1:DegreAlcool>0</d2p1:DegreAlcool>
+            <d2p1:Marque>Coca Cola</d2p1:Marque>
+          </d2p1:Boisson>
+          <d2p1:Boisson i:type="d2p1:BoissonSimple">
+            <d2p1:typeDeLaBoisson>Soda</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>Oasis Orange</d2p1:Nom>
+            <d2p1:Prix>1.5</d2p1:Prix>
+            <d2p1:DegreAlcool>0</d2p1:DegreAlcool>
+            <d2p1:Marque>Oasis</d2p1:Marque>
+          </d2p1:Boisson>
+          <d2p1:Boisson i:type="d2p1:BoissonSimple">
+            <d2p1:typeDeLaBoisson>Soda</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>7Up</d2p1:Nom>
+            <d2p1:Prix>1.5</d2p1:Prix>
+            <d2p1:DegreAlcool>0</d2p1:DegreAlcool>
+            <d2p1:Marque>SevenUp</d2p1:Marque>
+          </d2p1:Boisson>
+          <d2p1:Boisson i:type="d2p1:BoissonSimple">
+            <d2p1:typeDeLaBoisson>Soda</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>Orangina</d2p1:Nom>
+            <d2p1:Prix>1.5</d2p1:Prix>
+            <d2p1:DegreAlcool>0</d2p1:DegreAlcool>
+            <d2p1:Marque>Orangina</d2p1:Marque>
+          </d2p1:Boisson>
+          <d2p1:Boisson i:type="d2p1:BoissonSimple">
+            <d2p1:typeDeLaBoisson>Jus</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>Jus de banane</d2p1:Nom>
+            <d2p1:Prix>2</d2p1:Prix>
+            <d2p1:DegreAlcool>0</d2p1:DegreAlcool>
+            <d2p1:Marque>Pago</d2p1:Marque>
+          </d2p1:Boisson>
+          <d2p1:Boisson i:type="d2p1:BoissonSimple">
+            <d2p1:typeDeLaBoisson>Soda</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>RedBull Energy Drink</d2p1:Nom>
+            <d2p1:Prix>2.8</d2p1:Prix>
+            <d2p1:DegreAlcool>0</d2p1:DegreAlcool>
+            <d2p1:Marque>Redbull</d2p1:Marque>
+          </d2p1:Boisson>
+        </d2p1:listeDesBoissonsDuBar>
         <d2p1:listeDesAvisLaissés />
       </d2p1:Bar>
       <d2p1:Bar>
@@ -446,7 +2276,73 @@
         <d2p1:Adresse>27 Rue Léon Nautin</d2p1:Adresse>
         <d2p1:Numero>04 77 80 85 84</d2p1:Numero>
         <d2p1:Photo>Images/ImagesBars/zoobar.jpg</d2p1:Photo>
-        <d2p1:listeDesBoissonsDuBar />
+        <d2p1:listeDesBoissonsDuBar>
+          <d2p1:Boisson i:type="d2p1:BoissonSimple">
+            <d2p1:typeDeLaBoisson>Biere</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>K Mangue</d2p1:Nom>
+            <d2p1:Prix>3.2</d2p1:Prix>
+            <d2p1:DegreAlcool>4.5</d2p1:DegreAlcool>
+            <d2p1:Marque>Kronenbourg</d2p1:Marque>
+          </d2p1:Boisson>
+          <d2p1:Boisson i:type="d2p1:BoissonComposee">
+            <d2p1:typeDeLaBoisson>Cocktail</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>Tequila Sunrise</d2p1:Nom>
+            <d2p1:Prix>8.5</d2p1:Prix>
+            <d2p1:DegreAlcool>16</d2p1:DegreAlcool>
+            <d2p1:listeDesBoissons>
+              <d2p1:Boisson i:type="d2p1:BoissonSimple">
+                <d2p1:typeDeLaBoisson>AlcoolFort</d2p1:typeDeLaBoisson>
+                <d2p1:Nom>Tequila</d2p1:Nom>
+                <d2p1:Prix>4</d2p1:Prix>
+                <d2p1:DegreAlcool>25</d2p1:DegreAlcool>
+                <d2p1:Marque>Gordon</d2p1:Marque>
+              </d2p1:Boisson>
+              <d2p1:Boisson i:type="d2p1:BoissonSimple">
+                <d2p1:typeDeLaBoisson>Sirop</d2p1:typeDeLaBoisson>
+                <d2p1:Nom>Sirop de grenadine</d2p1:Nom>
+                <d2p1:Prix>3</d2p1:Prix>
+                <d2p1:DegreAlcool>0</d2p1:DegreAlcool>
+                <d2p1:Marque>Teisseire</d2p1:Marque>
+              </d2p1:Boisson>
+              <d2p1:Boisson i:type="d2p1:BoissonSimple">
+                <d2p1:typeDeLaBoisson>Jus</d2p1:typeDeLaBoisson>
+                <d2p1:Nom>Jus d'orange</d2p1:Nom>
+                <d2p1:Prix>2</d2p1:Prix>
+                <d2p1:DegreAlcool>0</d2p1:DegreAlcool>
+                <d2p1:Marque>Pago</d2p1:Marque>
+              </d2p1:Boisson>
+            </d2p1:listeDesBoissons>
+            <d2p1:listeDesIngredients />
+          </d2p1:Boisson>
+          <d2p1:Boisson i:type="d2p1:BoissonSimple">
+            <d2p1:typeDeLaBoisson>AlcoolFort</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>Tequila</d2p1:Nom>
+            <d2p1:Prix>4</d2p1:Prix>
+            <d2p1:DegreAlcool>25</d2p1:DegreAlcool>
+            <d2p1:Marque>Gordon</d2p1:Marque>
+          </d2p1:Boisson>
+          <d2p1:Boisson i:type="d2p1:BoissonSimple">
+            <d2p1:typeDeLaBoisson>Sirop</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>Sirop de grenadine</d2p1:Nom>
+            <d2p1:Prix>3</d2p1:Prix>
+            <d2p1:DegreAlcool>0</d2p1:DegreAlcool>
+            <d2p1:Marque>Teisseire</d2p1:Marque>
+          </d2p1:Boisson>
+          <d2p1:Boisson i:type="d2p1:BoissonSimple">
+            <d2p1:typeDeLaBoisson>Jus</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>Jus d'orange</d2p1:Nom>
+            <d2p1:Prix>2</d2p1:Prix>
+            <d2p1:DegreAlcool>0</d2p1:DegreAlcool>
+            <d2p1:Marque>Pago</d2p1:Marque>
+          </d2p1:Boisson>
+          <d2p1:Boisson i:type="d2p1:BoissonSimple">
+            <d2p1:typeDeLaBoisson>Soda</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>Oasis Tropical</d2p1:Nom>
+            <d2p1:Prix>1.5</d2p1:Prix>
+            <d2p1:DegreAlcool>0</d2p1:DegreAlcool>
+            <d2p1:Marque>Oasis</d2p1:Marque>
+          </d2p1:Boisson>
+        </d2p1:listeDesBoissonsDuBar>
         <d2p1:listeDesAvisLaissés />
       </d2p1:Bar>
       <d2p1:Bar>
@@ -459,7 +2355,31 @@
         <d2p1:Adresse>12 Rue Elise Gervais</d2p1:Adresse>
         <d2p1:Numero>04 77 33 48 02</d2p1:Numero>
         <d2p1:Photo>Images/ImagesBars/volDeNuit.jpg</d2p1:Photo>
-        <d2p1:listeDesBoissonsDuBar />
+        <d2p1:listeDesBoissonsDuBar>
+          <d2p1:Boisson i:type="d2p1:Vin">
+            <d2p1:typeDeLaBoisson>Vin</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>Côte de Beaune</d2p1:Nom>
+            <d2p1:Prix>16</d2p1:Prix>
+            <d2p1:DegreAlcool>12</d2p1:DegreAlcool>
+            <d2p1:Marque>Bourgogne</d2p1:Marque>
+            <d2p1:Millesime>2007</d2p1:Millesime>
+            <d2p1:Robe>rouge</d2p1:Robe>
+          </d2p1:Boisson>
+          <d2p1:Boisson i:type="d2p1:BoissonSimple">
+            <d2p1:typeDeLaBoisson>Soda</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>RedBull Energy Drink</d2p1:Nom>
+            <d2p1:Prix>2.8</d2p1:Prix>
+            <d2p1:DegreAlcool>0</d2p1:DegreAlcool>
+            <d2p1:Marque>Redbull</d2p1:Marque>
+          </d2p1:Boisson>
+          <d2p1:Boisson i:type="d2p1:BoissonSimple">
+            <d2p1:typeDeLaBoisson>AlcoolFort</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>Vodka</d2p1:Nom>
+            <d2p1:Prix>5</d2p1:Prix>
+            <d2p1:DegreAlcool>37</d2p1:DegreAlcool>
+            <d2p1:Marque>Eristoff</d2p1:Marque>
+          </d2p1:Boisson>
+        </d2p1:listeDesBoissonsDuBar>
         <d2p1:listeDesAvisLaissés />
       </d2p1:Bar>
       <d2p1:Bar>
@@ -472,7 +2392,73 @@
         <d2p1:Adresse>32 Rue du Onze Novembre</d2p1:Adresse>
         <d2p1:Numero>04 77 41 75 13</d2p1:Numero>
         <d2p1:Photo>Images/ImagesBars/leChantier.jpg</d2p1:Photo>
-        <d2p1:listeDesBoissonsDuBar />
+        <d2p1:listeDesBoissonsDuBar>
+          <d2p1:Boisson i:type="d2p1:Vin">
+            <d2p1:typeDeLaBoisson>Vin</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>Chateaubriant</d2p1:Nom>
+            <d2p1:Prix>15</d2p1:Prix>
+            <d2p1:DegreAlcool>12</d2p1:DegreAlcool>
+            <d2p1:Marque>Duras</d2p1:Marque>
+            <d2p1:Millesime>2009</d2p1:Millesime>
+            <d2p1:Robe>rouge</d2p1:Robe>
+          </d2p1:Boisson>
+          <d2p1:Boisson i:type="d2p1:BoissonSimple">
+            <d2p1:typeDeLaBoisson>AlcoolFort</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>Rhum</d2p1:Nom>
+            <d2p1:Prix>4</d2p1:Prix>
+            <d2p1:DegreAlcool>40</d2p1:DegreAlcool>
+            <d2p1:Marque>OldNick</d2p1:Marque>
+          </d2p1:Boisson>
+          <d2p1:Boisson i:type="d2p1:BoissonSimple">
+            <d2p1:typeDeLaBoisson>Biere</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>Blonde</d2p1:Nom>
+            <d2p1:Prix>2.5</d2p1:Prix>
+            <d2p1:DegreAlcool>4</d2p1:DegreAlcool>
+            <d2p1:Marque>Leffe</d2p1:Marque>
+          </d2p1:Boisson>
+          <d2p1:Boisson i:type="d2p1:BoissonSimple">
+            <d2p1:typeDeLaBoisson>Biere</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>Ambré</d2p1:Nom>
+            <d2p1:Prix>3.5</d2p1:Prix>
+            <d2p1:DegreAlcool>4</d2p1:DegreAlcool>
+            <d2p1:Marque>Leffe</d2p1:Marque>
+          </d2p1:Boisson>
+          <d2p1:Boisson i:type="d2p1:BoissonSimple">
+            <d2p1:typeDeLaBoisson>Biere</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>Ruby</d2p1:Nom>
+            <d2p1:Prix>3.5</d2p1:Prix>
+            <d2p1:DegreAlcool>4</d2p1:DegreAlcool>
+            <d2p1:Marque>Leffe</d2p1:Marque>
+          </d2p1:Boisson>
+          <d2p1:Boisson i:type="d2p1:BoissonSimple">
+            <d2p1:typeDeLaBoisson>Biere</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>K Mangue</d2p1:Nom>
+            <d2p1:Prix>3.2</d2p1:Prix>
+            <d2p1:DegreAlcool>4.5</d2p1:DegreAlcool>
+            <d2p1:Marque>Kronenbourg</d2p1:Marque>
+          </d2p1:Boisson>
+          <d2p1:Boisson i:type="d2p1:BoissonSimple">
+            <d2p1:typeDeLaBoisson>Biere</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>Blonde</d2p1:Nom>
+            <d2p1:Prix>3.5</d2p1:Prix>
+            <d2p1:DegreAlcool>4.7</d2p1:DegreAlcool>
+            <d2p1:Marque>Peroni</d2p1:Marque>
+          </d2p1:Boisson>
+          <d2p1:Boisson i:type="d2p1:BoissonSimple">
+            <d2p1:typeDeLaBoisson>Biere</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>Blonde</d2p1:Nom>
+            <d2p1:Prix>3.2</d2p1:Prix>
+            <d2p1:DegreAlcool>2.5</d2p1:DegreAlcool>
+            <d2p1:Marque>Kronenbourg</d2p1:Marque>
+          </d2p1:Boisson>
+          <d2p1:Boisson i:type="d2p1:BoissonSimple">
+            <d2p1:typeDeLaBoisson>Biere</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>Blonde</d2p1:Nom>
+            <d2p1:Prix>3.2</d2p1:Prix>
+            <d2p1:DegreAlcool>2.5</d2p1:DegreAlcool>
+            <d2p1:Marque>Heineken</d2p1:Marque>
+          </d2p1:Boisson>
+        </d2p1:listeDesBoissonsDuBar>
         <d2p1:listeDesAvisLaissés />
       </d2p1:Bar>
       <d2p1:Bar>
@@ -485,7 +2471,73 @@
         <d2p1:Adresse>13 Rue des Martyrs de Vingré</d2p1:Adresse>
         <d2p1:Numero>04 77 32 00 79</d2p1:Numero>
         <d2p1:Photo>Images/ImagesBars/leCafeStJacques.jpg</d2p1:Photo>
-        <d2p1:listeDesBoissonsDuBar />
+        <d2p1:listeDesBoissonsDuBar>
+          <d2p1:Boisson i:type="d2p1:BoissonSimple">
+            <d2p1:typeDeLaBoisson>Biere</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>K Mangue</d2p1:Nom>
+            <d2p1:Prix>3.2</d2p1:Prix>
+            <d2p1:DegreAlcool>4.5</d2p1:DegreAlcool>
+            <d2p1:Marque>Kronenbourg</d2p1:Marque>
+          </d2p1:Boisson>
+          <d2p1:Boisson i:type="d2p1:BoissonComposee">
+            <d2p1:typeDeLaBoisson>Cocktail</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>Tequila Sunrise</d2p1:Nom>
+            <d2p1:Prix>8.5</d2p1:Prix>
+            <d2p1:DegreAlcool>16</d2p1:DegreAlcool>
+            <d2p1:listeDesBoissons>
+              <d2p1:Boisson i:type="d2p1:BoissonSimple">
+                <d2p1:typeDeLaBoisson>AlcoolFort</d2p1:typeDeLaBoisson>
+                <d2p1:Nom>Tequila</d2p1:Nom>
+                <d2p1:Prix>4</d2p1:Prix>
+                <d2p1:DegreAlcool>25</d2p1:DegreAlcool>
+                <d2p1:Marque>Gordon</d2p1:Marque>
+              </d2p1:Boisson>
+              <d2p1:Boisson i:type="d2p1:BoissonSimple">
+                <d2p1:typeDeLaBoisson>Sirop</d2p1:typeDeLaBoisson>
+                <d2p1:Nom>Sirop de grenadine</d2p1:Nom>
+                <d2p1:Prix>3</d2p1:Prix>
+                <d2p1:DegreAlcool>0</d2p1:DegreAlcool>
+                <d2p1:Marque>Teisseire</d2p1:Marque>
+              </d2p1:Boisson>
+              <d2p1:Boisson i:type="d2p1:BoissonSimple">
+                <d2p1:typeDeLaBoisson>Jus</d2p1:typeDeLaBoisson>
+                <d2p1:Nom>Jus d'orange</d2p1:Nom>
+                <d2p1:Prix>2</d2p1:Prix>
+                <d2p1:DegreAlcool>0</d2p1:DegreAlcool>
+                <d2p1:Marque>Pago</d2p1:Marque>
+              </d2p1:Boisson>
+            </d2p1:listeDesBoissons>
+            <d2p1:listeDesIngredients />
+          </d2p1:Boisson>
+          <d2p1:Boisson i:type="d2p1:BoissonSimple">
+            <d2p1:typeDeLaBoisson>AlcoolFort</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>Tequila</d2p1:Nom>
+            <d2p1:Prix>4</d2p1:Prix>
+            <d2p1:DegreAlcool>25</d2p1:DegreAlcool>
+            <d2p1:Marque>Gordon</d2p1:Marque>
+          </d2p1:Boisson>
+          <d2p1:Boisson i:type="d2p1:BoissonSimple">
+            <d2p1:typeDeLaBoisson>Sirop</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>Sirop de grenadine</d2p1:Nom>
+            <d2p1:Prix>3</d2p1:Prix>
+            <d2p1:DegreAlcool>0</d2p1:DegreAlcool>
+            <d2p1:Marque>Teisseire</d2p1:Marque>
+          </d2p1:Boisson>
+          <d2p1:Boisson i:type="d2p1:BoissonSimple">
+            <d2p1:typeDeLaBoisson>Jus</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>Jus d'orange</d2p1:Nom>
+            <d2p1:Prix>2</d2p1:Prix>
+            <d2p1:DegreAlcool>0</d2p1:DegreAlcool>
+            <d2p1:Marque>Pago</d2p1:Marque>
+          </d2p1:Boisson>
+          <d2p1:Boisson i:type="d2p1:BoissonSimple">
+            <d2p1:typeDeLaBoisson>Soda</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>Oasis Tropical</d2p1:Nom>
+            <d2p1:Prix>1.5</d2p1:Prix>
+            <d2p1:DegreAlcool>0</d2p1:DegreAlcool>
+            <d2p1:Marque>Oasis</d2p1:Marque>
+          </d2p1:Boisson>
+        </d2p1:listeDesBoissonsDuBar>
         <d2p1:listeDesAvisLaissés />
       </d2p1:Bar>
     </d2p1:listeDesBarsDeLaVille>
@@ -507,7 +2559,108 @@
         <d2p1:Adresse>6 Passage Thiéré</d2p1:Adresse>
         <d2p1:Numero>01 77 11 81 78</d2p1:Numero>
         <d2p1:Photo>Images/ImagesBars/meltdown.jpg</d2p1:Photo>
-        <d2p1:listeDesBoissonsDuBar />
+        <d2p1:listeDesBoissonsDuBar>
+          <d2p1:Boisson i:type="d2p1:BoissonSimple">
+            <d2p1:typeDeLaBoisson>Biere</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>Blonde</d2p1:Nom>
+            <d2p1:Prix>3.2</d2p1:Prix>
+            <d2p1:DegreAlcool>2.5</d2p1:DegreAlcool>
+            <d2p1:Marque>Heineken</d2p1:Marque>
+          </d2p1:Boisson>
+          <d2p1:Boisson i:type="d2p1:BoissonSimple">
+            <d2p1:typeDeLaBoisson>Biere</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>Blonde</d2p1:Nom>
+            <d2p1:Prix>3.2</d2p1:Prix>
+            <d2p1:DegreAlcool>2.5</d2p1:DegreAlcool>
+            <d2p1:Marque>Kronenbourg</d2p1:Marque>
+          </d2p1:Boisson>
+          <d2p1:Boisson i:type="d2p1:BoissonComposee">
+            <d2p1:typeDeLaBoisson>AlcoolFort</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>Jeager Bombe</d2p1:Nom>
+            <d2p1:Prix>4.5</d2p1:Prix>
+            <d2p1:DegreAlcool>35</d2p1:DegreAlcool>
+            <d2p1:listeDesBoissons>
+              <d2p1:Boisson i:type="d2p1:BoissonSimple">
+                <d2p1:typeDeLaBoisson>AlcoolFort</d2p1:typeDeLaBoisson>
+                <d2p1:Nom>Jeagermeister</d2p1:Nom>
+                <d2p1:Prix>4</d2p1:Prix>
+                <d2p1:DegreAlcool>35</d2p1:DegreAlcool>
+                <d2p1:Marque>Jeagermeister</d2p1:Marque>
+              </d2p1:Boisson>
+              <d2p1:Boisson i:type="d2p1:BoissonSimple">
+                <d2p1:typeDeLaBoisson>Soda</d2p1:typeDeLaBoisson>
+                <d2p1:Nom>RedBull Energy Drink</d2p1:Nom>
+                <d2p1:Prix>2.8</d2p1:Prix>
+                <d2p1:DegreAlcool>0</d2p1:DegreAlcool>
+                <d2p1:Marque>Redbull</d2p1:Marque>
+              </d2p1:Boisson>
+            </d2p1:listeDesBoissons>
+            <d2p1:listeDesIngredients />
+          </d2p1:Boisson>
+          <d2p1:Boisson i:type="d2p1:BoissonSimple">
+            <d2p1:typeDeLaBoisson>AlcoolFort</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>Jeagermeister</d2p1:Nom>
+            <d2p1:Prix>4</d2p1:Prix>
+            <d2p1:DegreAlcool>35</d2p1:DegreAlcool>
+            <d2p1:Marque>Jeagermeister</d2p1:Marque>
+          </d2p1:Boisson>
+          <d2p1:Boisson i:type="d2p1:BoissonSimple">
+            <d2p1:typeDeLaBoisson>AlcoolFort</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>Whisky</d2p1:Nom>
+            <d2p1:Prix>6</d2p1:Prix>
+            <d2p1:DegreAlcool>45</d2p1:DegreAlcool>
+            <d2p1:Marque>Jack's Daniel</d2p1:Marque>
+          </d2p1:Boisson>
+          <d2p1:Boisson i:type="d2p1:BoissonSimple">
+            <d2p1:typeDeLaBoisson>AlcoolFort</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>Whisky</d2p1:Nom>
+            <d2p1:Prix>4</d2p1:Prix>
+            <d2p1:DegreAlcool>40</d2p1:DegreAlcool>
+            <d2p1:Marque>William Peel</d2p1:Marque>
+          </d2p1:Boisson>
+          <d2p1:Boisson i:type="d2p1:BoissonSimple">
+            <d2p1:typeDeLaBoisson>Soda</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>Coca cola</d2p1:Nom>
+            <d2p1:Prix>1.5</d2p1:Prix>
+            <d2p1:DegreAlcool>0</d2p1:DegreAlcool>
+            <d2p1:Marque>Coca Cola</d2p1:Marque>
+          </d2p1:Boisson>
+          <d2p1:Boisson i:type="d2p1:BoissonSimple">
+            <d2p1:typeDeLaBoisson>Soda</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>Oasis Orange</d2p1:Nom>
+            <d2p1:Prix>1.5</d2p1:Prix>
+            <d2p1:DegreAlcool>0</d2p1:DegreAlcool>
+            <d2p1:Marque>Oasis</d2p1:Marque>
+          </d2p1:Boisson>
+          <d2p1:Boisson i:type="d2p1:BoissonSimple">
+            <d2p1:typeDeLaBoisson>Soda</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>7Up</d2p1:Nom>
+            <d2p1:Prix>1.5</d2p1:Prix>
+            <d2p1:DegreAlcool>0</d2p1:DegreAlcool>
+            <d2p1:Marque>SevenUp</d2p1:Marque>
+          </d2p1:Boisson>
+          <d2p1:Boisson i:type="d2p1:BoissonSimple">
+            <d2p1:typeDeLaBoisson>Soda</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>Orangina</d2p1:Nom>
+            <d2p1:Prix>1.5</d2p1:Prix>
+            <d2p1:DegreAlcool>0</d2p1:DegreAlcool>
+            <d2p1:Marque>Orangina</d2p1:Marque>
+          </d2p1:Boisson>
+          <d2p1:Boisson i:type="d2p1:BoissonSimple">
+            <d2p1:typeDeLaBoisson>Jus</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>Jus de banane</d2p1:Nom>
+            <d2p1:Prix>2</d2p1:Prix>
+            <d2p1:DegreAlcool>0</d2p1:DegreAlcool>
+            <d2p1:Marque>Pago</d2p1:Marque>
+          </d2p1:Boisson>
+          <d2p1:Boisson i:type="d2p1:BoissonSimple">
+            <d2p1:typeDeLaBoisson>Soda</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>RedBull Energy Drink</d2p1:Nom>
+            <d2p1:Prix>2.8</d2p1:Prix>
+            <d2p1:DegreAlcool>0</d2p1:DegreAlcool>
+            <d2p1:Marque>Redbull</d2p1:Marque>
+          </d2p1:Boisson>
+        </d2p1:listeDesBoissonsDuBar>
         <d2p1:listeDesAvisLaissés />
       </d2p1:Bar>
       <d2p1:Bar>
@@ -520,7 +2673,73 @@
         <d2p1:Adresse>52 Rue de Saintonge</d2p1:Adresse>
         <d2p1:Numero>pas de numero</d2p1:Numero>
         <d2p1:Photo>Images/ImagesBars/candelaria.jpg</d2p1:Photo>
-        <d2p1:listeDesBoissonsDuBar />
+        <d2p1:listeDesBoissonsDuBar>
+          <d2p1:Boisson i:type="d2p1:BoissonSimple">
+            <d2p1:typeDeLaBoisson>Biere</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>K Mangue</d2p1:Nom>
+            <d2p1:Prix>3.2</d2p1:Prix>
+            <d2p1:DegreAlcool>4.5</d2p1:DegreAlcool>
+            <d2p1:Marque>Kronenbourg</d2p1:Marque>
+          </d2p1:Boisson>
+          <d2p1:Boisson i:type="d2p1:BoissonComposee">
+            <d2p1:typeDeLaBoisson>Cocktail</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>Tequila Sunrise</d2p1:Nom>
+            <d2p1:Prix>8.5</d2p1:Prix>
+            <d2p1:DegreAlcool>16</d2p1:DegreAlcool>
+            <d2p1:listeDesBoissons>
+              <d2p1:Boisson i:type="d2p1:BoissonSimple">
+                <d2p1:typeDeLaBoisson>AlcoolFort</d2p1:typeDeLaBoisson>
+                <d2p1:Nom>Tequila</d2p1:Nom>
+                <d2p1:Prix>4</d2p1:Prix>
+                <d2p1:DegreAlcool>25</d2p1:DegreAlcool>
+                <d2p1:Marque>Gordon</d2p1:Marque>
+              </d2p1:Boisson>
+              <d2p1:Boisson i:type="d2p1:BoissonSimple">
+                <d2p1:typeDeLaBoisson>Sirop</d2p1:typeDeLaBoisson>
+                <d2p1:Nom>Sirop de grenadine</d2p1:Nom>
+                <d2p1:Prix>3</d2p1:Prix>
+                <d2p1:DegreAlcool>0</d2p1:DegreAlcool>
+                <d2p1:Marque>Teisseire</d2p1:Marque>
+              </d2p1:Boisson>
+              <d2p1:Boisson i:type="d2p1:BoissonSimple">
+                <d2p1:typeDeLaBoisson>Jus</d2p1:typeDeLaBoisson>
+                <d2p1:Nom>Jus d'orange</d2p1:Nom>
+                <d2p1:Prix>2</d2p1:Prix>
+                <d2p1:DegreAlcool>0</d2p1:DegreAlcool>
+                <d2p1:Marque>Pago</d2p1:Marque>
+              </d2p1:Boisson>
+            </d2p1:listeDesBoissons>
+            <d2p1:listeDesIngredients />
+          </d2p1:Boisson>
+          <d2p1:Boisson i:type="d2p1:BoissonSimple">
+            <d2p1:typeDeLaBoisson>AlcoolFort</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>Tequila</d2p1:Nom>
+            <d2p1:Prix>4</d2p1:Prix>
+            <d2p1:DegreAlcool>25</d2p1:DegreAlcool>
+            <d2p1:Marque>Gordon</d2p1:Marque>
+          </d2p1:Boisson>
+          <d2p1:Boisson i:type="d2p1:BoissonSimple">
+            <d2p1:typeDeLaBoisson>Sirop</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>Sirop de grenadine</d2p1:Nom>
+            <d2p1:Prix>3</d2p1:Prix>
+            <d2p1:DegreAlcool>0</d2p1:DegreAlcool>
+            <d2p1:Marque>Teisseire</d2p1:Marque>
+          </d2p1:Boisson>
+          <d2p1:Boisson i:type="d2p1:BoissonSimple">
+            <d2p1:typeDeLaBoisson>Jus</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>Jus d'orange</d2p1:Nom>
+            <d2p1:Prix>2</d2p1:Prix>
+            <d2p1:DegreAlcool>0</d2p1:DegreAlcool>
+            <d2p1:Marque>Pago</d2p1:Marque>
+          </d2p1:Boisson>
+          <d2p1:Boisson i:type="d2p1:BoissonSimple">
+            <d2p1:typeDeLaBoisson>Soda</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>Oasis Tropical</d2p1:Nom>
+            <d2p1:Prix>1.5</d2p1:Prix>
+            <d2p1:DegreAlcool>0</d2p1:DegreAlcool>
+            <d2p1:Marque>Oasis</d2p1:Marque>
+          </d2p1:Boisson>
+        </d2p1:listeDesBoissonsDuBar>
         <d2p1:listeDesAvisLaissés />
       </d2p1:Bar>
       <d2p1:Bar>
@@ -533,7 +2752,31 @@
         <d2p1:Adresse>26 Rue François Miron</d2p1:Adresse>
         <d2p1:Numero>01 42 77 59 40</d2p1:Numero>
         <d2p1:Photo>Images/ImagesBars/laPerlaBar.jpg</d2p1:Photo>
-        <d2p1:listeDesBoissonsDuBar />
+        <d2p1:listeDesBoissonsDuBar>
+          <d2p1:Boisson i:type="d2p1:Vin">
+            <d2p1:typeDeLaBoisson>Vin</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>Côte de Beaune</d2p1:Nom>
+            <d2p1:Prix>16</d2p1:Prix>
+            <d2p1:DegreAlcool>12</d2p1:DegreAlcool>
+            <d2p1:Marque>Bourgogne</d2p1:Marque>
+            <d2p1:Millesime>2007</d2p1:Millesime>
+            <d2p1:Robe>rouge</d2p1:Robe>
+          </d2p1:Boisson>
+          <d2p1:Boisson i:type="d2p1:BoissonSimple">
+            <d2p1:typeDeLaBoisson>Soda</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>RedBull Energy Drink</d2p1:Nom>
+            <d2p1:Prix>2.8</d2p1:Prix>
+            <d2p1:DegreAlcool>0</d2p1:DegreAlcool>
+            <d2p1:Marque>Redbull</d2p1:Marque>
+          </d2p1:Boisson>
+          <d2p1:Boisson i:type="d2p1:BoissonSimple">
+            <d2p1:typeDeLaBoisson>AlcoolFort</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>Vodka</d2p1:Nom>
+            <d2p1:Prix>5</d2p1:Prix>
+            <d2p1:DegreAlcool>37</d2p1:DegreAlcool>
+            <d2p1:Marque>Eristoff</d2p1:Marque>
+          </d2p1:Boisson>
+        </d2p1:listeDesBoissonsDuBar>
         <d2p1:listeDesAvisLaissés />
       </d2p1:Bar>
       <d2p1:Bar>
@@ -546,7 +2789,108 @@
         <d2p1:Adresse>62 Rue Quincampoix</d2p1:Adresse>
         <d2p1:Numero>09 81 12 53 06</d2p1:Numero>
         <d2p1:Photo>Images/ImagesBars/barDemoryParis.jpg</d2p1:Photo>
-        <d2p1:listeDesBoissonsDuBar />
+        <d2p1:listeDesBoissonsDuBar>
+          <d2p1:Boisson i:type="d2p1:BoissonSimple">
+            <d2p1:typeDeLaBoisson>Biere</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>Blonde</d2p1:Nom>
+            <d2p1:Prix>3.2</d2p1:Prix>
+            <d2p1:DegreAlcool>2.5</d2p1:DegreAlcool>
+            <d2p1:Marque>Heineken</d2p1:Marque>
+          </d2p1:Boisson>
+          <d2p1:Boisson i:type="d2p1:BoissonSimple">
+            <d2p1:typeDeLaBoisson>Biere</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>Blonde</d2p1:Nom>
+            <d2p1:Prix>3.2</d2p1:Prix>
+            <d2p1:DegreAlcool>2.5</d2p1:DegreAlcool>
+            <d2p1:Marque>Kronenbourg</d2p1:Marque>
+          </d2p1:Boisson>
+          <d2p1:Boisson i:type="d2p1:BoissonComposee">
+            <d2p1:typeDeLaBoisson>AlcoolFort</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>Jeager Bombe</d2p1:Nom>
+            <d2p1:Prix>4.5</d2p1:Prix>
+            <d2p1:DegreAlcool>35</d2p1:DegreAlcool>
+            <d2p1:listeDesBoissons>
+              <d2p1:Boisson i:type="d2p1:BoissonSimple">
+                <d2p1:typeDeLaBoisson>AlcoolFort</d2p1:typeDeLaBoisson>
+                <d2p1:Nom>Jeagermeister</d2p1:Nom>
+                <d2p1:Prix>4</d2p1:Prix>
+                <d2p1:DegreAlcool>35</d2p1:DegreAlcool>
+                <d2p1:Marque>Jeagermeister</d2p1:Marque>
+              </d2p1:Boisson>
+              <d2p1:Boisson i:type="d2p1:BoissonSimple">
+                <d2p1:typeDeLaBoisson>Soda</d2p1:typeDeLaBoisson>
+                <d2p1:Nom>RedBull Energy Drink</d2p1:Nom>
+                <d2p1:Prix>2.8</d2p1:Prix>
+                <d2p1:DegreAlcool>0</d2p1:DegreAlcool>
+                <d2p1:Marque>Redbull</d2p1:Marque>
+              </d2p1:Boisson>
+            </d2p1:listeDesBoissons>
+            <d2p1:listeDesIngredients />
+          </d2p1:Boisson>
+          <d2p1:Boisson i:type="d2p1:BoissonSimple">
+            <d2p1:typeDeLaBoisson>AlcoolFort</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>Jeagermeister</d2p1:Nom>
+            <d2p1:Prix>4</d2p1:Prix>
+            <d2p1:DegreAlcool>35</d2p1:DegreAlcool>
+            <d2p1:Marque>Jeagermeister</d2p1:Marque>
+          </d2p1:Boisson>
+          <d2p1:Boisson i:type="d2p1:BoissonSimple">
+            <d2p1:typeDeLaBoisson>AlcoolFort</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>Whisky</d2p1:Nom>
+            <d2p1:Prix>6</d2p1:Prix>
+            <d2p1:DegreAlcool>45</d2p1:DegreAlcool>
+            <d2p1:Marque>Jack's Daniel</d2p1:Marque>
+          </d2p1:Boisson>
+          <d2p1:Boisson i:type="d2p1:BoissonSimple">
+            <d2p1:typeDeLaBoisson>AlcoolFort</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>Whisky</d2p1:Nom>
+            <d2p1:Prix>4</d2p1:Prix>
+            <d2p1:DegreAlcool>40</d2p1:DegreAlcool>
+            <d2p1:Marque>William Peel</d2p1:Marque>
+          </d2p1:Boisson>
+          <d2p1:Boisson i:type="d2p1:BoissonSimple">
+            <d2p1:typeDeLaBoisson>Soda</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>Coca cola</d2p1:Nom>
+            <d2p1:Prix>1.5</d2p1:Prix>
+            <d2p1:DegreAlcool>0</d2p1:DegreAlcool>
+            <d2p1:Marque>Coca Cola</d2p1:Marque>
+          </d2p1:Boisson>
+          <d2p1:Boisson i:type="d2p1:BoissonSimple">
+            <d2p1:typeDeLaBoisson>Soda</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>Oasis Orange</d2p1:Nom>
+            <d2p1:Prix>1.5</d2p1:Prix>
+            <d2p1:DegreAlcool>0</d2p1:DegreAlcool>
+            <d2p1:Marque>Oasis</d2p1:Marque>
+          </d2p1:Boisson>
+          <d2p1:Boisson i:type="d2p1:BoissonSimple">
+            <d2p1:typeDeLaBoisson>Soda</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>7Up</d2p1:Nom>
+            <d2p1:Prix>1.5</d2p1:Prix>
+            <d2p1:DegreAlcool>0</d2p1:DegreAlcool>
+            <d2p1:Marque>SevenUp</d2p1:Marque>
+          </d2p1:Boisson>
+          <d2p1:Boisson i:type="d2p1:BoissonSimple">
+            <d2p1:typeDeLaBoisson>Soda</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>Orangina</d2p1:Nom>
+            <d2p1:Prix>1.5</d2p1:Prix>
+            <d2p1:DegreAlcool>0</d2p1:DegreAlcool>
+            <d2p1:Marque>Orangina</d2p1:Marque>
+          </d2p1:Boisson>
+          <d2p1:Boisson i:type="d2p1:BoissonSimple">
+            <d2p1:typeDeLaBoisson>Jus</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>Jus de banane</d2p1:Nom>
+            <d2p1:Prix>2</d2p1:Prix>
+            <d2p1:DegreAlcool>0</d2p1:DegreAlcool>
+            <d2p1:Marque>Pago</d2p1:Marque>
+          </d2p1:Boisson>
+          <d2p1:Boisson i:type="d2p1:BoissonSimple">
+            <d2p1:typeDeLaBoisson>Soda</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>RedBull Energy Drink</d2p1:Nom>
+            <d2p1:Prix>2.8</d2p1:Prix>
+            <d2p1:DegreAlcool>0</d2p1:DegreAlcool>
+            <d2p1:Marque>Redbull</d2p1:Marque>
+          </d2p1:Boisson>
+        </d2p1:listeDesBoissonsDuBar>
         <d2p1:listeDesAvisLaissés />
       </d2p1:Bar>
       <d2p1:Bar>
@@ -559,7 +2903,73 @@
         <d2p1:Adresse>101 Rue Amelot</d2p1:Adresse>
         <d2p1:Numero>01 58 30 93 43</d2p1:Numero>
         <d2p1:Photo>Images/ImagesBars/panicRoom.jpg</d2p1:Photo>
-        <d2p1:listeDesBoissonsDuBar />
+        <d2p1:listeDesBoissonsDuBar>
+          <d2p1:Boisson i:type="d2p1:Vin">
+            <d2p1:typeDeLaBoisson>Vin</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>Chateaubriant</d2p1:Nom>
+            <d2p1:Prix>15</d2p1:Prix>
+            <d2p1:DegreAlcool>12</d2p1:DegreAlcool>
+            <d2p1:Marque>Duras</d2p1:Marque>
+            <d2p1:Millesime>2009</d2p1:Millesime>
+            <d2p1:Robe>rouge</d2p1:Robe>
+          </d2p1:Boisson>
+          <d2p1:Boisson i:type="d2p1:BoissonSimple">
+            <d2p1:typeDeLaBoisson>AlcoolFort</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>Rhum</d2p1:Nom>
+            <d2p1:Prix>4</d2p1:Prix>
+            <d2p1:DegreAlcool>40</d2p1:DegreAlcool>
+            <d2p1:Marque>OldNick</d2p1:Marque>
+          </d2p1:Boisson>
+          <d2p1:Boisson i:type="d2p1:BoissonSimple">
+            <d2p1:typeDeLaBoisson>Biere</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>Blonde</d2p1:Nom>
+            <d2p1:Prix>2.5</d2p1:Prix>
+            <d2p1:DegreAlcool>4</d2p1:DegreAlcool>
+            <d2p1:Marque>Leffe</d2p1:Marque>
+          </d2p1:Boisson>
+          <d2p1:Boisson i:type="d2p1:BoissonSimple">
+            <d2p1:typeDeLaBoisson>Biere</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>Ambré</d2p1:Nom>
+            <d2p1:Prix>3.5</d2p1:Prix>
+            <d2p1:DegreAlcool>4</d2p1:DegreAlcool>
+            <d2p1:Marque>Leffe</d2p1:Marque>
+          </d2p1:Boisson>
+          <d2p1:Boisson i:type="d2p1:BoissonSimple">
+            <d2p1:typeDeLaBoisson>Biere</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>Ruby</d2p1:Nom>
+            <d2p1:Prix>3.5</d2p1:Prix>
+            <d2p1:DegreAlcool>4</d2p1:DegreAlcool>
+            <d2p1:Marque>Leffe</d2p1:Marque>
+          </d2p1:Boisson>
+          <d2p1:Boisson i:type="d2p1:BoissonSimple">
+            <d2p1:typeDeLaBoisson>Biere</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>K Mangue</d2p1:Nom>
+            <d2p1:Prix>3.2</d2p1:Prix>
+            <d2p1:DegreAlcool>4.5</d2p1:DegreAlcool>
+            <d2p1:Marque>Kronenbourg</d2p1:Marque>
+          </d2p1:Boisson>
+          <d2p1:Boisson i:type="d2p1:BoissonSimple">
+            <d2p1:typeDeLaBoisson>Biere</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>Blonde</d2p1:Nom>
+            <d2p1:Prix>3.5</d2p1:Prix>
+            <d2p1:DegreAlcool>4.7</d2p1:DegreAlcool>
+            <d2p1:Marque>Peroni</d2p1:Marque>
+          </d2p1:Boisson>
+          <d2p1:Boisson i:type="d2p1:BoissonSimple">
+            <d2p1:typeDeLaBoisson>Biere</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>Blonde</d2p1:Nom>
+            <d2p1:Prix>3.2</d2p1:Prix>
+            <d2p1:DegreAlcool>2.5</d2p1:DegreAlcool>
+            <d2p1:Marque>Kronenbourg</d2p1:Marque>
+          </d2p1:Boisson>
+          <d2p1:Boisson i:type="d2p1:BoissonSimple">
+            <d2p1:typeDeLaBoisson>Biere</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>Blonde</d2p1:Nom>
+            <d2p1:Prix>3.2</d2p1:Prix>
+            <d2p1:DegreAlcool>2.5</d2p1:DegreAlcool>
+            <d2p1:Marque>Heineken</d2p1:Marque>
+          </d2p1:Boisson>
+        </d2p1:listeDesBoissonsDuBar>
         <d2p1:listeDesAvisLaissés />
       </d2p1:Bar>
       <d2p1:Bar>
@@ -572,7 +2982,73 @@
         <d2p1:Adresse>25 Rue des Grands Augustins</d2p1:Adresse>
         <d2p1:Numero>07 61 74 47 89</d2p1:Numero>
         <d2p1:Photo>Images/ImagesBars/lesCaractèresBarParis.jpg</d2p1:Photo>
-        <d2p1:listeDesBoissonsDuBar />
+        <d2p1:listeDesBoissonsDuBar>
+          <d2p1:Boisson i:type="d2p1:BoissonSimple">
+            <d2p1:typeDeLaBoisson>Biere</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>K Mangue</d2p1:Nom>
+            <d2p1:Prix>3.2</d2p1:Prix>
+            <d2p1:DegreAlcool>4.5</d2p1:DegreAlcool>
+            <d2p1:Marque>Kronenbourg</d2p1:Marque>
+          </d2p1:Boisson>
+          <d2p1:Boisson i:type="d2p1:BoissonComposee">
+            <d2p1:typeDeLaBoisson>Cocktail</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>Tequila Sunrise</d2p1:Nom>
+            <d2p1:Prix>8.5</d2p1:Prix>
+            <d2p1:DegreAlcool>16</d2p1:DegreAlcool>
+            <d2p1:listeDesBoissons>
+              <d2p1:Boisson i:type="d2p1:BoissonSimple">
+                <d2p1:typeDeLaBoisson>AlcoolFort</d2p1:typeDeLaBoisson>
+                <d2p1:Nom>Tequila</d2p1:Nom>
+                <d2p1:Prix>4</d2p1:Prix>
+                <d2p1:DegreAlcool>25</d2p1:DegreAlcool>
+                <d2p1:Marque>Gordon</d2p1:Marque>
+              </d2p1:Boisson>
+              <d2p1:Boisson i:type="d2p1:BoissonSimple">
+                <d2p1:typeDeLaBoisson>Sirop</d2p1:typeDeLaBoisson>
+                <d2p1:Nom>Sirop de grenadine</d2p1:Nom>
+                <d2p1:Prix>3</d2p1:Prix>
+                <d2p1:DegreAlcool>0</d2p1:DegreAlcool>
+                <d2p1:Marque>Teisseire</d2p1:Marque>
+              </d2p1:Boisson>
+              <d2p1:Boisson i:type="d2p1:BoissonSimple">
+                <d2p1:typeDeLaBoisson>Jus</d2p1:typeDeLaBoisson>
+                <d2p1:Nom>Jus d'orange</d2p1:Nom>
+                <d2p1:Prix>2</d2p1:Prix>
+                <d2p1:DegreAlcool>0</d2p1:DegreAlcool>
+                <d2p1:Marque>Pago</d2p1:Marque>
+              </d2p1:Boisson>
+            </d2p1:listeDesBoissons>
+            <d2p1:listeDesIngredients />
+          </d2p1:Boisson>
+          <d2p1:Boisson i:type="d2p1:BoissonSimple">
+            <d2p1:typeDeLaBoisson>AlcoolFort</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>Tequila</d2p1:Nom>
+            <d2p1:Prix>4</d2p1:Prix>
+            <d2p1:DegreAlcool>25</d2p1:DegreAlcool>
+            <d2p1:Marque>Gordon</d2p1:Marque>
+          </d2p1:Boisson>
+          <d2p1:Boisson i:type="d2p1:BoissonSimple">
+            <d2p1:typeDeLaBoisson>Sirop</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>Sirop de grenadine</d2p1:Nom>
+            <d2p1:Prix>3</d2p1:Prix>
+            <d2p1:DegreAlcool>0</d2p1:DegreAlcool>
+            <d2p1:Marque>Teisseire</d2p1:Marque>
+          </d2p1:Boisson>
+          <d2p1:Boisson i:type="d2p1:BoissonSimple">
+            <d2p1:typeDeLaBoisson>Jus</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>Jus d'orange</d2p1:Nom>
+            <d2p1:Prix>2</d2p1:Prix>
+            <d2p1:DegreAlcool>0</d2p1:DegreAlcool>
+            <d2p1:Marque>Pago</d2p1:Marque>
+          </d2p1:Boisson>
+          <d2p1:Boisson i:type="d2p1:BoissonSimple">
+            <d2p1:typeDeLaBoisson>Soda</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>Oasis Tropical</d2p1:Nom>
+            <d2p1:Prix>1.5</d2p1:Prix>
+            <d2p1:DegreAlcool>0</d2p1:DegreAlcool>
+            <d2p1:Marque>Oasis</d2p1:Marque>
+          </d2p1:Boisson>
+        </d2p1:listeDesBoissonsDuBar>
         <d2p1:listeDesAvisLaissés />
       </d2p1:Bar>
       <d2p1:Bar>
@@ -585,7 +3061,108 @@
         <d2p1:Adresse>5 Rue Sedaine</d2p1:Adresse>
         <d2p1:Numero>09 50 73 12 99</d2p1:Numero>
         <d2p1:Photo>Images/ImagesBars/moonshiner.jpg</d2p1:Photo>
-        <d2p1:listeDesBoissonsDuBar />
+        <d2p1:listeDesBoissonsDuBar>
+          <d2p1:Boisson i:type="d2p1:BoissonSimple">
+            <d2p1:typeDeLaBoisson>Biere</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>Blonde</d2p1:Nom>
+            <d2p1:Prix>3.2</d2p1:Prix>
+            <d2p1:DegreAlcool>2.5</d2p1:DegreAlcool>
+            <d2p1:Marque>Heineken</d2p1:Marque>
+          </d2p1:Boisson>
+          <d2p1:Boisson i:type="d2p1:BoissonSimple">
+            <d2p1:typeDeLaBoisson>Biere</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>Blonde</d2p1:Nom>
+            <d2p1:Prix>3.2</d2p1:Prix>
+            <d2p1:DegreAlcool>2.5</d2p1:DegreAlcool>
+            <d2p1:Marque>Kronenbourg</d2p1:Marque>
+          </d2p1:Boisson>
+          <d2p1:Boisson i:type="d2p1:BoissonComposee">
+            <d2p1:typeDeLaBoisson>AlcoolFort</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>Jeager Bombe</d2p1:Nom>
+            <d2p1:Prix>4.5</d2p1:Prix>
+            <d2p1:DegreAlcool>35</d2p1:DegreAlcool>
+            <d2p1:listeDesBoissons>
+              <d2p1:Boisson i:type="d2p1:BoissonSimple">
+                <d2p1:typeDeLaBoisson>AlcoolFort</d2p1:typeDeLaBoisson>
+                <d2p1:Nom>Jeagermeister</d2p1:Nom>
+                <d2p1:Prix>4</d2p1:Prix>
+                <d2p1:DegreAlcool>35</d2p1:DegreAlcool>
+                <d2p1:Marque>Jeagermeister</d2p1:Marque>
+              </d2p1:Boisson>
+              <d2p1:Boisson i:type="d2p1:BoissonSimple">
+                <d2p1:typeDeLaBoisson>Soda</d2p1:typeDeLaBoisson>
+                <d2p1:Nom>RedBull Energy Drink</d2p1:Nom>
+                <d2p1:Prix>2.8</d2p1:Prix>
+                <d2p1:DegreAlcool>0</d2p1:DegreAlcool>
+                <d2p1:Marque>Redbull</d2p1:Marque>
+              </d2p1:Boisson>
+            </d2p1:listeDesBoissons>
+            <d2p1:listeDesIngredients />
+          </d2p1:Boisson>
+          <d2p1:Boisson i:type="d2p1:BoissonSimple">
+            <d2p1:typeDeLaBoisson>AlcoolFort</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>Jeagermeister</d2p1:Nom>
+            <d2p1:Prix>4</d2p1:Prix>
+            <d2p1:DegreAlcool>35</d2p1:DegreAlcool>
+            <d2p1:Marque>Jeagermeister</d2p1:Marque>
+          </d2p1:Boisson>
+          <d2p1:Boisson i:type="d2p1:BoissonSimple">
+            <d2p1:typeDeLaBoisson>AlcoolFort</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>Whisky</d2p1:Nom>
+            <d2p1:Prix>6</d2p1:Prix>
+            <d2p1:DegreAlcool>45</d2p1:DegreAlcool>
+            <d2p1:Marque>Jack's Daniel</d2p1:Marque>
+          </d2p1:Boisson>
+          <d2p1:Boisson i:type="d2p1:BoissonSimple">
+            <d2p1:typeDeLaBoisson>AlcoolFort</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>Whisky</d2p1:Nom>
+            <d2p1:Prix>4</d2p1:Prix>
+            <d2p1:DegreAlcool>40</d2p1:DegreAlcool>
+            <d2p1:Marque>William Peel</d2p1:Marque>
+          </d2p1:Boisson>
+          <d2p1:Boisson i:type="d2p1:BoissonSimple">
+            <d2p1:typeDeLaBoisson>Soda</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>Coca cola</d2p1:Nom>
+            <d2p1:Prix>1.5</d2p1:Prix>
+            <d2p1:DegreAlcool>0</d2p1:DegreAlcool>
+            <d2p1:Marque>Coca Cola</d2p1:Marque>
+          </d2p1:Boisson>
+          <d2p1:Boisson i:type="d2p1:BoissonSimple">
+            <d2p1:typeDeLaBoisson>Soda</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>Oasis Orange</d2p1:Nom>
+            <d2p1:Prix>1.5</d2p1:Prix>
+            <d2p1:DegreAlcool>0</d2p1:DegreAlcool>
+            <d2p1:Marque>Oasis</d2p1:Marque>
+          </d2p1:Boisson>
+          <d2p1:Boisson i:type="d2p1:BoissonSimple">
+            <d2p1:typeDeLaBoisson>Soda</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>7Up</d2p1:Nom>
+            <d2p1:Prix>1.5</d2p1:Prix>
+            <d2p1:DegreAlcool>0</d2p1:DegreAlcool>
+            <d2p1:Marque>SevenUp</d2p1:Marque>
+          </d2p1:Boisson>
+          <d2p1:Boisson i:type="d2p1:BoissonSimple">
+            <d2p1:typeDeLaBoisson>Soda</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>Orangina</d2p1:Nom>
+            <d2p1:Prix>1.5</d2p1:Prix>
+            <d2p1:DegreAlcool>0</d2p1:DegreAlcool>
+            <d2p1:Marque>Orangina</d2p1:Marque>
+          </d2p1:Boisson>
+          <d2p1:Boisson i:type="d2p1:BoissonSimple">
+            <d2p1:typeDeLaBoisson>Jus</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>Jus de banane</d2p1:Nom>
+            <d2p1:Prix>2</d2p1:Prix>
+            <d2p1:DegreAlcool>0</d2p1:DegreAlcool>
+            <d2p1:Marque>Pago</d2p1:Marque>
+          </d2p1:Boisson>
+          <d2p1:Boisson i:type="d2p1:BoissonSimple">
+            <d2p1:typeDeLaBoisson>Soda</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>RedBull Energy Drink</d2p1:Nom>
+            <d2p1:Prix>2.8</d2p1:Prix>
+            <d2p1:DegreAlcool>0</d2p1:DegreAlcool>
+            <d2p1:Marque>Redbull</d2p1:Marque>
+          </d2p1:Boisson>
+        </d2p1:listeDesBoissonsDuBar>
         <d2p1:listeDesAvisLaissés />
       </d2p1:Bar>
       <d2p1:Bar>
@@ -598,7 +3175,31 @@
         <d2p1:Adresse>5 Rue Daunou</d2p1:Adresse>
         <d2p1:Numero>01 42 61 71 14</d2p1:Numero>
         <d2p1:Photo>Images/ImagesBars/harrysNewYorkBar.jpg</d2p1:Photo>
-        <d2p1:listeDesBoissonsDuBar />
+        <d2p1:listeDesBoissonsDuBar>
+          <d2p1:Boisson i:type="d2p1:Vin">
+            <d2p1:typeDeLaBoisson>Vin</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>Côte de Beaune</d2p1:Nom>
+            <d2p1:Prix>16</d2p1:Prix>
+            <d2p1:DegreAlcool>12</d2p1:DegreAlcool>
+            <d2p1:Marque>Bourgogne</d2p1:Marque>
+            <d2p1:Millesime>2007</d2p1:Millesime>
+            <d2p1:Robe>rouge</d2p1:Robe>
+          </d2p1:Boisson>
+          <d2p1:Boisson i:type="d2p1:BoissonSimple">
+            <d2p1:typeDeLaBoisson>Soda</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>RedBull Energy Drink</d2p1:Nom>
+            <d2p1:Prix>2.8</d2p1:Prix>
+            <d2p1:DegreAlcool>0</d2p1:DegreAlcool>
+            <d2p1:Marque>Redbull</d2p1:Marque>
+          </d2p1:Boisson>
+          <d2p1:Boisson i:type="d2p1:BoissonSimple">
+            <d2p1:typeDeLaBoisson>AlcoolFort</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>Vodka</d2p1:Nom>
+            <d2p1:Prix>5</d2p1:Prix>
+            <d2p1:DegreAlcool>37</d2p1:DegreAlcool>
+            <d2p1:Marque>Eristoff</d2p1:Marque>
+          </d2p1:Boisson>
+        </d2p1:listeDesBoissonsDuBar>
         <d2p1:listeDesAvisLaissés />
       </d2p1:Bar>
       <d2p1:Bar>
@@ -611,7 +3212,73 @@
         <d2p1:Adresse>46 Rue Jean-Pierre Timbaud</d2p1:Adresse>
         <d2p1:Numero>01 43 14 29 66</d2p1:Numero>
         <d2p1:Photo>Images/ImagesBars/downtownCafe.jpg</d2p1:Photo>
-        <d2p1:listeDesBoissonsDuBar />
+        <d2p1:listeDesBoissonsDuBar>
+          <d2p1:Boisson i:type="d2p1:Vin">
+            <d2p1:typeDeLaBoisson>Vin</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>Chateaubriant</d2p1:Nom>
+            <d2p1:Prix>15</d2p1:Prix>
+            <d2p1:DegreAlcool>12</d2p1:DegreAlcool>
+            <d2p1:Marque>Duras</d2p1:Marque>
+            <d2p1:Millesime>2009</d2p1:Millesime>
+            <d2p1:Robe>rouge</d2p1:Robe>
+          </d2p1:Boisson>
+          <d2p1:Boisson i:type="d2p1:BoissonSimple">
+            <d2p1:typeDeLaBoisson>AlcoolFort</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>Rhum</d2p1:Nom>
+            <d2p1:Prix>4</d2p1:Prix>
+            <d2p1:DegreAlcool>40</d2p1:DegreAlcool>
+            <d2p1:Marque>OldNick</d2p1:Marque>
+          </d2p1:Boisson>
+          <d2p1:Boisson i:type="d2p1:BoissonSimple">
+            <d2p1:typeDeLaBoisson>Biere</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>Blonde</d2p1:Nom>
+            <d2p1:Prix>2.5</d2p1:Prix>
+            <d2p1:DegreAlcool>4</d2p1:DegreAlcool>
+            <d2p1:Marque>Leffe</d2p1:Marque>
+          </d2p1:Boisson>
+          <d2p1:Boisson i:type="d2p1:BoissonSimple">
+            <d2p1:typeDeLaBoisson>Biere</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>Ambré</d2p1:Nom>
+            <d2p1:Prix>3.5</d2p1:Prix>
+            <d2p1:DegreAlcool>4</d2p1:DegreAlcool>
+            <d2p1:Marque>Leffe</d2p1:Marque>
+          </d2p1:Boisson>
+          <d2p1:Boisson i:type="d2p1:BoissonSimple">
+            <d2p1:typeDeLaBoisson>Biere</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>Ruby</d2p1:Nom>
+            <d2p1:Prix>3.5</d2p1:Prix>
+            <d2p1:DegreAlcool>4</d2p1:DegreAlcool>
+            <d2p1:Marque>Leffe</d2p1:Marque>
+          </d2p1:Boisson>
+          <d2p1:Boisson i:type="d2p1:BoissonSimple">
+            <d2p1:typeDeLaBoisson>Biere</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>K Mangue</d2p1:Nom>
+            <d2p1:Prix>3.2</d2p1:Prix>
+            <d2p1:DegreAlcool>4.5</d2p1:DegreAlcool>
+            <d2p1:Marque>Kronenbourg</d2p1:Marque>
+          </d2p1:Boisson>
+          <d2p1:Boisson i:type="d2p1:BoissonSimple">
+            <d2p1:typeDeLaBoisson>Biere</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>Blonde</d2p1:Nom>
+            <d2p1:Prix>3.5</d2p1:Prix>
+            <d2p1:DegreAlcool>4.7</d2p1:DegreAlcool>
+            <d2p1:Marque>Peroni</d2p1:Marque>
+          </d2p1:Boisson>
+          <d2p1:Boisson i:type="d2p1:BoissonSimple">
+            <d2p1:typeDeLaBoisson>Biere</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>Blonde</d2p1:Nom>
+            <d2p1:Prix>3.2</d2p1:Prix>
+            <d2p1:DegreAlcool>2.5</d2p1:DegreAlcool>
+            <d2p1:Marque>Kronenbourg</d2p1:Marque>
+          </d2p1:Boisson>
+          <d2p1:Boisson i:type="d2p1:BoissonSimple">
+            <d2p1:typeDeLaBoisson>Biere</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>Blonde</d2p1:Nom>
+            <d2p1:Prix>3.2</d2p1:Prix>
+            <d2p1:DegreAlcool>2.5</d2p1:DegreAlcool>
+            <d2p1:Marque>Heineken</d2p1:Marque>
+          </d2p1:Boisson>
+        </d2p1:listeDesBoissonsDuBar>
         <d2p1:listeDesAvisLaissés />
       </d2p1:Bar>
       <d2p1:Bar>
@@ -624,7 +3291,31 @@
         <d2p1:Adresse>5 Passage Ruelle</d2p1:Adresse>
         <d2p1:Numero>01 42 05 20 00</d2p1:Numero>
         <d2p1:Photo>Images/ImagesBars/iceKubeBar.jpg</d2p1:Photo>
-        <d2p1:listeDesBoissonsDuBar />
+        <d2p1:listeDesBoissonsDuBar>
+          <d2p1:Boisson i:type="d2p1:Vin">
+            <d2p1:typeDeLaBoisson>Vin</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>Côte de Beaune</d2p1:Nom>
+            <d2p1:Prix>16</d2p1:Prix>
+            <d2p1:DegreAlcool>12</d2p1:DegreAlcool>
+            <d2p1:Marque>Bourgogne</d2p1:Marque>
+            <d2p1:Millesime>2007</d2p1:Millesime>
+            <d2p1:Robe>rouge</d2p1:Robe>
+          </d2p1:Boisson>
+          <d2p1:Boisson i:type="d2p1:BoissonSimple">
+            <d2p1:typeDeLaBoisson>Soda</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>RedBull Energy Drink</d2p1:Nom>
+            <d2p1:Prix>2.8</d2p1:Prix>
+            <d2p1:DegreAlcool>0</d2p1:DegreAlcool>
+            <d2p1:Marque>Redbull</d2p1:Marque>
+          </d2p1:Boisson>
+          <d2p1:Boisson i:type="d2p1:BoissonSimple">
+            <d2p1:typeDeLaBoisson>AlcoolFort</d2p1:typeDeLaBoisson>
+            <d2p1:Nom>Vodka</d2p1:Nom>
+            <d2p1:Prix>5</d2p1:Prix>
+            <d2p1:DegreAlcool>37</d2p1:DegreAlcool>
+            <d2p1:Marque>Eristoff</d2p1:Marque>
+          </d2p1:Boisson>
+        </d2p1:listeDesBoissonsDuBar>
         <d2p1:listeDesAvisLaissés />
       </d2p1:Bar>
     </d2p1:listeDesBarsDeLaVille>
