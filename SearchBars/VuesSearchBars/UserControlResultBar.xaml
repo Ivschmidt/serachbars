@@ -38,7 +38,7 @@
                               ItemsSource="{Binding ListBoissons, ElementName=root}">
                         <ComboBox.ItemTemplate>
                             <DataTemplate>
-                                <TextBlock Text="{Binding Nom}"/>
+                                <TextBlock Text="{Binding}"/>
                             </DataTemplate>
                         </ComboBox.ItemTemplate>
                     </ComboBox>
@@ -112,7 +112,7 @@
                         </DataTemplate>
                     </ListView.ItemTemplate>
                 </ListView>
-                <Button Content="Poster un avis" Margin="0 5 0 5" Click="Button_Click_PosteAvis"/>
+                <Button Content="Poster un avis" Margin="0 5 0 5" Click="Button_Click_PosteAvis" Style="{StaticResource SButton}" Width="auto"/>
             </StackPanel>
         </Grid>
     </Grid>
