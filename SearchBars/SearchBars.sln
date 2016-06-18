@@ -13,8 +13,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataSearchBars", "DataSearc
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Documentation", "Documentation\Documentation.vcxproj", "{7B502999-350B-452B-B191-29C94C9AD164}"
 EndProject
-Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "SearchBarsSetup", "SearchBarsSetup\SearchBarsSetup.vdproj", "{2AA93A10-D43D-4402-A0F0-45F8532925B8}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -83,12 +81,6 @@ Global
 		{7B502999-350B-452B-B191-29C94C9AD164}.Release|x64.Build.0 = Release|x64
 		{7B502999-350B-452B-B191-29C94C9AD164}.Release|x86.ActiveCfg = Release|Win32
 		{7B502999-350B-452B-B191-29C94C9AD164}.Release|x86.Build.0 = Release|Win32
-		{2AA93A10-D43D-4402-A0F0-45F8532925B8}.Debug|Any CPU.ActiveCfg = Debug
-		{2AA93A10-D43D-4402-A0F0-45F8532925B8}.Debug|x64.ActiveCfg = Debug
-		{2AA93A10-D43D-4402-A0F0-45F8532925B8}.Debug|x86.ActiveCfg = Debug
-		{2AA93A10-D43D-4402-A0F0-45F8532925B8}.Release|Any CPU.ActiveCfg = Release
-		{2AA93A10-D43D-4402-A0F0-45F8532925B8}.Release|x64.ActiveCfg = Release
-		{2AA93A10-D43D-4402-A0F0-45F8532925B8}.Release|x86.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
